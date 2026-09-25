@@ -19,3 +19,6 @@ aggregated/chatgpt/
 launcher.txt
 main_commands.txt
 paper_plan.md
+
+# Manuscript sources, never part of the released code
+Camilo_NeurIPS_Paper/
