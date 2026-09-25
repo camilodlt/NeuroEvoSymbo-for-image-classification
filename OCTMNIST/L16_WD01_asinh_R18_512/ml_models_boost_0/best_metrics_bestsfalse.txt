@@ -1,0 +1,1 @@
+(model = "RF", val_acc = 0.8523818316100443, val_bacc = 0.8113561557275135, test = (test_acc = 0.709, test_bacc = 0.709, test_auc = 0.9273559999999998))

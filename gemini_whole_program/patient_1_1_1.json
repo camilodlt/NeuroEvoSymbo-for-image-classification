@@ -1,0 +1,13 @@
+{
+  "program_interpretability_score": 3,
+  "explanation_clarity_score": 9,
+  "short_summary": "The program creates a combined black-and-white mask of the image's thickened boundaries and its prominent colored regions, then calculates the percentage of the image that remains dark (background).",
+  "step_by_step_explanation": [
+    "Analyzes the texture of the third color channel to guide the extraction and thickening of visual edges (outlines) from the first color channel.",
+    "Smooths out the second color channel and breaks it into distinct segments to evaluate its regional properties.",
+    "Compares the second and third color channels to isolate their darkest shared areas, spreads out the brightness slightly, and turns the result into a clean black-and-white picture.",
+    "Overlays the thickened edges with the black-and-white picture, and calculates what fraction of the final combined image is completely dark."
+  ],
+  "stakeholder_explanation": "Imagine we are looking at a blood cell image separated into three different color layers. The program processes this image in two main ways to figure out what is cell and what is background. First, it looks for the outlines or edges of the cell structures in one color layer and makes those outlines thicker so they stand out. Second, it compares two of the other color layers, picks out specific dark and bright spots, and turns them into a simple black-and-white shape. After doing this, it stacks the thickened outlines on top of the black-and-white shapes. The final number the program gives you is simply the percentage of this final stacked picture that remains completely dark. Essentially, it is measuring how much 'empty space' is left after highlighting the most important parts of the cell.",
+  "rationale_for_score": "The raw code is highly unintuitive for a non-expert, as it mixes technical texture metrics, image pooling, and arbitrary combinations of color channels, meriting a low interpretability score. However, because the operations correspond to physical visual changes like 'finding edges' and 'counting dark space', the overall meaning can be clearly translated into plain language."
+}

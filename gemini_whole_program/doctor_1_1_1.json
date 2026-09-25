@@ -1,0 +1,12 @@
+{
+  "program_interpretability_score": 5,
+  "explanation_clarity_score": 9,
+  "short_summary": "The program estimates the relative area of the cell nucleus by isolating dense nuclear material and masking out the cell boundaries.",
+  "step_by_step_explanation": [
+    "Finds and thickens the physical boundaries of the cells by applying edge detection (morphological gradient) to the red color channel.",
+    "Highlights the dense nucleus by finding the darkest regions across the blue and green channels, then applies a mathematically generated threshold to separate the dark nucleus from the brighter cytoplasm and background.",
+    "Combines the thickened boundaries with the thresholded image and calculates the proportion of remaining dark pixels, which corresponds to the solid interior area of the nucleus."
+  ],
+  "stakeholder_explanation": "This program calculates a structural feature of the blood cell that is highly relevant for clinical classification: the proportional area of the cell nucleus. First, it identifies the physical boundaries of the cells by detecting sharp contrast changes in the red color channel, creating a map of thickened cell outlines. Second, it isolates the dense, dark regions of the cell—mainly the nucleus—by combining the blue and green channels (where hematoxylin-stained nuclei appear darkest) and separating them from the brighter background and cytoplasm. By merging these two maps, the program essentially 'masks out' the background, cytoplasm, and cell edges, leaving only the solid interior of the nucleus represented as black pixels. Finally, it calculates the percentage of the image covered by these black pixels. For a physician, this measurement directly correlates to the nuclear size or nuclear-to-cytoplasmic ratio, which is a fundamental visual criteria used to differentiate types of white blood cells (for instance, distinguishing lymphocytes, which have large nuclei, from other leukocytes).",
+  "rationale_for_score": "The program's core logic of combining edge detection with intensity thresholding to isolate the nucleus is clinically meaningful. However, the convoluted way it generates the threshold parameter (using watershed and texture metrics on a uniformly pooled image) requires significant effort to decode, lowering the raw interpretability score."
+}

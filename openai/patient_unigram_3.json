@@ -1,0 +1,1532 @@
+[
+  {
+    "library_id": "Library 1",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 9,
+        "rationale": "Leaves the picture unchanged, which is very clear."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 3,
+        "rationale": "An image of all 1s is a numeric idea, not visually explained."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 3,
+        "rationale": "An image of all 0s is numeric and not directly intuitive."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 7,
+        "rationale": "Flips dark and bright, which is easy to grasp."
+      },
+      {
+        "unit": "experimental_normalize_2D",
+        "score": 6,
+        "rationale": "Rescales brightness to 0–1, a fairly simple idea."
+      },
+      {
+        "unit": "experimental_standardize_2D",
+        "score": 4,
+        "rationale": "Uses mean and standard deviation, which is technical."
+      },
+      {
+        "unit": "experimental_tointensity_image2D",
+        "score": 4,
+        "rationale": "Converts labels/black‑white to gray levels, somewhat abstract."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 7,
+        "rationale": "Shrinks bright spots, which is easy to imagine."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 7,
+        "rationale": "Expands bright spots, which is easy to picture."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 6,
+        "rationale": "Removes small bright specks, a clear visual effect."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 6,
+        "rationale": "Fills tiny dark gaps, a clear visual effect."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 5,
+        "rationale": "Keeps only small bright bits, but the term is jargon."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 5,
+        "rationale": "Keeps only small dark bits, but the term is jargon."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 7,
+        "rationale": "Emphasizes edges/boundaries, which is intuitive."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 4,
+        "rationale": "Edge response via a technical 'Laplace' idea."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 5,
+        "rationale": "Subtracts pictures pixel by pixel, moderately clear."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 5,
+        "rationale": "Adds pictures pixel by pixel, moderately clear."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 5,
+        "rationale": "Multiplies brightness pixel by pixel, somewhat clear."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 5,
+        "rationale": "Keeps the brighter of two images per pixel, moderately clear."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 5,
+        "rationale": "Keeps the darker of two images per pixel, moderately clear."
+      },
+      {
+        "unit": "bsubtract_image2D",
+        "score": 5,
+        "rationale": "Shifts all brightness down by a constant, fairly clear."
+      },
+      {
+        "unit": "badd_image2D",
+        "score": 5,
+        "rationale": "Brightens all pixels by a constant, fairly clear."
+      },
+      {
+        "unit": "bmult_image2D",
+        "score": 5,
+        "rationale": "Scales all brightness by a constant, fairly clear."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 3,
+        "rationale": "Named derivative filter is technical to a layperson."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 3,
+        "rationale": "Named derivative filter is technical to a layperson."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 4,
+        "rationale": "Edge strength map is somewhat intuitive despite jargon."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 2,
+        "rationale": "Obscure filter name and derivative jargon are not clear."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 2,
+        "rationale": "Obscure filter name and derivative jargon are not clear."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 3,
+        "rationale": "Edge magnitude idea helps but the name is obscure."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 2,
+        "rationale": "Obscure filter name and derivative jargon are not clear."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 2,
+        "rationale": "Obscure filter name and derivative jargon are not clear."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 3,
+        "rationale": "Edge magnitude idea helps but the name is obscure."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 2,
+        "rationale": "Obscure filter name and derivative jargon are not clear."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 2,
+        "rationale": "Obscure filter name and derivative jargon are not clear."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 3,
+        "rationale": "Edge magnitude idea helps but the name is obscure."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 2,
+        "rationale": "Obscure filter name and derivative jargon are not clear."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 2,
+        "rationale": "Obscure filter name and derivative jargon are not clear."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 3,
+        "rationale": "Edge magnitude idea helps but the name is obscure."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 3,
+        "rationale": "Named derivative filter is technical to a layperson."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 3,
+        "rationale": "Named derivative filter is technical to a layperson."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 4,
+        "rationale": "Edge strength map is somewhat intuitive despite jargon."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 3,
+        "rationale": "Named derivative filter is technical to a layperson."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 3,
+        "rationale": "Named derivative filter is technical to a layperson."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 4,
+        "rationale": "Edge strength map is somewhat intuitive despite jargon."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 6,
+        "rationale": "Blurs the image, which is easy to understand."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 6,
+        "rationale": "Blurs the image, which is easy to understand."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 6,
+        "rationale": "Blurs the image, which is easy to understand."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 6,
+        "rationale": "Blurs the image, which is easy to understand."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 6,
+        "rationale": "Blurs the image, which is easy to understand."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 4,
+        "rationale": "Edge detection via a math filter is technical."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 4,
+        "rationale": "Difference‑of‑Gaussians is a technical filtering idea."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 5,
+        "rationale": "A smoothing blur is clear though the name is jargon."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 5,
+        "rationale": "A smoothing blur is clear though the name is jargon."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 5,
+        "rationale": "A smoothing blur is clear though the name is jargon."
+      },
+      {
+        "unit": "exp_image2D",
+        "score": 4,
+        "rationale": "Applies an exponential to brightness, a mathy idea."
+      },
+      {
+        "unit": "loginv_image2D",
+        "score": 3,
+        "rationale": "Log and sign inversion are quite technical."
+      },
+      {
+        "unit": "log_image2D",
+        "score": 4,
+        "rationale": "Log transform on brightness is a mathy idea."
+      },
+      {
+        "unit": "powerof_image2D",
+        "score": 5,
+        "rationale": "Raises brightness to a power, somewhat intuitive."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 5,
+        "rationale": "Chooses one image or another based on a condition, moderately clear."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 4,
+        "rationale": "Averages blocks of pixels, but 'pooling' jargon adds friction."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 3,
+        "rationale": "Center row/column averaging is technical and non‑intuitive."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 4,
+        "rationale": "Takes the brightest in blocks, but 'pooling' is jargon."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 3,
+        "rationale": "Center row/column max is technical and non‑intuitive."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 4,
+        "rationale": "Takes the darkest in blocks, but 'pooling' is jargon."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 3,
+        "rationale": "Center row/column min is technical and non‑intuitive."
+      },
+      {
+        "unit": "meanpool",
+        "score": 4,
+        "rationale": "Sliding average is somewhat clear though resizing is technical."
+      },
+      {
+        "unit": "maxpool",
+        "score": 4,
+        "rationale": "Sliding brightest‑value is somewhat clear though resizing is technical."
+      },
+      {
+        "unit": "minpool",
+        "score": 4,
+        "rationale": "Sliding darkest‑value is somewhat clear though resizing is technical."
+      },
+      {
+        "unit": "stdpool",
+        "score": 3,
+        "rationale": "Uses variability inside windows, a statistical idea."
+      },
+      {
+        "unit": "medianpool",
+        "score": 4,
+        "rationale": "Takes the middle value in windows, somewhat clear."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 2,
+        "rationale": "Counts unique values in windows, which is obscure."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 2,
+        "rationale": "Argmax counting is jargon and hard to visualize."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 2,
+        "rationale": "Argmin counting is jargon and hard to visualize."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 2,
+        "rationale": "Interquartile range is statistical jargon."
+      },
+      {
+        "unit": "grad_magnitude",
+        "score": 7,
+        "rationale": "Shows edge strength across the image, intuitive."
+      },
+      {
+        "unit": "grad_orientation",
+        "score": 5,
+        "rationale": "Shows edge directions, somewhat abstract but graspable."
+      },
+      {
+        "unit": "orientation_select",
+        "score": 3,
+        "rationale": "Selecting gradients by angle with bandwidth is technical."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 2",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 9,
+        "rationale": "Leaves the picture unchanged, which is very clear."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 4,
+        "rationale": "All‑ones (all white) image is simple but numeric wording is opaque."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 4,
+        "rationale": "All‑zeros (all black) image is simple but numeric wording is opaque."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 7,
+        "rationale": "Flips black and white, which is intuitive."
+      },
+      {
+        "unit": "experimental_tobinary_image2D",
+        "score": 4,
+        "rationale": "Turns gray into black‑white by a cutoff, somewhat clear."
+      },
+      {
+        "unit": "experimental_tobinary_th_image2D_factory",
+        "score": 4,
+        "rationale": "Uses a chosen cutoff to make black‑white, somewhat clear."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 3,
+        "rationale": "Subtracts pictures and rounds, which is technical."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 3,
+        "rationale": "Adds pictures and rounds, which is technical."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 3,
+        "rationale": "Multiplies pictures and rounds, which is technical."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 3,
+        "rationale": "Takes pixelwise maximum with rounding, still technical."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 3,
+        "rationale": "Takes pixelwise minimum with rounding, still technical."
+      },
+      {
+        "unit": "binarize_adaptive2D",
+        "score": 3,
+        "rationale": "Adaptive thresholding is jargon to non‑experts."
+      },
+      {
+        "unit": "binarize_niblack2D",
+        "score": 2,
+        "rationale": "Method name and thresholding are unfamiliar jargon."
+      },
+      {
+        "unit": "binarize_polysegment2D",
+        "score": 2,
+        "rationale": "Method name and process are unfamiliar jargon."
+      },
+      {
+        "unit": "binarize_sauvola2D",
+        "score": 2,
+        "rationale": "Method name and thresholding are unfamiliar jargon."
+      },
+      {
+        "unit": "binarize_otsu2D",
+        "score": 2,
+        "rationale": "Method name and histogram thresholding are jargon."
+      },
+      {
+        "unit": "binarize_minimumintermodes2D",
+        "score": 2,
+        "rationale": "Histogram threshold method name is heavy jargon."
+      },
+      {
+        "unit": "binarize_intermodes2D",
+        "score": 2,
+        "rationale": "Histogram threshold method name is heavy jargon."
+      },
+      {
+        "unit": "binarize_minimumerror2D",
+        "score": 2,
+        "rationale": "Minimum‑error thresholding is jargon."
+      },
+      {
+        "unit": "binarize_moments2D",
+        "score": 2,
+        "rationale": "Moments‑based thresholding is jargon."
+      },
+      {
+        "unit": "binarize_unimodalrosin2D",
+        "score": 2,
+        "rationale": "Unimodal Rosin method is obscure jargon."
+      },
+      {
+        "unit": "binarize_entropy2D",
+        "score": 2,
+        "rationale": "Entropy‑based thresholding is technical jargon."
+      },
+      {
+        "unit": "binarize_balanced2D",
+        "score": 2,
+        "rationale": "Balanced histogram thresholding is jargon."
+      },
+      {
+        "unit": "binarize_yen2D",
+        "score": 2,
+        "rationale": "Yen method name is unfamiliar jargon."
+      },
+      {
+        "unit": "binarize_manual2D",
+        "score": 4,
+        "rationale": "Manual threshold (set a cutoff) is somewhat clear."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 3,
+        "rationale": "Named derivative filter with rounding is technical."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 3,
+        "rationale": "Named derivative filter with rounding is technical."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 4,
+        "rationale": "Edge strength idea helps even if rounding is technical."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 2,
+        "rationale": "Obscure filter name and derivative jargon are not clear."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 2,
+        "rationale": "Obscure filter name and derivative jargon are not clear."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 3,
+        "rationale": "Edge magnitude idea helps but the name is obscure."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 2,
+        "rationale": "Obscure filter name and derivative jargon are not clear."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 2,
+        "rationale": "Obscure filter name and derivative jargon are not clear."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 3,
+        "rationale": "Edge magnitude idea helps but the name is obscure."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 2,
+        "rationale": "Obscure filter name and derivative jargon are not clear."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 2,
+        "rationale": "Obscure filter name and derivative jargon are not clear."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 3,
+        "rationale": "Edge magnitude idea helps but the name is obscure."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 2,
+        "rationale": "Obscure filter name and derivative jargon are not clear."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 2,
+        "rationale": "Obscure filter name and derivative jargon are not clear."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 3,
+        "rationale": "Edge magnitude idea helps but the name is obscure."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 3,
+        "rationale": "Named derivative filter with rounding is technical."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 3,
+        "rationale": "Named derivative filter with rounding is technical."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 4,
+        "rationale": "Edge strength idea helps even if rounding is technical."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 3,
+        "rationale": "Named derivative filter with rounding is technical."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 3,
+        "rationale": "Named derivative filter with rounding is technical."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 4,
+        "rationale": "Edge strength idea helps even if rounding is technical."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 5,
+        "rationale": "Blurs the image, which is easy to understand."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 5,
+        "rationale": "Blurs the image, which is easy to understand."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 5,
+        "rationale": "Blurs the image, which is easy to understand."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 5,
+        "rationale": "Blurs the image, which is easy to understand."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 5,
+        "rationale": "Blurs the image, which is easy to understand."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 4,
+        "rationale": "Edge detection via a math filter is technical."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 4,
+        "rationale": "Difference‑of‑Gaussians is a technical filtering idea."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 4,
+        "rationale": "A smoothing blur is clear though the name is jargon."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 4,
+        "rationale": "A smoothing blur is clear though the name is jargon."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 4,
+        "rationale": "A smoothing blur is clear though the name is jargon."
+      },
+      {
+        "unit": "findlocalminima_image2D",
+        "score": 4,
+        "rationale": "Marks local dimmest points, somewhat intuitive."
+      },
+      {
+        "unit": "findlocalmaxima_image2D",
+        "score": 5,
+        "rationale": "Marks local brightest points, fairly intuitive."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 7,
+        "rationale": "Shrinks white regions, which is easy to picture."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 7,
+        "rationale": "Expands white regions, which is easy to picture."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 6,
+        "rationale": "Removes small white specks, a clear visual effect."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 6,
+        "rationale": "Fills small black gaps, a clear visual effect."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 5,
+        "rationale": "Keeps only small white bits, but the term is jargon."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 5,
+        "rationale": "Keeps only small black bits, but the term is jargon."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 7,
+        "rationale": "Highlights object boundaries, which is intuitive."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 4,
+        "rationale": "Edge response via a technical 'Laplace' idea."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 5,
+        "rationale": "Chooses one image or another based on a condition, moderately clear."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 3,
+        "rationale": "Block averaging with rounding is technical to non‑experts."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 3,
+        "rationale": "Center row/column averaging is technical and opaque."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 3,
+        "rationale": "Block maximum with rounding uses jargon and is opaque."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 3,
+        "rationale": "Center row/column maximum is technical and opaque."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 3,
+        "rationale": "Block minimum with rounding uses jargon and is opaque."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 3,
+        "rationale": "Center row/column minimum is technical and opaque."
+      },
+      {
+        "unit": "meanpool",
+        "score": 3,
+        "rationale": "Sliding mean with rounding and resizing is technical."
+      },
+      {
+        "unit": "maxpool",
+        "score": 3,
+        "rationale": "Sliding maximum with rounding and resizing is technical."
+      },
+      {
+        "unit": "minpool",
+        "score": 3,
+        "rationale": "Sliding minimum with rounding and resizing is technical."
+      },
+      {
+        "unit": "stdpool",
+        "score": 2,
+        "rationale": "Standard deviation in windows is statistical jargon."
+      },
+      {
+        "unit": "medianpool",
+        "score": 3,
+        "rationale": "Sliding median with rounding is somewhat technical."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 2,
+        "rationale": "Counting unique values in windows is obscure."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 2,
+        "rationale": "Argmax counting is jargon and hard to visualize."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 2,
+        "rationale": "Argmin counting is jargon and hard to visualize."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 2,
+        "rationale": "Interquartile range is statistical jargon."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 3",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 9,
+        "rationale": "Leaves the image unchanged, which is very clear."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 3,
+        "rationale": "All‑ones label image is numeric and not intuitive."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 3,
+        "rationale": "All‑zeros label image is numeric and not intuitive."
+      },
+      {
+        "unit": "experimental_tosegment_image2D",
+        "score": 6,
+        "rationale": "Turns black‑white into labeled regions, fairly clear."
+      },
+      {
+        "unit": "fastscanning_image2D",
+        "score": 4,
+        "rationale": "Segments by a technical scanning method, not very clear."
+      },
+      {
+        "unit": "watershed_image2D",
+        "score": 3,
+        "rationale": "Watershed topology is jargon to non‑experts."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 4",
+    "scores": [
+      {
+        "unit": "identity_float",
+        "score": 7,
+        "rationale": "Returns the same number, which is simple."
+      },
+      {
+        "unit": "ret_1",
+        "score": 6,
+        "rationale": "Always returns 1, which is straightforward."
+      },
+      {
+        "unit": "tanh",
+        "score": 2,
+        "rationale": "Hyperbolic tangent is math jargon."
+      },
+      {
+        "unit": "relu",
+        "score": 5,
+        "rationale": "Keeps positives and drops negatives, fairly clear."
+      },
+      {
+        "unit": "modulo",
+        "score": 4,
+        "rationale": "Remainder after division is a math idea, not visual."
+      },
+      {
+        "unit": "is_eq_to",
+        "score": 6,
+        "rationale": "Checks if two numbers are equal, which is clear."
+      },
+      {
+        "unit": "experimental_is_gt",
+        "score": 6,
+        "rationale": "Checks if one number is greater than another, clear."
+      },
+      {
+        "unit": "experimental_is_lt",
+        "score": 6,
+        "rationale": "Checks if one number is less than another, clear."
+      },
+      {
+        "unit": "experimental_not",
+        "score": 5,
+        "rationale": "Turns a value into 1 or 0 by a cutoff, fairly clear."
+      },
+      {
+        "unit": "number_sum",
+        "score": 7,
+        "rationale": "Adds two numbers, which is simple."
+      },
+      {
+        "unit": "number_minus",
+        "score": 7,
+        "rationale": "Subtracts two numbers, which is simple."
+      },
+      {
+        "unit": "number_mult",
+        "score": 6,
+        "rationale": "Multiplies two numbers, which is basic."
+      },
+      {
+        "unit": "number_div",
+        "score": 5,
+        "rationale": "Divides two numbers, a basic idea with a caveat."
+      },
+      {
+        "unit": "safe_div",
+        "score": 6,
+        "rationale": "Division that safely handles zero is understandable."
+      },
+      {
+        "unit": "power_of",
+        "score": 5,
+        "rationale": "Raises a number to a power, somewhat clear."
+      },
+      {
+        "unit": "pi_",
+        "score": 5,
+        "rationale": "Returns pi, a familiar constant but not visual."
+      },
+      {
+        "unit": "exp_",
+        "score": 4,
+        "rationale": "Exponential function is mathy and abstract."
+      },
+      {
+        "unit": "log_",
+        "score": 4,
+        "rationale": "Logarithm is a math concept, not intuitive."
+      },
+      {
+        "unit": "log10_",
+        "score": 4,
+        "rationale": "Base‑10 logarithm is a math concept, not intuitive."
+      },
+      {
+        "unit": "reduce_length",
+        "score": 6,
+        "rationale": "Counts how many pixels there are, understandable."
+      },
+      {
+        "unit": "reduce_biggestAxis",
+        "score": 7,
+        "rationale": "Returns the larger image side length, clear."
+      },
+      {
+        "unit": "reduce_smallerAxis",
+        "score": 7,
+        "rationale": "Returns the smaller image side length, clear."
+      },
+      {
+        "unit": "reduce_histMode",
+        "score": 4,
+        "rationale": "Most frequent pixel value is statistical jargon."
+      },
+      {
+        "unit": "reduce_histModeCount",
+        "score": 4,
+        "rationale": "Count of the most frequent value is statistical jargon."
+      },
+      {
+        "unit": "reduce_propWhite",
+        "score": 8,
+        "rationale": "Proportion of white pixels is very intuitive."
+      },
+      {
+        "unit": "reduce_propBlack",
+        "score": 8,
+        "rationale": "Proportion of black pixels is very intuitive."
+      },
+      {
+        "unit": "reduce_nColors",
+        "score": 6,
+        "rationale": "Counts distinct pixel values, fairly clear."
+      },
+      {
+        "unit": "reduce_mean",
+        "score": 6,
+        "rationale": "Average brightness is easy to understand."
+      },
+      {
+        "unit": "reduce_median",
+        "score": 5,
+        "rationale": "Middle brightness value is somewhat familiar."
+      },
+      {
+        "unit": "reduce_std",
+        "score": 5,
+        "rationale": "Variability of brightness is a statistical idea."
+      },
+      {
+        "unit": "reduce_maximum",
+        "score": 7,
+        "rationale": "Brightest pixel value is clear."
+      },
+      {
+        "unit": "reduce_minimum",
+        "score": 7,
+        "rationale": "Darkest pixel value is clear."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 5,
+        "rationale": "Chooses between two numbers based on a condition, moderately clear."
+      },
+      {
+        "unit": "region_mean",
+        "score": 4,
+        "rationale": "Average inside a small region at a set location is somewhat technical."
+      },
+      {
+        "unit": "region_std",
+        "score": 4,
+        "rationale": "Variability inside a local region is statistical."
+      },
+      {
+        "unit": "region_min",
+        "score": 5,
+        "rationale": "Darkest value inside a local region is clear."
+      },
+      {
+        "unit": "region_max",
+        "score": 5,
+        "rationale": "Brightest value inside a local region is clear."
+      },
+      {
+        "unit": "region_sum",
+        "score": 4,
+        "rationale": "Total brightness in a local patch is somewhat clear."
+      },
+      {
+        "unit": "region_median",
+        "score": 4,
+        "rationale": "Middle brightness in a local patch is somewhat clear."
+      },
+      {
+        "unit": "region_range",
+        "score": 5,
+        "rationale": "Difference between local max and min is understandable."
+      },
+      {
+        "unit": "region_contrast",
+        "score": 5,
+        "rationale": "Compares center to surround brightness, fairly clear."
+      },
+      {
+        "unit": "region_energy",
+        "score": 3,
+        "rationale": "Mean squared value is technical jargon."
+      },
+      {
+        "unit": "region_entropy",
+        "score": 2,
+        "rationale": "Entropy is information theory jargon."
+      },
+      {
+        "unit": "region_mean_5p",
+        "score": 4,
+        "rationale": "Average in a 5%‑sized patch is somewhat technical."
+      },
+      {
+        "unit": "region_std_5p",
+        "score": 4,
+        "rationale": "Variability in a 5%‑sized patch is statistical."
+      },
+      {
+        "unit": "region_min_5p",
+        "score": 5,
+        "rationale": "Darkest value in a 5%‑sized patch is clear."
+      },
+      {
+        "unit": "region_max_5p",
+        "score": 5,
+        "rationale": "Brightest value in a 5%‑sized patch is clear."
+      },
+      {
+        "unit": "region_sum_5p",
+        "score": 4,
+        "rationale": "Total brightness in a 5%‑sized patch is somewhat clear."
+      },
+      {
+        "unit": "region_median_5p",
+        "score": 4,
+        "rationale": "Middle brightness in a 5%‑sized patch is somewhat clear."
+      },
+      {
+        "unit": "region_range_5p",
+        "score": 5,
+        "rationale": "Max minus min in a 5%‑sized patch is understandable."
+      },
+      {
+        "unit": "region_contrast_5p",
+        "score": 5,
+        "rationale": "Center versus ring contrast in a 5% patch is fairly clear."
+      },
+      {
+        "unit": "region_energy_5p",
+        "score": 3,
+        "rationale": "Mean squared value in a 5% patch is technical."
+      },
+      {
+        "unit": "region_entropy_5p",
+        "score": 2,
+        "rationale": "Entropy in a 5% patch is jargon."
+      },
+      {
+        "unit": "region_mean_10p",
+        "score": 4,
+        "rationale": "Average in a 10%‑sized patch is somewhat technical."
+      },
+      {
+        "unit": "region_std_10p",
+        "score": 4,
+        "rationale": "Variability in a 10%‑sized patch is statistical."
+      },
+      {
+        "unit": "region_min_10p",
+        "score": 5,
+        "rationale": "Darkest value in a 10%‑sized patch is clear."
+      },
+      {
+        "unit": "region_max_10p",
+        "score": 5,
+        "rationale": "Brightest value in a 10%‑sized patch is clear."
+      },
+      {
+        "unit": "region_sum_10p",
+        "score": 4,
+        "rationale": "Total brightness in a 10%‑sized patch is somewhat clear."
+      },
+      {
+        "unit": "region_median_10p",
+        "score": 4,
+        "rationale": "Middle brightness in a 10%‑sized patch is somewhat clear."
+      },
+      {
+        "unit": "region_range_10p",
+        "score": 5,
+        "rationale": "Max minus min in a 10%‑sized patch is understandable."
+      },
+      {
+        "unit": "region_contrast_10p",
+        "score": 5,
+        "rationale": "Center versus ring contrast in a 10% patch is fairly clear."
+      },
+      {
+        "unit": "region_energy_10p",
+        "score": 3,
+        "rationale": "Mean squared value in a 10% patch is technical."
+      },
+      {
+        "unit": "region_entropy_10p",
+        "score": 2,
+        "rationale": "Entropy in a 10% patch is jargon."
+      },
+      {
+        "unit": "region_mean_20p",
+        "score": 4,
+        "rationale": "Average in a 20%‑sized patch is somewhat technical."
+      },
+      {
+        "unit": "region_std_20p",
+        "score": 4,
+        "rationale": "Variability in a 20%‑sized patch is statistical."
+      },
+      {
+        "unit": "region_min_20p",
+        "score": 5,
+        "rationale": "Darkest value in a 20%‑sized patch is clear."
+      },
+      {
+        "unit": "region_max_20p",
+        "score": 5,
+        "rationale": "Brightest value in a 20%‑sized patch is clear."
+      },
+      {
+        "unit": "region_sum_20p",
+        "score": 4,
+        "rationale": "Total brightness in a 20%‑sized patch is somewhat clear."
+      },
+      {
+        "unit": "region_median_20p",
+        "score": 4,
+        "rationale": "Middle brightness in a 20%‑sized patch is somewhat clear."
+      },
+      {
+        "unit": "region_range_20p",
+        "score": 5,
+        "rationale": "Max minus min in a 20%‑sized patch is understandable."
+      },
+      {
+        "unit": "region_contrast_20p",
+        "score": 5,
+        "rationale": "Center versus ring contrast in a 20% patch is fairly clear."
+      },
+      {
+        "unit": "region_energy_20p",
+        "score": 3,
+        "rationale": "Mean squared value in a 20% patch is technical."
+      },
+      {
+        "unit": "region_entropy_20p",
+        "score": 2,
+        "rationale": "Entropy in a 20% patch is jargon."
+      },
+      {
+        "unit": "haar_lr",
+        "score": 7,
+        "rationale": "Compares left vs right brightness, easy to picture."
+      },
+      {
+        "unit": "haar_tb",
+        "score": 7,
+        "rationale": "Compares top vs bottom brightness, easy to picture."
+      },
+      {
+        "unit": "haar_diag_main",
+        "score": 6,
+        "rationale": "Compares diagonal quadrants, reasonably visual."
+      },
+      {
+        "unit": "haar_diag_anti",
+        "score": 6,
+        "rationale": "Compares anti‑diagonal quadrants, reasonably visual."
+      },
+      {
+        "unit": "haar_center_surround",
+        "score": 7,
+        "rationale": "Compares center to surrounding ring, easy to picture."
+      },
+      {
+        "unit": "haar_three_h",
+        "score": 6,
+        "rationale": "Compares three horizontal bands, fairly visual."
+      },
+      {
+        "unit": "haar_three_v",
+        "score": 6,
+        "rationale": "Compares three vertical bands, fairly visual."
+      },
+      {
+        "unit": "orientation_coherence",
+        "score": 4,
+        "rationale": "How aligned edge directions are is somewhat abstract."
+      },
+      {
+        "unit": "dominant_orientation",
+        "score": 3,
+        "rationale": "Returns a coded main angle using radians, quite technical."
+      },
+      {
+        "unit": "orientation_energy_0",
+        "score": 4,
+        "rationale": "Proportion of edges near 0° is somewhat abstract."
+      },
+      {
+        "unit": "orientation_energy_45",
+        "score": 4,
+        "rationale": "Proportion of edges near 45° is somewhat abstract."
+      },
+      {
+        "unit": "orientation_energy_90",
+        "score": 4,
+        "rationale": "Proportion of edges near 90° is somewhat abstract."
+      },
+      {
+        "unit": "orientation_energy_135",
+        "score": 4,
+        "rationale": "Proportion of edges near 135° is somewhat abstract."
+      },
+      {
+        "unit": "orientation_spread",
+        "score": 4,
+        "rationale": "How widely edge directions vary is abstract."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_mean",
+        "score": 1,
+        "rationale": "GLCM texture terminology is opaque to non‑experts."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_sum",
+        "score": 1,
+        "rationale": "GLCM texture terminology is opaque to non‑experts."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_std",
+        "score": 1,
+        "rationale": "GLCM texture terminology is opaque to non‑experts."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_minimum",
+        "score": 1,
+        "rationale": "GLCM texture terminology is opaque to non‑experts."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_maximum",
+        "score": 1,
+        "rationale": "GLCM texture terminology is opaque to non‑experts."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_mean",
+        "score": 1,
+        "rationale": "GLCM texture terminology is opaque to non‑experts."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_sum",
+        "score": 1,
+        "rationale": "GLCM texture terminology is opaque to non‑experts."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_std",
+        "score": 1,
+        "rationale": "GLCM texture terminology is opaque to non‑experts."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_minimum",
+        "score": 1,
+        "rationale": "GLCM texture terminology is opaque to non‑experts."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_maximum",
+        "score": 1,
+        "rationale": "GLCM texture terminology is opaque to non‑experts."
+      },
+      {
+        "unit": "glcm_correlation_mean",
+        "score": 1,
+        "rationale": "GLCM correlation is jargon and not intuitive."
+      },
+      {
+        "unit": "glcm_correlation_sum",
+        "score": 1,
+        "rationale": "GLCM correlation is jargon and not intuitive."
+      },
+      {
+        "unit": "glcm_correlation_std",
+        "score": 1,
+        "rationale": "GLCM correlation is jargon and not intuitive."
+      },
+      {
+        "unit": "glcm_correlation_minimum",
+        "score": 1,
+        "rationale": "GLCM correlation is jargon and not intuitive."
+      },
+      {
+        "unit": "glcm_correlation_maximum",
+        "score": 1,
+        "rationale": "GLCM correlation is jargon and not intuitive."
+      },
+      {
+        "unit": "glcm_contrast_mean",
+        "score": 2,
+        "rationale": "Though 'contrast' is familiar, GLCM jargon is not."
+      },
+      {
+        "unit": "glcm_contrast_sum",
+        "score": 2,
+        "rationale": "Though 'contrast' is familiar, GLCM jargon is not."
+      },
+      {
+        "unit": "glcm_contrast_std",
+        "score": 2,
+        "rationale": "Though 'contrast' is familiar, GLCM jargon is not."
+      },
+      {
+        "unit": "glcm_contrast_minimum",
+        "score": 2,
+        "rationale": "Though 'contrast' is familiar, GLCM jargon is not."
+      },
+      {
+        "unit": "glcm_contrast_maximum",
+        "score": 2,
+        "rationale": "Though 'contrast' is familiar, GLCM jargon is not."
+      },
+      {
+        "unit": "glcm_IDM_mean",
+        "score": 1,
+        "rationale": "GLCM IDM is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_IDM_sum",
+        "score": 1,
+        "rationale": "GLCM IDM is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_IDM_std",
+        "score": 1,
+        "rationale": "GLCM IDM is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_IDM_minimum",
+        "score": 1,
+        "rationale": "GLCM IDM is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_IDM_maximum",
+        "score": 1,
+        "rationale": "GLCM IDM is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_ASM_mean",
+        "score": 1,
+        "rationale": "GLCM ASM is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_ASM_sum",
+        "score": 1,
+        "rationale": "GLCM ASM is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_ASM_std",
+        "score": 1,
+        "rationale": "GLCM ASM is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_ASM_minimum",
+        "score": 1,
+        "rationale": "GLCM ASM is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_ASM_maximum",
+        "score": 1,
+        "rationale": "GLCM ASM is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_glcm_entropy_mean",
+        "score": 1,
+        "rationale": "GLCM entropy is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_glcm_entropy_sum",
+        "score": 1,
+        "rationale": "GLCM entropy is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_glcm_entropy_std",
+        "score": 1,
+        "rationale": "GLCM entropy is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_glcm_entropy_minimum",
+        "score": 1,
+        "rationale": "GLCM entropy is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_glcm_entropy_maximum",
+        "score": 1,
+        "rationale": "GLCM entropy is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_max_prob_mean",
+        "score": 1,
+        "rationale": "GLCM max‑probability is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_max_prob_sum",
+        "score": 1,
+        "rationale": "GLCM max‑probability is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_max_prob_std",
+        "score": 1,
+        "rationale": "GLCM max‑probability is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_max_prob_minimum",
+        "score": 1,
+        "rationale": "GLCM max‑probability is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_max_prob_maximum",
+        "score": 1,
+        "rationale": "GLCM max‑probability is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_energy_mean",
+        "score": 1,
+        "rationale": "GLCM energy is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_energy_sum",
+        "score": 1,
+        "rationale": "GLCM energy is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_energy_std",
+        "score": 1,
+        "rationale": "GLCM energy is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_energy_minimum",
+        "score": 1,
+        "rationale": "GLCM energy is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_energy_maximum",
+        "score": 1,
+        "rationale": "GLCM energy is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_dissimilarity_mean",
+        "score": 1,
+        "rationale": "GLCM dissimilarity is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_dissimilarity_sum",
+        "score": 1,
+        "rationale": "GLCM dissimilarity is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_dissimilarity_std",
+        "score": 1,
+        "rationale": "GLCM dissimilarity is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_dissimilarity_minimum",
+        "score": 1,
+        "rationale": "GLCM dissimilarity is unexplained texture jargon."
+      },
+      {
+        "unit": "glcm_dissimilarity_maximum",
+        "score": 1,
+        "rationale": "GLCM dissimilarity is unexplained texture jargon."
+      }
+    ]
+  }
+]

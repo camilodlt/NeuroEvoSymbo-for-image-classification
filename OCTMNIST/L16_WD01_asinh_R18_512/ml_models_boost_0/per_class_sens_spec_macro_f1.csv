@@ -1,0 +1,53 @@
+class,method,sensitivity,specificity
+choroidal neovasc.,MAGE end-to-end,67.2,83.33333333333334
+choroidal neovasc.,Best per dim RF,98.0,68.4
+choroidal neovasc.,Best per dim SVC,34.4,95.733
+choroidal neovasc.,Best per dim LR,95.19999999999999,77.467
+choroidal neovasc.,Runs per dim RF,98.4,65.2
+choroidal neovasc.,Runs per dim SVC,93.60000000000001,82.39999999999999
+choroidal neovasc.,Runs per dim LR,95.19999999999999,78.667
+choroidal neovasc.,All per dim RF,98.8,65.2
+choroidal neovasc.,All per dim SVC,97.2,74.667
+choroidal neovasc.,All per dim LR,98.0,78.8
+choroidal neovasc.,resnet18,100.0,90.26666666666667
+choroidal neovasc.,resnet34,99.6,90.4
+choroidal neovasc.,resnext50,99.6,91.2
+diabetic macular edema,MAGE end-to-end,0.0,99.73333333333333
+diabetic macular edema,Best per dim RF,45.2,97.733
+diabetic macular edema,Best per dim SVC,18.8,92.0
+diabetic macular edema,Best per dim LR,52.800000000000004,96.533
+diabetic macular edema,Runs per dim RF,57.599999999999994,98.933
+diabetic macular edema,Runs per dim SVC,78.4,93.733
+diabetic macular edema,Runs per dim LR,81.6,94.667
+diabetic macular edema,All per dim RF,56.00000000000001,98.933
+diabetic macular edema,All per dim SVC,72.39999999999999,96.0
+diabetic macular edema,All per dim LR,79.2,98.0
+diabetic macular edema,resnet18,94.39999999999999,99.86666666666667
+diabetic macular edema,resnet34,91.2,99.6
+diabetic macular edema,resnext50,92.80000000000001,99.73333333333333
+drusen,MAGE end-to-end,21.6,91.46666666666667
+drusen,Best per dim RF,14.799999999999999,99.467
+drusen,Best per dim SVC,0.4,99.467
+drusen,Best per dim LR,57.199999999999996,94.39999999999999
+drusen,Runs per dim RF,12.0,100.0
+drusen,Runs per dim SVC,61.6,81.2
+drusen,Runs per dim LR,44.4,95.867
+drusen,All per dim RF,13.200000000000001,99.733
+drusen,All per dim SVC,50.4,82.667
+drusen,All per dim LR,57.599999999999994,94.533
+drusen,resnet18,72.0,99.6
+drusen,resnet34,75.2,99.86666666666667
+drusen,resnext50,73.2,99.86666666666667
+normal,MAGE end-to-end,98.0,54.400000000000006
+normal,Best per dim RF,92.4,84.533
+normal,Best per dim SVC,99.2,30.4
+normal,Best per dim LR,80.4,93.467
+normal,Runs per dim RF,88.4,88.0
+normal,Runs per dim SVC,33.6,98.4
+normal,Runs per dim LR,76.0,96.533
+normal,All per dim RF,88.4,88.267
+normal,All per dim SVC,36.0,98.667
+normal,All per dim LR,74.4,98.4
+normal,resnet18,98.8,98.66666666666667
+normal,resnet34,98.8,98.4
+normal,resnext50,99.6,97.6

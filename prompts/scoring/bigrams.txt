@@ -1,0 +1,57 @@
+You will score the interpretability of symbolic program units from the perspective of the stakeholder defined above.
+
+You are given:
+1. A library identifier.
+2. A table of primitive function names and descriptions.
+3. A list of symbolic units extracted empirically from active programs.
+
+Each symbolic unit is either:
+- a standalone primitive, such as `lib4::reduce_std`, meaning the primitive (from library 4) is applied directly; or
+- a local composition, such as `lib4::region_mean(lib1::ando5x_image2D, lib4::reduce_biggestAxis, lib4::region_median)`, meaning the caller function `region_mean` (from library 4) receives inputs produced by the listed functions.
+
+Use the primitive descriptions to infer what each unit does. For a composition, score the interpretability of the local composed operation as a whole, not only the caller function.
+
+# Scoring
+
+Score from 1 to 10, where:
+1 = not interpretable at all for this stakeholder;
+5 = moderately interpretable, but requiring effort or background assumptions;
+10 = very interpretable, clear and easy for this stakeholder to understand.
+
+Use integers only.
+
+Score interpretability, not predictive usefulness, clinical correctness, or whether the unit is likely to improve classification.
+
+# Output
+
+Return only valid JSON. Do not include markdown, comments, or explanatory text outside the JSON.
+
+Use this exact schema:
+
+[
+  {
+    "library_id": "<library identifier>",
+    "scores": [
+      {
+        "unit": "<unit exactly as provided (primitive or composition)>",
+        "score": <integer from 1 to 10>,
+        "rationale": "<one short sentence>"
+      }
+    ]
+  },
+  {
+    "library_id": "<library identifier>",
+    "scores": [
+      {
+        "unit": "<unit exactly as provided (primitive or composition)>",
+        "score": <integer from 1 to 10>,
+        "rationale": "<one short sentence>"
+      }
+    ]
+  }
+]
+
+Return one score for every unit in the provided unit list.
+Preserve the exact unit string.
+Do not omit units.
+Do not add units that were not provided.

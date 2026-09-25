@@ -1,0 +1,1532 @@
+[
+  {
+    "library_id": "Library 1",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 6,
+        "rationale": "Returning the image unchanged is a simple concept, but the technical name makes it slightly harder to grasp."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 4,
+        "rationale": "Creating a blank all-white image is understandable visually, but the purpose in a medical context is unclear to a non-expert."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 4,
+        "rationale": "Creating a blank all-black image is a simple idea, but its purpose would be unclear to a non-expert."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 7,
+        "rationale": "Flipping bright areas to dark and vice versa is an intuitive visual concept most people can understand."
+      },
+      {
+        "unit": "experimental_normalize_2D",
+        "score": 4,
+        "rationale": "Adjusting the brightness range of an image is somewhat understandable, but 'normalize' is a technical term."
+      },
+      {
+        "unit": "experimental_standardize_2D",
+        "score": 2,
+        "rationale": "'Standardize using mean and standard deviation' is statistical jargon that is unlikely to be understood by a non-expert."
+      },
+      {
+        "unit": "experimental_tointensity_image2D",
+        "score": 2,
+        "rationale": "Converting between image representation types is a highly technical concept with no clear visual analogy for a non-expert."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 5,
+        "rationale": "Shrinking bright regions is a visual idea, but the term 'erosion' in this context is not intuitive for a non-expert."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 5,
+        "rationale": "Expanding bright regions is a visual idea, but the technical term requires some explanation."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 4,
+        "rationale": "Removing small bright noise is understandable in effect, but the term 'opening' is opaque to non-experts."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 4,
+        "rationale": "Filling small dark gaps is somewhat understandable visually, but the term 'closing' is not intuitive."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 3,
+        "rationale": "Extracting small bright structures is a somewhat visual idea, but 'top-hat transform' is jargon with no clear lay meaning."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 3,
+        "rationale": "Extracting small dark structures is a somewhat visual idea, but 'black tophat' is opaque technical jargon."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 4,
+        "rationale": "Emphasizing object boundaries is a recognizable visual concept, but 'morphological gradient' is technical terminology."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 2,
+        "rationale": "'Morphological Laplace-style edge response' is highly technical and unlikely to mean anything to a non-expert."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 6,
+        "rationale": "Subtracting two images pixel by pixel is a relatively simple arithmetic concept most people can grasp."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 6,
+        "rationale": "Adding two images together pixel by pixel is a simple arithmetic idea most non-experts can understand."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 5,
+        "rationale": "Multiplying images pixel by pixel is arithmetic but the visual effect is less intuitive than adding or subtracting."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 5,
+        "rationale": "Taking the brighter of two pixel values is understandable, though 'elementwise maximum' is slightly technical."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 5,
+        "rationale": "Taking the darker of two pixel values is understandable, though 'elementwise minimum' is slightly technical."
+      },
+      {
+        "unit": "bsubtract_image2D",
+        "score": 6,
+        "rationale": "Subtracting a fixed amount from every pixel (dimming the image) is an intuitive concept."
+      },
+      {
+        "unit": "badd_image2D",
+        "score": 6,
+        "rationale": "Adding a fixed amount to every pixel (brightening the image) is an intuitive concept."
+      },
+      {
+        "unit": "bmult_image2D",
+        "score": 6,
+        "rationale": "Scaling every pixel by the same factor is a simple brightness-adjustment concept."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 3,
+        "rationale": "'Sobel X derivative filter' is technical jargon that a non-expert would not understand without explanation."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 3,
+        "rationale": "'Sobel Y derivative filter' is technical jargon that a non-expert would not understand without explanation."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 4,
+        "rationale": "Gradient magnitude captures edge strength, which is somewhat visual, but 'Sobel gradient magnitude' is still jargon."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 2,
+        "rationale": "'Ando 3x3 X derivative filter' is highly technical and the named filter is unknown to non-experts."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 2,
+        "rationale": "'Ando 3x3 Y derivative filter' is highly technical and the named filter is unknown to non-experts."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 2,
+        "rationale": "'Ando 3x3 gradient magnitude' is highly technical and the named filter is unknown to non-experts."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 2,
+        "rationale": "'Ando 4x4 X derivative filter' is highly technical and the named filter is unknown to non-experts."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 2,
+        "rationale": "'Ando 4x4 Y derivative filter' is highly technical and the named filter is unknown to non-experts."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 2,
+        "rationale": "'Ando 4x4 gradient magnitude' is highly technical and the named filter is unknown to non-experts."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 2,
+        "rationale": "'Ando 5x5 X derivative filter' is highly technical and the named filter is unknown to non-experts."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 2,
+        "rationale": "'Ando 5x5 Y derivative filter' is highly technical and the named filter is unknown to non-experts."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 2,
+        "rationale": "'Ando 5x5 gradient magnitude' is highly technical and the named filter is unknown to non-experts."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 2,
+        "rationale": "'Bickley X derivative filter' is a specialist named filter unknown to non-experts."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 2,
+        "rationale": "'Bickley Y derivative filter' is a specialist named filter unknown to non-experts."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 2,
+        "rationale": "'Bickley gradient magnitude' is a specialist named filter unknown to non-experts."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 2,
+        "rationale": "'Prewitt X derivative filter' is technical jargon with no meaning to a non-expert."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 2,
+        "rationale": "'Prewitt Y derivative filter' is technical jargon with no meaning to a non-expert."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 3,
+        "rationale": "Gradient magnitude relates to edge detection which is somewhat visual, but the named filter is still jargon."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 2,
+        "rationale": "'Scharr X derivative filter' is technical jargon with no meaning to a non-expert."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 2,
+        "rationale": "'Scharr Y derivative filter' is technical jargon with no meaning to a non-expert."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 3,
+        "rationale": "Gradient magnitude relates to edges which is somewhat visual, but the named filter is still jargon."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 5,
+        "rationale": "Smoothing or blurring an image is a concept most people can relate to, though 'Gaussian' and 'sigma' are technical terms."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 5,
+        "rationale": "A slightly stronger blur is understandable visually even if the technical parameters are not."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 5,
+        "rationale": "A stronger blur is understandable visually even if the technical parameters are not."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 5,
+        "rationale": "A stronger blur is understandable visually even if the technical parameters are not."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 5,
+        "rationale": "A strong blur is understandable visually even if the technical parameters are not."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 3,
+        "rationale": "'Second-order edge response' and 'Laplacian filter' are technical terms with no lay interpretation."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 3,
+        "rationale": "'Difference-of-Gaussians' is technical jargon; the visual effect of highlighting edges at a certain scale is not obvious."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 3,
+        "rationale": "'Moffat smoothing filter' is a specialist named filter completely unknown to non-experts."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 3,
+        "rationale": "'Moffat smoothing filter' is a specialist named filter completely unknown to non-experts."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 3,
+        "rationale": "'Moffat smoothing filter' is a specialist named filter completely unknown to non-experts."
+      },
+      {
+        "unit": "exp_image2D",
+        "score": 3,
+        "rationale": "Applying an exponential function to pixel values is a mathematical operation with no clear visual intuition for non-experts."
+      },
+      {
+        "unit": "loginv_image2D",
+        "score": 2,
+        "rationale": "Applying a logarithm and inverting the sign is a mathematical transformation with no clear lay meaning."
+      },
+      {
+        "unit": "log_image2D",
+        "score": 3,
+        "rationale": "Applying a logarithm to pixel values is a mathematical operation; the visual effect (compressing bright values) is not obvious."
+      },
+      {
+        "unit": "powerof_image2D",
+        "score": 3,
+        "rationale": "Raising pixel values to a power is a mathematical operation whose visual effect (contrast change) is not intuitive."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 4,
+        "rationale": "Choosing between two options based on a condition is a logical concept, but 'multiplexer' and 'cond greater than zero' are technical."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 3,
+        "rationale": "Averaging pixels within blocks is somewhat understandable, but 'pooling' and 'broadcasting' are technical terms."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 2,
+        "rationale": "Averaging only the center row and column of blocks is a very technical and non-intuitive operation."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 3,
+        "rationale": "Taking the brightest pixel in each block is somewhat understandable, but 'pooling' is still technical jargon."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 2,
+        "rationale": "Taking the maximum over center rows and columns of blocks is a very technical and non-intuitive operation."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 3,
+        "rationale": "Taking the darkest pixel in each block is somewhat understandable, but 'pooling' is still technical jargon."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 2,
+        "rationale": "Taking the minimum over center rows and columns of blocks is a very technical and non-intuitive operation."
+      },
+      {
+        "unit": "meanpool",
+        "score": 4,
+        "rationale": "Averaging nearby pixels in a sliding window is somewhat understandable as local blurring, but 'pooling' is jargon."
+      },
+      {
+        "unit": "maxpool",
+        "score": 4,
+        "rationale": "Taking the brightest nearby pixel in a sliding window is somewhat understandable, but 'max pooling' is jargon."
+      },
+      {
+        "unit": "minpool",
+        "score": 4,
+        "rationale": "Taking the darkest nearby pixel in a sliding window is somewhat understandable, but 'min pooling' is jargon."
+      },
+      {
+        "unit": "stdpool",
+        "score": 3,
+        "rationale": "Standard deviation pooling captures local variability but is a statistical concept unfamiliar to most non-experts."
+      },
+      {
+        "unit": "medianpool",
+        "score": 4,
+        "rationale": "Median is a somewhat familiar concept, and median pooling as a local smoothing effect is somewhat understandable."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 3,
+        "rationale": "Counting unique values in a local window is an abstract concept with no clear visual analogy for non-experts."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 2,
+        "rationale": "'Argmax-count pooling' is highly technical jargon with no intuitive meaning for a non-expert."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 2,
+        "rationale": "'Argmin-count pooling' is highly technical jargon with no intuitive meaning for a non-expert."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 2,
+        "rationale": "'Interquartile-range pooling' is a statistical concept that most non-experts would not understand."
+      },
+      {
+        "unit": "grad_magnitude",
+        "score": 4,
+        "rationale": "A map of how quickly brightness changes (edges) is visually intuitive, but 'gradient magnitude' is technical."
+      },
+      {
+        "unit": "grad_orientation",
+        "score": 3,
+        "rationale": "The direction of brightness change is a harder visual concept, and 'gradient orientation' is technical jargon."
+      },
+      {
+        "unit": "orientation_select",
+        "score": 2,
+        "rationale": "Selecting gradients near a target orientation with configurable bandwidth is highly technical and not interpretable for non-experts."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 2",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 6,
+        "rationale": "Returning the image unchanged is a simple concept, though the technical name is slightly confusing."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 5,
+        "rationale": "Creating an all-white binary image is a simple visual idea, but its utility is unclear to a non-expert."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 5,
+        "rationale": "Creating an all-black binary image is a simple visual idea, but its utility is unclear to a non-expert."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 7,
+        "rationale": "Flipping black pixels to white and white to black is a very intuitive concept for a non-expert."
+      },
+      {
+        "unit": "experimental_tobinary_image2D",
+        "score": 6,
+        "rationale": "Converting a grayscale image to black-and-white is an understandable concept, though 'default thresholding' is vague."
+      },
+      {
+        "unit": "experimental_tobinary_th_image2D_factory",
+        "score": 6,
+        "rationale": "Converting to black-and-white using a cutoff value is understandable, though 'threshold' may need explanation."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 6,
+        "rationale": "Subtracting two images pixel by pixel is a simple arithmetic concept most people can grasp."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 6,
+        "rationale": "Adding two images together pixel by pixel is a simple arithmetic idea most non-experts can understand."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 5,
+        "rationale": "Multiplying images pixel by pixel is arithmetic and the visual effect (masking) is somewhat understandable."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 5,
+        "rationale": "Taking the brighter (or 'on') pixel between two binary images is somewhat understandable."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 5,
+        "rationale": "Taking the darker (or 'off') pixel between two binary images is somewhat understandable."
+      },
+      {
+        "unit": "binarize_adaptive2D",
+        "score": 5,
+        "rationale": "Converting to black-and-white by adjusting the cutoff locally is understandable, but 'adaptive thresholding' is somewhat technical."
+      },
+      {
+        "unit": "binarize_niblack2D",
+        "score": 3,
+        "rationale": "'Niblack local thresholding' is a named specialist method with no intuitive meaning for a non-expert."
+      },
+      {
+        "unit": "binarize_polysegment2D",
+        "score": 3,
+        "rationale": "'Polysegment thresholding' is a technical term that would be opaque to most non-experts."
+      },
+      {
+        "unit": "binarize_sauvola2D",
+        "score": 3,
+        "rationale": "'Sauvola local thresholding' is a named specialist method with no intuitive meaning for a non-expert."
+      },
+      {
+        "unit": "binarize_otsu2D",
+        "score": 4,
+        "rationale": "Converting to black-and-white using histogram analysis is somewhat understandable but 'Otsu' is a technical name."
+      },
+      {
+        "unit": "binarize_minimumintermodes2D",
+        "score": 3,
+        "rationale": "'Minimum-intermodes histogram threshold' is statistical jargon with no lay intuition."
+      },
+      {
+        "unit": "binarize_intermodes2D",
+        "score": 3,
+        "rationale": "'Intermodes histogram threshold' is statistical jargon with no lay intuition."
+      },
+      {
+        "unit": "binarize_minimumerror2D",
+        "score": 4,
+        "rationale": "Finding a threshold that minimizes error is a somewhat understandable concept, though still fairly technical."
+      },
+      {
+        "unit": "binarize_moments2D",
+        "score": 3,
+        "rationale": "'Moments-based histogram threshold' is a statistical concept with no intuitive meaning for a non-expert."
+      },
+      {
+        "unit": "binarize_unimodalrosin2D",
+        "score": 3,
+        "rationale": "'Unimodal Rosin threshold' is a named specialist method with no lay intuition."
+      },
+      {
+        "unit": "binarize_entropy2D",
+        "score": 3,
+        "rationale": "'Entropy-based thresholding' involves an information-theoretic concept that is not intuitive to non-experts."
+      },
+      {
+        "unit": "binarize_balanced2D",
+        "score": 4,
+        "rationale": "A 'balanced histogram threshold' suggests equal splitting which is somewhat understandable, but still technical."
+      },
+      {
+        "unit": "binarize_yen2D",
+        "score": 3,
+        "rationale": "'Yen thresholding method' is a named specialist method with no intuitive meaning for a non-expert."
+      },
+      {
+        "unit": "binarize_manual2D",
+        "score": 6,
+        "rationale": "Manually setting a threshold to convert to black-and-white is an understandable concept for non-experts."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 3,
+        "rationale": "'Sobel X derivative filter' is technical jargon that a non-expert would not understand without explanation."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 3,
+        "rationale": "'Sobel Y derivative filter' is technical jargon that a non-expert would not understand without explanation."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 4,
+        "rationale": "Detecting edges (gradient magnitude) is somewhat visual, but 'Sobel gradient magnitude' is still jargon."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 2,
+        "rationale": "'Ando 3x3 X derivative filter' is highly technical and the named filter is unknown to non-experts."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 2,
+        "rationale": "'Ando 3x3 Y derivative filter' is highly technical and the named filter is unknown to non-experts."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 2,
+        "rationale": "'Ando 3x3 gradient magnitude' is highly technical and the named filter is unknown to non-experts."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 2,
+        "rationale": "'Ando 4x4 X derivative filter' is highly technical and the named filter is unknown to non-experts."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 2,
+        "rationale": "'Ando 4x4 Y derivative filter' is highly technical and the named filter is unknown to non-experts."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 2,
+        "rationale": "'Ando 4x4 gradient magnitude' is highly technical and the named filter is unknown to non-experts."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 2,
+        "rationale": "'Ando 5x5 X derivative filter' is highly technical and the named filter is unknown to non-experts."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 2,
+        "rationale": "'Ando 5x5 Y derivative filter' is highly technical and the named filter is unknown to non-experts."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 2,
+        "rationale": "'Ando 5x5 gradient magnitude' is highly technical and the named filter is unknown to non-experts."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 2,
+        "rationale": "'Bickley X derivative filter' is a specialist named filter unknown to non-experts."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 2,
+        "rationale": "'Bickley Y derivative filter' is a specialist named filter unknown to non-experts."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 2,
+        "rationale": "'Bickley gradient magnitude' is a specialist named filter unknown to non-experts."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 2,
+        "rationale": "'Prewitt X derivative filter' is technical jargon with no meaning to a non-expert."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 2,
+        "rationale": "'Prewitt Y derivative filter' is technical jargon with no meaning to a non-expert."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 3,
+        "rationale": "Gradient magnitude relates to edge detection which is somewhat visual, but the named filter is still jargon."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 2,
+        "rationale": "'Scharr X derivative filter' is technical jargon with no meaning to a non-expert."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 2,
+        "rationale": "'Scharr Y derivative filter' is technical jargon with no meaning to a non-expert."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 3,
+        "rationale": "Gradient magnitude relates to edges which is somewhat visual, but the named filter is still jargon."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 5,
+        "rationale": "Blurring an image is a concept most people can relate to, though 'Gaussian' and 'sigma' are technical terms."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 5,
+        "rationale": "A slightly stronger blur is understandable visually even if the technical parameters are not."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 5,
+        "rationale": "A stronger blur is understandable visually even if the technical parameters are not."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 5,
+        "rationale": "A stronger blur is understandable visually even if the technical parameters are not."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 5,
+        "rationale": "A strong blur is understandable visually even if the technical parameters are not."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 3,
+        "rationale": "'Second-order edge response' and 'Laplacian filter' are technical terms with no lay interpretation."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 3,
+        "rationale": "'Difference-of-Gaussians' is technical jargon; the visual effect of highlighting edges at a certain scale is not obvious."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 3,
+        "rationale": "'Moffat smoothing filter' is a specialist named filter completely unknown to non-experts."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 3,
+        "rationale": "'Moffat smoothing filter' is a specialist named filter completely unknown to non-experts."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 3,
+        "rationale": "'Moffat smoothing filter' is a specialist named filter completely unknown to non-experts."
+      },
+      {
+        "unit": "findlocalminima_image2D",
+        "score": 6,
+        "rationale": "Marking locations of local dark spots in the image is a relatively intuitive visual concept."
+      },
+      {
+        "unit": "findlocalmaxima_image2D",
+        "score": 6,
+        "rationale": "Marking locations of local bright spots in the image is a relatively intuitive visual concept."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 5,
+        "rationale": "Shrinking white/bright regions is a visual idea, but the term 'erosion' in this context is not intuitive for a non-expert."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 5,
+        "rationale": "Expanding white/bright regions is a visual idea, but the technical term requires some explanation."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 4,
+        "rationale": "Removing small bright noise is understandable in effect, but the term 'opening' is opaque to non-experts."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 4,
+        "rationale": "Filling small dark gaps is somewhat understandable visually, but the term 'closing' is not intuitive."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 3,
+        "rationale": "Extracting small bright structures is somewhat visual, but 'top-hat transform' is jargon with no clear lay meaning."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 3,
+        "rationale": "Extracting small dark structures is somewhat visual, but 'black tophat' is opaque technical jargon."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 4,
+        "rationale": "Emphasizing object boundaries is a recognizable visual concept, but 'morphological gradient' is technical terminology."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 2,
+        "rationale": "'Morphological Laplace-style edge response' is highly technical and unlikely to mean anything to a non-expert."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 4,
+        "rationale": "Choosing between two options based on a condition is a logical concept, but 'multiplexer' is technical."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 3,
+        "rationale": "Averaging pixels within blocks is somewhat understandable, but 'pooling' and 'broadcasting' are technical terms."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 2,
+        "rationale": "Averaging only the center row and column of blocks is a very technical and non-intuitive operation."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 3,
+        "rationale": "Taking the brightest pixel in each block is somewhat understandable, but 'pooling' is still technical jargon."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 2,
+        "rationale": "Taking the maximum over center rows and columns of blocks is a very technical and non-intuitive operation."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 3,
+        "rationale": "Taking the darkest pixel in each block is somewhat understandable, but 'pooling' is still technical jargon."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 2,
+        "rationale": "Taking the minimum over center rows and columns of blocks is a very technical and non-intuitive operation."
+      },
+      {
+        "unit": "meanpool",
+        "score": 4,
+        "rationale": "Averaging nearby pixels in a sliding window is somewhat understandable as local blurring, but 'pooling' is jargon."
+      },
+      {
+        "unit": "maxpool",
+        "score": 4,
+        "rationale": "Taking the brightest nearby pixel in a sliding window is somewhat understandable, but 'max pooling' is jargon."
+      },
+      {
+        "unit": "minpool",
+        "score": 4,
+        "rationale": "Taking the darkest nearby pixel in a sliding window is somewhat understandable, but 'min pooling' is jargon."
+      },
+      {
+        "unit": "stdpool",
+        "score": 3,
+        "rationale": "Standard deviation pooling captures local variability but is a statistical concept unfamiliar to most non-experts."
+      },
+      {
+        "unit": "medianpool",
+        "score": 4,
+        "rationale": "Median is a somewhat familiar concept, and median pooling as a local smoothing effect is somewhat understandable."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 3,
+        "rationale": "Counting unique values in a local window is an abstract concept with no clear visual analogy for non-experts."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 2,
+        "rationale": "'Argmax-count pooling' is highly technical jargon with no intuitive meaning for a non-expert."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 2,
+        "rationale": "'Argmin-count pooling' is highly technical jargon with no intuitive meaning for a non-expert."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 2,
+        "rationale": "'Interquartile-range pooling' is a statistical concept that most non-experts would not understand."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 3",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 6,
+        "rationale": "Returning the image unchanged is a simple concept, though the technical name is slightly confusing."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 4,
+        "rationale": "Creating a uniform image is a simple concept but the purpose for a non-expert is unclear."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 4,
+        "rationale": "Creating a blank image is a simple concept but the purpose for a non-expert is unclear."
+      },
+      {
+        "unit": "experimental_tosegment_image2D",
+        "score": 5,
+        "rationale": "Separating background from foreground is a somewhat intuitive concept, though 'segment image representation' is technical."
+      },
+      {
+        "unit": "fastscanning_image2D",
+        "score": 3,
+        "rationale": "'Fast scanning region-labeling' is technical jargon; the idea of labeling different regions is understandable but the name is opaque."
+      },
+      {
+        "unit": "watershed_image2D",
+        "score": 4,
+        "rationale": "Dividing an image into regions based on brightness topology is somewhat understandable, but 'watershed transform' is technical."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 4",
+    "scores": [
+      {
+        "unit": "identity_float",
+        "score": 5,
+        "rationale": "Returning a value unchanged is simple, but 'Float64' is a technical data type term unfamiliar to non-experts."
+      },
+      {
+        "unit": "ret_1",
+        "score": 7,
+        "rationale": "Returning the constant value 1.0 is a simple and clear concept."
+      },
+      {
+        "unit": "tanh",
+        "score": 2,
+        "rationale": "'Hyperbolic tangent' is a mathematical function with no intuitive meaning for most non-experts."
+      },
+      {
+        "unit": "relu",
+        "score": 4,
+        "rationale": "Returning the maximum of a value and zero is simple mathematically, but 'ReLU' is jargon for non-experts."
+      },
+      {
+        "unit": "modulo",
+        "score": 4,
+        "rationale": "The remainder after division is a basic arithmetic concept but 'modulo' may be unfamiliar to some non-experts."
+      },
+      {
+        "unit": "is_eq_to",
+        "score": 7,
+        "rationale": "Checking whether two numbers are equal is a very simple and universally understood concept."
+      },
+      {
+        "unit": "experimental_is_gt",
+        "score": 7,
+        "rationale": "Checking whether one number is greater than another is a very simple and universally understood concept."
+      },
+      {
+        "unit": "experimental_is_lt",
+        "score": 7,
+        "rationale": "Checking whether one number is less than another is a very simple and universally understood concept."
+      },
+      {
+        "unit": "experimental_not",
+        "score": 6,
+        "rationale": "A logical NOT (returning 1 when a value is 0 or less) is a fairly understandable concept for most non-experts."
+      },
+      {
+        "unit": "number_sum",
+        "score": 8,
+        "rationale": "Adding two numbers together is a universally understood arithmetic operation."
+      },
+      {
+        "unit": "number_minus",
+        "score": 8,
+        "rationale": "Subtracting one number from another is a universally understood arithmetic operation."
+      },
+      {
+        "unit": "number_mult",
+        "score": 8,
+        "rationale": "Multiplying two numbers is a universally understood arithmetic operation."
+      },
+      {
+        "unit": "number_div",
+        "score": 7,
+        "rationale": "Dividing one number by another is a well-understood arithmetic operation, though division by zero may be confusing."
+      },
+      {
+        "unit": "safe_div",
+        "score": 7,
+        "rationale": "Dividing two numbers and returning zero when dividing by zero is understandable, with the safe-handling being an intuitive safeguard."
+      },
+      {
+        "unit": "power_of",
+        "score": 5,
+        "rationale": "Raising a number to a power is a secondary-school concept, though it may not be immediately intuitive for all non-experts."
+      },
+      {
+        "unit": "pi_",
+        "score": 7,
+        "rationale": "Pi is a widely known mathematical constant that most people have encountered."
+      },
+      {
+        "unit": "exp_",
+        "score": 3,
+        "rationale": "The exponential function is a mathematical concept that many non-experts may not be familiar with."
+      },
+      {
+        "unit": "log_",
+        "score": 3,
+        "rationale": "Natural logarithm is a mathematical concept that many non-experts may not be familiar with."
+      },
+      {
+        "unit": "log10_",
+        "score": 4,
+        "rationale": "Base-10 logarithm is slightly more familiar than natural log, but still a mathematical concept not widely understood by non-experts."
+      },
+      {
+        "unit": "reduce_length",
+        "score": 7,
+        "rationale": "The total number of pixels in an image is an intuitive size-related concept."
+      },
+      {
+        "unit": "reduce_biggestAxis",
+        "score": 7,
+        "rationale": "The largest dimension of the image (width or height) is an intuitive and easily understood concept."
+      },
+      {
+        "unit": "reduce_smallerAxis",
+        "score": 7,
+        "rationale": "The smallest dimension of the image (width or height) is an intuitive and easily understood concept."
+      },
+      {
+        "unit": "reduce_histMode",
+        "score": 4,
+        "rationale": "The most common brightness value in the image is somewhat understandable, but 'histogram mode' is technical."
+      },
+      {
+        "unit": "reduce_histModeCount",
+        "score": 4,
+        "rationale": "How many pixels have the most common brightness value is somewhat understandable, but relies on 'histogram mode' understanding."
+      },
+      {
+        "unit": "reduce_propWhite",
+        "score": 8,
+        "rationale": "The fraction of white pixels in a black-and-white image is a very clear and intuitive concept."
+      },
+      {
+        "unit": "reduce_propBlack",
+        "score": 8,
+        "rationale": "The fraction of black pixels in a black-and-white image is a very clear and intuitive concept."
+      },
+      {
+        "unit": "reduce_nColors",
+        "score": 7,
+        "rationale": "The number of different pixel values (colors) in the image is a relatively easy concept for non-experts."
+      },
+      {
+        "unit": "reduce_mean",
+        "score": 7,
+        "rationale": "The average brightness of the image is an intuitive and commonly understood concept."
+      },
+      {
+        "unit": "reduce_median",
+        "score": 6,
+        "rationale": "The middle brightness value is a familiar concept for most non-experts who know what a median is."
+      },
+      {
+        "unit": "reduce_std",
+        "score": 4,
+        "rationale": "Standard deviation of brightness measures variability, which is somewhat understandable but statistical."
+      },
+      {
+        "unit": "reduce_maximum",
+        "score": 8,
+        "rationale": "The brightest pixel value in the image is a very clear and intuitive concept."
+      },
+      {
+        "unit": "reduce_minimum",
+        "score": 8,
+        "rationale": "The darkest pixel value in the image is a very clear and intuitive concept."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 4,
+        "rationale": "Choosing between two values based on a condition is a logical concept, but 'multiplexer' is technical."
+      },
+      {
+        "unit": "region_mean",
+        "score": 6,
+        "rationale": "The average brightness of a specific area of the image is a relatively intuitive concept."
+      },
+      {
+        "unit": "region_std",
+        "score": 4,
+        "rationale": "Standard deviation of a local area is somewhat understandable as 'how varied the brightness is' but is statistical."
+      },
+      {
+        "unit": "region_min",
+        "score": 7,
+        "rationale": "The darkest pixel in a specific area of the image is a clear and intuitive concept."
+      },
+      {
+        "unit": "region_max",
+        "score": 7,
+        "rationale": "The brightest pixel in a specific area of the image is a clear and intuitive concept."
+      },
+      {
+        "unit": "region_sum",
+        "score": 5,
+        "rationale": "The total brightness of a local area is understandable as a concept, though the interpretation may not be immediately obvious."
+      },
+      {
+        "unit": "region_median",
+        "score": 6,
+        "rationale": "The middle brightness value in a local area is a fairly intuitive concept for those who understand median."
+      },
+      {
+        "unit": "region_range",
+        "score": 6,
+        "rationale": "The difference between the brightest and darkest pixels in an area is a simple and intuitive measure of local contrast."
+      },
+      {
+        "unit": "region_contrast",
+        "score": 6,
+        "rationale": "The difference in brightness between a central area and its surrounding area is a visually intuitive concept."
+      },
+      {
+        "unit": "region_energy",
+        "score": 3,
+        "rationale": "'Local energy as mean squared value' is a technical concept with no clear visual meaning for a non-expert."
+      },
+      {
+        "unit": "region_entropy",
+        "score": 3,
+        "rationale": "'Local entropy from a histogram' is an information-theoretic concept with no clear visual meaning for a non-expert."
+      },
+      {
+        "unit": "region_mean_5p",
+        "score": 6,
+        "rationale": "The average brightness of a small (5%) area of the image is a relatively intuitive concept."
+      },
+      {
+        "unit": "region_std_5p",
+        "score": 4,
+        "rationale": "Standard deviation of brightness in a small area is somewhat understandable but is a statistical concept."
+      },
+      {
+        "unit": "region_min_5p",
+        "score": 7,
+        "rationale": "The darkest pixel in a small area of the image is a clear and intuitive concept."
+      },
+      {
+        "unit": "region_max_5p",
+        "score": 7,
+        "rationale": "The brightest pixel in a small area of the image is a clear and intuitive concept."
+      },
+      {
+        "unit": "region_sum_5p",
+        "score": 5,
+        "rationale": "The total brightness of a small local area is understandable, though its interpretation may not be immediately obvious."
+      },
+      {
+        "unit": "region_median_5p",
+        "score": 6,
+        "rationale": "The middle brightness value in a small area is a fairly intuitive concept for those who understand median."
+      },
+      {
+        "unit": "region_range_5p",
+        "score": 6,
+        "rationale": "The brightness range (max minus min) in a small area is a simple and intuitive measure of local contrast."
+      },
+      {
+        "unit": "region_contrast_5p",
+        "score": 6,
+        "rationale": "The brightness difference between a small central patch and its surroundings is a visually intuitive concept."
+      },
+      {
+        "unit": "region_energy_5p",
+        "score": 3,
+        "rationale": "'Local energy as mean squared value' in a small area is technical with no clear visual meaning for a non-expert."
+      },
+      {
+        "unit": "region_entropy_5p",
+        "score": 3,
+        "rationale": "'Local entropy from histogram bins' in a small area is an information-theoretic concept with no lay visual meaning."
+      },
+      {
+        "unit": "region_mean_10p",
+        "score": 6,
+        "rationale": "The average brightness of a medium (10%) area of the image is a relatively intuitive concept."
+      },
+      {
+        "unit": "region_std_10p",
+        "score": 4,
+        "rationale": "Standard deviation of brightness in a medium area is somewhat understandable but is a statistical concept."
+      },
+      {
+        "unit": "region_min_10p",
+        "score": 7,
+        "rationale": "The darkest pixel in a medium area of the image is a clear and intuitive concept."
+      },
+      {
+        "unit": "region_max_10p",
+        "score": 7,
+        "rationale": "The brightest pixel in a medium area of the image is a clear and intuitive concept."
+      },
+      {
+        "unit": "region_sum_10p",
+        "score": 5,
+        "rationale": "The total brightness of a medium local area is understandable, though its interpretation may not be immediately obvious."
+      },
+      {
+        "unit": "region_median_10p",
+        "score": 6,
+        "rationale": "The middle brightness value in a medium area is a fairly intuitive concept for those who understand median."
+      },
+      {
+        "unit": "region_range_10p",
+        "score": 6,
+        "rationale": "The brightness range in a medium area is a simple and intuitive measure of local contrast."
+      },
+      {
+        "unit": "region_contrast_10p",
+        "score": 6,
+        "rationale": "The brightness difference between a medium patch and its surroundings is a visually intuitive concept."
+      },
+      {
+        "unit": "region_energy_10p",
+        "score": 3,
+        "rationale": "'Local energy as mean squared value' in a medium area is technical with no clear visual meaning for a non-expert."
+      },
+      {
+        "unit": "region_entropy_10p",
+        "score": 3,
+        "rationale": "'Local entropy from histogram bins' in a medium area is an information-theoretic concept with no lay visual meaning."
+      },
+      {
+        "unit": "region_mean_20p",
+        "score": 6,
+        "rationale": "The average brightness of a large (20%) area of the image is a relatively intuitive concept."
+      },
+      {
+        "unit": "region_std_20p",
+        "score": 4,
+        "rationale": "Standard deviation of brightness in a large area is somewhat understandable but is a statistical concept."
+      },
+      {
+        "unit": "region_min_20p",
+        "score": 7,
+        "rationale": "The darkest pixel in a large area of the image is a clear and intuitive concept."
+      },
+      {
+        "unit": "region_max_20p",
+        "score": 7,
+        "rationale": "The brightest pixel in a large area of the image is a clear and intuitive concept."
+      },
+      {
+        "unit": "region_sum_20p",
+        "score": 5,
+        "rationale": "The total brightness of a large local area is understandable, though its interpretation may not be immediately obvious."
+      },
+      {
+        "unit": "region_median_20p",
+        "score": 6,
+        "rationale": "The middle brightness value in a large area is a fairly intuitive concept for those who understand median."
+      },
+      {
+        "unit": "region_range_20p",
+        "score": 6,
+        "rationale": "The brightness range in a large area is a simple and intuitive measure of local contrast."
+      },
+      {
+        "unit": "region_contrast_20p",
+        "score": 6,
+        "rationale": "The brightness difference between a large central patch and its surroundings is a visually intuitive concept."
+      },
+      {
+        "unit": "region_energy_20p",
+        "score": 3,
+        "rationale": "'Local energy as mean squared value' in a large area is technical with no clear visual meaning for a non-expert."
+      },
+      {
+        "unit": "region_entropy_20p",
+        "score": 3,
+        "rationale": "'Local entropy from histogram bins' in a large area is an information-theoretic concept with no lay visual meaning."
+      },
+      {
+        "unit": "haar_lr",
+        "score": 5,
+        "rationale": "Left-versus-right brightness contrast in a region is an understandable visual concept, though 'Haar' is technical jargon."
+      },
+      {
+        "unit": "haar_tb",
+        "score": 5,
+        "rationale": "Top-versus-bottom brightness contrast in a region is an understandable visual concept, though 'Haar' is technical jargon."
+      },
+      {
+        "unit": "haar_diag_main",
+        "score": 4,
+        "rationale": "Diagonal brightness contrast is somewhat visual, but 'main-diagonal quadrants' and 'Haar' make it technical."
+      },
+      {
+        "unit": "haar_diag_anti",
+        "score": 4,
+        "rationale": "Anti-diagonal brightness contrast is somewhat visual, but 'anti-diagonal quadrants' and 'Haar' make it technical."
+      },
+      {
+        "unit": "haar_center_surround",
+        "score": 6,
+        "rationale": "Center-versus-surround brightness contrast is an intuitive and visually meaningful concept."
+      },
+      {
+        "unit": "haar_three_h",
+        "score": 4,
+        "rationale": "Comparing brightness across three horizontal bands is somewhat visual but 'three-band Haar contrast' is technical."
+      },
+      {
+        "unit": "haar_three_v",
+        "score": 4,
+        "rationale": "Comparing brightness across three vertical bands is somewhat visual but 'three-band Haar contrast' is technical."
+      },
+      {
+        "unit": "orientation_coherence",
+        "score": 3,
+        "rationale": "'Orientation coherence of the image gradient field' is highly technical and not interpretable for a non-expert."
+      },
+      {
+        "unit": "dominant_orientation",
+        "score": 3,
+        "rationale": "The strongest direction of edges in the image is somewhat visual, but 'dominant orientation bin' and normalization by π are technical."
+      },
+      {
+        "unit": "orientation_energy_0",
+        "score": 3,
+        "rationale": "How much of the image's edge energy runs horizontally is somewhat visual, but 'orientation energy' is technical jargon."
+      },
+      {
+        "unit": "orientation_energy_45",
+        "score": 3,
+        "rationale": "How much of the image's edge energy runs diagonally is somewhat visual, but 'orientation energy' is technical jargon."
+      },
+      {
+        "unit": "orientation_energy_90",
+        "score": 3,
+        "rationale": "How much of the image's edge energy runs vertically is somewhat visual, but 'orientation energy' is technical jargon."
+      },
+      {
+        "unit": "orientation_energy_135",
+        "score": 3,
+        "rationale": "How much of the image's edge energy runs in a specific diagonal is somewhat visual, but 'orientation energy' is technical jargon."
+      },
+      {
+        "unit": "orientation_spread",
+        "score": 4,
+        "rationale": "How evenly distributed edge directions are is somewhat understandable visually, but 'orientation spread' is still technical."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_mean",
+        "score": 2,
+        "rationale": "GLCM (gray-level co-occurrence matrix) metrics are highly technical texture analysis tools with no intuitive lay meaning."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_sum",
+        "score": 2,
+        "rationale": "GLCM metrics combined with statistical reducers are highly technical and not interpretable by non-experts."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_std",
+        "score": 2,
+        "rationale": "GLCM metrics combined with standard deviation are highly technical and not interpretable by non-experts."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_minimum",
+        "score": 2,
+        "rationale": "GLCM metrics combined with minimum reduction are highly technical and not interpretable by non-experts."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_maximum",
+        "score": 2,
+        "rationale": "GLCM metrics combined with maximum reduction are highly technical and not interpretable by non-experts."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_mean",
+        "score": 2,
+        "rationale": "GLCM variance metrics are highly technical texture analysis tools with no intuitive lay meaning."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_sum",
+        "score": 2,
+        "rationale": "GLCM variance metrics combined with sum reduction are highly technical and not interpretable by non-experts."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_std",
+        "score": 2,
+        "rationale": "GLCM variance metrics combined with standard deviation are highly technical and not interpretable by non-experts."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_minimum",
+        "score": 2,
+        "rationale": "GLCM variance metrics combined with minimum reduction are highly technical and not interpretable by non-experts."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_maximum",
+        "score": 2,
+        "rationale": "GLCM variance metrics combined with maximum reduction are highly technical and not interpretable by non-experts."
+      },
+      {
+        "unit": "glcm_correlation_mean",
+        "score": 2,
+        "rationale": "GLCM correlation is a highly technical texture measure with no intuitive meaning for non-experts."
+      },
+      {
+        "unit": "glcm_correlation_sum",
+        "score": 2,
+        "rationale": "GLCM correlation with sum reduction is a highly technical texture measure with no intuitive meaning for non-experts."
+      },
+      {
+        "unit": "glcm_correlation_std",
+        "score": 2,
+        "rationale": "GLCM correlation with standard deviation reduction is a highly technical texture measure with no intuitive meaning."
+      },
+      {
+        "unit": "glcm_correlation_minimum",
+        "score": 2,
+        "rationale": "GLCM correlation with minimum reduction is a highly technical texture measure with no intuitive meaning."
+      },
+      {
+        "unit": "glcm_correlation_maximum",
+        "score": 2,
+        "rationale": "GLCM correlation with maximum reduction is a highly technical texture measure with no intuitive meaning."
+      },
+      {
+        "unit": "glcm_contrast_mean",
+        "score": 3,
+        "rationale": "GLCM contrast relates to texture roughness which has some visual analogy, but the method is still highly technical."
+      },
+      {
+        "unit": "glcm_contrast_sum",
+        "score": 3,
+        "rationale": "GLCM contrast with sum reduction has some visual analogy to texture roughness but is still highly technical."
+      },
+      {
+        "unit": "glcm_contrast_std",
+        "score": 2,
+        "rationale": "GLCM contrast with standard deviation reduction is a highly technical texture measure with limited lay interpretability."
+      },
+      {
+        "unit": "glcm_contrast_minimum",
+        "score": 2,
+        "rationale": "GLCM contrast with minimum reduction is a highly technical texture measure with limited lay interpretability."
+      },
+      {
+        "unit": "glcm_contrast_maximum",
+        "score": 2,
+        "rationale": "GLCM contrast with maximum reduction is a highly technical texture measure with limited lay interpretability."
+      },
+      {
+        "unit": "glcm_IDM_mean",
+        "score": 2,
+        "rationale": "'GLCM inverse-difference-moment' is highly technical jargon with no intuitive meaning for non-experts."
+      },
+      {
+        "unit": "glcm_IDM_sum",
+        "score": 2,
+        "rationale": "'GLCM inverse-difference-moment' with sum reduction is highly technical jargon with no intuitive meaning."
+      },
+      {
+        "unit": "glcm_IDM_std",
+        "score": 2,
+        "rationale": "'GLCM inverse-difference-moment' with standard deviation reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_IDM_minimum",
+        "score": 2,
+        "rationale": "'GLCM inverse-difference-moment' with minimum reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_IDM_maximum",
+        "score": 2,
+        "rationale": "'GLCM inverse-difference-moment' with maximum reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_ASM_mean",
+        "score": 2,
+        "rationale": "'GLCM angular-second-moment' is highly technical jargon with no intuitive meaning for non-experts."
+      },
+      {
+        "unit": "glcm_ASM_sum",
+        "score": 2,
+        "rationale": "'GLCM angular-second-moment' with sum reduction is highly technical jargon with no intuitive meaning."
+      },
+      {
+        "unit": "glcm_ASM_std",
+        "score": 2,
+        "rationale": "'GLCM angular-second-moment' with standard deviation reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_ASM_minimum",
+        "score": 2,
+        "rationale": "'GLCM angular-second-moment' with minimum reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_ASM_maximum",
+        "score": 2,
+        "rationale": "'GLCM angular-second-moment' with maximum reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_glcm_entropy_mean",
+        "score": 2,
+        "rationale": "'GLCM entropy' is a highly technical information-theoretic texture measure with no intuitive meaning for non-experts."
+      },
+      {
+        "unit": "glcm_glcm_entropy_sum",
+        "score": 2,
+        "rationale": "'GLCM entropy' with sum reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_glcm_entropy_std",
+        "score": 2,
+        "rationale": "'GLCM entropy' with standard deviation reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_glcm_entropy_minimum",
+        "score": 2,
+        "rationale": "'GLCM entropy' with minimum reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_glcm_entropy_maximum",
+        "score": 2,
+        "rationale": "'GLCM entropy' with maximum reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_max_prob_mean",
+        "score": 2,
+        "rationale": "'GLCM max-probability' is a highly technical texture measure with no intuitive meaning for non-experts."
+      },
+      {
+        "unit": "glcm_max_prob_sum",
+        "score": 2,
+        "rationale": "'GLCM max-probability' with sum reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_max_prob_std",
+        "score": 2,
+        "rationale": "'GLCM max-probability' with standard deviation reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_max_prob_minimum",
+        "score": 2,
+        "rationale": "'GLCM max-probability' with minimum reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_max_prob_maximum",
+        "score": 2,
+        "rationale": "'GLCM max-probability' with maximum reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_energy_mean",
+        "score": 2,
+        "rationale": "'GLCM energy' is a highly technical texture uniformity measure with no intuitive meaning for non-experts."
+      },
+      {
+        "unit": "glcm_energy_sum",
+        "score": 2,
+        "rationale": "'GLCM energy' with sum reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_energy_std",
+        "score": 2,
+        "rationale": "'GLCM energy' with standard deviation reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_energy_minimum",
+        "score": 2,
+        "rationale": "'GLCM energy' with minimum reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_energy_maximum",
+        "score": 2,
+        "rationale": "'GLCM energy' with maximum reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_dissimilarity_mean",
+        "score": 3,
+        "rationale": "'GLCM dissimilarity' has a slightly intuitive name suggesting texture roughness, but the GLCM method itself is technical."
+      },
+      {
+        "unit": "glcm_dissimilarity_sum",
+        "score": 3,
+        "rationale": "'GLCM dissimilarity' with sum reduction has a slightly intuitive name but the overall method is still technical."
+      },
+      {
+        "unit": "glcm_dissimilarity_std",
+        "score": 2,
+        "rationale": "'GLCM dissimilarity' with standard deviation reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_dissimilarity_minimum",
+        "score": 2,
+        "rationale": "'GLCM dissimilarity' with minimum reduction is highly technical and not interpretable for non-experts."
+      },
+      {
+        "unit": "glcm_dissimilarity_maximum",
+        "score": 2,
+        "rationale": "'GLCM dissimilarity' with maximum reduction is highly technical and not interpretable for non-experts."
+      }
+    ]
+  }
+]

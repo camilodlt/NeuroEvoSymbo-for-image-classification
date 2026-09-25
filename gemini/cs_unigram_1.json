@@ -1,0 +1,1532 @@
+[
+  {
+    "library_id": "Library 1",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 10,
+        "rationale": "Returns the exact input, trivially understandable."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 10,
+        "rationale": "Standard matrix initialization with ones."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 10,
+        "rationale": "Standard matrix initialization with zeros."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 10,
+        "rationale": "Simple logical inversion of normalized intensities."
+      },
+      {
+        "unit": "experimental_normalize_2D",
+        "score": 10,
+        "rationale": "Standard min-max normalization mapping values to [0, 1]."
+      },
+      {
+        "unit": "experimental_standardize_2D",
+        "score": 10,
+        "rationale": "Standard z-score standardization."
+      },
+      {
+        "unit": "experimental_tointensity_image2D",
+        "score": 9,
+        "rationale": "Straightforward casting of labels/masks to intensity images."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 10,
+        "rationale": "Fundamental mathematical morphology operation."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 10,
+        "rationale": "Fundamental mathematical morphology operation."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 10,
+        "rationale": "Standard composite morphological operation."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 10,
+        "rationale": "Standard composite morphological operation."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 10,
+        "rationale": "Classic morphological transform for extracting bright details."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 10,
+        "rationale": "Classic morphological transform for extracting dark details."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 9,
+        "rationale": "Well-known morphological derivative operator."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 9,
+        "rationale": "Well-known morphological second derivative operator."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 10,
+        "rationale": "Simple element-wise subtraction."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 10,
+        "rationale": "Simple element-wise addition."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 10,
+        "rationale": "Simple element-wise multiplication."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 10,
+        "rationale": "Simple element-wise maximum."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 10,
+        "rationale": "Simple element-wise minimum."
+      },
+      {
+        "unit": "bsubtract_image2D",
+        "score": 10,
+        "rationale": "Clear scalar broadcasting subtraction."
+      },
+      {
+        "unit": "badd_image2D",
+        "score": 10,
+        "rationale": "Clear scalar broadcasting addition."
+      },
+      {
+        "unit": "bmult_image2D",
+        "score": 10,
+        "rationale": "Clear scalar broadcasting multiplication."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 10,
+        "rationale": "Classic and universally recognized edge detection filter."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 10,
+        "rationale": "Classic and universally recognized edge detection filter."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 10,
+        "rationale": "Classic gradient magnitude computed from Sobel components."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 8,
+        "rationale": "Ando filters are known in CV but slightly less common than Sobel."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 8,
+        "rationale": "Ando filters are known in CV but slightly less common than Sobel."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 8,
+        "rationale": "Gradient magnitude of a specific CV derivative filter."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 8,
+        "rationale": "Clear extension of Ando filters to larger kernels."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 8,
+        "rationale": "Clear extension of Ando filters to larger kernels."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 8,
+        "rationale": "Gradient magnitude of 4x4 Ando filters."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 8,
+        "rationale": "Clear extension of Ando filters to larger kernels."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 8,
+        "rationale": "Clear extension of Ando filters to larger kernels."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 8,
+        "rationale": "Gradient magnitude of 5x5 Ando filters."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 7,
+        "rationale": "Bickley is a niche derivative filter, though function is clear from description."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 7,
+        "rationale": "Bickley is a niche derivative filter, though function is clear from description."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 7,
+        "rationale": "Magnitude response of a less common derivative filter."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 10,
+        "rationale": "Prewitt is a very standard and well-taught derivative filter."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 10,
+        "rationale": "Prewitt is a very standard and well-taught derivative filter."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 10,
+        "rationale": "Gradient magnitude computed from Prewitt operators."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 10,
+        "rationale": "Scharr is a standard CV filter with excellent rotational symmetry properties."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 10,
+        "rationale": "Scharr is a standard CV filter with excellent rotational symmetry properties."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 10,
+        "rationale": "Gradient magnitude from Scharr components."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 10,
+        "rationale": "Ubiquitous Gaussian blur with explicitly stated kernel size."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 10,
+        "rationale": "Ubiquitous Gaussian blur with explicitly stated kernel size."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 10,
+        "rationale": "Ubiquitous Gaussian blur with explicitly stated kernel size."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 10,
+        "rationale": "Ubiquitous Gaussian blur with explicitly stated kernel size."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 10,
+        "rationale": "Ubiquitous Gaussian blur with explicitly stated kernel size."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 10,
+        "rationale": "Classic second-order derivative filter."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 10,
+        "rationale": "Difference-of-Gaussians is extremely common in feature extraction."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 8,
+        "rationale": "Moffat filter is less common than Gaussian, but easily understood as a smoothing operator."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 8,
+        "rationale": "Moffat smoothing operator with a larger kernel."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 8,
+        "rationale": "Moffat smoothing operator with a large kernel."
+      },
+      {
+        "unit": "exp_image2D",
+        "score": 10,
+        "rationale": "Standard element-wise mathematical transform."
+      },
+      {
+        "unit": "loginv_image2D",
+        "score": 9,
+        "rationale": "Logarithmic transform with a sign flip, very straightforward."
+      },
+      {
+        "unit": "log_image2D",
+        "score": 10,
+        "rationale": "Standard element-wise logarithmic transform."
+      },
+      {
+        "unit": "powerof_image2D",
+        "score": 10,
+        "rationale": "Standard element-wise mathematical exponentiation."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 10,
+        "rationale": "Standard programmatic conditional operation."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 9,
+        "rationale": "Standard block pooling followed by intra-block broadcasting."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 7,
+        "rationale": "Specific and less orthodox cross-shaped pooling requires some thought to visualize."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 9,
+        "rationale": "Standard block pooling followed by intra-block broadcasting."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 7,
+        "rationale": "Specific cross-shaped local max extraction is somewhat unconventional."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 9,
+        "rationale": "Standard block pooling followed by intra-block broadcasting."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 7,
+        "rationale": "Specific cross-shaped local min extraction is somewhat unconventional."
+      },
+      {
+        "unit": "meanpool",
+        "score": 10,
+        "rationale": "Classic sliding window average pooling."
+      },
+      {
+        "unit": "maxpool",
+        "score": 10,
+        "rationale": "Classic sliding window maximum pooling."
+      },
+      {
+        "unit": "minpool",
+        "score": 10,
+        "rationale": "Classic sliding window minimum pooling."
+      },
+      {
+        "unit": "stdpool",
+        "score": 9,
+        "rationale": "Local standard deviation filter, common in texture analysis."
+      },
+      {
+        "unit": "medianpool",
+        "score": 10,
+        "rationale": "Standard median filter for noise reduction."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 8,
+        "rationale": "Counting unique values in a local window is clear but less typical."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 8,
+        "rationale": "Clear statistical operation over sliding windows, but requires mental parsing."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 8,
+        "rationale": "Clear statistical operation over sliding windows, but requires mental parsing."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 9,
+        "rationale": "Interquartile range over a local window is a robust dispersion measure."
+      },
+      {
+        "unit": "grad_magnitude",
+        "score": 10,
+        "rationale": "Standard computation in image processing."
+      },
+      {
+        "unit": "grad_orientation",
+        "score": 10,
+        "rationale": "Standard computation for gradient directions."
+      },
+      {
+        "unit": "orientation_select",
+        "score": 9,
+        "rationale": "Clear subsetting of gradients by their orientation bandwidth."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 2",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 10,
+        "rationale": "Returns the exact input, trivially understandable."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 10,
+        "rationale": "Standard matrix initialization with ones."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 10,
+        "rationale": "Standard matrix initialization with zeros."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 10,
+        "rationale": "Simple logical inversion of binary images."
+      },
+      {
+        "unit": "experimental_tobinary_image2D",
+        "score": 10,
+        "rationale": "Standard global thresholding operation."
+      },
+      {
+        "unit": "experimental_tobinary_th_image2D_factory",
+        "score": 10,
+        "rationale": "Thresholding with explicit parameter is entirely straightforward."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 9,
+        "rationale": "Element-wise subtraction with rounding is clear."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 9,
+        "rationale": "Element-wise addition with rounding is clear."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 10,
+        "rationale": "Multiplication on booleans acts as a logical AND."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 10,
+        "rationale": "Maximum on booleans acts as a logical OR."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 10,
+        "rationale": "Minimum on booleans acts as a logical AND."
+      },
+      {
+        "unit": "binarize_adaptive2D",
+        "score": 10,
+        "rationale": "Standard adaptive thresholding technique."
+      },
+      {
+        "unit": "binarize_niblack2D",
+        "score": 9,
+        "rationale": "Niblack is a well-known local binarization algorithm."
+      },
+      {
+        "unit": "binarize_polysegment2D",
+        "score": 7,
+        "rationale": "Polysegment thresholding is less ubiquitous but algorithmically descriptive."
+      },
+      {
+        "unit": "binarize_sauvola2D",
+        "score": 9,
+        "rationale": "Sauvola is a standard method in document image binarization."
+      },
+      {
+        "unit": "binarize_otsu2D",
+        "score": 10,
+        "rationale": "Otsu's method is the most famous global thresholding algorithm."
+      },
+      {
+        "unit": "binarize_minimumintermodes2D",
+        "score": 8,
+        "rationale": "Histogram-based thresholding method clearly named."
+      },
+      {
+        "unit": "binarize_intermodes2D",
+        "score": 8,
+        "rationale": "Histogram-based thresholding method clearly named."
+      },
+      {
+        "unit": "binarize_minimumerror2D",
+        "score": 8,
+        "rationale": "Kittler-Illingworth minimum error method is a known CV technique."
+      },
+      {
+        "unit": "binarize_moments2D",
+        "score": 8,
+        "rationale": "Moment-preserving thresholding is an established technique."
+      },
+      {
+        "unit": "binarize_unimodalrosin2D",
+        "score": 8,
+        "rationale": "Rosin's method for unimodal distributions is well documented."
+      },
+      {
+        "unit": "binarize_entropy2D",
+        "score": 9,
+        "rationale": "Entropy-based thresholding (like Kapur's) is standard."
+      },
+      {
+        "unit": "binarize_balanced2D",
+        "score": 8,
+        "rationale": "Balanced histogram thresholding is a clear iterative approach."
+      },
+      {
+        "unit": "binarize_yen2D",
+        "score": 8,
+        "rationale": "Yen's method is a recognizable histogram thresholding technique."
+      },
+      {
+        "unit": "binarize_manual2D",
+        "score": 10,
+        "rationale": "Applying user-provided thresholds is entirely explicit."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 9,
+        "rationale": "Sobel derivative with rounding to yield a binary mask."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 9,
+        "rationale": "Sobel derivative with rounding to yield a binary mask."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 9,
+        "rationale": "Sobel magnitude with rounding to yield a binary mask."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 8,
+        "rationale": "Ando derivative applied and rounded to binary."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 8,
+        "rationale": "Ando derivative applied and rounded to binary."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 8,
+        "rationale": "Ando magnitude applied and rounded to binary."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 8,
+        "rationale": "Ando derivative applied and rounded to binary."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 8,
+        "rationale": "Ando derivative applied and rounded to binary."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 8,
+        "rationale": "Ando magnitude applied and rounded to binary."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 8,
+        "rationale": "Ando derivative applied and rounded to binary."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 8,
+        "rationale": "Ando derivative applied and rounded to binary."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 8,
+        "rationale": "Ando magnitude applied and rounded to binary."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 7,
+        "rationale": "Bickley is a niche filter, binarized by rounding."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 7,
+        "rationale": "Bickley is a niche filter, binarized by rounding."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 7,
+        "rationale": "Bickley magnitude, binarized by rounding."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 9,
+        "rationale": "Classic Prewitt operator, output rounded to binary."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 9,
+        "rationale": "Classic Prewitt operator, output rounded to binary."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 9,
+        "rationale": "Prewitt magnitude, output rounded to binary."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 9,
+        "rationale": "Scharr operator, output rounded to binary."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 9,
+        "rationale": "Scharr operator, output rounded to binary."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 9,
+        "rationale": "Scharr magnitude, output rounded to binary."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 9,
+        "rationale": "Gaussian blur followed by rounding acts as a local voting/smoothing mechanism."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 9,
+        "rationale": "Gaussian blur followed by rounding acts as a local voting/smoothing mechanism."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 9,
+        "rationale": "Gaussian blur followed by rounding acts as a local voting/smoothing mechanism."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 9,
+        "rationale": "Gaussian blur followed by rounding acts as a local voting/smoothing mechanism."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 9,
+        "rationale": "Gaussian blur followed by rounding acts as a local voting/smoothing mechanism."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 9,
+        "rationale": "Laplacian filter followed by rounding to detect zero-crossings or extrema."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 9,
+        "rationale": "Difference-of-Gaussians converted to binary mask."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 8,
+        "rationale": "Moffat smoothing binarized by rounding."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 8,
+        "rationale": "Moffat smoothing binarized by rounding."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 8,
+        "rationale": "Moffat smoothing binarized by rounding."
+      },
+      {
+        "unit": "findlocalminima_image2D",
+        "score": 10,
+        "rationale": "Straightforward morphological detection operation."
+      },
+      {
+        "unit": "findlocalmaxima_image2D",
+        "score": 10,
+        "rationale": "Straightforward morphological detection operation."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 10,
+        "rationale": "Fundamental morphological operator on binary images."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 10,
+        "rationale": "Fundamental morphological operator on binary images."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 10,
+        "rationale": "Standard morphological noise-removal on binary images."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 10,
+        "rationale": "Standard morphological gap-filling on binary images."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 10,
+        "rationale": "Morphological extraction of fine bright details."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 10,
+        "rationale": "Morphological extraction of fine dark details."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 10,
+        "rationale": "Morphological boundary extraction is perfectly clear."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 9,
+        "rationale": "Morphological second derivative is a known concept."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 10,
+        "rationale": "Standard programmatic conditional."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 9,
+        "rationale": "Block pooling rounded to binary."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 7,
+        "rationale": "Cross-shaped block pooling is an uncommon concept."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 9,
+        "rationale": "Max block pooling on binary is equivalent to block-wise dilation."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 7,
+        "rationale": "Unorthodox spatial reduction shape."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 9,
+        "rationale": "Min block pooling on binary is equivalent to block-wise erosion."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 7,
+        "rationale": "Unorthodox spatial reduction shape."
+      },
+      {
+        "unit": "meanpool",
+        "score": 10,
+        "rationale": "Sliding window mean with rounding implies local majority voting."
+      },
+      {
+        "unit": "maxpool",
+        "score": 10,
+        "rationale": "Sliding window maximum acts as a local binary dilation."
+      },
+      {
+        "unit": "minpool",
+        "score": 10,
+        "rationale": "Sliding window minimum acts as a local binary erosion."
+      },
+      {
+        "unit": "stdpool",
+        "score": 9,
+        "rationale": "Sliding window standard deviation, binarized."
+      },
+      {
+        "unit": "medianpool",
+        "score": 10,
+        "rationale": "Median filter is identical to majority voting on booleans."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 8,
+        "rationale": "Scaling and rounding unique counts requires careful reading to visualize."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 8,
+        "rationale": "Statistical operation binarized."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 8,
+        "rationale": "Statistical operation binarized."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 9,
+        "rationale": "Interquartile range binarized."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 3",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 10,
+        "rationale": "Returns exact input segment map."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 10,
+        "rationale": "Uniform segment image."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 10,
+        "rationale": "Uniform background segment image."
+      },
+      {
+        "unit": "experimental_tosegment_image2D",
+        "score": 9,
+        "rationale": "Foreground/background connected component separation."
+      },
+      {
+        "unit": "fastscanning_image2D",
+        "score": 8,
+        "rationale": "Standard raster-scan connected components labeling."
+      },
+      {
+        "unit": "watershed_image2D",
+        "score": 10,
+        "rationale": "Watershed transform is a textbook segmentation algorithm."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 4",
+    "scores": [
+      {
+        "unit": "identity_float",
+        "score": 10,
+        "rationale": "Trivial return operation."
+      },
+      {
+        "unit": "ret_1",
+        "score": 10,
+        "rationale": "Trivial constant float."
+      },
+      {
+        "unit": "tanh",
+        "score": 10,
+        "rationale": "Standard mathematical and neural network activation function."
+      },
+      {
+        "unit": "relu",
+        "score": 10,
+        "rationale": "Standard deep learning activation function."
+      },
+      {
+        "unit": "modulo",
+        "score": 10,
+        "rationale": "Basic arithmetic operation."
+      },
+      {
+        "unit": "is_eq_to",
+        "score": 10,
+        "rationale": "Basic logical equality."
+      },
+      {
+        "unit": "experimental_is_gt",
+        "score": 10,
+        "rationale": "Basic logical greater-than comparison."
+      },
+      {
+        "unit": "experimental_is_lt",
+        "score": 10,
+        "rationale": "Basic logical less-than comparison."
+      },
+      {
+        "unit": "experimental_not",
+        "score": 10,
+        "rationale": "Basic logical negation mapped over a threshold."
+      },
+      {
+        "unit": "number_sum",
+        "score": 10,
+        "rationale": "Basic addition."
+      },
+      {
+        "unit": "number_minus",
+        "score": 10,
+        "rationale": "Basic subtraction."
+      },
+      {
+        "unit": "number_mult",
+        "score": 10,
+        "rationale": "Basic multiplication."
+      },
+      {
+        "unit": "number_div",
+        "score": 10,
+        "rationale": "Basic division."
+      },
+      {
+        "unit": "safe_div",
+        "score": 10,
+        "rationale": "Standard protected division to prevent zero errors."
+      },
+      {
+        "unit": "power_of",
+        "score": 10,
+        "rationale": "Standard exponentiation."
+      },
+      {
+        "unit": "pi_",
+        "score": 10,
+        "rationale": "Mathematical constant."
+      },
+      {
+        "unit": "exp_",
+        "score": 10,
+        "rationale": "Standard exponential function."
+      },
+      {
+        "unit": "log_",
+        "score": 10,
+        "rationale": "Natural logarithm with standard minimum clipping."
+      },
+      {
+        "unit": "log10_",
+        "score": 10,
+        "rationale": "Base-10 logarithm with standard minimum clipping."
+      },
+      {
+        "unit": "reduce_length",
+        "score": 10,
+        "rationale": "Basic global geometric property (pixel count)."
+      },
+      {
+        "unit": "reduce_biggestAxis",
+        "score": 10,
+        "rationale": "Basic global geometric property."
+      },
+      {
+        "unit": "reduce_smallerAxis",
+        "score": 10,
+        "rationale": "Basic global geometric property."
+      },
+      {
+        "unit": "reduce_histMode",
+        "score": 10,
+        "rationale": "Basic global image statistic."
+      },
+      {
+        "unit": "reduce_histModeCount",
+        "score": 10,
+        "rationale": "Basic global image statistic."
+      },
+      {
+        "unit": "reduce_propWhite",
+        "score": 10,
+        "rationale": "Basic spatial density feature for binaries."
+      },
+      {
+        "unit": "reduce_propBlack",
+        "score": 10,
+        "rationale": "Basic spatial density feature for binaries."
+      },
+      {
+        "unit": "reduce_nColors",
+        "score": 10,
+        "rationale": "Basic global image statistic."
+      },
+      {
+        "unit": "reduce_mean",
+        "score": 10,
+        "rationale": "Basic global image statistic."
+      },
+      {
+        "unit": "reduce_median",
+        "score": 10,
+        "rationale": "Basic global image statistic."
+      },
+      {
+        "unit": "reduce_std",
+        "score": 10,
+        "rationale": "Basic global image statistic."
+      },
+      {
+        "unit": "reduce_maximum",
+        "score": 10,
+        "rationale": "Basic global image statistic."
+      },
+      {
+        "unit": "reduce_minimum",
+        "score": 10,
+        "rationale": "Basic global image statistic."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 10,
+        "rationale": "Standard programmatic scalar conditional."
+      },
+      {
+        "unit": "region_mean",
+        "score": 10,
+        "rationale": "Clear statistical metric over a localized patch."
+      },
+      {
+        "unit": "region_std",
+        "score": 10,
+        "rationale": "Clear statistical metric over a localized patch."
+      },
+      {
+        "unit": "region_min",
+        "score": 10,
+        "rationale": "Clear statistical metric over a localized patch."
+      },
+      {
+        "unit": "region_max",
+        "score": 10,
+        "rationale": "Clear statistical metric over a localized patch."
+      },
+      {
+        "unit": "region_sum",
+        "score": 10,
+        "rationale": "Clear statistical metric over a localized patch."
+      },
+      {
+        "unit": "region_median",
+        "score": 10,
+        "rationale": "Clear statistical metric over a localized patch."
+      },
+      {
+        "unit": "region_range",
+        "score": 10,
+        "rationale": "Clear statistical metric over a localized patch."
+      },
+      {
+        "unit": "region_contrast",
+        "score": 9,
+        "rationale": "Classic center-surround contrast filter."
+      },
+      {
+        "unit": "region_energy",
+        "score": 9,
+        "rationale": "Classic texture energy computation."
+      },
+      {
+        "unit": "region_entropy",
+        "score": 9,
+        "rationale": "Classic information theoretic texture metric."
+      },
+      {
+        "unit": "region_mean_5p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_std_5p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_min_5p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_max_5p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_sum_5p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_median_5p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_range_5p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_contrast_5p",
+        "score": 9,
+        "rationale": "Clearly parameterized center-surround computation."
+      },
+      {
+        "unit": "region_energy_5p",
+        "score": 9,
+        "rationale": "Clearly parameterized local energy computation."
+      },
+      {
+        "unit": "region_entropy_5p",
+        "score": 9,
+        "rationale": "Clearly parameterized local entropy computation."
+      },
+      {
+        "unit": "region_mean_10p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_std_10p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_min_10p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_max_10p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_sum_10p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_median_10p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_range_10p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_contrast_10p",
+        "score": 9,
+        "rationale": "Clearly parameterized center-surround computation."
+      },
+      {
+        "unit": "region_energy_10p",
+        "score": 9,
+        "rationale": "Clearly parameterized local energy computation."
+      },
+      {
+        "unit": "region_entropy_10p",
+        "score": 9,
+        "rationale": "Clearly parameterized local entropy computation."
+      },
+      {
+        "unit": "region_mean_20p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_std_20p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_min_20p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_max_20p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_sum_20p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_median_20p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_range_20p",
+        "score": 10,
+        "rationale": "Clearly parameterized version of a basic local statistic."
+      },
+      {
+        "unit": "region_contrast_20p",
+        "score": 9,
+        "rationale": "Clearly parameterized center-surround computation."
+      },
+      {
+        "unit": "region_energy_20p",
+        "score": 9,
+        "rationale": "Clearly parameterized local energy computation."
+      },
+      {
+        "unit": "region_entropy_20p",
+        "score": 9,
+        "rationale": "Clearly parameterized local entropy computation."
+      },
+      {
+        "unit": "haar_lr",
+        "score": 10,
+        "rationale": "Classic Viola-Jones style Haar feature."
+      },
+      {
+        "unit": "haar_tb",
+        "score": 10,
+        "rationale": "Classic Viola-Jones style Haar feature."
+      },
+      {
+        "unit": "haar_diag_main",
+        "score": 10,
+        "rationale": "Classic Viola-Jones style Haar feature."
+      },
+      {
+        "unit": "haar_diag_anti",
+        "score": 10,
+        "rationale": "Classic Viola-Jones style Haar feature."
+      },
+      {
+        "unit": "haar_center_surround",
+        "score": 10,
+        "rationale": "Classic Viola-Jones style Haar feature."
+      },
+      {
+        "unit": "haar_three_h",
+        "score": 10,
+        "rationale": "Classic three-band Haar-like feature."
+      },
+      {
+        "unit": "haar_three_v",
+        "score": 10,
+        "rationale": "Classic three-band Haar-like feature."
+      },
+      {
+        "unit": "orientation_coherence",
+        "score": 9,
+        "rationale": "Standard gradient field property utilized in structural tensor analysis."
+      },
+      {
+        "unit": "dominant_orientation",
+        "score": 9,
+        "rationale": "Standard directional histogram extraction."
+      },
+      {
+        "unit": "orientation_energy_0",
+        "score": 9,
+        "rationale": "Standard directional energy feature."
+      },
+      {
+        "unit": "orientation_energy_45",
+        "score": 9,
+        "rationale": "Standard directional energy feature."
+      },
+      {
+        "unit": "orientation_energy_90",
+        "score": 9,
+        "rationale": "Standard directional energy feature."
+      },
+      {
+        "unit": "orientation_energy_135",
+        "score": 9,
+        "rationale": "Standard directional energy feature."
+      },
+      {
+        "unit": "orientation_spread",
+        "score": 9,
+        "rationale": "Clear statistical measure of gradient direction variance."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_mean",
+        "score": 9,
+        "rationale": "Gray-Level Co-occurrence Matrix mean aggregated via mean over directions."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_sum",
+        "score": 9,
+        "rationale": "GLCM mean aggregated via sum."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_std",
+        "score": 9,
+        "rationale": "GLCM mean aggregated via standard deviation."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_minimum",
+        "score": 9,
+        "rationale": "GLCM mean aggregated via minimum."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_maximum",
+        "score": 9,
+        "rationale": "GLCM mean aggregated via maximum."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_mean",
+        "score": 9,
+        "rationale": "GLCM variance aggregated via mean."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_sum",
+        "score": 9,
+        "rationale": "GLCM variance aggregated via sum."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_std",
+        "score": 9,
+        "rationale": "GLCM variance aggregated via standard deviation."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_minimum",
+        "score": 9,
+        "rationale": "GLCM variance aggregated via minimum."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_maximum",
+        "score": 9,
+        "rationale": "GLCM variance aggregated via maximum."
+      },
+      {
+        "unit": "glcm_correlation_mean",
+        "score": 9,
+        "rationale": "GLCM correlation aggregated via mean."
+      },
+      {
+        "unit": "glcm_correlation_sum",
+        "score": 9,
+        "rationale": "GLCM correlation aggregated via sum."
+      },
+      {
+        "unit": "glcm_correlation_std",
+        "score": 9,
+        "rationale": "GLCM correlation aggregated via standard deviation."
+      },
+      {
+        "unit": "glcm_correlation_minimum",
+        "score": 9,
+        "rationale": "GLCM correlation aggregated via minimum."
+      },
+      {
+        "unit": "glcm_correlation_maximum",
+        "score": 9,
+        "rationale": "GLCM correlation aggregated via maximum."
+      },
+      {
+        "unit": "glcm_contrast_mean",
+        "score": 9,
+        "rationale": "GLCM contrast aggregated via mean."
+      },
+      {
+        "unit": "glcm_contrast_sum",
+        "score": 9,
+        "rationale": "GLCM contrast aggregated via sum."
+      },
+      {
+        "unit": "glcm_contrast_std",
+        "score": 9,
+        "rationale": "GLCM contrast aggregated via standard deviation."
+      },
+      {
+        "unit": "glcm_contrast_minimum",
+        "score": 9,
+        "rationale": "GLCM contrast aggregated via minimum."
+      },
+      {
+        "unit": "glcm_contrast_maximum",
+        "score": 9,
+        "rationale": "GLCM contrast aggregated via maximum."
+      },
+      {
+        "unit": "glcm_IDM_mean",
+        "score": 9,
+        "rationale": "GLCM inverse-difference-moment aggregated via mean."
+      },
+      {
+        "unit": "glcm_IDM_sum",
+        "score": 9,
+        "rationale": "GLCM inverse-difference-moment aggregated via sum."
+      },
+      {
+        "unit": "glcm_IDM_std",
+        "score": 9,
+        "rationale": "GLCM inverse-difference-moment aggregated via standard deviation."
+      },
+      {
+        "unit": "glcm_IDM_minimum",
+        "score": 9,
+        "rationale": "GLCM inverse-difference-moment aggregated via minimum."
+      },
+      {
+        "unit": "glcm_IDM_maximum",
+        "score": 9,
+        "rationale": "GLCM inverse-difference-moment aggregated via maximum."
+      },
+      {
+        "unit": "glcm_ASM_mean",
+        "score": 9,
+        "rationale": "GLCM angular-second-moment aggregated via mean."
+      },
+      {
+        "unit": "glcm_ASM_sum",
+        "score": 9,
+        "rationale": "GLCM angular-second-moment aggregated via sum."
+      },
+      {
+        "unit": "glcm_ASM_std",
+        "score": 9,
+        "rationale": "GLCM angular-second-moment aggregated via standard deviation."
+      },
+      {
+        "unit": "glcm_ASM_minimum",
+        "score": 9,
+        "rationale": "GLCM angular-second-moment aggregated via minimum."
+      },
+      {
+        "unit": "glcm_ASM_maximum",
+        "score": 9,
+        "rationale": "GLCM angular-second-moment aggregated via maximum."
+      },
+      {
+        "unit": "glcm_glcm_entropy_mean",
+        "score": 9,
+        "rationale": "GLCM entropy aggregated via mean."
+      },
+      {
+        "unit": "glcm_glcm_entropy_sum",
+        "score": 9,
+        "rationale": "GLCM entropy aggregated via sum."
+      },
+      {
+        "unit": "glcm_glcm_entropy_std",
+        "score": 9,
+        "rationale": "GLCM entropy aggregated via standard deviation."
+      },
+      {
+        "unit": "glcm_glcm_entropy_minimum",
+        "score": 9,
+        "rationale": "GLCM entropy aggregated via minimum."
+      },
+      {
+        "unit": "glcm_glcm_entropy_maximum",
+        "score": 9,
+        "rationale": "GLCM entropy aggregated via maximum."
+      },
+      {
+        "unit": "glcm_max_prob_mean",
+        "score": 9,
+        "rationale": "GLCM max-probability aggregated via mean."
+      },
+      {
+        "unit": "glcm_max_prob_sum",
+        "score": 9,
+        "rationale": "GLCM max-probability aggregated via sum."
+      },
+      {
+        "unit": "glcm_max_prob_std",
+        "score": 9,
+        "rationale": "GLCM max-probability aggregated via standard deviation."
+      },
+      {
+        "unit": "glcm_max_prob_minimum",
+        "score": 9,
+        "rationale": "GLCM max-probability aggregated via minimum."
+      },
+      {
+        "unit": "glcm_max_prob_maximum",
+        "score": 9,
+        "rationale": "GLCM max-probability aggregated via maximum."
+      },
+      {
+        "unit": "glcm_energy_mean",
+        "score": 9,
+        "rationale": "GLCM energy aggregated via mean."
+      },
+      {
+        "unit": "glcm_energy_sum",
+        "score": 9,
+        "rationale": "GLCM energy aggregated via sum."
+      },
+      {
+        "unit": "glcm_energy_std",
+        "score": 9,
+        "rationale": "GLCM energy aggregated via standard deviation."
+      },
+      {
+        "unit": "glcm_energy_minimum",
+        "score": 9,
+        "rationale": "GLCM energy aggregated via minimum."
+      },
+      {
+        "unit": "glcm_energy_maximum",
+        "score": 9,
+        "rationale": "GLCM energy aggregated via maximum."
+      },
+      {
+        "unit": "glcm_dissimilarity_mean",
+        "score": 9,
+        "rationale": "GLCM dissimilarity aggregated via mean."
+      },
+      {
+        "unit": "glcm_dissimilarity_sum",
+        "score": 9,
+        "rationale": "GLCM dissimilarity aggregated via sum."
+      },
+      {
+        "unit": "glcm_dissimilarity_std",
+        "score": 9,
+        "rationale": "GLCM dissimilarity aggregated via standard deviation."
+      },
+      {
+        "unit": "glcm_dissimilarity_minimum",
+        "score": 9,
+        "rationale": "GLCM dissimilarity aggregated via minimum."
+      },
+      {
+        "unit": "glcm_dissimilarity_maximum",
+        "score": 9,
+        "rationale": "GLCM dissimilarity aggregated via maximum."
+      }
+    ]
+  }
+]

@@ -1,0 +1,1532 @@
+[
+  {
+    "library_id": "Library 1",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 10,
+        "rationale": "Identity function is universally understood by any programmer or ML researcher."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 10,
+        "rationale": "Creating an all-ones image of matching shape is a trivial and standard operation."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 10,
+        "rationale": "Creating an all-zeros image of matching shape is a trivial and standard operation."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 9,
+        "rationale": "Inverting pixel intensities in [0,1] range (i.e., 1-x) is straightforward and commonly understood."
+      },
+      {
+        "unit": "experimental_normalize_2D",
+        "score": 9,
+        "rationale": "Min-max normalization to [0,1] is a standard preprocessing step well known to ML researchers."
+      },
+      {
+        "unit": "experimental_standardize_2D",
+        "score": 9,
+        "rationale": "Z-score standardization using mean and std is a standard ML preprocessing operation."
+      },
+      {
+        "unit": "experimental_tointensity_image2D",
+        "score": 6,
+        "rationale": "The concept of converting binary/segment images to intensity representation is understandable but the exact mapping may require assumptions."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 9,
+        "rationale": "Morphological erosion is a standard and well-documented computer vision operation."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 9,
+        "rationale": "Morphological dilation is a standard and well-documented computer vision operation."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 9,
+        "rationale": "Morphological opening (erosion then dilation) is well known for removing small bright noise."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 9,
+        "rationale": "Morphological closing (dilation then erosion) is well known for filling small dark gaps."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 8,
+        "rationale": "Top-hat transform is a recognized morphological technique for extracting bright structures, familiar to CV practitioners."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 8,
+        "rationale": "Black top-hat transform is recognized in morphological processing for extracting dark structures."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 8,
+        "rationale": "Morphological gradient as dilation minus erosion is a standard boundary-detection operation."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 6,
+        "rationale": "Morphological Laplace is less commonly known than standard Laplacian, requiring some background in morphological operators."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 10,
+        "rationale": "Elementwise image subtraction is a fundamental and universally understood operation."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 10,
+        "rationale": "Elementwise image addition is a fundamental and universally understood operation."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 10,
+        "rationale": "Elementwise image multiplication is a fundamental and universally understood operation."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 10,
+        "rationale": "Elementwise maximum between two images is clear and standard."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 10,
+        "rationale": "Elementwise minimum between two images is clear and standard."
+      },
+      {
+        "unit": "bsubtract_image2D",
+        "score": 9,
+        "rationale": "Subtracting a scalar from every pixel is a straightforward broadcast operation."
+      },
+      {
+        "unit": "badd_image2D",
+        "score": 9,
+        "rationale": "Adding a scalar to every pixel is a straightforward broadcast operation."
+      },
+      {
+        "unit": "bmult_image2D",
+        "score": 9,
+        "rationale": "Multiplying every pixel by a scalar is a straightforward broadcast operation."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 9,
+        "rationale": "Sobel X derivative filter is a standard and widely known edge detection operator."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 9,
+        "rationale": "Sobel Y derivative filter is a standard and widely known edge detection operator."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 9,
+        "rationale": "Sobel gradient magnitude is a standard and widely known edge detection measure."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 5,
+        "rationale": "Ando filters are less commonly known than Sobel; the concept of a derivative filter is clear but the specific kernel may not be familiar."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 5,
+        "rationale": "Ando filters are less commonly known than Sobel; the concept of a derivative filter is clear but the specific kernel may not be familiar."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 5,
+        "rationale": "Ando gradient magnitude is understandable as a concept but the specific Ando kernel is less familiar."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 5,
+        "rationale": "Ando 4x4 derivative filter is understandable structurally but the specific kernel is not widely known."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 5,
+        "rationale": "Ando 4x4 derivative filter is understandable structurally but the specific kernel is not widely known."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 5,
+        "rationale": "Ando 4x4 gradient magnitude is understandable as a concept but the specific filter is less familiar."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 5,
+        "rationale": "Ando 5x5 derivative filter is understandable structurally but the specific kernel is not widely known."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 5,
+        "rationale": "Ando 5x5 derivative filter is understandable structurally but the specific kernel is not widely known."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 5,
+        "rationale": "Ando 5x5 gradient magnitude is understandable as a concept but the specific filter is less familiar."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 4,
+        "rationale": "Bickley filter is quite obscure and not widely known in mainstream CV literature, though the X-derivative concept is clear."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 4,
+        "rationale": "Bickley filter is quite obscure and not widely known in mainstream CV literature, though the Y-derivative concept is clear."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 4,
+        "rationale": "Bickley gradient magnitude is understandable in concept but the specific filter is quite obscure."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 9,
+        "rationale": "Prewitt X derivative filter is a standard and well-known edge detection operator."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 9,
+        "rationale": "Prewitt Y derivative filter is a standard and well-known edge detection operator."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 9,
+        "rationale": "Prewitt gradient magnitude is a standard and well-known edge detection measure."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 7,
+        "rationale": "Scharr filter is known to experienced CV practitioners as an improved Sobel variant, moderately interpretable."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 7,
+        "rationale": "Scharr filter is known to experienced CV practitioners as an improved Sobel variant, moderately interpretable."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 7,
+        "rationale": "Scharr gradient magnitude is known to experienced CV practitioners, moderately interpretable."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 9,
+        "rationale": "Gaussian smoothing with specified sigma and kernel size is a fundamental and widely understood operation."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 9,
+        "rationale": "Gaussian smoothing with specified sigma and kernel size is a fundamental and widely understood operation."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 9,
+        "rationale": "Gaussian smoothing with specified sigma and kernel size is a fundamental and widely understood operation."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 9,
+        "rationale": "Gaussian smoothing with specified sigma and kernel size is a fundamental and widely understood operation."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 9,
+        "rationale": "Gaussian smoothing with specified sigma and kernel size is a fundamental and widely understood operation."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 9,
+        "rationale": "Laplacian filter for second-order edge detection is a standard and well-known CV operation."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 8,
+        "rationale": "Difference-of-Gaussians is a well-known blob/edge detection technique in computer vision."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 4,
+        "rationale": "Moffat filter is primarily known in astronomy/astrophysics and is not a standard CV operation, making it hard to interpret."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 4,
+        "rationale": "Moffat filter is primarily known in astronomy/astrophysics and is not a standard CV operation, making it hard to interpret."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 4,
+        "rationale": "Moffat filter is primarily known in astronomy/astrophysics and is not a standard CV operation, making it hard to interpret."
+      },
+      {
+        "unit": "exp_image2D",
+        "score": 9,
+        "rationale": "Applying exponential transform to each pixel is a simple and well-understood pointwise operation."
+      },
+      {
+        "unit": "loginv_image2D",
+        "score": 7,
+        "rationale": "Log transform with sign inversion is understandable but the combined operation is slightly less obvious than a plain log."
+      },
+      {
+        "unit": "log_image2D",
+        "score": 8,
+        "rationale": "Logarithm applied pixelwise with normalization is a common image processing operation."
+      },
+      {
+        "unit": "powerof_image2D",
+        "score": 9,
+        "rationale": "Raising each pixel to an exponent (gamma correction style) is a standard and clear operation."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 8,
+        "rationale": "Conditional selection between two values based on a condition is a standard programming construct."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 8,
+        "rationale": "Block-wise average pooling with broadcast is a clear spatial pooling concept familiar to ML practitioners."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 6,
+        "rationale": "Pooling over the center row and column of a block is an unusual variant that requires extra thought."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 8,
+        "rationale": "Block-wise max pooling with broadcast is a clear spatial pooling concept familiar to ML practitioners."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 6,
+        "rationale": "Max pooling over center row and column of a block is an unusual variant that requires extra thought."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 8,
+        "rationale": "Block-wise min pooling with broadcast is a clear spatial pooling concept familiar to ML practitioners."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 6,
+        "rationale": "Min pooling over center row and column of a block is an unusual variant that requires extra thought."
+      },
+      {
+        "unit": "meanpool",
+        "score": 9,
+        "rationale": "Sliding-window mean pooling resized back to original size is a standard and well-understood operation."
+      },
+      {
+        "unit": "maxpool",
+        "score": 9,
+        "rationale": "Sliding-window max pooling resized back to original size is a standard and well-understood operation."
+      },
+      {
+        "unit": "minpool",
+        "score": 9,
+        "rationale": "Sliding-window min pooling resized back to original size is a standard and well-understood operation."
+      },
+      {
+        "unit": "stdpool",
+        "score": 8,
+        "rationale": "Sliding-window standard deviation pooling is a clear local statistics operation."
+      },
+      {
+        "unit": "medianpool",
+        "score": 9,
+        "rationale": "Sliding-window median pooling is a standard and well-understood image processing operation."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 7,
+        "rationale": "Counting unique values in a sliding window is conceptually clear though not a standard pooling operation."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 5,
+        "rationale": "Argmax-count pooling is an unusual operation whose exact semantics are not immediately obvious."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 5,
+        "rationale": "Argmin-count pooling is an unusual operation whose exact semantics are not immediately obvious."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 7,
+        "rationale": "Interquartile range pooling measures local spread and is understandable to someone familiar with statistics."
+      },
+      {
+        "unit": "grad_magnitude",
+        "score": 9,
+        "rationale": "Computing the gradient magnitude map is a standard and clearly described image processing operation."
+      },
+      {
+        "unit": "grad_orientation",
+        "score": 9,
+        "rationale": "Computing the gradient orientation map is a standard and clearly described image processing operation."
+      },
+      {
+        "unit": "orientation_select",
+        "score": 7,
+        "rationale": "Selecting gradients near a target orientation with configurable bandwidth is understandable but requires familiarity with orientation filtering."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 2",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 10,
+        "rationale": "Identity function is universally understood by any programmer or ML researcher."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 10,
+        "rationale": "Creating an all-ones binary image is trivial and universally understood."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 10,
+        "rationale": "Creating an all-zeros binary image is trivial and universally understood."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 10,
+        "rationale": "Inverting a binary image (flipping 0s and 1s) is a trivially clear operation."
+      },
+      {
+        "unit": "experimental_tobinary_image2D",
+        "score": 8,
+        "rationale": "Converting an intensity image to binary via default thresholding is a standard and clear operation."
+      },
+      {
+        "unit": "experimental_tobinary_th_image2D_factory",
+        "score": 8,
+        "rationale": "Converting an intensity image to binary with a provided threshold is a standard and clear operation."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 9,
+        "rationale": "Elementwise subtraction followed by rounding to binary is straightforward."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 9,
+        "rationale": "Elementwise addition followed by rounding to binary is straightforward."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 9,
+        "rationale": "Elementwise multiplication followed by rounding to binary is straightforward."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 9,
+        "rationale": "Elementwise maximum (logical OR equivalent for binary) followed by rounding is clear."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 9,
+        "rationale": "Elementwise minimum (logical AND equivalent for binary) followed by rounding is clear."
+      },
+      {
+        "unit": "binarize_adaptive2D",
+        "score": 8,
+        "rationale": "Adaptive local thresholding is a well-known binarization technique in image processing."
+      },
+      {
+        "unit": "binarize_niblack2D",
+        "score": 7,
+        "rationale": "Niblack thresholding is a known local thresholding method, recognizable to practitioners familiar with document binarization."
+      },
+      {
+        "unit": "binarize_polysegment2D",
+        "score": 4,
+        "rationale": "Polysegment thresholding is not a widely known standard method and its semantics are not obvious from the name alone."
+      },
+      {
+        "unit": "binarize_sauvola2D",
+        "score": 7,
+        "rationale": "Sauvola thresholding is a known local adaptive method, recognizable to practitioners familiar with document binarization."
+      },
+      {
+        "unit": "binarize_otsu2D",
+        "score": 9,
+        "rationale": "Otsu thresholding is one of the most well-known automatic binarization methods."
+      },
+      {
+        "unit": "binarize_minimumintermodes2D",
+        "score": 6,
+        "rationale": "Minimum-intermodes histogram thresholding is a recognized but less common method requiring some background knowledge."
+      },
+      {
+        "unit": "binarize_intermodes2D",
+        "score": 6,
+        "rationale": "Intermodes histogram thresholding is a recognized but less common method requiring some background knowledge."
+      },
+      {
+        "unit": "binarize_minimumerror2D",
+        "score": 6,
+        "rationale": "Minimum-error thresholding is a recognized but less common statistical method."
+      },
+      {
+        "unit": "binarize_moments2D",
+        "score": 6,
+        "rationale": "Moments-based thresholding is recognized in the literature but not as widely known as Otsu."
+      },
+      {
+        "unit": "binarize_unimodalrosin2D",
+        "score": 6,
+        "rationale": "Unimodal Rosin thresholding is a recognized method for unimodal histograms but not widely known by all ML researchers."
+      },
+      {
+        "unit": "binarize_entropy2D",
+        "score": 7,
+        "rationale": "Entropy-based thresholding is an understandable concept given familiarity with information theory."
+      },
+      {
+        "unit": "binarize_balanced2D",
+        "score": 6,
+        "rationale": "Balanced histogram thresholding is less well known but the name is descriptive enough to infer the concept."
+      },
+      {
+        "unit": "binarize_yen2D",
+        "score": 6,
+        "rationale": "Yen thresholding is a recognized method but not as widely known as Otsu, requiring some background."
+      },
+      {
+        "unit": "binarize_manual2D",
+        "score": 9,
+        "rationale": "Manual binarization with explicit threshold parameters is a clear and simple concept."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 9,
+        "rationale": "Sobel X derivative filter followed by rounding to binary is a standard and well-known operation."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 9,
+        "rationale": "Sobel Y derivative filter followed by rounding to binary is a standard and well-known operation."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 9,
+        "rationale": "Sobel gradient magnitude followed by rounding to binary is a standard and well-known operation."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 5,
+        "rationale": "Ando 3x3 X derivative filter is understandable structurally but the specific kernel is less familiar."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 5,
+        "rationale": "Ando 3x3 Y derivative filter is understandable structurally but the specific kernel is less familiar."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 5,
+        "rationale": "Ando 3x3 gradient magnitude is understandable as a concept but the specific filter is less familiar."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 5,
+        "rationale": "Ando 4x4 X derivative filter is understandable structurally but the specific kernel is less familiar."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 5,
+        "rationale": "Ando 4x4 Y derivative filter is understandable structurally but the specific kernel is less familiar."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 5,
+        "rationale": "Ando 4x4 gradient magnitude is understandable as a concept but the specific filter is less familiar."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 5,
+        "rationale": "Ando 5x5 X derivative filter is understandable structurally but the specific kernel is less familiar."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 5,
+        "rationale": "Ando 5x5 Y derivative filter is understandable structurally but the specific kernel is less familiar."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 5,
+        "rationale": "Ando 5x5 gradient magnitude is understandable as a concept but the specific filter is less familiar."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 4,
+        "rationale": "Bickley filter is quite obscure; the derivative direction is clear but the kernel itself is not widely known."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 4,
+        "rationale": "Bickley filter is quite obscure; the derivative direction is clear but the kernel itself is not widely known."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 4,
+        "rationale": "Bickley gradient magnitude is understandable in concept but the specific filter is quite obscure."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 9,
+        "rationale": "Prewitt X derivative filter followed by rounding is a standard and well-known edge detection operation."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 9,
+        "rationale": "Prewitt Y derivative filter followed by rounding is a standard and well-known edge detection operation."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 9,
+        "rationale": "Prewitt gradient magnitude followed by rounding is a standard and well-known edge detection operation."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 7,
+        "rationale": "Scharr filter is known to experienced CV practitioners as an improved Sobel variant."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 7,
+        "rationale": "Scharr filter is known to experienced CV practitioners as an improved Sobel variant."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 7,
+        "rationale": "Scharr gradient magnitude is known to experienced CV practitioners."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 8,
+        "rationale": "Gaussian smoothing followed by rounding to binary is understandable, though rounding a smooth result is unusual."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 8,
+        "rationale": "Gaussian smoothing followed by rounding to binary is understandable, though rounding a smooth result is unusual."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 8,
+        "rationale": "Gaussian smoothing followed by rounding to binary is understandable, though rounding a smooth result is unusual."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 8,
+        "rationale": "Gaussian smoothing followed by rounding to binary is understandable, though rounding a smooth result is unusual."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 8,
+        "rationale": "Gaussian smoothing followed by rounding to binary is understandable, though rounding a smooth result is unusual."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 8,
+        "rationale": "Laplacian edge filter followed by rounding to binary is a recognizable edge-to-binary pipeline."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 7,
+        "rationale": "Difference-of-Gaussians followed by rounding to binary is understandable to CV practitioners."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 4,
+        "rationale": "Moffat filter is obscure outside astronomy, making its purpose in a binary context hard to interpret."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 4,
+        "rationale": "Moffat filter is obscure outside astronomy, making its purpose in a binary context hard to interpret."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 4,
+        "rationale": "Moffat filter is obscure outside astronomy, making its purpose in a binary context hard to interpret."
+      },
+      {
+        "unit": "findlocalminima_image2D",
+        "score": 9,
+        "rationale": "Marking local minima locations in an image is a clear and standard operation."
+      },
+      {
+        "unit": "findlocalmaxima_image2D",
+        "score": 9,
+        "rationale": "Marking local maxima locations in an image is a clear and standard operation."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 9,
+        "rationale": "Morphological erosion on a binary image is a standard and well-documented operation."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 9,
+        "rationale": "Morphological dilation on a binary image is a standard and well-documented operation."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 9,
+        "rationale": "Morphological opening on a binary image is well known for removing small bright noise."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 9,
+        "rationale": "Morphological closing on a binary image is well known for filling small dark gaps."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 8,
+        "rationale": "Top-hat transform is a recognized morphological technique for extracting small bright structures."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 8,
+        "rationale": "Black top-hat transform is a recognized morphological technique for extracting small dark structures."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 8,
+        "rationale": "Morphological gradient for boundary emphasis is a standard morphological operation."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 6,
+        "rationale": "Morphological Laplace-style edge response is less commonly known than the standard Laplacian."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 8,
+        "rationale": "Conditional selection between two binary images is a standard programming construct."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 7,
+        "rationale": "Block-wise average pooling with broadcast and rounding to binary is understandable but the rounding step adds slight complexity."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 6,
+        "rationale": "Averaging center row and column of a block then rounding is an unusual pooling variant."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 8,
+        "rationale": "Block-wise max pooling with broadcast and rounding is understandable and familiar."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 6,
+        "rationale": "Max pooling over center row and column of a block is an unusual pooling variant."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 8,
+        "rationale": "Block-wise min pooling with broadcast and rounding is understandable and familiar."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 6,
+        "rationale": "Min pooling over center row and column of a block is an unusual pooling variant."
+      },
+      {
+        "unit": "meanpool",
+        "score": 8,
+        "rationale": "Sliding-window mean pooling resized back and rounded to binary is a recognizable operation."
+      },
+      {
+        "unit": "maxpool",
+        "score": 8,
+        "rationale": "Sliding-window max pooling resized back and rounded to binary is a recognizable operation."
+      },
+      {
+        "unit": "minpool",
+        "score": 8,
+        "rationale": "Sliding-window min pooling resized back and rounded to binary is a recognizable operation."
+      },
+      {
+        "unit": "stdpool",
+        "score": 7,
+        "rationale": "Sliding-window standard deviation pooling rounded to binary is understandable as a local variability measure."
+      },
+      {
+        "unit": "medianpool",
+        "score": 8,
+        "rationale": "Sliding-window median pooling resized back and rounded to binary is a recognizable operation."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 6,
+        "rationale": "Counting unique values in a sliding window then rounding to binary is conceptually clear but unusual."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 4,
+        "rationale": "Argmax-count pooling with rounding to binary is an unusual operation whose exact semantics are not immediately obvious."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 4,
+        "rationale": "Argmin-count pooling with rounding to binary is an unusual operation whose exact semantics are not immediately obvious."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 7,
+        "rationale": "Interquartile range pooling measures local spread and is understandable to someone familiar with statistics."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 3",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 10,
+        "rationale": "Identity function is universally understood."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 9,
+        "rationale": "Creating an image filled with ones (all pixels labeled 1) is straightforward."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 9,
+        "rationale": "Creating an image filled with zeros (all background) is straightforward."
+      },
+      {
+        "unit": "experimental_tosegment_image2D",
+        "score": 7,
+        "rationale": "Converting a binary image to a segment label image separating foreground and background is understandable."
+      },
+      {
+        "unit": "fastscanning_image2D",
+        "score": 6,
+        "rationale": "Fast scanning region-labeling is understandable as connected-component-like labeling but the specific algorithm name is not universally known."
+      },
+      {
+        "unit": "watershed_image2D",
+        "score": 8,
+        "rationale": "Watershed segmentation is a well-known algorithm in image processing and computer vision."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 4",
+    "scores": [
+      {
+        "unit": "identity_float",
+        "score": 10,
+        "rationale": "Identity function returning a float unchanged is universally understood."
+      },
+      {
+        "unit": "ret_1",
+        "score": 10,
+        "rationale": "Returning the constant 1.0 is trivially clear."
+      },
+      {
+        "unit": "tanh",
+        "score": 10,
+        "rationale": "Hyperbolic tangent is a standard activation function well known to any ML researcher."
+      },
+      {
+        "unit": "relu",
+        "score": 10,
+        "rationale": "ReLU (max(x,0)) is one of the most well-known activation functions in machine learning."
+      },
+      {
+        "unit": "modulo",
+        "score": 10,
+        "rationale": "Modulo remainder is a fundamental arithmetic operation universally understood."
+      },
+      {
+        "unit": "is_eq_to",
+        "score": 10,
+        "rationale": "Equality check returning 0 or 1 is a trivially clear logical operation."
+      },
+      {
+        "unit": "experimental_is_gt",
+        "score": 10,
+        "rationale": "Greater-than comparison returning 0 or 1 is a trivially clear logical operation."
+      },
+      {
+        "unit": "experimental_is_lt",
+        "score": 10,
+        "rationale": "Less-than comparison returning 0 or 1 is a trivially clear logical operation."
+      },
+      {
+        "unit": "experimental_not",
+        "score": 9,
+        "rationale": "Logical NOT with a 0.5 threshold is clear, though the threshold-based definition is slightly non-standard."
+      },
+      {
+        "unit": "number_sum",
+        "score": 10,
+        "rationale": "Adding two numbers is a fundamental arithmetic operation universally understood."
+      },
+      {
+        "unit": "number_minus",
+        "score": 10,
+        "rationale": "Subtracting two numbers is a fundamental arithmetic operation universally understood."
+      },
+      {
+        "unit": "number_mult",
+        "score": 10,
+        "rationale": "Multiplying two numbers is a fundamental arithmetic operation universally understood."
+      },
+      {
+        "unit": "number_div",
+        "score": 9,
+        "rationale": "Division is universally understood; the note about throwing on division by zero is a clear caveat."
+      },
+      {
+        "unit": "safe_div",
+        "score": 9,
+        "rationale": "Safe division returning 0 on zero divisor is a clear and standard defensive programming pattern."
+      },
+      {
+        "unit": "power_of",
+        "score": 10,
+        "rationale": "Raising a number to a power is a fundamental mathematical operation."
+      },
+      {
+        "unit": "pi_",
+        "score": 10,
+        "rationale": "Returning the mathematical constant pi is universally understood."
+      },
+      {
+        "unit": "exp_",
+        "score": 10,
+        "rationale": "Computing the exponential of a number is a fundamental and universally known operation."
+      },
+      {
+        "unit": "log_",
+        "score": 9,
+        "rationale": "Natural logarithm with clipping to avoid log(0) is a standard and clear operation."
+      },
+      {
+        "unit": "log10_",
+        "score": 9,
+        "rationale": "Base-10 logarithm with clipping is a standard and clear operation."
+      },
+      {
+        "unit": "reduce_length",
+        "score": 9,
+        "rationale": "Returning the total number of pixels in an image is a simple and clear reduction."
+      },
+      {
+        "unit": "reduce_biggestAxis",
+        "score": 9,
+        "rationale": "Returning the largest image dimension is a simple and clear operation."
+      },
+      {
+        "unit": "reduce_smallerAxis",
+        "score": 9,
+        "rationale": "Returning the smallest image dimension is a simple and clear operation."
+      },
+      {
+        "unit": "reduce_histMode",
+        "score": 8,
+        "rationale": "Returning the most frequent pixel value (mode of histogram) is a clear statistical operation."
+      },
+      {
+        "unit": "reduce_histModeCount",
+        "score": 8,
+        "rationale": "Returning the count of the most frequent pixel value is a clear statistical operation."
+      },
+      {
+        "unit": "reduce_propWhite",
+        "score": 9,
+        "rationale": "Proportion of white pixels in a binary image is a direct and clearly interpretable statistic."
+      },
+      {
+        "unit": "reduce_propBlack",
+        "score": 9,
+        "rationale": "Proportion of black pixels in a binary image is a direct and clearly interpretable statistic."
+      },
+      {
+        "unit": "reduce_nColors",
+        "score": 9,
+        "rationale": "Number of unique pixel values is a simple and clearly interpretable image statistic."
+      },
+      {
+        "unit": "reduce_mean",
+        "score": 10,
+        "rationale": "Mean intensity of an image is a fundamental and universally understood statistic."
+      },
+      {
+        "unit": "reduce_median",
+        "score": 10,
+        "rationale": "Median intensity of an image is a fundamental and universally understood statistic."
+      },
+      {
+        "unit": "reduce_std",
+        "score": 10,
+        "rationale": "Standard deviation of image intensities is a fundamental and universally understood statistic."
+      },
+      {
+        "unit": "reduce_maximum",
+        "score": 10,
+        "rationale": "Maximum intensity value is a fundamental and universally understood statistic."
+      },
+      {
+        "unit": "reduce_minimum",
+        "score": 10,
+        "rationale": "Minimum intensity value is a fundamental and universally understood statistic."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 8,
+        "rationale": "Conditional selection between two scalar values based on a condition is a standard programming construct."
+      },
+      {
+        "unit": "region_mean",
+        "score": 8,
+        "rationale": "Local mean inside a patch at normalized coordinates is a clear and commonly used local feature."
+      },
+      {
+        "unit": "region_std",
+        "score": 8,
+        "rationale": "Local standard deviation inside a patch at normalized coordinates is a clear local variability measure."
+      },
+      {
+        "unit": "region_min",
+        "score": 8,
+        "rationale": "Local minimum inside a centered patch is a clear and simple local feature."
+      },
+      {
+        "unit": "region_max",
+        "score": 8,
+        "rationale": "Local maximum inside a centered patch is a clear and simple local feature."
+      },
+      {
+        "unit": "region_sum",
+        "score": 8,
+        "rationale": "Local sum inside a centered patch is a clear and simple local feature."
+      },
+      {
+        "unit": "region_median",
+        "score": 8,
+        "rationale": "Local median inside a centered patch is a clear and simple local feature."
+      },
+      {
+        "unit": "region_range",
+        "score": 8,
+        "rationale": "Local range (max minus min) inside a centered patch is a clear local contrast measure."
+      },
+      {
+        "unit": "region_contrast",
+        "score": 8,
+        "rationale": "Center-versus-ring contrast is a clear local feature computing the difference between a patch center and its surround."
+      },
+      {
+        "unit": "region_energy",
+        "score": 8,
+        "rationale": "Local energy as mean squared value inside a patch is a recognized image feature."
+      },
+      {
+        "unit": "region_entropy",
+        "score": 8,
+        "rationale": "Local entropy from histogram inside a patch is a recognizable texture/information measure."
+      },
+      {
+        "unit": "region_mean_5p",
+        "score": 8,
+        "rationale": "Local mean using a 5%-sized patch is a clear local feature with explicit size specification."
+      },
+      {
+        "unit": "region_std_5p",
+        "score": 8,
+        "rationale": "Local standard deviation using a 5%-sized patch is a clear local variability measure."
+      },
+      {
+        "unit": "region_min_5p",
+        "score": 8,
+        "rationale": "Local minimum using a 5%-sized patch is a clear and simple local feature."
+      },
+      {
+        "unit": "region_max_5p",
+        "score": 8,
+        "rationale": "Local maximum using a 5%-sized patch is a clear and simple local feature."
+      },
+      {
+        "unit": "region_sum_5p",
+        "score": 8,
+        "rationale": "Local sum using a 5%-sized patch is a clear and simple local feature."
+      },
+      {
+        "unit": "region_median_5p",
+        "score": 8,
+        "rationale": "Local median using a 5%-sized patch is a clear and simple local feature."
+      },
+      {
+        "unit": "region_range_5p",
+        "score": 8,
+        "rationale": "Local range using a 5%-sized patch is a clear local contrast measure."
+      },
+      {
+        "unit": "region_contrast_5p",
+        "score": 8,
+        "rationale": "Center-versus-ring contrast using a 5%-sized patch is a clear local feature."
+      },
+      {
+        "unit": "region_energy_5p",
+        "score": 8,
+        "rationale": "Local energy using a 5%-sized patch is a recognized image feature."
+      },
+      {
+        "unit": "region_entropy_5p",
+        "score": 8,
+        "rationale": "Local entropy using a 5%-sized patch is a recognizable texture measure."
+      },
+      {
+        "unit": "region_mean_10p",
+        "score": 8,
+        "rationale": "Local mean using a 10%-sized patch is a clear local feature with explicit size specification."
+      },
+      {
+        "unit": "region_std_10p",
+        "score": 8,
+        "rationale": "Local standard deviation using a 10%-sized patch is a clear local variability measure."
+      },
+      {
+        "unit": "region_min_10p",
+        "score": 8,
+        "rationale": "Local minimum using a 10%-sized patch is a clear and simple local feature."
+      },
+      {
+        "unit": "region_max_10p",
+        "score": 8,
+        "rationale": "Local maximum using a 10%-sized patch is a clear and simple local feature."
+      },
+      {
+        "unit": "region_sum_10p",
+        "score": 8,
+        "rationale": "Local sum using a 10%-sized patch is a clear and simple local feature."
+      },
+      {
+        "unit": "region_median_10p",
+        "score": 8,
+        "rationale": "Local median using a 10%-sized patch is a clear and simple local feature."
+      },
+      {
+        "unit": "region_range_10p",
+        "score": 8,
+        "rationale": "Local range using a 10%-sized patch is a clear local contrast measure."
+      },
+      {
+        "unit": "region_contrast_10p",
+        "score": 8,
+        "rationale": "Center-versus-ring contrast using a 10%-sized patch is a clear local feature."
+      },
+      {
+        "unit": "region_energy_10p",
+        "score": 8,
+        "rationale": "Local energy using a 10%-sized patch is a recognized image feature."
+      },
+      {
+        "unit": "region_entropy_10p",
+        "score": 8,
+        "rationale": "Local entropy using a 10%-sized patch is a recognizable texture measure."
+      },
+      {
+        "unit": "region_mean_20p",
+        "score": 8,
+        "rationale": "Local mean using a 20%-sized patch is a clear local feature with explicit size specification."
+      },
+      {
+        "unit": "region_std_20p",
+        "score": 8,
+        "rationale": "Local standard deviation using a 20%-sized patch is a clear local variability measure."
+      },
+      {
+        "unit": "region_min_20p",
+        "score": 8,
+        "rationale": "Local minimum using a 20%-sized patch is a clear and simple local feature."
+      },
+      {
+        "unit": "region_max_20p",
+        "score": 8,
+        "rationale": "Local maximum using a 20%-sized patch is a clear and simple local feature."
+      },
+      {
+        "unit": "region_sum_20p",
+        "score": 8,
+        "rationale": "Local sum using a 20%-sized patch is a clear and simple local feature."
+      },
+      {
+        "unit": "region_median_20p",
+        "score": 8,
+        "rationale": "Local median using a 20%-sized patch is a clear and simple local feature."
+      },
+      {
+        "unit": "region_range_20p",
+        "score": 8,
+        "rationale": "Local range using a 20%-sized patch is a clear local contrast measure."
+      },
+      {
+        "unit": "region_contrast_20p",
+        "score": 8,
+        "rationale": "Center-versus-ring contrast using a 20%-sized patch is a clear local feature."
+      },
+      {
+        "unit": "region_energy_20p",
+        "score": 8,
+        "rationale": "Local energy using a 20%-sized patch is a recognized image feature."
+      },
+      {
+        "unit": "region_entropy_20p",
+        "score": 8,
+        "rationale": "Local entropy using a 20%-sized patch is a recognizable texture measure."
+      },
+      {
+        "unit": "haar_lr",
+        "score": 8,
+        "rationale": "Left-versus-right Haar contrast is a well-known Haar-like feature used in detection pipelines."
+      },
+      {
+        "unit": "haar_tb",
+        "score": 8,
+        "rationale": "Top-versus-bottom Haar contrast is a well-known Haar-like feature used in detection pipelines."
+      },
+      {
+        "unit": "haar_diag_main",
+        "score": 7,
+        "rationale": "Diagonal Haar feature favoring main-diagonal quadrants is a recognized Haar-like feature variant."
+      },
+      {
+        "unit": "haar_diag_anti",
+        "score": 7,
+        "rationale": "Diagonal Haar feature favoring anti-diagonal quadrants is a recognized Haar-like feature variant."
+      },
+      {
+        "unit": "haar_center_surround",
+        "score": 8,
+        "rationale": "Center-versus-surround Haar contrast is a well-known Haar-like feature used in detection pipelines."
+      },
+      {
+        "unit": "haar_three_h",
+        "score": 7,
+        "rationale": "Three-band horizontal Haar feature is a recognized Haar-like feature used in detection."
+      },
+      {
+        "unit": "haar_three_v",
+        "score": 7,
+        "rationale": "Three-band vertical Haar feature is a recognized Haar-like feature used in detection."
+      },
+      {
+        "unit": "orientation_coherence",
+        "score": 7,
+        "rationale": "Orientation coherence of the gradient field is understandable as a measure of gradient direction consistency."
+      },
+      {
+        "unit": "dominant_orientation",
+        "score": 7,
+        "rationale": "Returning the strongest coarse orientation bin is understandable given familiarity with gradient orientation histograms."
+      },
+      {
+        "unit": "orientation_energy_0",
+        "score": 7,
+        "rationale": "Proportion of gradient energy near 0 degrees is a clear directional energy measure."
+      },
+      {
+        "unit": "orientation_energy_45",
+        "score": 7,
+        "rationale": "Proportion of gradient energy near 45 degrees is a clear directional energy measure."
+      },
+      {
+        "unit": "orientation_energy_90",
+        "score": 7,
+        "rationale": "Proportion of gradient energy near 90 degrees is a clear directional energy measure."
+      },
+      {
+        "unit": "orientation_energy_135",
+        "score": 7,
+        "rationale": "Proportion of gradient energy near 135 degrees is a clear directional energy measure."
+      },
+      {
+        "unit": "orientation_spread",
+        "score": 7,
+        "rationale": "Measuring how widely orientation energy is distributed across directions is a clear concept for CV practitioners."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_mean",
+        "score": 6,
+        "rationale": "GLCM mean metric aggregated across multiple angles then reduced by mean is understandable to texture analysis practitioners but requires GLCM familiarity."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_sum",
+        "score": 6,
+        "rationale": "GLCM mean metric summed across angles is understandable but requires GLCM familiarity."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_std",
+        "score": 6,
+        "rationale": "GLCM mean metric standard deviation across angles is understandable but requires GLCM familiarity."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_minimum",
+        "score": 6,
+        "rationale": "GLCM mean metric minimum across angles is understandable but requires GLCM familiarity."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_maximum",
+        "score": 6,
+        "rationale": "GLCM mean metric maximum across angles is understandable but requires GLCM familiarity."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_mean",
+        "score": 6,
+        "rationale": "GLCM variance metric aggregated across angles then reduced by mean is understandable but requires GLCM familiarity."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_sum",
+        "score": 6,
+        "rationale": "GLCM variance metric summed across angles is understandable but requires GLCM familiarity."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_std",
+        "score": 6,
+        "rationale": "GLCM variance metric standard deviation across angles is understandable but requires GLCM familiarity."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_minimum",
+        "score": 6,
+        "rationale": "GLCM variance metric minimum across angles is understandable but requires GLCM familiarity."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_maximum",
+        "score": 6,
+        "rationale": "GLCM variance metric maximum across angles is understandable but requires GLCM familiarity."
+      },
+      {
+        "unit": "glcm_correlation_mean",
+        "score": 7,
+        "rationale": "GLCM correlation is a well-known texture feature; mean across angles is a clear aggregation."
+      },
+      {
+        "unit": "glcm_correlation_sum",
+        "score": 7,
+        "rationale": "GLCM correlation summed across angles is a clear aggregation of a known texture feature."
+      },
+      {
+        "unit": "glcm_correlation_std",
+        "score": 7,
+        "rationale": "GLCM correlation standard deviation across angles is a clear aggregation of a known texture feature."
+      },
+      {
+        "unit": "glcm_correlation_minimum",
+        "score": 7,
+        "rationale": "GLCM correlation minimum across angles is a clear aggregation of a known texture feature."
+      },
+      {
+        "unit": "glcm_correlation_maximum",
+        "score": 7,
+        "rationale": "GLCM correlation maximum across angles is a clear aggregation of a known texture feature."
+      },
+      {
+        "unit": "glcm_contrast_mean",
+        "score": 7,
+        "rationale": "GLCM contrast is a well-known texture feature; mean across angles is a clear aggregation."
+      },
+      {
+        "unit": "glcm_contrast_sum",
+        "score": 7,
+        "rationale": "GLCM contrast summed across angles is a clear aggregation of a known texture feature."
+      },
+      {
+        "unit": "glcm_contrast_std",
+        "score": 7,
+        "rationale": "GLCM contrast standard deviation across angles is a clear aggregation of a known texture feature."
+      },
+      {
+        "unit": "glcm_contrast_minimum",
+        "score": 7,
+        "rationale": "GLCM contrast minimum across angles is a clear aggregation of a known texture feature."
+      },
+      {
+        "unit": "glcm_contrast_maximum",
+        "score": 7,
+        "rationale": "GLCM contrast maximum across angles is a clear aggregation of a known texture feature."
+      },
+      {
+        "unit": "glcm_IDM_mean",
+        "score": 6,
+        "rationale": "GLCM inverse-difference-moment is a recognized texture feature but less universally known than contrast or correlation."
+      },
+      {
+        "unit": "glcm_IDM_sum",
+        "score": 6,
+        "rationale": "GLCM IDM summed across angles is understandable to texture analysis practitioners."
+      },
+      {
+        "unit": "glcm_IDM_std",
+        "score": 6,
+        "rationale": "GLCM IDM standard deviation across angles is understandable to texture analysis practitioners."
+      },
+      {
+        "unit": "glcm_IDM_minimum",
+        "score": 6,
+        "rationale": "GLCM IDM minimum across angles is understandable to texture analysis practitioners."
+      },
+      {
+        "unit": "glcm_IDM_maximum",
+        "score": 6,
+        "rationale": "GLCM IDM maximum across angles is understandable to texture analysis practitioners."
+      },
+      {
+        "unit": "glcm_ASM_mean",
+        "score": 6,
+        "rationale": "GLCM angular second moment is a recognized texture feature; the acronym ASM may require recall effort."
+      },
+      {
+        "unit": "glcm_ASM_sum",
+        "score": 6,
+        "rationale": "GLCM ASM summed across angles is understandable to texture analysis practitioners."
+      },
+      {
+        "unit": "glcm_ASM_std",
+        "score": 6,
+        "rationale": "GLCM ASM standard deviation across angles is understandable to texture analysis practitioners."
+      },
+      {
+        "unit": "glcm_ASM_minimum",
+        "score": 6,
+        "rationale": "GLCM ASM minimum across angles is understandable to texture analysis practitioners."
+      },
+      {
+        "unit": "glcm_ASM_maximum",
+        "score": 6,
+        "rationale": "GLCM ASM maximum across angles is understandable to texture analysis practitioners."
+      },
+      {
+        "unit": "glcm_glcm_entropy_mean",
+        "score": 7,
+        "rationale": "GLCM entropy is a recognizable texture feature; mean across angles is a clear aggregation."
+      },
+      {
+        "unit": "glcm_glcm_entropy_sum",
+        "score": 7,
+        "rationale": "GLCM entropy summed across angles is a clear aggregation of a recognized texture feature."
+      },
+      {
+        "unit": "glcm_glcm_entropy_std",
+        "score": 7,
+        "rationale": "GLCM entropy standard deviation across angles is a clear aggregation of a recognized texture feature."
+      },
+      {
+        "unit": "glcm_glcm_entropy_minimum",
+        "score": 7,
+        "rationale": "GLCM entropy minimum across angles is a clear aggregation of a recognized texture feature."
+      },
+      {
+        "unit": "glcm_glcm_entropy_maximum",
+        "score": 7,
+        "rationale": "GLCM entropy maximum across angles is a clear aggregation of a recognized texture feature."
+      },
+      {
+        "unit": "glcm_max_prob_mean",
+        "score": 6,
+        "rationale": "GLCM max-probability is a recognized but less commonly discussed texture feature; aggregation by mean is clear."
+      },
+      {
+        "unit": "glcm_max_prob_sum",
+        "score": 6,
+        "rationale": "GLCM max-probability summed across angles is understandable to texture analysis practitioners."
+      },
+      {
+        "unit": "glcm_max_prob_std",
+        "score": 6,
+        "rationale": "GLCM max-probability standard deviation across angles is understandable to texture analysis practitioners."
+      },
+      {
+        "unit": "glcm_max_prob_minimum",
+        "score": 6,
+        "rationale": "GLCM max-probability minimum across angles is understandable to texture analysis practitioners."
+      },
+      {
+        "unit": "glcm_max_prob_maximum",
+        "score": 6,
+        "rationale": "GLCM max-probability maximum across angles is understandable to texture analysis practitioners."
+      },
+      {
+        "unit": "glcm_energy_mean",
+        "score": 7,
+        "rationale": "GLCM energy is a recognized texture feature; mean across angles is a clear aggregation."
+      },
+      {
+        "unit": "glcm_energy_sum",
+        "score": 7,
+        "rationale": "GLCM energy summed across angles is a clear aggregation of a recognized texture feature."
+      },
+      {
+        "unit": "glcm_energy_std",
+        "score": 7,
+        "rationale": "GLCM energy standard deviation across angles is a clear aggregation of a recognized texture feature."
+      },
+      {
+        "unit": "glcm_energy_minimum",
+        "score": 7,
+        "rationale": "GLCM energy minimum across angles is a clear aggregation of a recognized texture feature."
+      },
+      {
+        "unit": "glcm_energy_maximum",
+        "score": 7,
+        "rationale": "GLCM energy maximum across angles is a clear aggregation of a recognized texture feature."
+      },
+      {
+        "unit": "glcm_dissimilarity_mean",
+        "score": 7,
+        "rationale": "GLCM dissimilarity is a recognized texture feature; mean across angles is a clear aggregation."
+      },
+      {
+        "unit": "glcm_dissimilarity_sum",
+        "score": 7,
+        "rationale": "GLCM dissimilarity summed across angles is a clear aggregation of a recognized texture feature."
+      },
+      {
+        "unit": "glcm_dissimilarity_std",
+        "score": 7,
+        "rationale": "GLCM dissimilarity standard deviation across angles is a clear aggregation of a recognized texture feature."
+      },
+      {
+        "unit": "glcm_dissimilarity_minimum",
+        "score": 7,
+        "rationale": "GLCM dissimilarity minimum across angles is a clear aggregation of a recognized texture feature."
+      },
+      {
+        "unit": "glcm_dissimilarity_maximum",
+        "score": 7,
+        "rationale": "GLCM dissimilarity maximum across angles is a clear aggregation of a recognized texture feature."
+      }
+    ]
+  }
+]

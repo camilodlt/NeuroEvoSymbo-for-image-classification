@@ -1,0 +1,11 @@
+% per-class sensitivity/specificity (\%) on the test split, head selection by macro_f1
+\begin{tabular}{l c c c c c c c c c c c c c}
+\toprule
+Class & \rotatebox{90}{MAGE end-to-end} & \rotatebox{90}{Best per dim RF} & \rotatebox{90}{Best per dim SVC} & \rotatebox{90}{Best per dim LR} & \rotatebox{90}{Runs per dim RF} & \rotatebox{90}{Runs per dim SVC} & \rotatebox{90}{Runs per dim LR} & \rotatebox{90}{All per dim RF} & \rotatebox{90}{All per dim SVC} & \rotatebox{90}{All per dim LR} & \rotatebox{90}{resnet18} & \rotatebox{90}{resnet34} & \rotatebox{90}{resnext50} \\
+\midrule
+choroidal neovasc. & 67.2/83.3 & 98.0/68.4 & 34.4/95.7 & 95.2/77.5 & 98.4/65.2 & 93.6/82.4 & 95.2/78.7 & 98.8/65.2 & 97.2/74.7 & 98.0/78.8 & 100.0/90.3 & 99.6/90.4 & 99.6/91.2 \\
+diabetic macular edema & 0.0/99.7 & 45.2/97.7 & 18.8/92.0 & 52.8/96.5 & 57.6/98.9 & 78.4/93.7 & 81.6/94.7 & 56.0/98.9 & 72.4/96.0 & 79.2/98.0 & 94.4/99.9 & 91.2/99.6 & 92.8/99.7 \\
+drusen & 21.6/91.5 & 14.8/99.5 & 0.4/99.5 & 57.2/94.4 & 12.0/100.0 & 61.6/81.2 & 44.4/95.9 & 13.2/99.7 & 50.4/82.7 & 57.6/94.5 & 72.0/99.6 & 75.2/99.9 & 73.2/99.9 \\
+normal & 98.0/54.4 & 92.4/84.5 & 99.2/30.4 & 80.4/93.5 & 88.4/88.0 & 33.6/98.4 & 76.0/96.5 & 88.4/88.3 & 36.0/98.7 & 74.4/98.4 & 98.8/98.7 & 98.8/98.4 & 99.6/97.6 \\
+\bottomrule
+\end{tabular}

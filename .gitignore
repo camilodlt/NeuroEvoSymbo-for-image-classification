@@ -1,0 +1,21 @@
+# Python caches
+__pycache__/
+**/__pycache__/
+
+# Notebook checkpoints
+python_utils/.ipynb_checkpoints/
+
+# Lock files
+lock.pid
+python_utils/lock.pid
+
+# Old result folders
+*_old/
+chatgpt/
+legacy_chatgpt/
+aggregated/chatgpt/
+
+# Working notes / local launcher docs not meant for submission
+launcher.txt
+main_commands.txt
+paper_plan.md

@@ -1,0 +1,53 @@
+You will explain a full symbolic program from the perspective of the stakeholder defined above.
+
+You are given:
+1. A table of primitive function names and descriptions.
+2. The full program.
+
+The program is an executable symbolic image-processing pipeline. It receives an input image and produces a scalar output. Explain what the program appears to compute, using the primitive descriptions to interpret each step.
+
+# Instructions
+
+Explain the program for the specified stakeholder.
+
+Focus on:
+- what visual information the program extracts or transforms;
+- how the main operations are combined;
+- what the final scalar output seems to summarize;
+
+The idea is not to describe the sequence of operations that are performed, but rather to explain what this sequence means.
+In other words, trying to figure out what the programs does semantically.
+
+The inputs for the program are image channels from the BloodMNIST dataset.
+
+# Scoring
+
+Provide two integer scores from 1 to 10:
+
+1. `program_interpretability_score`: how interpretable the program itself is for the stakeholder.
+   - 1 = not interpretable at all;
+   - 5 = moderately interpretable, but requiring effort or background assumptions;
+   - 10 = very interpretable, clear and easy for this stakeholder to understand.
+
+2. `explanation_clarity_score`: how clear your own explanation is for the stakeholder.
+   - 1 = very unclear;
+   - 5 = moderately clear;
+   - 10 = very clear and accessible.
+
+# Output
+
+Return only valid JSON. Do not include markdown, comments, or explanatory text outside the JSON.
+
+Use this exact schema:
+
+{
+  "program_interpretability_score": <integer from 1 to 10>,
+  "explanation_clarity_score": <integer from 1 to 10>,
+  "short_summary": "<one sentence summary of what the program computes>",
+  "step_by_step_explanation": [
+    "<short explanation of one major computational step>",
+    "<short explanation of another major computational step>"
+  ],
+  "stakeholder_explanation": "<plain-language explanation tailored to the stakeholder>",
+  "rationale_for_score": "<one or two sentences explaining the interpretability score>"
+}

@@ -1,0 +1,1527 @@
+[
+  {
+    "library_id": "Library 1",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 10,
+        "rationale": "Identity pass-through is trivial."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 10,
+        "rationale": "Constant-one image is straightforward."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 10,
+        "rationale": "Constant-zero image is straightforward."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 9,
+        "rationale": "Intensity inversion in [0,1] is simple."
+      },
+      {
+        "unit": "experimental_normalize_2D",
+        "score": 9,
+        "rationale": "Normalization to [0,1] is standard."
+      },
+      {
+        "unit": "experimental_standardize_2D",
+        "score": 9,
+        "rationale": "Z-score standardization is familiar."
+      },
+      {
+        "unit": "experimental_tointensity_image2D",
+        "score": 8,
+        "rationale": "Converting labels to intensities is clear though details are implicit."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 9,
+        "rationale": "Morphological erosion is a standard CV primitive."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 9,
+        "rationale": "Morphological dilation is standard."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 9,
+        "rationale": "Opening (erode then dilate) is well known."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 9,
+        "rationale": "Closing (dilate then erode) is well known."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 9,
+        "rationale": "Top-hat for small bright structures is standard."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 9,
+        "rationale": "Black top-hat for small dark structures is standard."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 9,
+        "rationale": "Morphological gradient emphasizing boundaries is well-known."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 8,
+        "rationale": "Morphological Laplacian is less common but clear."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 10,
+        "rationale": "Elementwise subtraction is obvious."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 10,
+        "rationale": "Elementwise addition is obvious."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 10,
+        "rationale": "Elementwise multiplication is obvious."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 10,
+        "rationale": "Elementwise maximum is obvious."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 10,
+        "rationale": "Elementwise minimum is obvious."
+      },
+      {
+        "unit": "bsubtract_image2D",
+        "score": 10,
+        "rationale": "Subtracting a scalar per pixel is trivial."
+      },
+      {
+        "unit": "badd_image2D",
+        "score": 10,
+        "rationale": "Adding a scalar per pixel is trivial."
+      },
+      {
+        "unit": "bmult_image2D",
+        "score": 10,
+        "rationale": "Multiplying by a scalar per pixel is trivial."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 10,
+        "rationale": "Sobel X derivative is standard."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 10,
+        "rationale": "Sobel Y derivative is standard."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 10,
+        "rationale": "Sobel gradient magnitude is standard."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 7,
+        "rationale": "Ando derivative filter is uncommon but intent is clear."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 7,
+        "rationale": "Ando derivative filter is uncommon but intent is clear."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 7,
+        "rationale": "Ando gradient magnitude is uncommon but understandable."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 7,
+        "rationale": "Ando 4x4 derivative is uncommon but understandable."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 7,
+        "rationale": "Ando 4x4 derivative is uncommon but understandable."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 7,
+        "rationale": "Ando 4x4 magnitude is uncommon but understandable."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 7,
+        "rationale": "Ando 5x5 derivative is uncommon but understandable."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 7,
+        "rationale": "Ando 5x5 derivative is uncommon but understandable."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 7,
+        "rationale": "Ando 5x5 magnitude is uncommon but understandable."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 7,
+        "rationale": "Bickley derivative filter is obscure though intent is clear."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 7,
+        "rationale": "Bickley derivative filter is obscure though intent is clear."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 7,
+        "rationale": "Bickley gradient magnitude is obscure though intent is clear."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 9,
+        "rationale": "Prewitt X derivative is standard."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 9,
+        "rationale": "Prewitt Y derivative is standard."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 9,
+        "rationale": "Prewitt gradient magnitude is standard."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 9,
+        "rationale": "Scharr X derivative is standard."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 9,
+        "rationale": "Scharr Y derivative is standard."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 9,
+        "rationale": "Scharr gradient magnitude is standard."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 10,
+        "rationale": "Gaussian blur with specified sigma and kernel is clear."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 10,
+        "rationale": "Gaussian blur with specified sigma and kernel is clear."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 10,
+        "rationale": "Gaussian blur with specified sigma and kernel is clear."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 10,
+        "rationale": "Gaussian blur with specified sigma and kernel is clear."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 10,
+        "rationale": "Gaussian blur with specified sigma and kernel is clear."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 9,
+        "rationale": "Laplacian edge filter is standard."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 9,
+        "rationale": "Difference-of-Gaussians is standard."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 7,
+        "rationale": "Moffat smoothing is less common though described."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 7,
+        "rationale": "Moffat smoothing is less common though described."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 7,
+        "rationale": "Moffat smoothing is less common though described."
+      },
+      {
+        "unit": "exp_image2D",
+        "score": 9,
+        "rationale": "Per-pixel exponential is straightforward."
+      },
+      {
+        "unit": "loginv_image2D",
+        "score": 8,
+        "rationale": "Log transform with sign inversion is unusual but clear."
+      },
+      {
+        "unit": "log_image2D",
+        "score": 8,
+        "rationale": "Log transform with normalization is slightly underspecified."
+      },
+      {
+        "unit": "powerof_image2D",
+        "score": 9,
+        "rationale": "Per-pixel power transform is clear."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 9,
+        "rationale": "Conditional selection based on cond>0 is clear."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 8,
+        "rationale": "Block-mean with broadcast is understandable."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 7,
+        "rationale": "Averaging center row/column per block is unusual but described."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 8,
+        "rationale": "Block-max with broadcast is understandable."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 7,
+        "rationale": "Center-cross max per block is unusual but described."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 8,
+        "rationale": "Block-min with broadcast is understandable."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 7,
+        "rationale": "Center-cross min per block is unusual but described."
+      },
+      {
+        "unit": "meanpool",
+        "score": 9,
+        "rationale": "Sliding-window mean then resize is standard."
+      },
+      {
+        "unit": "maxpool",
+        "score": 9,
+        "rationale": "Sliding-window max then resize is standard."
+      },
+      {
+        "unit": "minpool",
+        "score": 9,
+        "rationale": "Sliding-window min then resize is standard."
+      },
+      {
+        "unit": "stdpool",
+        "score": 9,
+        "rationale": "Sliding-window standard deviation then resize is clear."
+      },
+      {
+        "unit": "medianpool",
+        "score": 9,
+        "rationale": "Sliding-window median then resize is clear."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 7,
+        "rationale": "Unique-count pooling with rescale is less standard but understandable."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 7,
+        "rationale": "Argmax-count pooling with rescale is unusual but understandable."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 7,
+        "rationale": "Argmin-count pooling with rescale is unusual but understandable."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 8,
+        "rationale": "Sliding-window IQR then resize is clear."
+      },
+      {
+        "unit": "grad_magnitude",
+        "score": 9,
+        "rationale": "Gradient magnitude map is standard."
+      },
+      {
+        "unit": "grad_orientation",
+        "score": 9,
+        "rationale": "Gradient orientation map is standard."
+      },
+      {
+        "unit": "orientation_select",
+        "score": 8,
+        "rationale": "Selecting gradients near a target orientation is clear."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 2",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 10,
+        "rationale": "Identity pass-through is trivial."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 10,
+        "rationale": "Constant-one binary image is trivial."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 10,
+        "rationale": "Constant-zero binary image is trivial."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 10,
+        "rationale": "Binary inversion is unambiguous."
+      },
+      {
+        "unit": "experimental_tobinary_image2D",
+        "score": 8,
+        "rationale": "Default thresholding is clear though method unspecified."
+      },
+      {
+        "unit": "experimental_tobinary_th_image2D_factory",
+        "score": 9,
+        "rationale": "Binary conversion with provided threshold is clear."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 7,
+        "rationale": "Binary subtraction with rounding is odd but understandable."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 8,
+        "rationale": "Binary addition with rounding is understandable though nonstandard."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 8,
+        "rationale": "Binary multiplication with rounding is understandable."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 9,
+        "rationale": "Elementwise max in binary is clear."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 9,
+        "rationale": "Elementwise min in binary is clear."
+      },
+      {
+        "unit": "binarize_adaptive2D",
+        "score": 9,
+        "rationale": "Adaptive local thresholding is standard."
+      },
+      {
+        "unit": "binarize_niblack2D",
+        "score": 9,
+        "rationale": "Niblack local thresholding is known."
+      },
+      {
+        "unit": "binarize_polysegment2D",
+        "score": 7,
+        "rationale": "Polysegment thresholding is obscure."
+      },
+      {
+        "unit": "binarize_sauvola2D",
+        "score": 9,
+        "rationale": "Sauvola local thresholding is known."
+      },
+      {
+        "unit": "binarize_otsu2D",
+        "score": 10,
+        "rationale": "Otsu's histogram thresholding is well known."
+      },
+      {
+        "unit": "binarize_minimumintermodes2D",
+        "score": 8,
+        "rationale": "Minimum-intermodes method is less common but clear."
+      },
+      {
+        "unit": "binarize_intermodes2D",
+        "score": 8,
+        "rationale": "Intermodes method is less common but clear."
+      },
+      {
+        "unit": "binarize_minimumerror2D",
+        "score": 8,
+        "rationale": "Minimum-error thresholding is understandable."
+      },
+      {
+        "unit": "binarize_moments2D",
+        "score": 8,
+        "rationale": "Moments-based thresholding is understandable."
+      },
+      {
+        "unit": "binarize_unimodalrosin2D",
+        "score": 7,
+        "rationale": "Unimodal Rosin method is niche."
+      },
+      {
+        "unit": "binarize_entropy2D",
+        "score": 9,
+        "rationale": "Entropy-based thresholding is known."
+      },
+      {
+        "unit": "binarize_balanced2D",
+        "score": 7,
+        "rationale": "Balanced histogram thresholding is lesser-known."
+      },
+      {
+        "unit": "binarize_manual2D",
+        "score": 9,
+        "rationale": "Manual threshold via parameters is clear."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 8,
+        "rationale": "Sobel X then rounding to binary is understandable though lossy."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 8,
+        "rationale": "Sobel Y then rounding to binary is understandable though lossy."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 8,
+        "rationale": "Sobel magnitude then rounding is understandable though lossy."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 7,
+        "rationale": "Ando derivative then rounding is uncommon but clear."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 7,
+        "rationale": "Ando derivative then rounding is uncommon but clear."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 7,
+        "rationale": "Ando magnitude then rounding is uncommon but clear."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 7,
+        "rationale": "Ando 4x4 derivative then rounding is uncommon but clear."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 7,
+        "rationale": "Ando 4x4 derivative then rounding is uncommon but clear."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 7,
+        "rationale": "Ando 4x4 magnitude then rounding is uncommon but clear."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 7,
+        "rationale": "Ando 5x5 derivative then rounding is uncommon but clear."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 7,
+        "rationale": "Ando 5x5 derivative then rounding is uncommon but clear."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 7,
+        "rationale": "Ando 5x5 magnitude then rounding is uncommon but clear."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 7,
+        "rationale": "Bickley derivative then rounding is obscure but clear."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 7,
+        "rationale": "Bickley derivative then rounding is obscure but clear."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 7,
+        "rationale": "Bickley magnitude then rounding is obscure but clear."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 8,
+        "rationale": "Prewitt X then rounding is understandable though nonstandard."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 8,
+        "rationale": "Prewitt Y then rounding is understandable though nonstandard."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 8,
+        "rationale": "Prewitt magnitude then rounding is understandable though nonstandard."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 8,
+        "rationale": "Scharr X then rounding is understandable though nonstandard."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 8,
+        "rationale": "Scharr Y then rounding is understandable though nonstandard."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 8,
+        "rationale": "Scharr magnitude then rounding is understandable though nonstandard."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 7,
+        "rationale": "Gaussian smoothing then rounding to binary is a bit odd but clear."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 7,
+        "rationale": "Gaussian smoothing then rounding to binary is a bit odd but clear."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 7,
+        "rationale": "Gaussian smoothing then rounding to binary is a bit odd but clear."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 7,
+        "rationale": "Gaussian smoothing then rounding to binary is a bit odd but clear."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 7,
+        "rationale": "Gaussian smoothing then rounding to binary is a bit odd but clear."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 8,
+        "rationale": "Laplacian then rounding to binary is understandable though unusual."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 7,
+        "rationale": "DoG then rounding to binary is unusual but clear."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 6,
+        "rationale": "Moffat smoothing plus rounding is obscure."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 6,
+        "rationale": "Moffat smoothing plus rounding is obscure."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 6,
+        "rationale": "Moffat smoothing plus rounding is obscure."
+      },
+      {
+        "unit": "findlocalminima_image2D",
+        "score": 9,
+        "rationale": "Marking local minima locations is clear."
+      },
+      {
+        "unit": "findlocalmaxima_image2D",
+        "score": 9,
+        "rationale": "Marking local maxima locations is clear."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 10,
+        "rationale": "Binary erosion is standard."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 10,
+        "rationale": "Binary dilation is standard."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 10,
+        "rationale": "Binary opening is standard."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 10,
+        "rationale": "Binary closing is standard."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 9,
+        "rationale": "Binary top-hat is standard."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 9,
+        "rationale": "Binary black top-hat is standard."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 8,
+        "rationale": "Morphological gradient in binary is clear."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 8,
+        "rationale": "Morphological Laplacian in binary is less common but clear."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 9,
+        "rationale": "Conditional selection based on cond>0 is clear."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 7,
+        "rationale": "Block mean with broadcast then rounding is unusual but described."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 6,
+        "rationale": "Center-cross pooling then rounding is unusual."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 8,
+        "rationale": "Block max with broadcast then rounding is clear."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 7,
+        "rationale": "Center-cross max then rounding is unusual but clear."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 8,
+        "rationale": "Block min with broadcast then rounding is clear."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 7,
+        "rationale": "Center-cross min then rounding is unusual but clear."
+      },
+      {
+        "unit": "meanpool",
+        "score": 7,
+        "rationale": "Sliding mean then resize and rounding is unusual but clear."
+      },
+      {
+        "unit": "maxpool",
+        "score": 8,
+        "rationale": "Sliding max then resize and rounding is clear."
+      },
+      {
+        "unit": "minpool",
+        "score": 8,
+        "rationale": "Sliding min then resize and rounding is clear."
+      },
+      {
+        "unit": "stdpool",
+        "score": 7,
+        "rationale": "Sliding std then rounding is unusual but clear."
+      },
+      {
+        "unit": "medianpool",
+        "score": 8,
+        "rationale": "Sliding median then rounding is clear."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 6,
+        "rationale": "Unique-count with rescale and rounding is nonstandard."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 6,
+        "rationale": "Argmax-count with rescale and rounding is nonstandard."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 6,
+        "rationale": "Argmin-count with rescale and rounding is nonstandard."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 7,
+        "rationale": "Sliding IQR then rounding is unusual but understandable."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 3",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 10,
+        "rationale": "Identity for segment labels is trivial."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 9,
+        "rationale": "Constant-one segment image is clear though semantically odd."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 9,
+        "rationale": "Constant-zero segment image is clear though semantically odd."
+      },
+      {
+        "unit": "experimental_tosegment_image2D",
+        "score": 9,
+        "rationale": "Binary to labeled segments is clear."
+      },
+      {
+        "unit": "fastscanning_image2D",
+        "score": 8,
+        "rationale": "Fast scanning region labeling is standard though algorithm unspecified."
+      },
+      {
+        "unit": "watershed_image2D",
+        "score": 9,
+        "rationale": "Watershed segmentation is well-known."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 4",
+    "scores": [
+      {
+        "unit": "identity_float",
+        "score": 10,
+        "rationale": "Identity scalar is trivial."
+      },
+      {
+        "unit": "ret_1",
+        "score": 10,
+        "rationale": "Constant 1.0 is trivial."
+      },
+      {
+        "unit": "tanh",
+        "score": 10,
+        "rationale": "Hyperbolic tangent is standard."
+      },
+      {
+        "unit": "relu",
+        "score": 10,
+        "rationale": "ReLU is standard."
+      },
+      {
+        "unit": "modulo",
+        "score": 9,
+        "rationale": "Modulo operation is standard."
+      },
+      {
+        "unit": "is_eq_to",
+        "score": 9,
+        "rationale": "Equality test returning 0/1 is clear."
+      },
+      {
+        "unit": "experimental_is_gt",
+        "score": 10,
+        "rationale": "Greater-than returning 0/1 is clear."
+      },
+      {
+        "unit": "experimental_is_lt",
+        "score": 10,
+        "rationale": "Less-than returning 0/1 is clear."
+      },
+      {
+        "unit": "experimental_not",
+        "score": 8,
+        "rationale": "NOT with a 0.5 threshold is slightly ad hoc but clear."
+      },
+      {
+        "unit": "number_sum",
+        "score": 10,
+        "rationale": "Addition is standard."
+      },
+      {
+        "unit": "number_minus",
+        "score": 10,
+        "rationale": "Subtraction is standard."
+      },
+      {
+        "unit": "number_mult",
+        "score": 10,
+        "rationale": "Multiplication is standard."
+      },
+      {
+        "unit": "number_div",
+        "score": 9,
+        "rationale": "Division with error on zero is clear."
+      },
+      {
+        "unit": "safe_div",
+        "score": 9,
+        "rationale": "Division with zero-safe handling is clear."
+      },
+      {
+        "unit": "power_of",
+        "score": 10,
+        "rationale": "Exponentiation is standard."
+      },
+      {
+        "unit": "pi_",
+        "score": 10,
+        "rationale": "Mathematical constant pi is unambiguous."
+      },
+      {
+        "unit": "exp_",
+        "score": 10,
+        "rationale": "Exponential is standard."
+      },
+      {
+        "unit": "log_",
+        "score": 9,
+        "rationale": "Natural log with clipping is clear."
+      },
+      {
+        "unit": "log10_",
+        "score": 9,
+        "rationale": "Base-10 log with clipping is clear."
+      },
+      {
+        "unit": "reduce_length",
+        "score": 10,
+        "rationale": "Number of pixels in image is clear."
+      },
+      {
+        "unit": "reduce_biggestAxis",
+        "score": 10,
+        "rationale": "Largest image dimension is clear."
+      },
+      {
+        "unit": "reduce_smallerAxis",
+        "score": 10,
+        "rationale": "Smallest image dimension is clear."
+      },
+      {
+        "unit": "reduce_histMode",
+        "score": 9,
+        "rationale": "Most frequent pixel value is clear."
+      },
+      {
+        "unit": "reduce_histModeCount",
+        "score": 9,
+        "rationale": "Count of most frequent value is clear."
+      },
+      {
+        "unit": "reduce_propWhite",
+        "score": 10,
+        "rationale": "Proportion of white pixels is clear."
+      },
+      {
+        "unit": "reduce_propBlack",
+        "score": 10,
+        "rationale": "Proportion of black pixels is clear."
+      },
+      {
+        "unit": "reduce_nColors",
+        "score": 9,
+        "rationale": "Number of unique pixel values is clear."
+      },
+      {
+        "unit": "reduce_mean",
+        "score": 10,
+        "rationale": "Image mean intensity is clear."
+      },
+      {
+        "unit": "reduce_median",
+        "score": 10,
+        "rationale": "Image median intensity is clear."
+      },
+      {
+        "unit": "reduce_std",
+        "score": 10,
+        "rationale": "Image intensity standard deviation is clear."
+      },
+      {
+        "unit": "reduce_maximum",
+        "score": 10,
+        "rationale": "Maximum image value is clear."
+      },
+      {
+        "unit": "reduce_minimum",
+        "score": 10,
+        "rationale": "Minimum image value is clear."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 9,
+        "rationale": "Conditional scalar selection is clear."
+      },
+      {
+        "unit": "region_mean",
+        "score": 9,
+        "rationale": "Mean in a centered patch is clear."
+      },
+      {
+        "unit": "region_std",
+        "score": 9,
+        "rationale": "Std in a centered patch is clear."
+      },
+      {
+        "unit": "region_min",
+        "score": 9,
+        "rationale": "Min in a centered patch is clear."
+      },
+      {
+        "unit": "region_max",
+        "score": 9,
+        "rationale": "Max in a centered patch is clear."
+      },
+      {
+        "unit": "region_sum",
+        "score": 9,
+        "rationale": "Sum in a centered patch is clear."
+      },
+      {
+        "unit": "region_median",
+        "score": 9,
+        "rationale": "Median in a centered patch is clear."
+      },
+      {
+        "unit": "region_range",
+        "score": 9,
+        "rationale": "Range in a centered patch is clear."
+      },
+      {
+        "unit": "region_contrast",
+        "score": 9,
+        "rationale": "Center-versus-ring contrast is clear."
+      },
+      {
+        "unit": "region_energy",
+        "score": 9,
+        "rationale": "Mean squared value in a patch is clear."
+      },
+      {
+        "unit": "region_entropy",
+        "score": 9,
+        "rationale": "Patch entropy from coarse bins is understandable."
+      },
+      {
+        "unit": "region_mean_5p",
+        "score": 10,
+        "rationale": "Mean in a 5% sized patch is clear."
+      },
+      {
+        "unit": "region_std_5p",
+        "score": 10,
+        "rationale": "Std in a 5% sized patch is clear."
+      },
+      {
+        "unit": "region_min_5p",
+        "score": 10,
+        "rationale": "Min in a 5% sized patch is clear."
+      },
+      {
+        "unit": "region_max_5p",
+        "score": 10,
+        "rationale": "Max in a 5% sized patch is clear."
+      },
+      {
+        "unit": "region_sum_5p",
+        "score": 10,
+        "rationale": "Sum in a 5% sized patch is clear."
+      },
+      {
+        "unit": "region_median_5p",
+        "score": 10,
+        "rationale": "Median in a 5% sized patch is clear."
+      },
+      {
+        "unit": "region_range_5p",
+        "score": 10,
+        "rationale": "Range in a 5% sized patch is clear."
+      },
+      {
+        "unit": "region_contrast_5p",
+        "score": 10,
+        "rationale": "Center-versus-ring contrast in 5% patch is clear."
+      },
+      {
+        "unit": "region_energy_5p",
+        "score": 10,
+        "rationale": "Energy in a 5% sized patch is clear."
+      },
+      {
+        "unit": "region_entropy_5p",
+        "score": 9,
+        "rationale": "Entropy in 5% patch with coarse bins is slightly underspecified."
+      },
+      {
+        "unit": "region_mean_10p",
+        "score": 10,
+        "rationale": "Mean in a 10% sized patch is clear."
+      },
+      {
+        "unit": "region_std_10p",
+        "score": 10,
+        "rationale": "Std in a 10% sized patch is clear."
+      },
+      {
+        "unit": "region_min_10p",
+        "score": 10,
+        "rationale": "Min in a 10% sized patch is clear."
+      },
+      {
+        "unit": "region_max_10p",
+        "score": 10,
+        "rationale": "Max in a 10% sized patch is clear."
+      },
+      {
+        "unit": "region_sum_10p",
+        "score": 10,
+        "rationale": "Sum in a 10% sized patch is clear."
+      },
+      {
+        "unit": "region_median_10p",
+        "score": 10,
+        "rationale": "Median in a 10% sized patch is clear."
+      },
+      {
+        "unit": "region_range_10p",
+        "score": 10,
+        "rationale": "Range in a 10% sized patch is clear."
+      },
+      {
+        "unit": "region_contrast_10p",
+        "score": 10,
+        "rationale": "Center-versus-ring contrast in 10% patch is clear."
+      },
+      {
+        "unit": "region_energy_10p",
+        "score": 10,
+        "rationale": "Energy in a 10% sized patch is clear."
+      },
+      {
+        "unit": "region_entropy_10p",
+        "score": 9,
+        "rationale": "Entropy in 10% patch with coarse bins is slightly underspecified."
+      },
+      {
+        "unit": "region_mean_20p",
+        "score": 10,
+        "rationale": "Mean in a 20% sized patch is clear."
+      },
+      {
+        "unit": "region_std_20p",
+        "score": 10,
+        "rationale": "Std in a 20% sized patch is clear."
+      },
+      {
+        "unit": "region_min_20p",
+        "score": 10,
+        "rationale": "Min in a 20% sized patch is clear."
+      },
+      {
+        "unit": "region_max_20p",
+        "score": 10,
+        "rationale": "Max in a 20% sized patch is clear."
+      },
+      {
+        "unit": "region_sum_20p",
+        "score": 10,
+        "rationale": "Sum in a 20% sized patch is clear."
+      },
+      {
+        "unit": "region_median_20p",
+        "score": 10,
+        "rationale": "Median in a 20% sized patch is clear."
+      },
+      {
+        "unit": "region_range_20p",
+        "score": 10,
+        "rationale": "Range in a 20% sized patch is clear."
+      },
+      {
+        "unit": "region_contrast_20p",
+        "score": 10,
+        "rationale": "Center-versus-ring contrast in 20% patch is clear."
+      },
+      {
+        "unit": "region_energy_20p",
+        "score": 10,
+        "rationale": "Energy in a 20% sized patch is clear."
+      },
+      {
+        "unit": "region_entropy_20p",
+        "score": 9,
+        "rationale": "Entropy in 20% patch with coarse bins is slightly underspecified."
+      },
+      {
+        "unit": "haar_lr",
+        "score": 9,
+        "rationale": "Left–right Haar contrast is a standard integral-feature concept."
+      },
+      {
+        "unit": "haar_tb",
+        "score": 9,
+        "rationale": "Top–bottom Haar contrast is standard."
+      },
+      {
+        "unit": "haar_diag_main",
+        "score": 9,
+        "rationale": "Main-diagonal Haar contrast is understandable."
+      },
+      {
+        "unit": "haar_diag_anti",
+        "score": 9,
+        "rationale": "Anti-diagonal Haar contrast is understandable."
+      },
+      {
+        "unit": "haar_center_surround",
+        "score": 9,
+        "rationale": "Center–surround Haar contrast is clear."
+      },
+      {
+        "unit": "haar_three_h",
+        "score": 9,
+        "rationale": "Horizontal three-band Haar-like feature is clear."
+      },
+      {
+        "unit": "haar_three_v",
+        "score": 9,
+        "rationale": "Vertical three-band Haar-like feature is clear."
+      },
+      {
+        "unit": "orientation_coherence",
+        "score": 8,
+        "rationale": "Gradient orientation coherence is clear though definitions vary."
+      },
+      {
+        "unit": "dominant_orientation",
+        "score": 9,
+        "rationale": "Strongest of four orientation bins normalized by pi is clear."
+      },
+      {
+        "unit": "orientation_energy_0",
+        "score": 9,
+        "rationale": "Energy proportion near 0 degrees is clear."
+      },
+      {
+        "unit": "orientation_energy_45",
+        "score": 9,
+        "rationale": "Energy proportion near 45 degrees is clear."
+      },
+      {
+        "unit": "orientation_energy_90",
+        "score": 9,
+        "rationale": "Energy proportion near 90 degrees is clear."
+      },
+      {
+        "unit": "orientation_energy_135",
+        "score": 9,
+        "rationale": "Energy proportion near 135 degrees is clear."
+      },
+      {
+        "unit": "orientation_spread",
+        "score": 8,
+        "rationale": "Spread across orientations is clear though metric unspecified."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_mean",
+        "score": 8,
+        "rationale": "GLCM mean across angles with mean reduce is standard though parameters unspecified."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_sum",
+        "score": 8,
+        "rationale": "GLCM mean across angles with sum reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_std",
+        "score": 8,
+        "rationale": "GLCM mean across angles with std reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_minimum",
+        "score": 8,
+        "rationale": "GLCM mean across angles with min reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_maximum",
+        "score": 8,
+        "rationale": "GLCM mean across angles with max reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_mean",
+        "score": 8,
+        "rationale": "GLCM variance across angles with mean reduce is standard though parameters unspecified."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_sum",
+        "score": 8,
+        "rationale": "GLCM variance across angles with sum reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_std",
+        "score": 8,
+        "rationale": "GLCM variance across angles with std reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_minimum",
+        "score": 8,
+        "rationale": "GLCM variance across angles with min reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_maximum",
+        "score": 8,
+        "rationale": "GLCM variance across angles with max reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_correlation_mean",
+        "score": 8,
+        "rationale": "GLCM correlation across angles with mean reduce is standard though parameters unspecified."
+      },
+      {
+        "unit": "glcm_correlation_sum",
+        "score": 8,
+        "rationale": "GLCM correlation across angles with sum reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_correlation_std",
+        "score": 8,
+        "rationale": "GLCM correlation across angles with std reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_correlation_minimum",
+        "score": 8,
+        "rationale": "GLCM correlation across angles with min reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_correlation_maximum",
+        "score": 8,
+        "rationale": "GLCM correlation across angles with max reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_contrast_mean",
+        "score": 8,
+        "rationale": "GLCM contrast across angles with mean reduce is standard though parameters unspecified."
+      },
+      {
+        "unit": "glcm_contrast_sum",
+        "score": 8,
+        "rationale": "GLCM contrast across angles with sum reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_contrast_std",
+        "score": 8,
+        "rationale": "GLCM contrast across angles with std reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_contrast_minimum",
+        "score": 8,
+        "rationale": "GLCM contrast across angles with min reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_contrast_maximum",
+        "score": 8,
+        "rationale": "GLCM contrast across angles with max reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_IDM_mean",
+        "score": 8,
+        "rationale": "GLCM inverse-difference-moment with mean reduce is standard though parameters unspecified."
+      },
+      {
+        "unit": "glcm_IDM_sum",
+        "score": 8,
+        "rationale": "GLCM inverse-difference-moment with sum reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_IDM_std",
+        "score": 8,
+        "rationale": "GLCM inverse-difference-moment with std reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_IDM_minimum",
+        "score": 8,
+        "rationale": "GLCM inverse-difference-moment with min reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_IDM_maximum",
+        "score": 8,
+        "rationale": "GLCM inverse-difference-moment with max reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_ASM_mean",
+        "score": 8,
+        "rationale": "GLCM angular-second-moment with mean reduce is standard though parameters unspecified."
+      },
+      {
+        "unit": "glcm_ASM_sum",
+        "score": 8,
+        "rationale": "GLCM angular-second-moment with sum reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_ASM_std",
+        "score": 8,
+        "rationale": "GLCM angular-second-moment with std reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_ASM_minimum",
+        "score": 8,
+        "rationale": "GLCM angular-second-moment with min reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_ASM_maximum",
+        "score": 8,
+        "rationale": "GLCM angular-second-moment with max reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_glcm_entropy_mean",
+        "score": 8,
+        "rationale": "GLCM entropy with mean reduce is standard though parameters unspecified."
+      },
+      {
+        "unit": "glcm_glcm_entropy_sum",
+        "score": 8,
+        "rationale": "GLCM entropy with sum reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_glcm_entropy_std",
+        "score": 8,
+        "rationale": "GLCM entropy with std reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_glcm_entropy_minimum",
+        "score": 8,
+        "rationale": "GLCM entropy with min reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_glcm_entropy_maximum",
+        "score": 8,
+        "rationale": "GLCM entropy with max reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_max_prob_mean",
+        "score": 8,
+        "rationale": "GLCM max-probability with mean reduce is standard though parameters unspecified."
+      },
+      {
+        "unit": "glcm_max_prob_sum",
+        "score": 8,
+        "rationale": "GLCM max-probability with sum reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_max_prob_std",
+        "score": 8,
+        "rationale": "GLCM max-probability with std reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_max_prob_minimum",
+        "score": 8,
+        "rationale": "GLCM max-probability with min reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_max_prob_maximum",
+        "score": 8,
+        "rationale": "GLCM max-probability with max reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_energy_mean",
+        "score": 8,
+        "rationale": "GLCM energy with mean reduce is standard though parameters unspecified."
+      },
+      {
+        "unit": "glcm_energy_sum",
+        "score": 8,
+        "rationale": "GLCM energy with sum reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_energy_std",
+        "score": 8,
+        "rationale": "GLCM energy with std reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_energy_minimum",
+        "score": 8,
+        "rationale": "GLCM energy with min reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_energy_maximum",
+        "score": 8,
+        "rationale": "GLCM energy with max reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_dissimilarity_mean",
+        "score": 8,
+        "rationale": "GLCM dissimilarity with mean reduce is standard though parameters unspecified."
+      },
+      {
+        "unit": "glcm_dissimilarity_sum",
+        "score": 8,
+        "rationale": "GLCM dissimilarity with sum reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_dissimilarity_std",
+        "score": 8,
+        "rationale": "GLCM dissimilarity with std reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_dissimilarity_minimum",
+        "score": 8,
+        "rationale": "GLCM dissimilarity with min reduce is clear though parameters unspecified."
+      },
+      {
+        "unit": "glcm_dissimilarity_maximum",
+        "score": 8,
+        "rationale": "GLCM dissimilarity with max reduce is clear though parameters unspecified."
+      }
+    ]
+  }
+]

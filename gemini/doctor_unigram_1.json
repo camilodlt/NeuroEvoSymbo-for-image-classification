@@ -1,0 +1,1532 @@
+[
+  {
+    "library_id": "Library 1",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 10,
+        "rationale": "Returning the image unchanged is a trivial and fully interpretable operation."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 9,
+        "rationale": "An all-white image is easily understood as a uniform blank canvas."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 9,
+        "rationale": "An all-black image is easily understood as an empty mask."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 10,
+        "rationale": "Inverting an image is identical to a photographic negative, which is highly familiar in medicine."
+      },
+      {
+        "unit": "experimental_normalize_2D",
+        "score": 8,
+        "rationale": "Adjusting values to a standard range is a basic concept akin to standardizing contrast."
+      },
+      {
+        "unit": "experimental_standardize_2D",
+        "score": 8,
+        "rationale": "Using mean and standard deviation for standardization is a basic statistical concept familiar to doctors."
+      },
+      {
+        "unit": "experimental_tointensity_image2D",
+        "score": 8,
+        "rationale": "Converting a mask to a grayscale image is conceptually straightforward."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 9,
+        "rationale": "Shrinking bright regions is easily visualizable as making white structures like calcifications smaller."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 9,
+        "rationale": "Expanding bright regions is easily visualizable as thickening white structures."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 9,
+        "rationale": "Removing small bright noise intuitively helps in cleaning up imaging artifacts."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 9,
+        "rationale": "Filling small dark gaps intuitively helps in viewing continuous structures or closing tissue holes."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 10,
+        "rationale": "Extracting small bright structures perfectly matches the task of finding microcalcifications or bright lesions."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 10,
+        "rationale": "Extracting small dark structures maps well to finding dark lesions or cellular nuclei."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 9,
+        "rationale": "Emphasizing object boundaries is highly relevant for defining the borders of organs or tumors."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 5,
+        "rationale": "The Laplace edge response is mathematically abstract and less intuitively visualizable than simple boundaries."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 9,
+        "rationale": "Subtracting images is familiar conceptually, akin to digital subtraction angiography."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 8,
+        "rationale": "Adding images is easily understood as overlaying or combining two signals."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 8,
+        "rationale": "Multiplying images is conceptually clear as applying an intensity mask."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 8,
+        "rationale": "Taking the elementwise maximum intuitively highlights the brightest structures from either image."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 8,
+        "rationale": "Taking the elementwise minimum intuitively highlights the darkest structures from either image."
+      },
+      {
+        "unit": "bsubtract_image2D",
+        "score": 9,
+        "rationale": "Subtracting a scalar is universally understood as uniformly darkening the image."
+      },
+      {
+        "unit": "badd_image2D",
+        "score": 9,
+        "rationale": "Adding a scalar is universally understood as uniformly brightening the image."
+      },
+      {
+        "unit": "bmult_image2D",
+        "score": 9,
+        "rationale": "Multiplying by a scalar is equivalent to adjusting the global contrast or gain."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 5,
+        "rationale": "Sobel X derivative is a specific mathematical edge detector that is not intuitively clinical."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 5,
+        "rationale": "Sobel Y derivative mathematically extracts vertical edges but lacks direct clinical context."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 6,
+        "rationale": "Sobel gradient magnitude is recognized as a way to find tissue boundaries, though the term is technical."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 2,
+        "rationale": "Ando filters are highly specific low-level computer vision algorithms unfamiliar to medical professionals."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 2,
+        "rationale": "Ando filters are highly specific low-level computer vision algorithms unfamiliar to medical professionals."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 2,
+        "rationale": "Ando filters are highly specific low-level computer vision algorithms unfamiliar to medical professionals."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 2,
+        "rationale": "Ando filters are highly specific low-level computer vision algorithms unfamiliar to medical professionals."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 2,
+        "rationale": "Ando filters are highly specific low-level computer vision algorithms unfamiliar to medical professionals."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 2,
+        "rationale": "Ando filters are highly specific low-level computer vision algorithms unfamiliar to medical professionals."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 2,
+        "rationale": "Ando filters are highly specific low-level computer vision algorithms unfamiliar to medical professionals."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 2,
+        "rationale": "Ando filters are highly specific low-level computer vision algorithms unfamiliar to medical professionals."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 2,
+        "rationale": "Ando filters are highly specific low-level computer vision algorithms unfamiliar to medical professionals."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 2,
+        "rationale": "Bickley filters are highly specific low-level computer vision algorithms unfamiliar to medical professionals."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 2,
+        "rationale": "Bickley filters are highly specific low-level computer vision algorithms unfamiliar to medical professionals."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 2,
+        "rationale": "Bickley filters are highly specific low-level computer vision algorithms unfamiliar to medical professionals."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 2,
+        "rationale": "Prewitt filters are highly specific low-level computer vision algorithms unfamiliar to medical professionals."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 2,
+        "rationale": "Prewitt filters are highly specific low-level computer vision algorithms unfamiliar to medical professionals."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 2,
+        "rationale": "Prewitt filters are highly specific low-level computer vision algorithms unfamiliar to medical professionals."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 2,
+        "rationale": "Scharr filters are highly specific low-level computer vision algorithms unfamiliar to medical professionals."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 2,
+        "rationale": "Scharr filters are highly specific low-level computer vision algorithms unfamiliar to medical professionals."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 2,
+        "rationale": "Scharr filters are highly specific low-level computer vision algorithms unfamiliar to medical professionals."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 9,
+        "rationale": "Gaussian smoothing is easily understood as a simple blurring effect often used to reduce image noise."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 9,
+        "rationale": "Gaussian smoothing is easily understood as a simple blurring effect often used to reduce image noise."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 9,
+        "rationale": "Gaussian smoothing is easily understood as a simple blurring effect often used to reduce image noise."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 9,
+        "rationale": "Gaussian smoothing is easily understood as a simple blurring effect often used to reduce image noise."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 9,
+        "rationale": "Gaussian smoothing is easily understood as a simple blurring effect often used to reduce image noise."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 4,
+        "rationale": "Second-order derivatives are mathematical abstractions not commonly used in clinical image interpretation."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 3,
+        "rationale": "Difference-of-Gaussians is a computer vision concept that lacks a direct clinical analogy."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 3,
+        "rationale": "Moffat filters are specialized mathematical smoothing kernels unfamiliar to most doctors."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 3,
+        "rationale": "Moffat filters are specialized mathematical smoothing kernels unfamiliar to most doctors."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 3,
+        "rationale": "Moffat filters are specialized mathematical smoothing kernels unfamiliar to most doctors."
+      },
+      {
+        "unit": "exp_image2D",
+        "score": 6,
+        "rationale": "Exponential transforms alter contrast in a mathematically clear but visually abstract way."
+      },
+      {
+        "unit": "loginv_image2D",
+        "score": 6,
+        "rationale": "Logarithmic transforms are somewhat familiar for compressing dynamic range, like in x-ray densities."
+      },
+      {
+        "unit": "log_image2D",
+        "score": 6,
+        "rationale": "Logarithmic transforms are somewhat familiar for compressing dynamic range."
+      },
+      {
+        "unit": "powerof_image2D",
+        "score": 7,
+        "rationale": "Applying a power law is understood as gamma correction for adjusting contrast."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 8,
+        "rationale": "Conditional logic to select between values is universally understood."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 3,
+        "rationale": "Block-based pooling and broadcasting are machine learning tensor operations that do not map intuitively to clinical imaging."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 3,
+        "rationale": "Block-based pooling and broadcasting are machine learning tensor operations that do not map intuitively to clinical imaging."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 3,
+        "rationale": "Block-based pooling and broadcasting are machine learning tensor operations that do not map intuitively to clinical imaging."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 3,
+        "rationale": "Block-based pooling and broadcasting are machine learning tensor operations that do not map intuitively to clinical imaging."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 3,
+        "rationale": "Block-based pooling and broadcasting are machine learning tensor operations that do not map intuitively to clinical imaging."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 3,
+        "rationale": "Block-based pooling and broadcasting are machine learning tensor operations that do not map intuitively to clinical imaging."
+      },
+      {
+        "unit": "meanpool",
+        "score": 5,
+        "rationale": "Sliding-window local statistics can be somewhat understood as applying a local blur or enhancing local extremes."
+      },
+      {
+        "unit": "maxpool",
+        "score": 5,
+        "rationale": "Sliding-window local statistics can be somewhat understood as applying a local blur or enhancing local extremes."
+      },
+      {
+        "unit": "minpool",
+        "score": 5,
+        "rationale": "Sliding-window local statistics can be somewhat understood as applying a local blur or enhancing local extremes."
+      },
+      {
+        "unit": "stdpool",
+        "score": 4,
+        "rationale": "Sliding-window standard deviation measures local texture variance, which is somewhat abstract clinically."
+      },
+      {
+        "unit": "medianpool",
+        "score": 5,
+        "rationale": "Sliding-window median pooling acts as a recognizable noise reduction technique."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 2,
+        "rationale": "These counting-based pooling operations are highly technical and lack a clinical visual analogy."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 2,
+        "rationale": "These counting-based pooling operations are highly technical and lack a clinical visual analogy."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 2,
+        "rationale": "These counting-based pooling operations are highly technical and lack a clinical visual analogy."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 4,
+        "rationale": "Sliding-window interquartile range is statistically sound but difficult to interpret as a visual transformation."
+      },
+      {
+        "unit": "grad_magnitude",
+        "score": 8,
+        "rationale": "Computing gradient magnitude is easily understood as finding the boundaries or edges of structures."
+      },
+      {
+        "unit": "grad_orientation",
+        "score": 6,
+        "rationale": "Gradient orientation represents the physical direction of edges, which is somewhat intuitive."
+      },
+      {
+        "unit": "orientation_select",
+        "score": 7,
+        "rationale": "Selecting specific orientations is understandable for highlighting aligned structures like muscle fibers."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 2",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 10,
+        "rationale": "Returning the binary mask unchanged is trivial to understand."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 9,
+        "rationale": "An image filled with ones is easily understood as a single uniform mask."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 9,
+        "rationale": "An image filled with zeros is easily understood as a completely empty mask."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 10,
+        "rationale": "Inverting a binary image is trivially understood as flipping foreground and background."
+      },
+      {
+        "unit": "experimental_tobinary_image2D",
+        "score": 8,
+        "rationale": "Converting an intensity image to binary is easily understood as extracting a region of interest."
+      },
+      {
+        "unit": "experimental_tobinary_th_image2D_factory",
+        "score": 10,
+        "rationale": "Converting to binary using a specified threshold perfectly mimics window/level adjustments in clinical software."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 8,
+        "rationale": "Subtracting images and rounding is understandable as extracting binary differences between two masks."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 9,
+        "rationale": "Adding binary images is simply interpreted as taking the union of two masks."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 9,
+        "rationale": "Multiplying binary images is simply interpreted as taking the intersection of two masks."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 9,
+        "rationale": "Taking the maximum of binary images intuitively acts as a logical OR operator for masks."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 9,
+        "rationale": "Taking the minimum of binary images intuitively acts as a logical AND operator for masks."
+      },
+      {
+        "unit": "binarize_adaptive2D",
+        "score": 8,
+        "rationale": "Adaptive local thresholding makes clinical sense for analyzing scans with uneven illumination."
+      },
+      {
+        "unit": "binarize_niblack2D",
+        "score": 3,
+        "rationale": "Niblack thresholding is a specific algorithmic term unfamiliar to a medical doctor."
+      },
+      {
+        "unit": "binarize_polysegment2D",
+        "score": 3,
+        "rationale": "Polysegment thresholding is a specific computer vision algorithmic term."
+      },
+      {
+        "unit": "binarize_sauvola2D",
+        "score": 3,
+        "rationale": "Sauvola thresholding is a specialized image processing term."
+      },
+      {
+        "unit": "binarize_otsu2D",
+        "score": 6,
+        "rationale": "Otsu thresholding is fairly common but the underlying histogram maximization math is slightly technical."
+      },
+      {
+        "unit": "binarize_minimumintermodes2D",
+        "score": 3,
+        "rationale": "Minimum-intermodes is a specialized histogram analysis algorithm."
+      },
+      {
+        "unit": "binarize_intermodes2D",
+        "score": 3,
+        "rationale": "Intermodes thresholding is a purely technical image processing algorithm."
+      },
+      {
+        "unit": "binarize_minimumerror2D",
+        "score": 3,
+        "rationale": "Minimum-error thresholding relies on statistical estimations unfamiliar to most clinicians."
+      },
+      {
+        "unit": "binarize_moments2D",
+        "score": 3,
+        "rationale": "Moments-based thresholding is highly mathematical and lacks clinical intuition."
+      },
+      {
+        "unit": "binarize_unimodalrosin2D",
+        "score": 2,
+        "rationale": "Unimodal Rosin is an obscure computer vision algorithm to a medical stakeholder."
+      },
+      {
+        "unit": "binarize_entropy2D",
+        "score": 4,
+        "rationale": "Entropy-based thresholding uses abstract information theory concepts rather than visual intuition."
+      },
+      {
+        "unit": "binarize_balanced2D",
+        "score": 4,
+        "rationale": "Balanced histogram thresholding is slightly descriptive but remains mostly an algorithmic black box."
+      },
+      {
+        "unit": "binarize_yen2D",
+        "score": 2,
+        "rationale": "Yen thresholding is a highly specific algorithm name with no clinical meaning."
+      },
+      {
+        "unit": "binarize_manual2D",
+        "score": 10,
+        "rationale": "Manual thresholding is identical to adjusting window/level viewing parameters, which is a daily clinical task."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 4,
+        "rationale": "Applying a mathematical Sobel filter and rounding is technical and not intuitively clinical."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 4,
+        "rationale": "Applying a mathematical Sobel filter and rounding is technical and not intuitively clinical."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 5,
+        "rationale": "Extracting gradient magnitude and rounding relates somewhat to edge extraction but remains technical."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 2,
+        "rationale": "Applying an Ando filter and rounding is a highly technical computer vision operation with no clinical equivalent."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 2,
+        "rationale": "Applying an Ando filter and rounding is a highly technical computer vision operation with no clinical equivalent."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 2,
+        "rationale": "Applying an Ando filter and rounding is a highly technical computer vision operation with no clinical equivalent."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 2,
+        "rationale": "Applying an Ando filter and rounding is a highly technical computer vision operation with no clinical equivalent."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 2,
+        "rationale": "Applying an Ando filter and rounding is a highly technical computer vision operation with no clinical equivalent."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 2,
+        "rationale": "Applying an Ando filter and rounding is a highly technical computer vision operation with no clinical equivalent."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 2,
+        "rationale": "Applying an Ando filter and rounding is a highly technical computer vision operation with no clinical equivalent."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 2,
+        "rationale": "Applying an Ando filter and rounding is a highly technical computer vision operation with no clinical equivalent."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 2,
+        "rationale": "Applying an Ando filter and rounding is a highly technical computer vision operation with no clinical equivalent."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 2,
+        "rationale": "Applying a Bickley filter and rounding is a highly technical computer vision operation with no clinical equivalent."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 2,
+        "rationale": "Applying a Bickley filter and rounding is a highly technical computer vision operation with no clinical equivalent."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 2,
+        "rationale": "Applying a Bickley filter and rounding is a highly technical computer vision operation with no clinical equivalent."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 2,
+        "rationale": "Applying a Prewitt filter and rounding is a highly technical computer vision operation with no clinical equivalent."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 2,
+        "rationale": "Applying a Prewitt filter and rounding is a highly technical computer vision operation with no clinical equivalent."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 2,
+        "rationale": "Applying a Prewitt filter and rounding is a highly technical computer vision operation with no clinical equivalent."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 2,
+        "rationale": "Applying a Scharr filter and rounding is a highly technical computer vision operation with no clinical equivalent."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 2,
+        "rationale": "Applying a Scharr filter and rounding is a highly technical computer vision operation with no clinical equivalent."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 2,
+        "rationale": "Applying a Scharr filter and rounding is a highly technical computer vision operation with no clinical equivalent."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 7,
+        "rationale": "Gaussian blurring followed by rounding is somewhat understood as smoothing boundaries of binary masks."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 7,
+        "rationale": "Gaussian blurring followed by rounding is somewhat understood as smoothing boundaries of binary masks."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 7,
+        "rationale": "Gaussian blurring followed by rounding is somewhat understood as smoothing boundaries of binary masks."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 7,
+        "rationale": "Gaussian blurring followed by rounding is somewhat understood as smoothing boundaries of binary masks."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 7,
+        "rationale": "Gaussian blurring followed by rounding is somewhat understood as smoothing boundaries of binary masks."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 3,
+        "rationale": "Second-order derivatives with rounding form a highly mathematical feature extraction tool."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 2,
+        "rationale": "Difference-of-Gaussians with rounding is a computer vision concept that lacks a direct clinical analogy."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 2,
+        "rationale": "Moffat filters with rounding are specialized mathematical smoothing kernels unfamiliar to doctors."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 2,
+        "rationale": "Moffat filters with rounding are specialized mathematical smoothing kernels unfamiliar to doctors."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 2,
+        "rationale": "Moffat filters with rounding are specialized mathematical smoothing kernels unfamiliar to doctors."
+      },
+      {
+        "unit": "findlocalminima_image2D",
+        "score": 10,
+        "rationale": "Marking local minima is perfectly aligned with finding the darkest spots, like cell nuclei."
+      },
+      {
+        "unit": "findlocalmaxima_image2D",
+        "score": 10,
+        "rationale": "Marking local maxima perfectly aligns with finding the brightest spots, like calcifications or tracer uptake."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 9,
+        "rationale": "Morphological erosion is conceptually clear as shrinking bright regions, like minimizing calcifications."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 9,
+        "rationale": "Morphological dilation is intuitively understood as expanding bright regions or thickening structures."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 9,
+        "rationale": "Opening is intuitively understood as removing small bright noise or artifacts from an image."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 9,
+        "rationale": "Closing is intuitively understood as filling small dark holes or gaps within a continuous structure."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 10,
+        "rationale": "Extracting small bright structures maps well to finding microcalcifications or bright lesions."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 10,
+        "rationale": "Extracting small dark structures maps well to finding dark lesions or cellular nuclei."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 9,
+        "rationale": "Emphasizing object boundaries is highly relevant for defining the borders of organs or tumors."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 5,
+        "rationale": "The Laplace edge response is more mathematically abstract and less intuitively visualizable than simple boundaries."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 8,
+        "rationale": "Conditional logic to select between binary values is straightforward."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 3,
+        "rationale": "Block-based pooling, broadcasting, and rounding are technical machine learning tensor operations rather than clinical concepts."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 3,
+        "rationale": "Block-based pooling, broadcasting, and rounding are technical machine learning tensor operations rather than clinical concepts."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 3,
+        "rationale": "Block-based pooling, broadcasting, and rounding are technical machine learning tensor operations rather than clinical concepts."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 3,
+        "rationale": "Block-based pooling, broadcasting, and rounding are technical machine learning tensor operations rather than clinical concepts."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 3,
+        "rationale": "Block-based pooling, broadcasting, and rounding are technical machine learning tensor operations rather than clinical concepts."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 3,
+        "rationale": "Block-based pooling, broadcasting, and rounding are technical machine learning tensor operations rather than clinical concepts."
+      },
+      {
+        "unit": "meanpool",
+        "score": 4,
+        "rationale": "Sliding-window statistics with rounding can be vaguely understood as applying a local morphological effect."
+      },
+      {
+        "unit": "maxpool",
+        "score": 4,
+        "rationale": "Sliding-window statistics with rounding can be vaguely understood as applying a local morphological effect."
+      },
+      {
+        "unit": "minpool",
+        "score": 4,
+        "rationale": "Sliding-window statistics with rounding can be vaguely understood as applying a local morphological effect."
+      },
+      {
+        "unit": "stdpool",
+        "score": 3,
+        "rationale": "Sliding-window standard deviation on a binary image with rounding is conceptually highly abstract."
+      },
+      {
+        "unit": "medianpool",
+        "score": 4,
+        "rationale": "Sliding-window median pooling with rounding acts as a recognizable binary noise reduction technique."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 2,
+        "rationale": "These counting and rounding operations are highly technical and lack any visual clinical analogy."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 2,
+        "rationale": "These counting and rounding operations are highly technical and lack any visual clinical analogy."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 2,
+        "rationale": "These counting and rounding operations are highly technical and lack any visual clinical analogy."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 3,
+        "rationale": "Sliding-window interquartile range pooling with rounding is statistically sound but unintuitive as a visual transformation."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 3",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 10,
+        "rationale": "Returning the segmentation map unchanged is trivial to understand."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 9,
+        "rationale": "An image filled with ones is easily understood as a single uniform segment."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 9,
+        "rationale": "An image filled with zeros is easily understood as a completely blank segmentation map."
+      },
+      {
+        "unit": "experimental_tosegment_image2D",
+        "score": 10,
+        "rationale": "Converting a binary image to a segment map perfectly defines the clinical goal of structure segmentation."
+      },
+      {
+        "unit": "fastscanning_image2D",
+        "score": 3,
+        "rationale": "Fast scanning region-labeling is a purely algorithmic implementation detail."
+      },
+      {
+        "unit": "watershed_image2D",
+        "score": 6,
+        "rationale": "The watershed transform is used in medical image analysis, but 'intensity topology' remains somewhat technical."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 4",
+    "scores": [
+      {
+        "unit": "identity_float",
+        "score": 10,
+        "rationale": "Returning a number unchanged is trivial to understand."
+      },
+      {
+        "unit": "ret_1",
+        "score": 10,
+        "rationale": "Returning a constant is trivial."
+      },
+      {
+        "unit": "tanh",
+        "score": 4,
+        "rationale": "Hyperbolic tangent is a purely mathematical curve rarely used in direct clinical reasoning."
+      },
+      {
+        "unit": "relu",
+        "score": 2,
+        "rationale": "Rectified Linear Unit (ReLU) is an ML-specific term that holds no inherent meaning in medicine."
+      },
+      {
+        "unit": "modulo",
+        "score": 5,
+        "rationale": "Modulo division is basic math but lacks a clear clinical application here."
+      },
+      {
+        "unit": "is_eq_to",
+        "score": 9,
+        "rationale": "Checking for equality is a universally understood logical operation."
+      },
+      {
+        "unit": "experimental_is_gt",
+        "score": 9,
+        "rationale": "Checking if one value is greater than another is basic and universally understood."
+      },
+      {
+        "unit": "experimental_is_lt",
+        "score": 9,
+        "rationale": "Checking if one value is lower than another is simple and easily understood."
+      },
+      {
+        "unit": "experimental_not",
+        "score": 9,
+        "rationale": "Simple boolean thresholding logic is universally understood."
+      },
+      {
+        "unit": "number_sum",
+        "score": 9,
+        "rationale": "Basic addition is universally understood."
+      },
+      {
+        "unit": "number_minus",
+        "score": 9,
+        "rationale": "Basic subtraction is universally understood."
+      },
+      {
+        "unit": "number_mult",
+        "score": 9,
+        "rationale": "Basic multiplication is universally understood."
+      },
+      {
+        "unit": "number_div",
+        "score": 9,
+        "rationale": "Basic division is universally understood."
+      },
+      {
+        "unit": "safe_div",
+        "score": 9,
+        "rationale": "Basic division with a zero-check is easily grasped."
+      },
+      {
+        "unit": "power_of",
+        "score": 8,
+        "rationale": "Exponentiation is mathematically clear, though less visually intuitive than simple arithmetic."
+      },
+      {
+        "unit": "pi_",
+        "score": 8,
+        "rationale": "The mathematical constant pi is universally recognized."
+      },
+      {
+        "unit": "exp_",
+        "score": 7,
+        "rationale": "Exponential functions are basic math, though their direct clinical image effect is abstract."
+      },
+      {
+        "unit": "log_",
+        "score": 7,
+        "rationale": "Natural logarithm is basic math, often understood in the context of signal compression."
+      },
+      {
+        "unit": "log10_",
+        "score": 7,
+        "rationale": "Base-10 logarithm is familiar to doctors from concepts like pH or signal attenuation."
+      },
+      {
+        "unit": "reduce_length",
+        "score": 10,
+        "rationale": "Counting the total number of pixels easily maps to measuring image area."
+      },
+      {
+        "unit": "reduce_biggestAxis",
+        "score": 10,
+        "rationale": "Measuring the largest image dimension is a completely intuitive geometric property."
+      },
+      {
+        "unit": "reduce_smallerAxis",
+        "score": 10,
+        "rationale": "Measuring the smallest image dimension is intuitively understood."
+      },
+      {
+        "unit": "reduce_histMode",
+        "score": 8,
+        "rationale": "The most frequent pixel value cleanly represents the dominant background or tissue intensity."
+      },
+      {
+        "unit": "reduce_histModeCount",
+        "score": 8,
+        "rationale": "The count of the most frequent value indicates the area of the dominant tissue or background."
+      },
+      {
+        "unit": "reduce_propWhite",
+        "score": 10,
+        "rationale": "The proportion of white pixels clearly represents the area fraction of a segmented region."
+      },
+      {
+        "unit": "reduce_propBlack",
+        "score": 10,
+        "rationale": "The proportion of black pixels clearly represents the area fraction of the background."
+      },
+      {
+        "unit": "reduce_nColors",
+        "score": 8,
+        "rationale": "The number of unique intensities is a straightforward indicator of image complexity."
+      },
+      {
+        "unit": "reduce_mean",
+        "score": 10,
+        "rationale": "The average intensity is a highly familiar statistic used routinely in radiology."
+      },
+      {
+        "unit": "reduce_median",
+        "score": 10,
+        "rationale": "The median intensity is a familiar and robust basic statistical measure."
+      },
+      {
+        "unit": "reduce_std",
+        "score": 9,
+        "rationale": "Standard deviation of intensities is a familiar statistical measure of image contrast or tissue heterogeneity."
+      },
+      {
+        "unit": "reduce_maximum",
+        "score": 10,
+        "rationale": "Finding the maximum intensity correlates perfectly with identifying the brightest structure, like bone or calcification."
+      },
+      {
+        "unit": "reduce_minimum",
+        "score": 10,
+        "rationale": "Finding the minimum intensity correlates perfectly with identifying the darkest region, like air or fluid."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 9,
+        "rationale": "Simple if-else conditional logic is universally understood."
+      },
+      {
+        "unit": "region_mean",
+        "score": 10,
+        "rationale": "Computing local mean intensity inside a patch mimics how a doctor evaluates a specific region of interest."
+      },
+      {
+        "unit": "region_std",
+        "score": 9,
+        "rationale": "Computing local variance within a patch maps well to assessing tissue heterogeneity."
+      },
+      {
+        "unit": "region_min",
+        "score": 10,
+        "rationale": "Finding the local minimum inside a patch is intuitive for analyzing dark lesions."
+      },
+      {
+        "unit": "region_max",
+        "score": 10,
+        "rationale": "Finding the local maximum inside a patch is intuitive for analyzing bright lesions."
+      },
+      {
+        "unit": "region_sum",
+        "score": 9,
+        "rationale": "Summing local values inside a patch is a straightforward way to measure total regional signal."
+      },
+      {
+        "unit": "region_median",
+        "score": 10,
+        "rationale": "The median local value is a clear, robust metric for the intensity of a region."
+      },
+      {
+        "unit": "region_range",
+        "score": 9,
+        "rationale": "The local intensity range is a clear, intuitive measure of local contrast."
+      },
+      {
+        "unit": "region_contrast",
+        "score": 10,
+        "rationale": "Measuring contrast between a center patch and its surround perfectly mimics how radiologists spot lesions against background tissue."
+      },
+      {
+        "unit": "region_energy",
+        "score": 5,
+        "rationale": "Local energy is an abstract signal-processing metric."
+      },
+      {
+        "unit": "region_entropy",
+        "score": 4,
+        "rationale": "Local entropy is an abstract texture measure that is difficult to visually conceptualize."
+      },
+      {
+        "unit": "region_mean_5p",
+        "score": 10,
+        "rationale": "Computing local mean intensity in a specific 5% patch mimics clinical evaluation of a focal region of interest."
+      },
+      {
+        "unit": "region_std_5p",
+        "score": 9,
+        "rationale": "Computing local variance within a 5% patch maps well to assessing focal tissue heterogeneity."
+      },
+      {
+        "unit": "region_min_5p",
+        "score": 10,
+        "rationale": "Finding the local minimum inside a 5% patch is intuitive for analyzing localized dark regions."
+      },
+      {
+        "unit": "region_max_5p",
+        "score": 10,
+        "rationale": "Finding the local maximum inside a 5% patch is intuitive for analyzing localized bright regions."
+      },
+      {
+        "unit": "region_sum_5p",
+        "score": 9,
+        "rationale": "Summing local values inside a 5% patch is a straightforward way to measure total focal signal."
+      },
+      {
+        "unit": "region_median_5p",
+        "score": 10,
+        "rationale": "The median local value of a 5% patch is a clear metric for the intensity of a focal region."
+      },
+      {
+        "unit": "region_range_5p",
+        "score": 9,
+        "rationale": "The local intensity range in a 5% patch is a clear measure of focal contrast."
+      },
+      {
+        "unit": "region_contrast_5p",
+        "score": 10,
+        "rationale": "Measuring contrast in a 5% patch against its surround perfectly mimics radiologic visual search."
+      },
+      {
+        "unit": "region_energy_5p",
+        "score": 5,
+        "rationale": "Local energy in a 5% patch is an abstract signal-processing metric."
+      },
+      {
+        "unit": "region_entropy_5p",
+        "score": 4,
+        "rationale": "Local entropy in a 5% patch is an abstract texture measure."
+      },
+      {
+        "unit": "region_mean_10p",
+        "score": 10,
+        "rationale": "Computing local mean intensity in a 10% patch mimics clinical evaluation of a larger focal region."
+      },
+      {
+        "unit": "region_std_10p",
+        "score": 9,
+        "rationale": "Computing local variance within a 10% patch maps well to assessing regional tissue heterogeneity."
+      },
+      {
+        "unit": "region_min_10p",
+        "score": 10,
+        "rationale": "Finding the local minimum inside a 10% patch is intuitive for analyzing regional dark structures."
+      },
+      {
+        "unit": "region_max_10p",
+        "score": 10,
+        "rationale": "Finding the local maximum inside a 10% patch is intuitive for analyzing regional bright structures."
+      },
+      {
+        "unit": "region_sum_10p",
+        "score": 9,
+        "rationale": "Summing local values inside a 10% patch is a straightforward way to measure total regional signal."
+      },
+      {
+        "unit": "region_median_10p",
+        "score": 10,
+        "rationale": "The median local value of a 10% patch is a clear metric for regional intensity."
+      },
+      {
+        "unit": "region_range_10p",
+        "score": 9,
+        "rationale": "The local intensity range in a 10% patch is a clear measure of regional contrast."
+      },
+      {
+        "unit": "region_contrast_10p",
+        "score": 10,
+        "rationale": "Measuring contrast in a 10% patch against its surround perfectly mimics radiologic visual search."
+      },
+      {
+        "unit": "region_energy_10p",
+        "score": 5,
+        "rationale": "Local energy in a 10% patch is an abstract signal-processing metric."
+      },
+      {
+        "unit": "region_entropy_10p",
+        "score": 4,
+        "rationale": "Local entropy in a 10% patch is an abstract texture measure."
+      },
+      {
+        "unit": "region_mean_20p",
+        "score": 10,
+        "rationale": "Computing local mean intensity in a 20% patch mimics clinical evaluation of a major anatomical region."
+      },
+      {
+        "unit": "region_std_20p",
+        "score": 9,
+        "rationale": "Computing local variance within a 20% patch maps well to assessing large-scale tissue heterogeneity."
+      },
+      {
+        "unit": "region_min_20p",
+        "score": 10,
+        "rationale": "Finding the local minimum inside a 20% patch is intuitive for analyzing large dark regions."
+      },
+      {
+        "unit": "region_max_20p",
+        "score": 10,
+        "rationale": "Finding the local maximum inside a 20% patch is intuitive for analyzing large bright regions."
+      },
+      {
+        "unit": "region_sum_20p",
+        "score": 9,
+        "rationale": "Summing local values inside a 20% patch is a straightforward way to measure massive regional signal."
+      },
+      {
+        "unit": "region_median_20p",
+        "score": 10,
+        "rationale": "The median local value of a 20% patch is a clear metric for large-scale regional intensity."
+      },
+      {
+        "unit": "region_range_20p",
+        "score": 9,
+        "rationale": "The local intensity range in a 20% patch is a clear measure of large-scale contrast."
+      },
+      {
+        "unit": "region_contrast_20p",
+        "score": 10,
+        "rationale": "Measuring contrast in a 20% patch against its surround perfectly mimics radiologic visual search."
+      },
+      {
+        "unit": "region_energy_20p",
+        "score": 5,
+        "rationale": "Local energy in a 20% patch is an abstract signal-processing metric."
+      },
+      {
+        "unit": "region_entropy_20p",
+        "score": 4,
+        "rationale": "Local entropy in a 20% patch is an abstract texture measure."
+      },
+      {
+        "unit": "haar_lr",
+        "score": 3,
+        "rationale": "Haar contrast is a machine learning feature extraction concept that doesn't map directly to medical terminology."
+      },
+      {
+        "unit": "haar_tb",
+        "score": 3,
+        "rationale": "Haar contrast is a low-level computer vision feature that lacks clinical intuition."
+      },
+      {
+        "unit": "haar_diag_main",
+        "score": 3,
+        "rationale": "Diagonal Haar contrast is an algorithmic feature extraction tool rather than a clinical one."
+      },
+      {
+        "unit": "haar_diag_anti",
+        "score": 3,
+        "rationale": "Diagonal Haar contrast is highly specific to computer vision."
+      },
+      {
+        "unit": "haar_center_surround",
+        "score": 4,
+        "rationale": "Center-surround contrast is conceptually similar to spotting lesions, but the Haar formulation is technical."
+      },
+      {
+        "unit": "haar_three_h",
+        "score": 3,
+        "rationale": "Three-band horizontal Haar contrast is purely a computer vision feature."
+      },
+      {
+        "unit": "haar_three_v",
+        "score": 3,
+        "rationale": "Three-band vertical Haar contrast is purely a computer vision feature."
+      },
+      {
+        "unit": "orientation_coherence",
+        "score": 7,
+        "rationale": "Orientation coherence intuitively maps to evaluating the alignment of fibrous tissues like muscles or nerves."
+      },
+      {
+        "unit": "dominant_orientation",
+        "score": 8,
+        "rationale": "Finding the dominant angle is conceptually simple and clinically relevant for oriented biological structures."
+      },
+      {
+        "unit": "orientation_energy_0",
+        "score": 7,
+        "rationale": "Measuring energy near a specific angle intuitively corresponds to detecting linear structures in that direction."
+      },
+      {
+        "unit": "orientation_energy_45",
+        "score": 7,
+        "rationale": "Measuring structural energy near 45 degrees is conceptually understandable."
+      },
+      {
+        "unit": "orientation_energy_90",
+        "score": 7,
+        "rationale": "Measuring structural energy near 90 degrees is conceptually understandable."
+      },
+      {
+        "unit": "orientation_energy_135",
+        "score": 7,
+        "rationale": "Measuring structural energy near 135 degrees is conceptually understandable."
+      },
+      {
+        "unit": "orientation_spread",
+        "score": 8,
+        "rationale": "Measuring how widely orientations are spread is an intuitive way to assess structural disorganization."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_mean",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_sum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_std",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_minimum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_maximum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_mean",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_sum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_std",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_minimum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_maximum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_correlation_mean",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_correlation_sum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_correlation_std",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_correlation_minimum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_correlation_maximum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_contrast_mean",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_contrast_sum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_contrast_std",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_contrast_minimum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_contrast_maximum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_IDM_mean",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_IDM_sum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_IDM_std",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_IDM_minimum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_IDM_maximum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_ASM_mean",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_ASM_sum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_ASM_std",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_ASM_minimum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_ASM_maximum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_glcm_entropy_mean",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_glcm_entropy_sum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_glcm_entropy_std",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_glcm_entropy_minimum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_glcm_entropy_maximum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_max_prob_mean",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_max_prob_sum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_max_prob_std",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_max_prob_minimum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_max_prob_maximum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_energy_mean",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_energy_sum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_energy_std",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_energy_minimum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_energy_maximum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_dissimilarity_mean",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_dissimilarity_sum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_dissimilarity_std",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_dissimilarity_minimum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      },
+      {
+        "unit": "glcm_dissimilarity_maximum",
+        "score": 3,
+        "rationale": "GLCM texture features are complex statistical abstractions that lack direct, intuitive visual meaning for standard clinical workflows."
+      }
+    ]
+  }
+]

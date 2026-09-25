@@ -1,0 +1,105 @@
+class,method,sensitivity,specificity
+basophil,MAGE end-to-end,64.34426229508196,92.7289896128423
+basophil,Best per dim RF,96.311,99.559
+basophil,Best per dim SVC,94.672,99.30799999999999
+basophil,Best per dim LR,92.213,98.615
+basophil,Runs per dim RF,96.311,99.78
+basophil,Runs per dim SVC,96.721,99.78
+basophil,Runs per dim LR,97.951,99.528
+basophil,All per dim RF,97.131,99.748
+basophil,All per dim SVC,97.131,99.874
+basophil,All per dim LR,98.77,99.685
+basophil,resnet18,99.18032786885246,99.90557129367328
+basophil,resnet34,98.77049180327869,99.96852376455776
+basophil,resnext50,99.59016393442623,100.0
+eosinophil,MAGE end-to-end,51.76282051282052,95.38791562388273
+eosinophil,Best per dim RF,99.679,99.928
+eosinophil,Best per dim SVC,99.519,99.964
+eosinophil,Best per dim LR,99.199,99.928
+eosinophil,Runs per dim RF,100.0,99.964
+eosinophil,Runs per dim SVC,99.679,99.928
+eosinophil,Runs per dim LR,99.83999999999999,99.964
+eosinophil,All per dim RF,100.0,99.928
+eosinophil,All per dim SVC,99.679,99.964
+eosinophil,All per dim LR,99.83999999999999,99.964
+eosinophil,resnet18,100.0,99.96424740793708
+eosinophil,resnet34,100.0,99.92849481587415
+eosinophil,resnext50,100.0,99.92849481587415
+erythroblast,MAGE end-to-end,63.9871382636656,98.13504823151126
+erythroblast,Best per dim RF,91.961,99.614
+erythroblast,Best per dim SVC,91.64,99.518
+erythroblast,Best per dim LR,89.389,98.457
+erythroblast,Runs per dim RF,93.569,99.839
+erythroblast,Runs per dim SVC,95.82000000000001,99.90400000000001
+erythroblast,Runs per dim LR,95.177,99.646
+erythroblast,All per dim RF,94.21199999999999,99.775
+erythroblast,All per dim SVC,95.177,99.807
+erythroblast,All per dim LR,96.141,99.775
+erythroblast,resnet18,99.35691318327974,99.87138263665595
+erythroblast,resnet34,99.03536977491962,100.0
+erythroblast,resnext50,99.35691318327974,99.96784565916398
+immature gran.,MAGE end-to-end,35.92400690846287,93.49049964813511
+immature gran.,Best per dim RF,89.119,97.748
+immature gran.,Best per dim SVC,87.565,96.868
+immature gran.,Best per dim LR,75.302,96.974
+immature gran.,Runs per dim RF,94.473,98.17
+immature gran.,Runs per dim SVC,93.955,98.346
+immature gran.,Runs per dim LR,89.119,98.909
+immature gran.,All per dim RF,94.301,98.065
+immature gran.,All per dim SVC,96.2,98.628
+immature gran.,All per dim LR,94.819,98.944
+immature gran.,resnet18,97.75474956822107,99.26108374384236
+immature gran.,resnet34,98.44559585492227,98.9795918367347
+immature gran.,resnext50,97.23661485319516,99.54257565095004
+lymphocyte,MAGE end-to-end,78.60082304526749,93.3920704845815
+lymphocyte,Best per dim RF,97.531,99.528
+lymphocyte,Best per dim SVC,95.88499999999999,99.465
+lymphocyte,Best per dim LR,94.23899999999999,99.056
+lymphocyte,Runs per dim RF,98.354,99.78
+lymphocyte,Runs per dim SVC,97.531,99.748
+lymphocyte,Runs per dim LR,97.942,99.622
+lymphocyte,All per dim RF,98.354,99.843
+lymphocyte,All per dim SVC,98.354,99.654
+lymphocyte,All per dim LR,98.354,99.748
+lymphocyte,resnet18,98.35390946502058,99.9685336689742
+lymphocyte,resnet34,99.1769547325103,99.77973568281938
+lymphocyte,resnext50,99.58847736625515,99.93706733794839
+monocyte,MAGE end-to-end,81.69014084507043,91.7118265859101
+monocyte,Best per dim RF,91.19699999999999,99.107
+monocyte,Best per dim SVC,89.437,98.693
+monocyte,Best per dim LR,84.859,97.96000000000001
+monocyte,Runs per dim RF,94.014,99.681
+monocyte,Runs per dim SVC,92.958,99.458
+monocyte,Runs per dim LR,93.31,98.693
+monocyte,All per dim RF,92.958,99.681
+monocyte,All per dim SVC,95.423,99.649
+monocyte,All per dim LR,95.775,99.458
+monocyte,resnet18,98.94366197183099,99.77685686962066
+monocyte,resnet34,95.4225352112676,99.93624481989161
+monocyte,resnext50,99.29577464788733,99.87248963978324
+neutrophil,MAGE end-to-end,69.51951951951952,97.4228675136116
+neutrophil,Best per dim RF,96.997,99.347
+neutrophil,Best per dim SVC,94.144,99.601
+neutrophil,Best per dim LR,94.745,99.165
+neutrophil,Runs per dim RF,97.898,99.456
+neutrophil,Runs per dim SVC,97.297,99.31
+neutrophil,Runs per dim LR,97.598,99.528
+neutrophil,All per dim RF,97.44699999999999,99.528
+neutrophil,All per dim SVC,96.84700000000001,99.492
+neutrophil,All per dim LR,96.84700000000001,99.564
+neutrophil,resnet18,96.69669669669669,99.63702359346642
+neutrophil,resnet34,97.44744744744744,99.7459165154265
+neutrophil,resnext50,97.8978978978979,99.49183303085299
+platelet,MAGE end-to-end,92.76595744680851,97.69569637411047
+platelet,Best per dim RF,99.362,100.0
+platelet,Best per dim SVC,99.362,100.0
+platelet,Best per dim LR,98.936,100.0
+platelet,Runs per dim RF,99.787,100.0
+platelet,Runs per dim SVC,99.787,100.0
+platelet,Runs per dim LR,100.0,100.0
+platelet,All per dim RF,99.787,100.0
+platelet,All per dim SVC,99.574,100.0
+platelet,All per dim LR,99.574,100.0
+platelet,resnet18,99.7872340425532,100.0
+platelet,resnet34,99.7872340425532,100.0
+platelet,resnext50,100.0,100.0

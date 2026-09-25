@@ -1,0 +1,1532 @@
+[
+  {
+    "library_id": "Library 1",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 10,
+        "rationale": "Simply returns the image unchanged."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 9,
+        "rationale": "A constant white image is easy to understand."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 9,
+        "rationale": "A constant black image is straightforward."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 9,
+        "rationale": "Intensity inversion is a familiar visualization idea."
+      },
+      {
+        "unit": "experimental_normalize_2D",
+        "score": 7,
+        "rationale": "Rescaling intensities to [0,1] is reasonably clear."
+      },
+      {
+        "unit": "experimental_standardize_2D",
+        "score": 6,
+        "rationale": "Mean and standard-deviation scaling is somewhat technical."
+      },
+      {
+        "unit": "experimental_tointensity_image2D",
+        "score": 6,
+        "rationale": "Converting labels to intensities is somewhat abstract but explainable."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 8,
+        "rationale": "Shrinking bright structures is intuitive morphologically."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 8,
+        "rationale": "Expanding bright structures is intuitive morphologically."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 7,
+        "rationale": "Removing small bright noise is a clear operation."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 7,
+        "rationale": "Filling small dark gaps is understandable."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 6,
+        "rationale": "Extracting small bright structures is somewhat clear."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 6,
+        "rationale": "Extracting small dark structures is somewhat clear."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 7,
+        "rationale": "Emphasizing boundaries is clinically meaningful."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 5,
+        "rationale": "Laplacian-style edge response is more technical."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 8,
+        "rationale": "Pixelwise subtraction between images is easy to grasp."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 8,
+        "rationale": "Pixelwise addition between images is simple."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 7,
+        "rationale": "Pixelwise multiplication is understandable but less intuitive visually."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 7,
+        "rationale": "Taking pixelwise maximum is fairly clear."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 7,
+        "rationale": "Taking pixelwise minimum is fairly clear."
+      },
+      {
+        "unit": "bsubtract_image2D",
+        "score": 8,
+        "rationale": "Subtracting a constant from all pixels is straightforward."
+      },
+      {
+        "unit": "badd_image2D",
+        "score": 8,
+        "rationale": "Adding a constant to all pixels is straightforward."
+      },
+      {
+        "unit": "bmult_image2D",
+        "score": 7,
+        "rationale": "Scaling intensities by a constant is clear."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 5,
+        "rationale": "X-direction edge filter is technical but understandable."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 5,
+        "rationale": "Y-direction edge filter is technical but understandable."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 6,
+        "rationale": "Overall edge magnitude is a familiar concept."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 3,
+        "rationale": "Obscure derivative filter name reduces clarity."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 3,
+        "rationale": "Obscure derivative filter name reduces clarity."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 4,
+        "rationale": "Gradient magnitude is clearer but the filter name is obscure."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 3,
+        "rationale": "Obscure derivative filter name reduces clarity."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 3,
+        "rationale": "Obscure derivative filter name reduces clarity."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 4,
+        "rationale": "Gradient magnitude is clearer but the filter name is obscure."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 3,
+        "rationale": "Obscure derivative filter name reduces clarity."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 3,
+        "rationale": "Obscure derivative filter name reduces clarity."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 4,
+        "rationale": "Gradient magnitude is clearer but the filter name is obscure."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 3,
+        "rationale": "Obscure derivative filter name reduces interpretability."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 3,
+        "rationale": "Obscure derivative filter name reduces interpretability."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 4,
+        "rationale": "Magnitude idea is clearer but filter name is obscure."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 5,
+        "rationale": "Named edge filter is somewhat known but still technical."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 5,
+        "rationale": "Named edge filter is somewhat known but still technical."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 6,
+        "rationale": "Edge magnitude is easier to relate to boundaries."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 5,
+        "rationale": "Named edge filter is technical though direction is clear."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 5,
+        "rationale": "Named edge filter is technical though direction is clear."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 6,
+        "rationale": "Edge magnitude is easier to relate to structure."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 8,
+        "rationale": "Smoothing/denoising with Gaussian blur is familiar."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 8,
+        "rationale": "Smoothing/denoising with Gaussian blur is familiar."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 8,
+        "rationale": "Smoothing/denoising with Gaussian blur is familiar."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 8,
+        "rationale": "Smoothing/denoising with Gaussian blur is familiar."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 8,
+        "rationale": "Smoothing/denoising with Gaussian blur is familiar."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 6,
+        "rationale": "Second-order edge response is more technical but about edges."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 5,
+        "rationale": "Difference-of-Gaussians is a less intuitive edge/scale filter."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 4,
+        "rationale": "Moffat kernel is specialized and not widely known clinically."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 4,
+        "rationale": "Moffat kernel is specialized and not widely known clinically."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 4,
+        "rationale": "Moffat kernel is specialized and not widely known clinically."
+      },
+      {
+        "unit": "exp_image2D",
+        "score": 6,
+        "rationale": "Exponential intensity transform is understandable but mathy."
+      },
+      {
+        "unit": "loginv_image2D",
+        "score": 5,
+        "rationale": "Log transform with sign inversion is technical."
+      },
+      {
+        "unit": "log_image2D",
+        "score": 6,
+        "rationale": "Log compression of intensities is moderately clear."
+      },
+      {
+        "unit": "powerof_image2D",
+        "score": 6,
+        "rationale": "Gamma-like power transform is somewhat familiar."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 5,
+        "rationale": "Conditional selection based on a threshold is abstract."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 5,
+        "rationale": "Blockwise averaging is moderately clear."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 4,
+        "rationale": "Averaging only center row/column per block is unusual."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 5,
+        "rationale": "Blockwise maximum is moderately clear."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 4,
+        "rationale": "Taking max over cross lines per block is unusual."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 5,
+        "rationale": "Blockwise minimum is moderately clear."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 4,
+        "rationale": "Taking min over cross lines per block is unusual."
+      },
+      {
+        "unit": "meanpool",
+        "score": 6,
+        "rationale": "Sliding-window averaging is fairly intuitive."
+      },
+      {
+        "unit": "maxpool",
+        "score": 6,
+        "rationale": "Sliding-window maxima relate to bright spots."
+      },
+      {
+        "unit": "minpool",
+        "score": 6,
+        "rationale": "Sliding-window minima relate to dark spots."
+      },
+      {
+        "unit": "stdpool",
+        "score": 5,
+        "rationale": "Local standard deviation is somewhat abstract."
+      },
+      {
+        "unit": "medianpool",
+        "score": 6,
+        "rationale": "Local median smoothing is fairly intuitive."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 3,
+        "rationale": "Counting unique values per window is not a familiar visual cue."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 3,
+        "rationale": "Counting argmax occurrences is technical and opaque."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 3,
+        "rationale": "Counting argmin occurrences is technical and opaque."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 4,
+        "rationale": "Local interquartile range is statistical and less intuitive visually."
+      },
+      {
+        "unit": "grad_magnitude",
+        "score": 6,
+        "rationale": "Edge strength map relates to boundaries."
+      },
+      {
+        "unit": "grad_orientation",
+        "score": 5,
+        "rationale": "Edge direction map is more technical to interpret."
+      },
+      {
+        "unit": "orientation_select",
+        "score": 5,
+        "rationale": "Selecting gradients by angle is a technical notion."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 2",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 10,
+        "rationale": "Simply returns the image unchanged."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 9,
+        "rationale": "A constant mask of ones is easy to understand."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 9,
+        "rationale": "A constant mask of zeros is straightforward."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 9,
+        "rationale": "Flipping 0/1 in a binary image is very clear."
+      },
+      {
+        "unit": "experimental_tobinary_image2D",
+        "score": 8,
+        "rationale": "Thresholding an intensity image to a mask is familiar."
+      },
+      {
+        "unit": "experimental_tobinary_th_image2D_factory",
+        "score": 9,
+        "rationale": "User-set threshold to create a mask is very clear."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 6,
+        "rationale": "Binary subtraction with rounding is somewhat odd but described."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 6,
+        "rationale": "Binary addition with rounding is somewhat odd but described."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 6,
+        "rationale": "Binary multiplication (AND-like) is moderately clear."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 7,
+        "rationale": "Pixelwise max corresponds to logical OR."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 7,
+        "rationale": "Pixelwise min corresponds to logical AND."
+      },
+      {
+        "unit": "binarize_adaptive2D",
+        "score": 7,
+        "rationale": "Adaptive local thresholding is a familiar binarization idea."
+      },
+      {
+        "unit": "binarize_niblack2D",
+        "score": 5,
+        "rationale": "Named local method is less familiar despite concept."
+      },
+      {
+        "unit": "binarize_polysegment2D",
+        "score": 4,
+        "rationale": "Polysegment thresholding is obscure."
+      },
+      {
+        "unit": "binarize_sauvola2D",
+        "score": 5,
+        "rationale": "Named local method is less familiar despite concept."
+      },
+      {
+        "unit": "binarize_otsu2D",
+        "score": 6,
+        "rationale": "Otsu thresholding is relatively well-known conceptually."
+      },
+      {
+        "unit": "binarize_minimumintermodes2D",
+        "score": 4,
+        "rationale": "Histogram intermodes method is technical."
+      },
+      {
+        "unit": "binarize_intermodes2D",
+        "score": 4,
+        "rationale": "Histogram intermodes method is technical."
+      },
+      {
+        "unit": "binarize_minimumerror2D",
+        "score": 4,
+        "rationale": "Minimum-error thresholding is algorithmic and opaque."
+      },
+      {
+        "unit": "binarize_moments2D",
+        "score": 4,
+        "rationale": "Moments-based thresholding is technical."
+      },
+      {
+        "unit": "binarize_unimodalrosin2D",
+        "score": 3,
+        "rationale": "Rosin method name offers little intuitive meaning."
+      },
+      {
+        "unit": "binarize_entropy2D",
+        "score": 5,
+        "rationale": "Entropy-based thresholding is somewhat abstract."
+      },
+      {
+        "unit": "binarize_balanced2D",
+        "score": 4,
+        "rationale": "Balanced histogram thresholding is technical."
+      },
+      {
+        "unit": "binarize_yen2D",
+        "score": 4,
+        "rationale": "Yen method name is obscure to clinicians."
+      },
+      {
+        "unit": "binarize_manual2D",
+        "score": 8,
+        "rationale": "Manual thresholding is simple to understand."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 5,
+        "rationale": "X-direction edge mask is technical but graspable."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 5,
+        "rationale": "Y-direction edge mask is technical but graspable."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 6,
+        "rationale": "Edge magnitude mask relates to boundaries."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 3,
+        "rationale": "Obscure derivative filter name reduces clarity."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 3,
+        "rationale": "Obscure derivative filter name reduces clarity."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 4,
+        "rationale": "Magnitude is clearer but the filter name is obscure."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 3,
+        "rationale": "Obscure derivative filter name reduces clarity."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 3,
+        "rationale": "Obscure derivative filter name reduces clarity."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 4,
+        "rationale": "Magnitude is clearer but the filter name is obscure."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 3,
+        "rationale": "Obscure derivative filter name reduces clarity."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 3,
+        "rationale": "Obscure derivative filter name reduces clarity."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 4,
+        "rationale": "Magnitude is clearer but the filter name is obscure."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 3,
+        "rationale": "Obscure derivative filter name reduces interpretability."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 3,
+        "rationale": "Obscure derivative filter name reduces interpretability."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 4,
+        "rationale": "Magnitude idea is clearer but filter name is obscure."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 5,
+        "rationale": "Named edge filter is somewhat known but technical."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 5,
+        "rationale": "Named edge filter is somewhat known but technical."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 6,
+        "rationale": "Edge magnitude mask relates to boundaries."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 5,
+        "rationale": "Named edge filter is technical though direction is clear."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 5,
+        "rationale": "Named edge filter is technical though direction is clear."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 6,
+        "rationale": "Edge magnitude mask relates to structure."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 5,
+        "rationale": "Smoothing then rounding to binary is somewhat odd but described."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 5,
+        "rationale": "Smoothing then rounding to binary is somewhat odd but described."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 5,
+        "rationale": "Smoothing then rounding to binary is somewhat odd but described."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 5,
+        "rationale": "Smoothing then rounding to binary is somewhat odd but described."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 5,
+        "rationale": "Smoothing then rounding to binary is somewhat odd but described."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 5,
+        "rationale": "Second-order edge response mask is technical."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 4,
+        "rationale": "Difference-of-Gaussians with rounding is not intuitive."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 3,
+        "rationale": "Moffat smoothing then rounding is obscure."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 3,
+        "rationale": "Moffat smoothing then rounding is obscure."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 3,
+        "rationale": "Moffat smoothing then rounding is obscure."
+      },
+      {
+        "unit": "findlocalminima_image2D",
+        "score": 7,
+        "rationale": "Marking local valleys is an intuitive detection."
+      },
+      {
+        "unit": "findlocalmaxima_image2D",
+        "score": 7,
+        "rationale": "Marking local peaks is an intuitive detection."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 8,
+        "rationale": "Shrinking bright regions in a mask is intuitive."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 8,
+        "rationale": "Expanding bright regions in a mask is intuitive."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 7,
+        "rationale": "Removing small bright noise from a mask is clear."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 7,
+        "rationale": "Filling small dark holes in a mask is clear."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 6,
+        "rationale": "Extracting small bright structures is somewhat clear."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 6,
+        "rationale": "Extracting small dark structures is somewhat clear."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 7,
+        "rationale": "Boundary emphasis in a mask is meaningful."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 5,
+        "rationale": "Laplacian-style mask is more technical."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 5,
+        "rationale": "Conditional selection based on a threshold is abstract."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 5,
+        "rationale": "Blockwise averaging then rounding is moderately clear."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 4,
+        "rationale": "Pooling on center cross per block is unusual."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 5,
+        "rationale": "Blockwise maxima then rounding is moderately clear."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 4,
+        "rationale": "Max over center cross per block is unusual."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 5,
+        "rationale": "Blockwise minima then rounding is moderately clear."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 4,
+        "rationale": "Min over center cross per block is unusual."
+      },
+      {
+        "unit": "meanpool",
+        "score": 5,
+        "rationale": "Sliding mean then rounding to binary is somewhat odd but described."
+      },
+      {
+        "unit": "maxpool",
+        "score": 5,
+        "rationale": "Sliding max then rounding is moderately clear."
+      },
+      {
+        "unit": "minpool",
+        "score": 5,
+        "rationale": "Sliding min then rounding is moderately clear."
+      },
+      {
+        "unit": "stdpool",
+        "score": 4,
+        "rationale": "Local standard deviation then rounding is abstract."
+      },
+      {
+        "unit": "medianpool",
+        "score": 5,
+        "rationale": "Local median then rounding is moderately clear."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 3,
+        "rationale": "Counting unique values in a window is opaque for masks."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 3,
+        "rationale": "Argmax-count in a window is technical and opaque."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 3,
+        "rationale": "Argmin-count in a window is technical and opaque."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 4,
+        "rationale": "Interquartile range pooling then rounding is abstract."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 3",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 10,
+        "rationale": "Simply returns the segmentation unchanged."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 7,
+        "rationale": "Single-label image of ones is understandable but unusual."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 7,
+        "rationale": "Single-label image of zeros is understandable but unusual."
+      },
+      {
+        "unit": "experimental_tosegment_image2D",
+        "score": 8,
+        "rationale": "Converting a mask to labeled foreground/background is clear."
+      },
+      {
+        "unit": "fastscanning_image2D",
+        "score": 5,
+        "rationale": "Region-labeling by fast scanning is algorithmic and vague."
+      },
+      {
+        "unit": "watershed_image2D",
+        "score": 7,
+        "rationale": "Watershed segmentation is a known concept for separating regions."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 4",
+    "scores": [
+      {
+        "unit": "identity_float",
+        "score": 9,
+        "rationale": "Passing a scalar through is trivial to understand."
+      },
+      {
+        "unit": "ret_1",
+        "score": 9,
+        "rationale": "Constant 1.0 is immediately clear."
+      },
+      {
+        "unit": "tanh",
+        "score": 4,
+        "rationale": "Hyperbolic tangent is a math function with limited intuitive meaning."
+      },
+      {
+        "unit": "relu",
+        "score": 7,
+        "rationale": "Returning max(x,0) is simple to grasp."
+      },
+      {
+        "unit": "modulo",
+        "score": 6,
+        "rationale": "Remainder after division is a basic math idea."
+      },
+      {
+        "unit": "is_eq_to",
+        "score": 8,
+        "rationale": "Equality test returning 1 or 0 is clear."
+      },
+      {
+        "unit": "experimental_is_gt",
+        "score": 8,
+        "rationale": "Greater-than comparison returning 1 or 0 is clear."
+      },
+      {
+        "unit": "experimental_is_lt",
+        "score": 8,
+        "rationale": "Less-than comparison returning 1 or 0 is clear."
+      },
+      {
+        "unit": "experimental_not",
+        "score": 6,
+        "rationale": "Thresholded NOT at 0.5 is mildly unintuitive but described."
+      },
+      {
+        "unit": "number_sum",
+        "score": 9,
+        "rationale": "Adding two numbers is trivial."
+      },
+      {
+        "unit": "number_minus",
+        "score": 9,
+        "rationale": "Subtracting numbers is trivial."
+      },
+      {
+        "unit": "number_mult",
+        "score": 9,
+        "rationale": "Multiplying numbers is trivial."
+      },
+      {
+        "unit": "number_div",
+        "score": 8,
+        "rationale": "Division is basic arithmetic."
+      },
+      {
+        "unit": "safe_div",
+        "score": 9,
+        "rationale": "Division with safe zero handling is easy to understand."
+      },
+      {
+        "unit": "power_of",
+        "score": 7,
+        "rationale": "Raising to a power is a common transform but more mathy."
+      },
+      {
+        "unit": "pi_",
+        "score": 8,
+        "rationale": "The constant pi is familiar."
+      },
+      {
+        "unit": "exp_",
+        "score": 6,
+        "rationale": "Exponential of a number is moderately clear."
+      },
+      {
+        "unit": "log_",
+        "score": 6,
+        "rationale": "Natural logarithm is a common math function."
+      },
+      {
+        "unit": "log10_",
+        "score": 6,
+        "rationale": "Base-10 logarithm is a common math function."
+      },
+      {
+        "unit": "reduce_length",
+        "score": 8,
+        "rationale": "Counting image pixels is straightforward."
+      },
+      {
+        "unit": "reduce_biggestAxis",
+        "score": 8,
+        "rationale": "Largest image dimension is easy to interpret."
+      },
+      {
+        "unit": "reduce_smallerAxis",
+        "score": 8,
+        "rationale": "Smallest image dimension is easy to interpret."
+      },
+      {
+        "unit": "reduce_histMode",
+        "score": 6,
+        "rationale": "Most frequent intensity is somewhat abstract but understandable."
+      },
+      {
+        "unit": "reduce_histModeCount",
+        "score": 6,
+        "rationale": "Count of most frequent intensity is moderately clear."
+      },
+      {
+        "unit": "reduce_propWhite",
+        "score": 9,
+        "rationale": "Proportion of white pixels in a mask is very clear."
+      },
+      {
+        "unit": "reduce_propBlack",
+        "score": 9,
+        "rationale": "Proportion of black pixels in a mask is very clear."
+      },
+      {
+        "unit": "reduce_nColors",
+        "score": 6,
+        "rationale": "Number of unique values is understandable but abstract."
+      },
+      {
+        "unit": "reduce_mean",
+        "score": 9,
+        "rationale": "Mean intensity is a familiar summary."
+      },
+      {
+        "unit": "reduce_median",
+        "score": 9,
+        "rationale": "Median intensity is a familiar summary."
+      },
+      {
+        "unit": "reduce_std",
+        "score": 8,
+        "rationale": "Standard deviation of intensities is familiar."
+      },
+      {
+        "unit": "reduce_maximum",
+        "score": 9,
+        "rationale": "Maximum intensity is very clear."
+      },
+      {
+        "unit": "reduce_minimum",
+        "score": 9,
+        "rationale": "Minimum intensity is very clear."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 5,
+        "rationale": "Conditional selection based on a threshold is abstract."
+      },
+      {
+        "unit": "region_mean",
+        "score": 7,
+        "rationale": "Mean intensity in a local patch is intuitive."
+      },
+      {
+        "unit": "region_std",
+        "score": 6,
+        "rationale": "Local variability is understandable but statistical."
+      },
+      {
+        "unit": "region_min",
+        "score": 7,
+        "rationale": "Local minimum value is easy to grasp."
+      },
+      {
+        "unit": "region_max",
+        "score": 7,
+        "rationale": "Local maximum value is easy to grasp."
+      },
+      {
+        "unit": "region_sum",
+        "score": 6,
+        "rationale": "Local sum is a basic but less intuitive measure."
+      },
+      {
+        "unit": "region_median",
+        "score": 7,
+        "rationale": "Local median is a familiar summary."
+      },
+      {
+        "unit": "region_range",
+        "score": 6,
+        "rationale": "Local max-minus-min is understandable."
+      },
+      {
+        "unit": "region_contrast",
+        "score": 7,
+        "rationale": "Center-versus-surround contrast is intuitive for lesions."
+      },
+      {
+        "unit": "region_energy",
+        "score": 5,
+        "rationale": "Mean squared intensity is a technical texture measure."
+      },
+      {
+        "unit": "region_entropy",
+        "score": 5,
+        "rationale": "Local entropy is a statistical texture concept."
+      },
+      {
+        "unit": "region_mean_5p",
+        "score": 7,
+        "rationale": "Mean in a small percentage patch is intuitive."
+      },
+      {
+        "unit": "region_std_5p",
+        "score": 6,
+        "rationale": "Local variability in a small patch is moderately clear."
+      },
+      {
+        "unit": "region_min_5p",
+        "score": 7,
+        "rationale": "Local minimum in a small patch is easy to grasp."
+      },
+      {
+        "unit": "region_max_5p",
+        "score": 7,
+        "rationale": "Local maximum in a small patch is easy to grasp."
+      },
+      {
+        "unit": "region_sum_5p",
+        "score": 6,
+        "rationale": "Local sum in a small patch is less intuitive."
+      },
+      {
+        "unit": "region_median_5p",
+        "score": 7,
+        "rationale": "Local median in a small patch is familiar."
+      },
+      {
+        "unit": "region_range_5p",
+        "score": 6,
+        "rationale": "Local range in a small patch is understandable."
+      },
+      {
+        "unit": "region_contrast_5p",
+        "score": 7,
+        "rationale": "Center-surround contrast in a small patch is intuitive."
+      },
+      {
+        "unit": "region_energy_5p",
+        "score": 5,
+        "rationale": "Mean squared value in a small patch is technical."
+      },
+      {
+        "unit": "region_entropy_5p",
+        "score": 5,
+        "rationale": "Local entropy in a small patch is statistical."
+      },
+      {
+        "unit": "region_mean_10p",
+        "score": 7,
+        "rationale": "Mean in a percentage-sized patch is intuitive."
+      },
+      {
+        "unit": "region_std_10p",
+        "score": 6,
+        "rationale": "Local variability in a patch is moderately clear."
+      },
+      {
+        "unit": "region_min_10p",
+        "score": 7,
+        "rationale": "Local minimum in a patch is easy to grasp."
+      },
+      {
+        "unit": "region_max_10p",
+        "score": 7,
+        "rationale": "Local maximum in a patch is easy to grasp."
+      },
+      {
+        "unit": "region_sum_10p",
+        "score": 6,
+        "rationale": "Local sum in a patch is less intuitive."
+      },
+      {
+        "unit": "region_median_10p",
+        "score": 7,
+        "rationale": "Local median in a patch is familiar."
+      },
+      {
+        "unit": "region_range_10p",
+        "score": 6,
+        "rationale": "Local range in a patch is understandable."
+      },
+      {
+        "unit": "region_contrast_10p",
+        "score": 7,
+        "rationale": "Center-surround contrast in a patch is intuitive."
+      },
+      {
+        "unit": "region_energy_10p",
+        "score": 5,
+        "rationale": "Mean squared value in a patch is technical."
+      },
+      {
+        "unit": "region_entropy_10p",
+        "score": 5,
+        "rationale": "Local entropy in a patch is statistical."
+      },
+      {
+        "unit": "region_mean_20p",
+        "score": 7,
+        "rationale": "Mean in a larger percentage patch is intuitive."
+      },
+      {
+        "unit": "region_std_20p",
+        "score": 6,
+        "rationale": "Local variability in a larger patch is moderately clear."
+      },
+      {
+        "unit": "region_min_20p",
+        "score": 7,
+        "rationale": "Local minimum in a larger patch is easy to grasp."
+      },
+      {
+        "unit": "region_max_20p",
+        "score": 7,
+        "rationale": "Local maximum in a larger patch is easy to grasp."
+      },
+      {
+        "unit": "region_sum_20p",
+        "score": 6,
+        "rationale": "Local sum in a larger patch is less intuitive."
+      },
+      {
+        "unit": "region_median_20p",
+        "score": 7,
+        "rationale": "Local median in a larger patch is familiar."
+      },
+      {
+        "unit": "region_range_20p",
+        "score": 6,
+        "rationale": "Local range in a larger patch is understandable."
+      },
+      {
+        "unit": "region_contrast_20p",
+        "score": 7,
+        "rationale": "Center-surround contrast in a larger patch is intuitive."
+      },
+      {
+        "unit": "region_energy_20p",
+        "score": 5,
+        "rationale": "Mean squared value in a larger patch is technical."
+      },
+      {
+        "unit": "region_entropy_20p",
+        "score": 5,
+        "rationale": "Local entropy in a larger patch is statistical."
+      },
+      {
+        "unit": "haar_lr",
+        "score": 7,
+        "rationale": "Left-right contrast is intuitive for asymmetry."
+      },
+      {
+        "unit": "haar_tb",
+        "score": 7,
+        "rationale": "Top-bottom contrast is intuitive for gradients."
+      },
+      {
+        "unit": "haar_diag_main",
+        "score": 6,
+        "rationale": "Diagonal contrast is somewhat intuitive but technical."
+      },
+      {
+        "unit": "haar_diag_anti",
+        "score": 6,
+        "rationale": "Opposite diagonal contrast is somewhat intuitive but technical."
+      },
+      {
+        "unit": "haar_center_surround",
+        "score": 7,
+        "rationale": "Center-versus-surround contrast is clinically meaningful."
+      },
+      {
+        "unit": "haar_three_h",
+        "score": 6,
+        "rationale": "Three-band horizontal contrast is moderately clear."
+      },
+      {
+        "unit": "haar_three_v",
+        "score": 6,
+        "rationale": "Three-band vertical contrast is moderately clear."
+      },
+      {
+        "unit": "orientation_coherence",
+        "score": 6,
+        "rationale": "How aligned edges are is a fairly clear concept."
+      },
+      {
+        "unit": "dominant_orientation",
+        "score": 6,
+        "rationale": "Strongest coarse edge direction is understandable."
+      },
+      {
+        "unit": "orientation_energy_0",
+        "score": 6,
+        "rationale": "Proportion of horizontal-edge energy is reasonably clear."
+      },
+      {
+        "unit": "orientation_energy_45",
+        "score": 6,
+        "rationale": "Proportion of 45-degree edge energy is reasonably clear."
+      },
+      {
+        "unit": "orientation_energy_90",
+        "score": 6,
+        "rationale": "Proportion of vertical-edge energy is reasonably clear."
+      },
+      {
+        "unit": "orientation_energy_135",
+        "score": 6,
+        "rationale": "Proportion of 135-degree edge energy is reasonably clear."
+      },
+      {
+        "unit": "orientation_spread",
+        "score": 6,
+        "rationale": "How widely orientations are distributed is understandable."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_mean",
+        "score": 4,
+        "rationale": "GLCM mean is a technical texture measure."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_sum",
+        "score": 4,
+        "rationale": "GLCM mean (summed) remains a technical texture feature."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_std",
+        "score": 4,
+        "rationale": "GLCM mean variability is technical and abstract."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_minimum",
+        "score": 4,
+        "rationale": "GLCM mean minimum is technical and not intuitive."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_maximum",
+        "score": 4,
+        "rationale": "GLCM mean maximum is technical and not intuitive."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_mean",
+        "score": 4,
+        "rationale": "GLCM variance is a technical texture measure."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_sum",
+        "score": 4,
+        "rationale": "GLCM variance (summed) remains technical."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_std",
+        "score": 4,
+        "rationale": "GLCM variance variability is technical."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_minimum",
+        "score": 4,
+        "rationale": "GLCM variance minimum is technical and opaque."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_maximum",
+        "score": 4,
+        "rationale": "GLCM variance maximum is technical and opaque."
+      },
+      {
+        "unit": "glcm_correlation_mean",
+        "score": 5,
+        "rationale": "GLCM correlation has some intuitive meaning but is technical."
+      },
+      {
+        "unit": "glcm_correlation_sum",
+        "score": 5,
+        "rationale": "Summed GLCM correlation remains technical."
+      },
+      {
+        "unit": "glcm_correlation_std",
+        "score": 5,
+        "rationale": "Variability of GLCM correlation is technical."
+      },
+      {
+        "unit": "glcm_correlation_minimum",
+        "score": 5,
+        "rationale": "Minimum GLCM correlation is still technical."
+      },
+      {
+        "unit": "glcm_correlation_maximum",
+        "score": 5,
+        "rationale": "Maximum GLCM correlation is still technical."
+      },
+      {
+        "unit": "glcm_contrast_mean",
+        "score": 6,
+        "rationale": "GLCM contrast relates to texture contrast and is somewhat intuitive."
+      },
+      {
+        "unit": "glcm_contrast_sum",
+        "score": 6,
+        "rationale": "Summed GLCM contrast is still reasonably intuitive."
+      },
+      {
+        "unit": "glcm_contrast_std",
+        "score": 6,
+        "rationale": "Variability of GLCM contrast remains fairly interpretable."
+      },
+      {
+        "unit": "glcm_contrast_minimum",
+        "score": 6,
+        "rationale": "Minimum GLCM contrast is somewhat interpretable."
+      },
+      {
+        "unit": "glcm_contrast_maximum",
+        "score": 6,
+        "rationale": "Maximum GLCM contrast is somewhat interpretable."
+      },
+      {
+        "unit": "glcm_IDM_mean",
+        "score": 4,
+        "rationale": "Inverse-difference-moment is a technical smoothness measure."
+      },
+      {
+        "unit": "glcm_IDM_sum",
+        "score": 4,
+        "rationale": "Summed IDM remains technical."
+      },
+      {
+        "unit": "glcm_IDM_std",
+        "score": 4,
+        "rationale": "Variability of IDM is technical and opaque."
+      },
+      {
+        "unit": "glcm_IDM_minimum",
+        "score": 4,
+        "rationale": "Minimum IDM is technical and opaque."
+      },
+      {
+        "unit": "glcm_IDM_maximum",
+        "score": 4,
+        "rationale": "Maximum IDM is technical and opaque."
+      },
+      {
+        "unit": "glcm_ASM_mean",
+        "score": 3,
+        "rationale": "Angular second moment is a niche texture term."
+      },
+      {
+        "unit": "glcm_ASM_sum",
+        "score": 3,
+        "rationale": "Summed ASM remains opaque to clinicians."
+      },
+      {
+        "unit": "glcm_ASM_std",
+        "score": 3,
+        "rationale": "ASM variability is technical and opaque."
+      },
+      {
+        "unit": "glcm_ASM_minimum",
+        "score": 3,
+        "rationale": "Minimum ASM is technical and opaque."
+      },
+      {
+        "unit": "glcm_ASM_maximum",
+        "score": 3,
+        "rationale": "Maximum ASM is technical and opaque."
+      },
+      {
+        "unit": "glcm_glcm_entropy_mean",
+        "score": 6,
+        "rationale": "GLCM entropy as texture randomness is somewhat intuitive."
+      },
+      {
+        "unit": "glcm_glcm_entropy_sum",
+        "score": 6,
+        "rationale": "Summed GLCM entropy remains fairly interpretable."
+      },
+      {
+        "unit": "glcm_glcm_entropy_std",
+        "score": 6,
+        "rationale": "Variability of GLCM entropy is still somewhat intuitive."
+      },
+      {
+        "unit": "glcm_glcm_entropy_minimum",
+        "score": 6,
+        "rationale": "Minimum GLCM entropy is somewhat interpretable."
+      },
+      {
+        "unit": "glcm_glcm_entropy_maximum",
+        "score": 6,
+        "rationale": "Maximum GLCM entropy is somewhat interpretable."
+      },
+      {
+        "unit": "glcm_max_prob_mean",
+        "score": 3,
+        "rationale": "Max-probability from GLCM is technical and opaque."
+      },
+      {
+        "unit": "glcm_max_prob_sum",
+        "score": 3,
+        "rationale": "Summed max-probability remains opaque."
+      },
+      {
+        "unit": "glcm_max_prob_std",
+        "score": 3,
+        "rationale": "Variability of max-probability is technical."
+      },
+      {
+        "unit": "glcm_max_prob_minimum",
+        "score": 3,
+        "rationale": "Minimum max-probability is technical and opaque."
+      },
+      {
+        "unit": "glcm_max_prob_maximum",
+        "score": 3,
+        "rationale": "Maximum max-probability is technical and opaque."
+      },
+      {
+        "unit": "glcm_energy_mean",
+        "score": 5,
+        "rationale": "GLCM energy relates to uniformity but is technical."
+      },
+      {
+        "unit": "glcm_energy_sum",
+        "score": 5,
+        "rationale": "Summed GLCM energy remains technical."
+      },
+      {
+        "unit": "glcm_energy_std",
+        "score": 5,
+        "rationale": "Variability of GLCM energy is technical."
+      },
+      {
+        "unit": "glcm_energy_minimum",
+        "score": 5,
+        "rationale": "Minimum GLCM energy is somewhat abstract."
+      },
+      {
+        "unit": "glcm_energy_maximum",
+        "score": 5,
+        "rationale": "Maximum GLCM energy is somewhat abstract."
+      },
+      {
+        "unit": "glcm_dissimilarity_mean",
+        "score": 5,
+        "rationale": "GLCM dissimilarity reflects texture roughness but is technical."
+      },
+      {
+        "unit": "glcm_dissimilarity_sum",
+        "score": 5,
+        "rationale": "Summed GLCM dissimilarity remains technical."
+      },
+      {
+        "unit": "glcm_dissimilarity_std",
+        "score": 5,
+        "rationale": "Variability of GLCM dissimilarity is technical."
+      },
+      {
+        "unit": "glcm_dissimilarity_minimum",
+        "score": 5,
+        "rationale": "Minimum GLCM dissimilarity is somewhat abstract."
+      },
+      {
+        "unit": "glcm_dissimilarity_maximum",
+        "score": 5,
+        "rationale": "Maximum GLCM dissimilarity is somewhat abstract."
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+llm,audience,gram,seed,library_id,unit,path
+gemini,cs,bigram,2,4,lib4::glcm_energy_std(lib4::glcm_energy_maximum),gemini/cs_bigram_2.json
+gemini,doctor,bigram,3,1,lib1::morpholaplace_2D(lib2::uniquecountpool),gemini/doctor_bigram_3.json
+openai,cs,bigram,1,2,lib2::laplacian3_image2D(lib4::glcm_energy_mean),openai/cs_bigram_1.json
+openai,cs,bigram,1,4,lib4::glcm_glcm_entropy_maximum(lib3::zeros_2D),openai/cs_bigram_1.json
+openai,cs,bigram,1,4,lib4::glcm_glcm_mean_ref_mean(lib4::orientation_energy_45),openai/cs_bigram_1.json
+openai,cs,bigram,1,4,lib4::glcm_glcm_var_ref_sum(lib3::zeros_2D),openai/cs_bigram_1.json
+openai,cs,bigram,1,4,"lib4::region_sum_10p(lib2::avgpool_cross_blocks, lib4::reduce_propWhite, lib4::reduce_propBlack)",openai/cs_bigram_1.json
+openai,cs,bigram,1,4,"lib4::region_sum_20p(lib4::reduce_median, lib4::reduce_median)",openai/cs_bigram_1.json
+openai,cs,unigram,2,2,binarize_yen2D,openai/cs_unigram_2.json
+openai,doctor,bigram,1,2,"lib2::add_img2D(lib1::dilation_2D, lib1::closing_2D)",openai/doctor_bigram_1.json
+openai,doctor,bigram,3,2,"lib2::add_img2D(lib1::dilation_2D, lib1::closing_2D)",openai/doctor_bigram_3.json
+openai,patient,bigram,1,1,"lib1::add_img2D(lib1::add_img2D, lib1::add_img2D)",openai/patient_bigram_1.json
+openai,patient,bigram,3,1,"lib1::add_img2D(lib1::add_img2D, lib1::add_img2D)",openai/patient_bigram_3.json
+openai,patient,bigram,3,4,"lib4::number_mult(lib4::reduce_mean, lib4::glcm_glcm_mean_ref_minimum)",openai/patient_bigram_3.json
+anthropic,doctor,bigram,3,3,"lib3::watershed_image2D(lib2::add_img2D, lib4::glcm_max_prob_minimum)",anthropic/doctor_bigram_3.json
+anthropic,patient,bigram,2,1,lib1::gaussian13_image2D(lib2::experimental_tobinary_th_image2D_factory),anthropic/patient_bigram_2.json
+anthropic,patient,bigram,3,1,lib1::gaussian13_image2D(lib2::experimental_tobinary_th_image2D_factory),anthropic/patient_bigram_3.json

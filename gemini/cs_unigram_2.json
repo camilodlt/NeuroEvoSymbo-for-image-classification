@@ -1,0 +1,1532 @@
+[
+  {
+    "library_id": "Library 1",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 10,
+        "rationale": "Identity functions are ubiquitous and trivial to understand."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 10,
+        "rationale": "Tensor initialization with ones is a fundamental and universally understood operation."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 10,
+        "rationale": "Tensor initialization with zeros is a fundamental and universally understood operation."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 9,
+        "rationale": "Value inversion in the continuous [0, 1] range is a standard scalar transform."
+      },
+      {
+        "unit": "experimental_normalize_2D",
+        "score": 10,
+        "rationale": "Min-max normalization is a standard machine learning preprocessing step."
+      },
+      {
+        "unit": "experimental_standardize_2D",
+        "score": 10,
+        "rationale": "Z-score standardization is universally understood in data science."
+      },
+      {
+        "unit": "experimental_tointensity_image2D",
+        "score": 8,
+        "rationale": "Casting masks to continuous representations is clear but requires context on the input type."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 10,
+        "rationale": "Erosion is a textbook mathematical morphology operation."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 10,
+        "rationale": "Dilation is a textbook mathematical morphology operation."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 10,
+        "rationale": "Opening is a standard morphological combination of erosion and dilation."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 10,
+        "rationale": "Closing is a standard morphological combination of dilation and erosion."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 9,
+        "rationale": "The top-hat transform is a well-known morphological filter for feature extraction."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 9,
+        "rationale": "The black top-hat transform is a well-known morphological filter."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 9,
+        "rationale": "The morphological gradient is a clear and well-documented edge detection method."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 8,
+        "rationale": "Morphological Laplace edge response is understandable but slightly less common than linear equivalents."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 10,
+        "rationale": "Elementwise subtraction is a basic tensor operation."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 10,
+        "rationale": "Elementwise addition is a basic tensor operation."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 10,
+        "rationale": "Hadamard (elementwise) multiplication is a basic tensor operation."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 10,
+        "rationale": "Elementwise maximum is a basic tensor operation."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 10,
+        "rationale": "Elementwise minimum is a basic tensor operation."
+      },
+      {
+        "unit": "bsubtract_image2D",
+        "score": 10,
+        "rationale": "Scalar broadcast subtraction is a highly standard operation."
+      },
+      {
+        "unit": "badd_image2D",
+        "score": 10,
+        "rationale": "Scalar broadcast addition is a highly standard operation."
+      },
+      {
+        "unit": "bmult_image2D",
+        "score": 10,
+        "rationale": "Scalar broadcast multiplication is a highly standard operation."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 10,
+        "rationale": "Sobel X is a ubiquitous textbook edge detection filter."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 10,
+        "rationale": "Sobel Y is a ubiquitous textbook edge detection filter."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 10,
+        "rationale": "Sobel gradient magnitude is universally taught in computer vision."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 8,
+        "rationale": "Ando filters are clear in function but slightly more specialized than Sobel."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 8,
+        "rationale": "Ando filters are clear in function but slightly more specialized than Sobel."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 8,
+        "rationale": "Ando gradient magnitude is easily understood given standard gradient concepts."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 8,
+        "rationale": "Ando 4x4 X derivative is clear to CV practitioners."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 8,
+        "rationale": "Ando 4x4 Y derivative is clear to CV practitioners."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 8,
+        "rationale": "Ando 4x4 gradient magnitude is straightforward."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 8,
+        "rationale": "Ando 5x5 X derivative is clear to CV practitioners."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 8,
+        "rationale": "Ando 5x5 Y derivative is clear to CV practitioners."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 8,
+        "rationale": "Ando 5x5 gradient magnitude is straightforward."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 8,
+        "rationale": "Bickley filters are specialized but the mathematical intent is clear."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 8,
+        "rationale": "Bickley filters are specialized but the mathematical intent is clear."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 8,
+        "rationale": "Magnitude response of a derivative filter is easily interpretable."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 10,
+        "rationale": "Prewitt X is a fundamental textbook edge detection filter."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 10,
+        "rationale": "Prewitt Y is a fundamental textbook edge detection filter."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 10,
+        "rationale": "Prewitt magnitude is a textbook concept in CV."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 10,
+        "rationale": "Scharr filters are standard, widely used derivative operators."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 10,
+        "rationale": "Scharr filters are standard, widely used derivative operators."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 10,
+        "rationale": "Scharr magnitude is standard and easily understood."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 10,
+        "rationale": "Gaussian blur is a universally understood smoothing operation."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 10,
+        "rationale": "Gaussian blur is a universally understood smoothing operation."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 10,
+        "rationale": "Gaussian blur is a universally understood smoothing operation."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 10,
+        "rationale": "Gaussian blur is a universally understood smoothing operation."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 10,
+        "rationale": "Gaussian blur is a universally understood smoothing operation."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 10,
+        "rationale": "The Laplacian filter is a textbook second-order derivative operator."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 10,
+        "rationale": "Difference-of-Gaussians is a classic blob detection algorithm."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 8,
+        "rationale": "Moffat smoothing is slightly specialized but behaves similarly to a clear Gaussian alternative."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 8,
+        "rationale": "Moffat smoothing is slightly specialized but well defined."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 8,
+        "rationale": "Moffat smoothing is slightly specialized but well defined."
+      },
+      {
+        "unit": "exp_image2D",
+        "score": 10,
+        "rationale": "Elementwise exponential is completely unambiguous."
+      },
+      {
+        "unit": "loginv_image2D",
+        "score": 9,
+        "rationale": "Inverse-sign logarithm is mathematically clear."
+      },
+      {
+        "unit": "log_image2D",
+        "score": 10,
+        "rationale": "Elementwise logarithm is a standard mathematical transform."
+      },
+      {
+        "unit": "powerof_image2D",
+        "score": 10,
+        "rationale": "Elementwise exponentiation is a standard operation."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 10,
+        "rationale": "Basic conditional logic is fundamental to all programming."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 9,
+        "rationale": "Standard block pooling with value broadcasting is simple to grasp."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 7,
+        "rationale": "Pooling restricted to the center row and column is an unconventional design requiring minor cognitive effort."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 9,
+        "rationale": "Max pooling with broadcasting is mechanically clear."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 7,
+        "rationale": "Cross-shaped block max pooling is mathematically clear but unconventional."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 9,
+        "rationale": "Min pooling with broadcasting is mechanically clear."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 7,
+        "rationale": "Cross-shaped block min pooling is unconventional."
+      },
+      {
+        "unit": "meanpool",
+        "score": 10,
+        "rationale": "Sliding-window mean pooling is a ubiquitous ML primitive."
+      },
+      {
+        "unit": "maxpool",
+        "score": 10,
+        "rationale": "Sliding-window max pooling is a universally understood CNN component."
+      },
+      {
+        "unit": "minpool",
+        "score": 10,
+        "rationale": "Sliding-window min pooling is easily understood alongside maxpool."
+      },
+      {
+        "unit": "stdpool",
+        "score": 9,
+        "rationale": "Sliding-window standard deviation is a clear local variance measure."
+      },
+      {
+        "unit": "medianpool",
+        "score": 10,
+        "rationale": "Median filtering is a standard noise reduction technique."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 8,
+        "rationale": "Counting unique values locally is understandable but less common as a continuous layer."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 8,
+        "rationale": "Argmax-count pooling has a specific definition that requires reading carefully, though mechanically straightforward."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 8,
+        "rationale": "Argmin-count pooling has a specific definition that requires reading carefully."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 9,
+        "rationale": "Interquartile-range pooling applies standard statistical dispersion locally."
+      },
+      {
+        "unit": "grad_magnitude",
+        "score": 10,
+        "rationale": "Image gradient magnitude is a universally taught CV concept."
+      },
+      {
+        "unit": "grad_orientation",
+        "score": 10,
+        "rationale": "Image gradient orientation is a universally taught CV concept."
+      },
+      {
+        "unit": "orientation_select",
+        "score": 9,
+        "rationale": "Selecting subsets of gradients by orientation is a classic texture/feature extraction step."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 2",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 10,
+        "rationale": "Identity functions are ubiquitous and trivial."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 10,
+        "rationale": "Tensor initialization is standard."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 10,
+        "rationale": "Tensor initialization is standard."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 10,
+        "rationale": "Logical NOT / boolean inversion is trivial for CS practitioners."
+      },
+      {
+        "unit": "experimental_tobinary_image2D",
+        "score": 10,
+        "rationale": "Converting intensity to boolean via thresholding is universally understood."
+      },
+      {
+        "unit": "experimental_tobinary_th_image2D_factory",
+        "score": 10,
+        "rationale": "Parameterized thresholding is fully standard."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 9,
+        "rationale": "Elementwise subtraction with rounding on booleans is mechanically clear."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 9,
+        "rationale": "Elementwise addition with rounding maps intuitively to logical operations."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 10,
+        "rationale": "Multiplication on booleans maps exactly to logical AND."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 10,
+        "rationale": "Maximum on booleans maps exactly to logical OR."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 10,
+        "rationale": "Minimum on booleans maps exactly to logical AND."
+      },
+      {
+        "unit": "binarize_adaptive2D",
+        "score": 10,
+        "rationale": "Adaptive thresholding is a standard CV operation."
+      },
+      {
+        "unit": "binarize_niblack2D",
+        "score": 9,
+        "rationale": "Niblack thresholding is a famous historical algorithm in document image processing."
+      },
+      {
+        "unit": "binarize_polysegment2D",
+        "score": 7,
+        "rationale": "Polysegment thresholding is less ubiquitous but its role is clear from context."
+      },
+      {
+        "unit": "binarize_sauvola2D",
+        "score": 9,
+        "rationale": "Sauvola thresholding is a well-known improvement over Niblack."
+      },
+      {
+        "unit": "binarize_otsu2D",
+        "score": 10,
+        "rationale": "Otsu's method is widely taught and universally recognized."
+      },
+      {
+        "unit": "binarize_minimumintermodes2D",
+        "score": 8,
+        "rationale": "Minimum-intermodes is a standard histogram shape-based thresholding method."
+      },
+      {
+        "unit": "binarize_intermodes2D",
+        "score": 8,
+        "rationale": "Intermodes histogram thresholding is a known technique."
+      },
+      {
+        "unit": "binarize_minimumerror2D",
+        "score": 8,
+        "rationale": "Minimum-error thresholding is mathematically well-defined."
+      },
+      {
+        "unit": "binarize_moments2D",
+        "score": 8,
+        "rationale": "Moment-preserving thresholding is standard in image processing literature."
+      },
+      {
+        "unit": "binarize_unimodalrosin2D",
+        "score": 8,
+        "rationale": "Rosin's algorithm for unimodal histograms is known to CV specialists."
+      },
+      {
+        "unit": "binarize_entropy2D",
+        "score": 9,
+        "rationale": "Maximum entropy thresholding is widely understood."
+      },
+      {
+        "unit": "binarize_balanced2D",
+        "score": 8,
+        "rationale": "Balanced histogram thresholding is a clearly specified statistical method."
+      },
+      {
+        "unit": "binarize_yen2D",
+        "score": 8,
+        "rationale": "Yen's thresholding is established in image processing libraries."
+      },
+      {
+        "unit": "binarize_manual2D",
+        "score": 10,
+        "rationale": "Manual thresholding is trivial to understand."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 9,
+        "rationale": "Applying Sobel and rounding to boolean is non-standard but mechanically unambiguous."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 9,
+        "rationale": "Applying Sobel and rounding to boolean is non-standard but mechanically unambiguous."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 9,
+        "rationale": "Sobel magnitude with rounding yields a boolean edge map, which is intuitive."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 8,
+        "rationale": "Ando filter with boolean rounding is easily extrapolated from linear equivalents."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 8,
+        "rationale": "Ando filter with boolean rounding is easily extrapolated."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 8,
+        "rationale": "Ando magnitude with rounding yields boolean edges."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 8,
+        "rationale": "Higher order Ando filter with boolean rounding."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 8,
+        "rationale": "Higher order Ando filter with boolean rounding."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 8,
+        "rationale": "Higher order Ando magnitude with boolean rounding."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 8,
+        "rationale": "Higher order Ando filter with boolean rounding."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 8,
+        "rationale": "Higher order Ando filter with boolean rounding."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 8,
+        "rationale": "Higher order Ando magnitude with boolean rounding."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 8,
+        "rationale": "Bickley derivative with rounding."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 8,
+        "rationale": "Bickley derivative with rounding."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 8,
+        "rationale": "Bickley magnitude with rounding."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 9,
+        "rationale": "Prewitt derivative with boolean rounding is conceptually clear."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 9,
+        "rationale": "Prewitt derivative with boolean rounding is conceptually clear."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 9,
+        "rationale": "Prewitt magnitude with boolean rounding is conceptually clear."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 9,
+        "rationale": "Scharr derivative with boolean rounding is mechanically clear."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 9,
+        "rationale": "Scharr derivative with boolean rounding is mechanically clear."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 9,
+        "rationale": "Scharr magnitude with boolean rounding is mechanically clear."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 9,
+        "rationale": "Gaussian smoothing combined with rounding is slightly atypical but computationally transparent."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 9,
+        "rationale": "Gaussian smoothing with rounding."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 9,
+        "rationale": "Gaussian smoothing with rounding."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 9,
+        "rationale": "Gaussian smoothing with rounding."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 9,
+        "rationale": "Gaussian smoothing with rounding."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 9,
+        "rationale": "Laplacian filter cast to boolean via rounding is clear."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 9,
+        "rationale": "DoG filter cast to boolean is highly interpretable as an edge/blob mask."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 8,
+        "rationale": "Moffat filter with boolean rounding."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 8,
+        "rationale": "Moffat filter with boolean rounding."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 8,
+        "rationale": "Moffat filter with boolean rounding."
+      },
+      {
+        "unit": "findlocalminima_image2D",
+        "score": 10,
+        "rationale": "Extracting a boolean mask of local minima is a standard algorithm."
+      },
+      {
+        "unit": "findlocalmaxima_image2D",
+        "score": 10,
+        "rationale": "Extracting a boolean mask of local maxima is a standard algorithm."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 10,
+        "rationale": "Binary erosion is universally taught."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 10,
+        "rationale": "Binary dilation is universally taught."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 10,
+        "rationale": "Binary opening is highly interpretable noise removal."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 10,
+        "rationale": "Binary closing is highly interpretable gap filling."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 10,
+        "rationale": "Binary top-hat is standard."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 10,
+        "rationale": "Binary black top-hat is standard."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 10,
+        "rationale": "Binary morphological gradient perfectly isolates boundaries."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 9,
+        "rationale": "Morphological Laplace over booleans is a structured mathematical operation."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 10,
+        "rationale": "Standard programming conditional."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 9,
+        "rationale": "Block average pooling followed by rounding essentially implements a majority vote."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 7,
+        "rationale": "Cross-shaped block average pooling with rounding is unconventional."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 9,
+        "rationale": "Max pooling on booleans is mathematically equivalent to block dilation."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 7,
+        "rationale": "Unconventional pooling region shape."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 9,
+        "rationale": "Min pooling on booleans is mathematically equivalent to block erosion."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 7,
+        "rationale": "Unconventional pooling region shape."
+      },
+      {
+        "unit": "meanpool",
+        "score": 10,
+        "rationale": "Sliding window mean with rounding maps to local majority voting."
+      },
+      {
+        "unit": "maxpool",
+        "score": 10,
+        "rationale": "Sliding window max on binary is standard dilation."
+      },
+      {
+        "unit": "minpool",
+        "score": 10,
+        "rationale": "Sliding window min on binary is standard erosion."
+      },
+      {
+        "unit": "stdpool",
+        "score": 9,
+        "rationale": "Sliding window standard deviation with rounding is mathematically clear."
+      },
+      {
+        "unit": "medianpool",
+        "score": 10,
+        "rationale": "Median filter on binary images is highly standard noise removal."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 8,
+        "rationale": "Unique count pooling with scaling and rounding is highly specific but understandable."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 8,
+        "rationale": "Argmax-count pooling mapped to binary requires parsing the exact definition."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 8,
+        "rationale": "Argmin-count pooling mapped to binary requires parsing."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 9,
+        "rationale": "IQR on booleans measures local variability, scaled and rounded."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 3",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 10,
+        "rationale": "Identity is trivial."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 10,
+        "rationale": "Matrix of ones is a standard construct."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 10,
+        "rationale": "Matrix of zeros is a standard construct."
+      },
+      {
+        "unit": "experimental_tosegment_image2D",
+        "score": 10,
+        "rationale": "Converting a binary image to connected components/segments is standard CV."
+      },
+      {
+        "unit": "fastscanning_image2D",
+        "score": 9,
+        "rationale": "Fast scanning is a known algorithm for connected components labeling."
+      },
+      {
+        "unit": "watershed_image2D",
+        "score": 10,
+        "rationale": "Watershed is a textbook segmentation algorithm universally recognized by ML/CV researchers."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 4",
+    "scores": [
+      {
+        "unit": "identity_float",
+        "score": 10,
+        "rationale": "Identity operations are trivial."
+      },
+      {
+        "unit": "ret_1",
+        "score": 10,
+        "rationale": "Returning a constant is trivial."
+      },
+      {
+        "unit": "tanh",
+        "score": 10,
+        "rationale": "Tanh is a standard neural network activation function."
+      },
+      {
+        "unit": "relu",
+        "score": 10,
+        "rationale": "ReLU is universally known in deep learning."
+      },
+      {
+        "unit": "modulo",
+        "score": 10,
+        "rationale": "Modulo is a fundamental programming arithmetic operator."
+      },
+      {
+        "unit": "is_eq_to",
+        "score": 10,
+        "rationale": "Equality check is a basic logical primitive."
+      },
+      {
+        "unit": "experimental_is_gt",
+        "score": 10,
+        "rationale": "Greater-than comparison is a basic logical primitive."
+      },
+      {
+        "unit": "experimental_is_lt",
+        "score": 10,
+        "rationale": "Less-than comparison is a basic logical primitive."
+      },
+      {
+        "unit": "experimental_not",
+        "score": 9,
+        "rationale": "Thresholded logical NOT over continuous space is intuitive."
+      },
+      {
+        "unit": "number_sum",
+        "score": 10,
+        "rationale": "Scalar addition is trivial."
+      },
+      {
+        "unit": "number_minus",
+        "score": 10,
+        "rationale": "Scalar subtraction is trivial."
+      },
+      {
+        "unit": "number_mult",
+        "score": 10,
+        "rationale": "Scalar multiplication is trivial."
+      },
+      {
+        "unit": "number_div",
+        "score": 10,
+        "rationale": "Scalar division is trivial."
+      },
+      {
+        "unit": "safe_div",
+        "score": 10,
+        "rationale": "Division with zero-protection is standard practice in robust numerical programming."
+      },
+      {
+        "unit": "power_of",
+        "score": 10,
+        "rationale": "Exponentiation is trivial."
+      },
+      {
+        "unit": "pi_",
+        "score": 10,
+        "rationale": "Mathematical constants are inherently clear."
+      },
+      {
+        "unit": "exp_",
+        "score": 10,
+        "rationale": "Exponential function is standard."
+      },
+      {
+        "unit": "log_",
+        "score": 10,
+        "rationale": "Natural logarithm is standard."
+      },
+      {
+        "unit": "log10_",
+        "score": 10,
+        "rationale": "Base-10 logarithm is standard."
+      },
+      {
+        "unit": "reduce_length",
+        "score": 10,
+        "rationale": "Computing total pixel count is trivial."
+      },
+      {
+        "unit": "reduce_biggestAxis",
+        "score": 10,
+        "rationale": "Max dimension size is trivial."
+      },
+      {
+        "unit": "reduce_smallerAxis",
+        "score": 10,
+        "rationale": "Min dimension size is trivial."
+      },
+      {
+        "unit": "reduce_histMode",
+        "score": 10,
+        "rationale": "Finding the global mode is a standard statistical operation."
+      },
+      {
+        "unit": "reduce_histModeCount",
+        "score": 10,
+        "rationale": "Counting the global mode's frequency is a standard statistical operation."
+      },
+      {
+        "unit": "reduce_propWhite",
+        "score": 10,
+        "rationale": "Calculating boolean class proportion is completely standard."
+      },
+      {
+        "unit": "reduce_propBlack",
+        "score": 10,
+        "rationale": "Calculating boolean class proportion is completely standard."
+      },
+      {
+        "unit": "reduce_nColors",
+        "score": 10,
+        "rationale": "Counting unique elements is widely understood."
+      },
+      {
+        "unit": "reduce_mean",
+        "score": 10,
+        "rationale": "Global mean reduction is standard."
+      },
+      {
+        "unit": "reduce_median",
+        "score": 10,
+        "rationale": "Global median reduction is standard."
+      },
+      {
+        "unit": "reduce_std",
+        "score": 10,
+        "rationale": "Global standard deviation reduction is standard."
+      },
+      {
+        "unit": "reduce_maximum",
+        "score": 10,
+        "rationale": "Global maximum reduction is standard."
+      },
+      {
+        "unit": "reduce_minimum",
+        "score": 10,
+        "rationale": "Global minimum reduction is standard."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 10,
+        "rationale": "Standard conditional multiplexing."
+      },
+      {
+        "unit": "region_mean",
+        "score": 10,
+        "rationale": "Local patch mean is perfectly interpretable."
+      },
+      {
+        "unit": "region_std",
+        "score": 10,
+        "rationale": "Local patch standard deviation is perfectly interpretable."
+      },
+      {
+        "unit": "region_min",
+        "score": 10,
+        "rationale": "Local patch minimum is perfectly interpretable."
+      },
+      {
+        "unit": "region_max",
+        "score": 10,
+        "rationale": "Local patch maximum is perfectly interpretable."
+      },
+      {
+        "unit": "region_sum",
+        "score": 10,
+        "rationale": "Local patch sum is perfectly interpretable."
+      },
+      {
+        "unit": "region_median",
+        "score": 10,
+        "rationale": "Local patch median is perfectly interpretable."
+      },
+      {
+        "unit": "region_range",
+        "score": 10,
+        "rationale": "Local patch range (max-min) is clear."
+      },
+      {
+        "unit": "region_contrast",
+        "score": 9,
+        "rationale": "Center-surround contrast is standard in visual neuroscience and traditional CV."
+      },
+      {
+        "unit": "region_energy",
+        "score": 10,
+        "rationale": "Patch energy (mean squared value) is a standard signal processing metric."
+      },
+      {
+        "unit": "region_entropy",
+        "score": 10,
+        "rationale": "Patch entropy via histogram is a standard texture metric."
+      },
+      {
+        "unit": "region_mean_5p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_std_5p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_min_5p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_max_5p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_sum_5p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_median_5p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_range_5p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_contrast_5p",
+        "score": 9,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_energy_5p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_entropy_5p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_mean_10p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_std_10p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_min_10p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_max_10p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_sum_10p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_median_10p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_range_10p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_contrast_10p",
+        "score": 9,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_energy_10p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_entropy_10p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_mean_20p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_std_20p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_min_20p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_max_20p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_sum_20p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_median_20p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_range_20p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_contrast_20p",
+        "score": 9,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_energy_20p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "region_entropy_20p",
+        "score": 10,
+        "rationale": "Patch metric bounded by relative size is easy to interpret."
+      },
+      {
+        "unit": "haar_lr",
+        "score": 10,
+        "rationale": "Haar-like features are a foundational algorithm in object detection."
+      },
+      {
+        "unit": "haar_tb",
+        "score": 10,
+        "rationale": "Haar-like features are a foundational algorithm in object detection."
+      },
+      {
+        "unit": "haar_diag_main",
+        "score": 10,
+        "rationale": "Diagonal Haar contrast is standard in CV."
+      },
+      {
+        "unit": "haar_diag_anti",
+        "score": 10,
+        "rationale": "Diagonal Haar contrast is standard in CV."
+      },
+      {
+        "unit": "haar_center_surround",
+        "score": 10,
+        "rationale": "Center-surround Haar contrast maps easily to Viola-Jones style features."
+      },
+      {
+        "unit": "haar_three_h",
+        "score": 10,
+        "rationale": "Three-band horizontal Haar is a standard CV template."
+      },
+      {
+        "unit": "haar_three_v",
+        "score": 10,
+        "rationale": "Three-band vertical Haar is a standard CV template."
+      },
+      {
+        "unit": "orientation_coherence",
+        "score": 9,
+        "rationale": "Orientation coherence is an established structural tensor metric."
+      },
+      {
+        "unit": "dominant_orientation",
+        "score": 9,
+        "rationale": "Extracting the dominant coarse angle is intuitively clear."
+      },
+      {
+        "unit": "orientation_energy_0",
+        "score": 9,
+        "rationale": "Directional energy proportions are widely used in HOG-like pipelines."
+      },
+      {
+        "unit": "orientation_energy_45",
+        "score": 9,
+        "rationale": "Directional energy proportions are widely used in HOG-like pipelines."
+      },
+      {
+        "unit": "orientation_energy_90",
+        "score": 9,
+        "rationale": "Directional energy proportions are widely used in HOG-like pipelines."
+      },
+      {
+        "unit": "orientation_energy_135",
+        "score": 9,
+        "rationale": "Directional energy proportions are widely used in HOG-like pipelines."
+      },
+      {
+        "unit": "orientation_spread",
+        "score": 9,
+        "rationale": "Measuring gradient angle variance is a clear indicator of texture regularity."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_mean",
+        "score": 10,
+        "rationale": "GLCM metrics combined with basic poolings are textbook texture features in ML."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_sum",
+        "score": 10,
+        "rationale": "GLCM metrics combined with basic poolings are textbook texture features in ML."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_std",
+        "score": 10,
+        "rationale": "GLCM metrics combined with basic poolings are textbook texture features in ML."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_minimum",
+        "score": 10,
+        "rationale": "GLCM metrics combined with basic poolings are textbook texture features in ML."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_maximum",
+        "score": 10,
+        "rationale": "GLCM metrics combined with basic poolings are textbook texture features in ML."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_mean",
+        "score": 10,
+        "rationale": "GLCM metrics combined with basic poolings are textbook texture features in ML."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_sum",
+        "score": 10,
+        "rationale": "GLCM metrics combined with basic poolings are textbook texture features in ML."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_std",
+        "score": 10,
+        "rationale": "GLCM metrics combined with basic poolings are textbook texture features in ML."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_minimum",
+        "score": 10,
+        "rationale": "GLCM metrics combined with basic poolings are textbook texture features in ML."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_maximum",
+        "score": 10,
+        "rationale": "GLCM metrics combined with basic poolings are textbook texture features in ML."
+      },
+      {
+        "unit": "glcm_correlation_mean",
+        "score": 10,
+        "rationale": "GLCM correlation is highly established in CV texture analysis."
+      },
+      {
+        "unit": "glcm_correlation_sum",
+        "score": 10,
+        "rationale": "GLCM correlation is highly established in CV texture analysis."
+      },
+      {
+        "unit": "glcm_correlation_std",
+        "score": 10,
+        "rationale": "GLCM correlation is highly established in CV texture analysis."
+      },
+      {
+        "unit": "glcm_correlation_minimum",
+        "score": 10,
+        "rationale": "GLCM correlation is highly established in CV texture analysis."
+      },
+      {
+        "unit": "glcm_correlation_maximum",
+        "score": 10,
+        "rationale": "GLCM correlation is highly established in CV texture analysis."
+      },
+      {
+        "unit": "glcm_contrast_mean",
+        "score": 10,
+        "rationale": "GLCM contrast is highly established in CV texture analysis."
+      },
+      {
+        "unit": "glcm_contrast_sum",
+        "score": 10,
+        "rationale": "GLCM contrast is highly established in CV texture analysis."
+      },
+      {
+        "unit": "glcm_contrast_std",
+        "score": 10,
+        "rationale": "GLCM contrast is highly established in CV texture analysis."
+      },
+      {
+        "unit": "glcm_contrast_minimum",
+        "score": 10,
+        "rationale": "GLCM contrast is highly established in CV texture analysis."
+      },
+      {
+        "unit": "glcm_contrast_maximum",
+        "score": 10,
+        "rationale": "GLCM contrast is highly established in CV texture analysis."
+      },
+      {
+        "unit": "glcm_IDM_mean",
+        "score": 10,
+        "rationale": "GLCM Inverse Difference Moment is standard."
+      },
+      {
+        "unit": "glcm_IDM_sum",
+        "score": 10,
+        "rationale": "GLCM Inverse Difference Moment is standard."
+      },
+      {
+        "unit": "glcm_IDM_std",
+        "score": 10,
+        "rationale": "GLCM Inverse Difference Moment is standard."
+      },
+      {
+        "unit": "glcm_IDM_minimum",
+        "score": 10,
+        "rationale": "GLCM Inverse Difference Moment is standard."
+      },
+      {
+        "unit": "glcm_IDM_maximum",
+        "score": 10,
+        "rationale": "GLCM Inverse Difference Moment is standard."
+      },
+      {
+        "unit": "glcm_ASM_mean",
+        "score": 10,
+        "rationale": "GLCM Angular Second Moment is standard."
+      },
+      {
+        "unit": "glcm_ASM_sum",
+        "score": 10,
+        "rationale": "GLCM Angular Second Moment is standard."
+      },
+      {
+        "unit": "glcm_ASM_std",
+        "score": 10,
+        "rationale": "GLCM Angular Second Moment is standard."
+      },
+      {
+        "unit": "glcm_ASM_minimum",
+        "score": 10,
+        "rationale": "GLCM Angular Second Moment is standard."
+      },
+      {
+        "unit": "glcm_ASM_maximum",
+        "score": 10,
+        "rationale": "GLCM Angular Second Moment is standard."
+      },
+      {
+        "unit": "glcm_glcm_entropy_mean",
+        "score": 10,
+        "rationale": "GLCM entropy is standard."
+      },
+      {
+        "unit": "glcm_glcm_entropy_sum",
+        "score": 10,
+        "rationale": "GLCM entropy is standard."
+      },
+      {
+        "unit": "glcm_glcm_entropy_std",
+        "score": 10,
+        "rationale": "GLCM entropy is standard."
+      },
+      {
+        "unit": "glcm_glcm_entropy_minimum",
+        "score": 10,
+        "rationale": "GLCM entropy is standard."
+      },
+      {
+        "unit": "glcm_glcm_entropy_maximum",
+        "score": 10,
+        "rationale": "GLCM entropy is standard."
+      },
+      {
+        "unit": "glcm_max_prob_mean",
+        "score": 10,
+        "rationale": "GLCM max probability is standard."
+      },
+      {
+        "unit": "glcm_max_prob_sum",
+        "score": 10,
+        "rationale": "GLCM max probability is standard."
+      },
+      {
+        "unit": "glcm_max_prob_std",
+        "score": 10,
+        "rationale": "GLCM max probability is standard."
+      },
+      {
+        "unit": "glcm_max_prob_minimum",
+        "score": 10,
+        "rationale": "GLCM max probability is standard."
+      },
+      {
+        "unit": "glcm_max_prob_maximum",
+        "score": 10,
+        "rationale": "GLCM max probability is standard."
+      },
+      {
+        "unit": "glcm_energy_mean",
+        "score": 10,
+        "rationale": "GLCM energy is standard."
+      },
+      {
+        "unit": "glcm_energy_sum",
+        "score": 10,
+        "rationale": "GLCM energy is standard."
+      },
+      {
+        "unit": "glcm_energy_std",
+        "score": 10,
+        "rationale": "GLCM energy is standard."
+      },
+      {
+        "unit": "glcm_energy_minimum",
+        "score": 10,
+        "rationale": "GLCM energy is standard."
+      },
+      {
+        "unit": "glcm_energy_maximum",
+        "score": 10,
+        "rationale": "GLCM energy is standard."
+      },
+      {
+        "unit": "glcm_dissimilarity_mean",
+        "score": 10,
+        "rationale": "GLCM dissimilarity is standard."
+      },
+      {
+        "unit": "glcm_dissimilarity_sum",
+        "score": 10,
+        "rationale": "GLCM dissimilarity is standard."
+      },
+      {
+        "unit": "glcm_dissimilarity_std",
+        "score": 10,
+        "rationale": "GLCM dissimilarity is standard."
+      },
+      {
+        "unit": "glcm_dissimilarity_minimum",
+        "score": 10,
+        "rationale": "GLCM dissimilarity is standard."
+      },
+      {
+        "unit": "glcm_dissimilarity_maximum",
+        "score": 10,
+        "rationale": "GLCM dissimilarity is standard."
+      }
+    ]
+  }
+]

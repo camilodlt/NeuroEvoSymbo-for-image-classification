@@ -1,0 +1,1532 @@
+[
+  {
+    "library_id": "Library 1",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 8,
+        "rationale": "Returning the image unchanged is straightforward and easy to understand for any stakeholder."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 6,
+        "rationale": "Creating a uniform white image is simple but its clinical utility requires some inference."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 6,
+        "rationale": "Creating a blank/black image is simple but its clinical purpose requires some inference."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 8,
+        "rationale": "Inverting image intensities (making bright areas dark and vice versa) is a familiar radiological concept."
+      },
+      {
+        "unit": "experimental_normalize_2D",
+        "score": 7,
+        "rationale": "Normalizing image values to a standard range is a recognizable preprocessing step in medical imaging."
+      },
+      {
+        "unit": "experimental_standardize_2D",
+        "score": 6,
+        "rationale": "Standardization using mean and standard deviation is statistically familiar but less intuitively visual."
+      },
+      {
+        "unit": "experimental_tointensity_image2D",
+        "score": 5,
+        "rationale": "Converting binary/segment images to intensity representation requires understanding of image type distinctions."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 7,
+        "rationale": "Shrinking bright regions is conceptually relatable to reducing highlighted structures in an image."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 7,
+        "rationale": "Expanding bright regions is conceptually relatable to enlarging highlighted structures in an image."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 6,
+        "rationale": "Removing small bright noise by erosion then dilation is clinically relevant but requires morphological knowledge."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 6,
+        "rationale": "Filling small dark gaps is clinically relevant (e.g., closing holes in lesions) but requires morphological knowledge."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 6,
+        "rationale": "Extracting small bright structures is relevant to detecting small lesions, though the transform name is technical."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 5,
+        "rationale": "Extracting small dark structures is clinically relevant but the black top-hat concept is less familiar."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 6,
+        "rationale": "Emphasizing object boundaries is directly relevant to lesion or tissue boundary delineation."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 3,
+        "rationale": "Morphological Laplace edge response is a highly technical concept unlikely to be familiar to a clinician."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 7,
+        "rationale": "Subtracting one image from another is intuitively understandable as highlighting differences between images."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 7,
+        "rationale": "Adding two images elementwise is intuitively understandable as combining image information."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 6,
+        "rationale": "Multiplying two images elementwise is somewhat intuitive as masking or weighting, though less immediate."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 6,
+        "rationale": "Taking the elementwise maximum between two images is moderately interpretable as selecting the brighter value."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 6,
+        "rationale": "Taking the elementwise minimum between two images is moderately interpretable as selecting the darker value."
+      },
+      {
+        "unit": "bsubtract_image2D",
+        "score": 7,
+        "rationale": "Subtracting a constant from every pixel is easily understood as shifting brightness downward."
+      },
+      {
+        "unit": "badd_image2D",
+        "score": 7,
+        "rationale": "Adding a constant to every pixel is easily understood as shifting brightness upward."
+      },
+      {
+        "unit": "bmult_image2D",
+        "score": 7,
+        "rationale": "Multiplying every pixel by a scalar is easily understood as adjusting image contrast or gain."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 5,
+        "rationale": "Sobel X derivative highlights vertical edges; the concept of edge detection is familiar but the specific filter name is technical."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 5,
+        "rationale": "Sobel Y derivative highlights horizontal edges; edge detection is familiar but the specific filter name is technical."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 6,
+        "rationale": "Sobel gradient magnitude highlights all edges/boundaries, which is clinically meaningful for structure delineation."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 3,
+        "rationale": "Ando filter is an obscure technical variant of derivative filters unlikely to be recognized by clinicians."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 3,
+        "rationale": "Ando filter is an obscure technical variant of derivative filters unlikely to be recognized by clinicians."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 3,
+        "rationale": "Ando gradient magnitude is a technical concept not recognizable to medical professionals."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 3,
+        "rationale": "Ando 4x4 filter variant is highly technical and not interpretable without CV expertise."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 3,
+        "rationale": "Ando 4x4 filter variant is highly technical and not interpretable without CV expertise."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 3,
+        "rationale": "Ando 4x4 gradient magnitude is a technical concept not recognizable to medical professionals."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 3,
+        "rationale": "Ando 5x5 filter variant is highly technical and not interpretable without CV expertise."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 3,
+        "rationale": "Ando 5x5 filter variant is highly technical and not interpretable without CV expertise."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 3,
+        "rationale": "Ando 5x5 gradient magnitude is a technical concept not recognizable to medical professionals."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 2,
+        "rationale": "Bickley filter is an obscure technical filter name with no clinical relevance or recognition."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 2,
+        "rationale": "Bickley filter is an obscure technical filter name with no clinical relevance or recognition."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 2,
+        "rationale": "Bickley gradient magnitude is an obscure technical concept with no clinical relevance."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 4,
+        "rationale": "Prewitt X derivative is a known edge detection filter but the name is technical and directional details require background."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 4,
+        "rationale": "Prewitt Y derivative is a known edge detection filter but the name is technical and directional details require background."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 5,
+        "rationale": "Prewitt gradient magnitude for edge detection is somewhat interpretable as boundary highlighting."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 3,
+        "rationale": "Scharr filter is a technical CV concept unlikely to be familiar to clinicians."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 3,
+        "rationale": "Scharr filter is a technical CV concept unlikely to be familiar to clinicians."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 4,
+        "rationale": "Scharr gradient magnitude highlights edges but the filter name remains technical for a clinician."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 7,
+        "rationale": "Gaussian smoothing/blurring at a specific scale is a familiar image processing concept in medical imaging."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 7,
+        "rationale": "Gaussian smoothing at a larger scale is interpretable as broader blurring of image details."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 7,
+        "rationale": "Gaussian smoothing at progressively larger kernel is interpretable as strong blurring."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 6,
+        "rationale": "Gaussian smoothing with a large kernel is interpretable as heavy blurring, though sigma values are technical."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 6,
+        "rationale": "Gaussian smoothing with a very large kernel is interpretable as very heavy blurring."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 5,
+        "rationale": "Laplacian edge detection is a known concept but the second-order derivative framing requires technical background."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 5,
+        "rationale": "Difference of Gaussians for edge/blob detection is a moderately known concept but technically named."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 2,
+        "rationale": "Moffat filter is an obscure technical filter from astrophysics with no recognizable clinical meaning."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 2,
+        "rationale": "Moffat filter is an obscure technical filter with no recognizable clinical meaning."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 2,
+        "rationale": "Moffat filter is an obscure technical filter with no recognizable clinical meaning."
+      },
+      {
+        "unit": "exp_image2D",
+        "score": 5,
+        "rationale": "Applying an exponential transform to pixel values is a recognized intensity transformation but its visual effect needs interpretation."
+      },
+      {
+        "unit": "loginv_image2D",
+        "score": 4,
+        "rationale": "Log transform with sign inversion is a recognized enhancement technique but the inverted sign adds confusion."
+      },
+      {
+        "unit": "log_image2D",
+        "score": 6,
+        "rationale": "Logarithmic intensity transformation to enhance dark regions is a familiar concept in medical image display."
+      },
+      {
+        "unit": "powerof_image2D",
+        "score": 5,
+        "rationale": "Power-law (gamma) transformation of pixel values is a recognized image enhancement concept."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 5,
+        "rationale": "Conditional selection between two images based on a condition map is moderately interpretable as a masking operation."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 5,
+        "rationale": "Block-wise average pooling creating uniform regions is interpretable as a spatial averaging/downsampling concept."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 3,
+        "rationale": "Averaging only center row and column of blocks is a technical operation without clear clinical intuition."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 5,
+        "rationale": "Block-wise maximum pooling highlighting the brightest value in each region is moderately interpretable."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 3,
+        "rationale": "Max pooling over center row and column of blocks is a technical operation without clear clinical intuition."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 5,
+        "rationale": "Block-wise minimum pooling highlighting the darkest value in each region is moderately interpretable."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 3,
+        "rationale": "Min pooling over center row and column of blocks is a technical operation without clear clinical intuition."
+      },
+      {
+        "unit": "meanpool",
+        "score": 6,
+        "rationale": "Sliding-window mean pooling as local averaging is an interpretable spatial smoothing operation."
+      },
+      {
+        "unit": "maxpool",
+        "score": 6,
+        "rationale": "Sliding-window max pooling highlighting local bright spots is interpretable as detecting local bright features."
+      },
+      {
+        "unit": "minpool",
+        "score": 6,
+        "rationale": "Sliding-window min pooling highlighting local dark spots is interpretable as detecting local dark features."
+      },
+      {
+        "unit": "stdpool",
+        "score": 6,
+        "rationale": "Sliding-window standard deviation maps local intensity variability, which is clinically relevant for texture."
+      },
+      {
+        "unit": "medianpool",
+        "score": 6,
+        "rationale": "Sliding-window median pooling as a noise-robust local average is an interpretable smoothing operation."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 4,
+        "rationale": "Counting unique values in local windows is a technical operation without direct clinical intuition."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 3,
+        "rationale": "Argmax-count pooling is a technical operation without clear clinical meaning."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 3,
+        "rationale": "Argmin-count pooling is a technical operation without clear clinical meaning."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 5,
+        "rationale": "Interquartile range pooling measures local intensity spread and is moderately interpretable as local contrast variability."
+      },
+      {
+        "unit": "grad_magnitude",
+        "score": 7,
+        "rationale": "Gradient magnitude as a map of intensity changes is directly interpretable as edge/boundary strength in tissue."
+      },
+      {
+        "unit": "grad_orientation",
+        "score": 5,
+        "rationale": "Gradient orientation map showing the direction of intensity changes requires some geometric interpretation."
+      },
+      {
+        "unit": "orientation_select",
+        "score": 4,
+        "rationale": "Selecting gradients near a specific orientation is a technical concept requiring knowledge of directional filtering."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 2",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 8,
+        "rationale": "Returning the image unchanged is straightforward and easy to understand for any stakeholder."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 6,
+        "rationale": "Creating a fully white binary image is simple but its clinical purpose requires some inference."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 6,
+        "rationale": "Creating a fully black binary image is simple but its clinical purpose requires some inference."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 8,
+        "rationale": "Inverting a binary image (swapping foreground and background) is intuitive and clinically understandable."
+      },
+      {
+        "unit": "experimental_tobinary_image2D",
+        "score": 8,
+        "rationale": "Converting to binary by thresholding is directly understandable as separating foreground from background."
+      },
+      {
+        "unit": "experimental_tobinary_th_image2D_factory",
+        "score": 8,
+        "rationale": "Thresholding with a specified value to create a binary image is intuitive and clinically meaningful."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 7,
+        "rationale": "Subtracting two binary images is interpretable as finding regions present in one but not the other."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 7,
+        "rationale": "Adding two binary images is interpretable as combining or unioning two segmented regions."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 7,
+        "rationale": "Multiplying two binary images is interpretable as the intersection of two segmented regions."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 7,
+        "rationale": "Elementwise maximum of binary images is interpretable as logical OR (union of regions)."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 7,
+        "rationale": "Elementwise minimum of binary images is interpretable as logical AND (intersection of regions)."
+      },
+      {
+        "unit": "binarize_adaptive2D",
+        "score": 7,
+        "rationale": "Adaptive local thresholding to segment heterogeneous regions is a clinically meaningful concept."
+      },
+      {
+        "unit": "binarize_niblack2D",
+        "score": 5,
+        "rationale": "Niblack thresholding is a named local method that requires background knowledge to distinguish from other methods."
+      },
+      {
+        "unit": "binarize_polysegment2D",
+        "score": 4,
+        "rationale": "Polysegment thresholding is a technical method name without obvious clinical intuition."
+      },
+      {
+        "unit": "binarize_sauvola2D",
+        "score": 5,
+        "rationale": "Sauvola thresholding is a named local method that requires background knowledge to distinguish from others."
+      },
+      {
+        "unit": "binarize_otsu2D",
+        "score": 7,
+        "rationale": "Otsu thresholding is a widely known automatic histogram-based segmentation method recognizable in biomedical contexts."
+      },
+      {
+        "unit": "binarize_minimumintermodes2D",
+        "score": 4,
+        "rationale": "Minimum-intermodes thresholding is a technical histogram method not immediately clear to a clinician."
+      },
+      {
+        "unit": "binarize_intermodes2D",
+        "score": 4,
+        "rationale": "Intermodes thresholding is a technical histogram method not immediately clear to a clinician."
+      },
+      {
+        "unit": "binarize_minimumerror2D",
+        "score": 4,
+        "rationale": "Minimum-error thresholding is a statistical method that is not intuitively clear to a clinician."
+      },
+      {
+        "unit": "binarize_moments2D",
+        "score": 4,
+        "rationale": "Moments-based thresholding is a technical statistical method not immediately interpretable clinically."
+      },
+      {
+        "unit": "binarize_unimodalrosin2D",
+        "score": 4,
+        "rationale": "Unimodal Rosin thresholding is a named technical method not familiar to most clinicians."
+      },
+      {
+        "unit": "binarize_entropy2D",
+        "score": 5,
+        "rationale": "Entropy-based thresholding is a somewhat recognizable concept linking information content to segmentation."
+      },
+      {
+        "unit": "binarize_balanced2D",
+        "score": 5,
+        "rationale": "Balanced histogram thresholding is partially intuitive but remains a technical method name."
+      },
+      {
+        "unit": "binarize_yen2D",
+        "score": 4,
+        "rationale": "Yen thresholding is a named technical method not familiar to most clinicians."
+      },
+      {
+        "unit": "binarize_manual2D",
+        "score": 8,
+        "rationale": "Manual thresholding with explicit parameters is highly interpretable as direct user-controlled segmentation."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 5,
+        "rationale": "Sobel X edge detection binarized is moderately interpretable as detecting vertical boundaries."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 5,
+        "rationale": "Sobel Y edge detection binarized is moderately interpretable as detecting horizontal boundaries."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 6,
+        "rationale": "Sobel gradient magnitude binarized highlights all tissue/structure edges in a recognizable way."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 3,
+        "rationale": "Ando filter is an obscure technical variant unlikely to be recognized by clinicians."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 3,
+        "rationale": "Ando filter is an obscure technical variant unlikely to be recognized by clinicians."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 3,
+        "rationale": "Ando gradient magnitude is a technical concept not recognizable to medical professionals."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 3,
+        "rationale": "Ando 4x4 filter variant is highly technical and not interpretable without CV expertise."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 3,
+        "rationale": "Ando 4x4 filter variant is highly technical and not interpretable without CV expertise."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 3,
+        "rationale": "Ando 4x4 gradient magnitude is a technical concept not recognizable to medical professionals."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 3,
+        "rationale": "Ando 5x5 filter variant is highly technical and not interpretable without CV expertise."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 3,
+        "rationale": "Ando 5x5 filter variant is highly technical and not interpretable without CV expertise."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 3,
+        "rationale": "Ando 5x5 gradient magnitude is a technical concept not recognizable to medical professionals."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 2,
+        "rationale": "Bickley filter is an obscure technical filter name with no clinical relevance or recognition."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 2,
+        "rationale": "Bickley filter is an obscure technical filter name with no clinical relevance or recognition."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 2,
+        "rationale": "Bickley gradient magnitude is an obscure technical concept with no clinical relevance."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 4,
+        "rationale": "Prewitt X derivative is a known edge detection filter but technical naming reduces interpretability."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 4,
+        "rationale": "Prewitt Y derivative is a known edge detection filter but technical naming reduces interpretability."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 5,
+        "rationale": "Prewitt gradient magnitude for edge detection is somewhat interpretable as boundary detection."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 3,
+        "rationale": "Scharr filter is a technical CV concept unlikely to be familiar to clinicians."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 3,
+        "rationale": "Scharr filter is a technical CV concept unlikely to be familiar to clinicians."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 4,
+        "rationale": "Scharr gradient magnitude highlights edges but the filter name remains technical for a clinician."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 7,
+        "rationale": "Gaussian smoothing binarized is interpretable as detecting broad intensity features after blurring."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 6,
+        "rationale": "Gaussian smoothing at larger scale binarized is interpretable as detecting coarser intensity features."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 6,
+        "rationale": "Gaussian smoothing at progressively larger kernel binarized is interpretable as detecting very coarse features."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 6,
+        "rationale": "Large Gaussian smoothing binarized is interpretable as detecting broad regional intensity patterns."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 6,
+        "rationale": "Very large Gaussian smoothing binarized is interpretable as detecting very broad spatial patterns."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 5,
+        "rationale": "Laplacian edge detection binarized is moderately interpretable as marking sharp boundaries."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 5,
+        "rationale": "Difference of Gaussians binarized is a moderately known concept for detecting edges and blobs."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 2,
+        "rationale": "Moffat filter is an obscure technical filter with no recognizable clinical meaning."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 2,
+        "rationale": "Moffat filter is an obscure technical filter with no recognizable clinical meaning."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 2,
+        "rationale": "Moffat filter is an obscure technical filter with no recognizable clinical meaning."
+      },
+      {
+        "unit": "findlocalminima_image2D",
+        "score": 7,
+        "rationale": "Marking local intensity minima is directly interpretable as identifying local dark spots or valleys in tissue."
+      },
+      {
+        "unit": "findlocalmaxima_image2D",
+        "score": 7,
+        "rationale": "Marking local intensity maxima is directly interpretable as identifying local bright spots or peaks in tissue."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 7,
+        "rationale": "Shrinking binary foreground regions is interpretable as reducing or trimming segmented structures."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 7,
+        "rationale": "Expanding binary foreground regions is interpretable as growing or enlarging segmented structures."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 6,
+        "rationale": "Removing small binary noise regions is clinically relevant for cleaning up segmentation results."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 6,
+        "rationale": "Filling small holes in binary regions is clinically relevant for completing segmented structures."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 6,
+        "rationale": "Extracting small bright binary structures is relevant to detecting small lesions, though the transform name is technical."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 5,
+        "rationale": "Extracting small dark binary structures is clinically relevant but the black top-hat concept is less familiar."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 6,
+        "rationale": "Emphasizing binary object boundaries is directly relevant to lesion edge delineation."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 3,
+        "rationale": "Morphological Laplace edge response is a highly technical concept unlikely to be familiar to a clinician."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 5,
+        "rationale": "Conditional selection between two binary images based on a condition map is moderately interpretable as conditional masking."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 5,
+        "rationale": "Block-wise average pooling of binary image measures local foreground density in a block."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 3,
+        "rationale": "Averaging center row and column of blocks is a technical operation without clear clinical intuition."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 5,
+        "rationale": "Block-wise max pooling of binary image marks any foreground presence in a block."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 3,
+        "rationale": "Max pooling over center row and column of blocks is a technical operation without clear clinical intuition."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 5,
+        "rationale": "Block-wise min pooling of binary image marks only fully foreground blocks."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 3,
+        "rationale": "Min pooling over center row and column of blocks is a technical operation without clear clinical intuition."
+      },
+      {
+        "unit": "meanpool",
+        "score": 5,
+        "rationale": "Sliding-window mean pooling on binary image measures local foreground density."
+      },
+      {
+        "unit": "maxpool",
+        "score": 5,
+        "rationale": "Sliding-window max pooling on binary image detects any foreground presence in a neighborhood."
+      },
+      {
+        "unit": "minpool",
+        "score": 5,
+        "rationale": "Sliding-window min pooling on binary image marks fully foreground neighborhoods."
+      },
+      {
+        "unit": "stdpool",
+        "score": 4,
+        "rationale": "Standard deviation pooling on binary images measures local foreground variability, which is less directly intuitive."
+      },
+      {
+        "unit": "medianpool",
+        "score": 5,
+        "rationale": "Sliding-window median pooling on binary image is moderately interpretable as a robust local foreground measure."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 4,
+        "rationale": "Unique count pooling on binary images has limited intuitive clinical meaning."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 3,
+        "rationale": "Argmax-count pooling is a technical operation without clear clinical meaning."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 3,
+        "rationale": "Argmin-count pooling is a technical operation without clear clinical meaning."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 4,
+        "rationale": "IQR pooling on binary images measures local variability but has limited direct clinical interpretation."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 3",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 8,
+        "rationale": "Returning the segmentation image unchanged is straightforward and easy to understand."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 5,
+        "rationale": "Creating a uniform segment label image is simple but its role in a pipeline requires inference."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 5,
+        "rationale": "Creating a blank segment label image is simple but its role in a pipeline requires inference."
+      },
+      {
+        "unit": "experimental_tosegment_image2D",
+        "score": 6,
+        "rationale": "Converting binary to labeled segments separating background and foreground is interpretable in the context of tissue segmentation."
+      },
+      {
+        "unit": "fastscanning_image2D",
+        "score": 5,
+        "rationale": "Region-labeling segmentation is interpretable as identifying distinct tissue regions, though the method name is technical."
+      },
+      {
+        "unit": "watershed_image2D",
+        "score": 7,
+        "rationale": "Watershed segmentation is a well-known method in biomedical imaging for separating touching structures like cells."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 4",
+    "scores": [
+      {
+        "unit": "identity_float",
+        "score": 8,
+        "rationale": "Returning a value unchanged is universally understandable."
+      },
+      {
+        "unit": "ret_1",
+        "score": 7,
+        "rationale": "Returning a constant value of 1.0 is simple and universally understandable."
+      },
+      {
+        "unit": "tanh",
+        "score": 4,
+        "rationale": "Hyperbolic tangent is a mathematical function familiar to those with quantitative training but not typical clinicians."
+      },
+      {
+        "unit": "relu",
+        "score": 4,
+        "rationale": "ReLU is a machine learning activation function not typically familiar to clinicians."
+      },
+      {
+        "unit": "modulo",
+        "score": 5,
+        "rationale": "Modulo remainder is a basic arithmetic operation understandable to most but with unclear direct clinical meaning."
+      },
+      {
+        "unit": "is_eq_to",
+        "score": 7,
+        "rationale": "Checking equality between two values is a simple logical operation easily understood by any stakeholder."
+      },
+      {
+        "unit": "experimental_is_gt",
+        "score": 7,
+        "rationale": "Checking if one value is greater than another is a simple comparison understandable by any stakeholder."
+      },
+      {
+        "unit": "experimental_is_lt",
+        "score": 7,
+        "rationale": "Checking if one value is lower than another is a simple comparison understandable by any stakeholder."
+      },
+      {
+        "unit": "experimental_not",
+        "score": 6,
+        "rationale": "Logical NOT returning 1 when input is at most 0.5 is somewhat interpretable as a binary inversion."
+      },
+      {
+        "unit": "number_sum",
+        "score": 8,
+        "rationale": "Adding two numbers is universally understandable."
+      },
+      {
+        "unit": "number_minus",
+        "score": 8,
+        "rationale": "Subtracting one number from another is universally understandable."
+      },
+      {
+        "unit": "number_mult",
+        "score": 8,
+        "rationale": "Multiplying two numbers is universally understandable."
+      },
+      {
+        "unit": "number_div",
+        "score": 7,
+        "rationale": "Dividing two numbers is universally understandable, though the division-by-zero exception is a technical detail."
+      },
+      {
+        "unit": "safe_div",
+        "score": 7,
+        "rationale": "Safe division returning 0 on zero divisor is interpretable as a guarded ratio calculation."
+      },
+      {
+        "unit": "power_of",
+        "score": 6,
+        "rationale": "Raising a number to a power is a familiar mathematical operation."
+      },
+      {
+        "unit": "pi_",
+        "score": 8,
+        "rationale": "The mathematical constant pi is universally known."
+      },
+      {
+        "unit": "exp_",
+        "score": 6,
+        "rationale": "Exponential function is familiar from scientific and medical contexts."
+      },
+      {
+        "unit": "log_",
+        "score": 6,
+        "rationale": "Natural logarithm is a familiar scientific function, though clipping details are technical."
+      },
+      {
+        "unit": "log10_",
+        "score": 6,
+        "rationale": "Base-10 logarithm is familiar from scientific and medical contexts (e.g., pH, dB scales)."
+      },
+      {
+        "unit": "reduce_length",
+        "score": 7,
+        "rationale": "Returning the total number of pixels in an image is easily understood as image size."
+      },
+      {
+        "unit": "reduce_biggestAxis",
+        "score": 7,
+        "rationale": "Returning the largest image dimension is interpretable as the longest side of the image."
+      },
+      {
+        "unit": "reduce_smallerAxis",
+        "score": 7,
+        "rationale": "Returning the smallest image dimension is interpretable as the shortest side of the image."
+      },
+      {
+        "unit": "reduce_histMode",
+        "score": 6,
+        "rationale": "The most frequent pixel value (histogram mode) relates to the dominant intensity, which is clinically interpretable."
+      },
+      {
+        "unit": "reduce_histModeCount",
+        "score": 5,
+        "rationale": "The count of the most frequent pixel value is moderately interpretable as how dominant a particular intensity is."
+      },
+      {
+        "unit": "reduce_propWhite",
+        "score": 8,
+        "rationale": "Proportion of white pixels in a binary image directly maps to the fraction of foreground tissue or lesion area."
+      },
+      {
+        "unit": "reduce_propBlack",
+        "score": 8,
+        "rationale": "Proportion of black pixels in a binary image directly maps to the fraction of background area."
+      },
+      {
+        "unit": "reduce_nColors",
+        "score": 6,
+        "rationale": "Number of unique pixel values relates to image complexity or number of distinct tissue types."
+      },
+      {
+        "unit": "reduce_mean",
+        "score": 9,
+        "rationale": "Mean image intensity is a fundamental and universally interpretable summary measure of brightness."
+      },
+      {
+        "unit": "reduce_median",
+        "score": 9,
+        "rationale": "Median image intensity is a fundamental and universally interpretable summary of typical brightness."
+      },
+      {
+        "unit": "reduce_std",
+        "score": 8,
+        "rationale": "Standard deviation of intensity is directly interpretable as overall image contrast or texture variability."
+      },
+      {
+        "unit": "reduce_maximum",
+        "score": 8,
+        "rationale": "Maximum pixel intensity is directly interpretable as the brightest point in the image."
+      },
+      {
+        "unit": "reduce_minimum",
+        "score": 8,
+        "rationale": "Minimum pixel intensity is directly interpretable as the darkest point in the image."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 6,
+        "rationale": "Conditional selection between two values based on a condition is moderately interpretable as a decision rule."
+      },
+      {
+        "unit": "region_mean",
+        "score": 8,
+        "rationale": "Mean intensity in a localized patch is directly interpretable as average brightness in a specific image region."
+      },
+      {
+        "unit": "region_std",
+        "score": 8,
+        "rationale": "Standard deviation in a localized patch is directly interpretable as local texture variability."
+      },
+      {
+        "unit": "region_min",
+        "score": 8,
+        "rationale": "Minimum value in a local patch is directly interpretable as the darkest spot in a region of interest."
+      },
+      {
+        "unit": "region_max",
+        "score": 8,
+        "rationale": "Maximum value in a local patch is directly interpretable as the brightest spot in a region of interest."
+      },
+      {
+        "unit": "region_sum",
+        "score": 7,
+        "rationale": "Sum of values in a local patch is interpretable as total signal or intensity load in a region."
+      },
+      {
+        "unit": "region_median",
+        "score": 8,
+        "rationale": "Median value in a local patch is directly interpretable as the typical intensity in a region of interest."
+      },
+      {
+        "unit": "region_range",
+        "score": 8,
+        "rationale": "Range (max minus min) in a local patch is directly interpretable as local contrast in a region."
+      },
+      {
+        "unit": "region_contrast",
+        "score": 8,
+        "rationale": "Local contrast between a center patch and surrounding ring is highly interpretable as lesion-versus-background contrast."
+      },
+      {
+        "unit": "region_energy",
+        "score": 6,
+        "rationale": "Local energy as mean squared intensity is somewhat interpretable but the squared nature adds abstraction."
+      },
+      {
+        "unit": "region_entropy",
+        "score": 6,
+        "rationale": "Local entropy as a measure of intensity diversity is moderately interpretable as textural complexity."
+      },
+      {
+        "unit": "region_mean_5p",
+        "score": 8,
+        "rationale": "Mean intensity in a small 5% patch at a specific location is directly interpretable as focal brightness."
+      },
+      {
+        "unit": "region_std_5p",
+        "score": 7,
+        "rationale": "Standard deviation in a small 5% patch is directly interpretable as fine-scale local texture variability."
+      },
+      {
+        "unit": "region_min_5p",
+        "score": 7,
+        "rationale": "Minimum in a small 5% patch is directly interpretable as the darkest point in a small focal area."
+      },
+      {
+        "unit": "region_max_5p",
+        "score": 7,
+        "rationale": "Maximum in a small 5% patch is directly interpretable as the brightest point in a small focal area."
+      },
+      {
+        "unit": "region_sum_5p",
+        "score": 6,
+        "rationale": "Sum in a small 5% patch is interpretable as total signal in a focal area."
+      },
+      {
+        "unit": "region_median_5p",
+        "score": 7,
+        "rationale": "Median in a small 5% patch is directly interpretable as typical intensity in a small focal area."
+      },
+      {
+        "unit": "region_range_5p",
+        "score": 7,
+        "rationale": "Range in a small 5% patch is directly interpretable as local contrast in a small focal area."
+      },
+      {
+        "unit": "region_contrast_5p",
+        "score": 7,
+        "rationale": "Center-versus-ring contrast in a small 5% patch is interpretable as focal lesion contrast."
+      },
+      {
+        "unit": "region_energy_5p",
+        "score": 5,
+        "rationale": "Energy in a small 5% patch is moderately interpretable but the squared nature adds abstraction."
+      },
+      {
+        "unit": "region_entropy_5p",
+        "score": 6,
+        "rationale": "Entropy in a small 5% patch measures textural complexity in a focal area."
+      },
+      {
+        "unit": "region_mean_10p",
+        "score": 8,
+        "rationale": "Mean intensity in a 10% patch is directly interpretable as average brightness in a moderate focal area."
+      },
+      {
+        "unit": "region_std_10p",
+        "score": 7,
+        "rationale": "Standard deviation in a 10% patch is directly interpretable as local texture variability in a moderate area."
+      },
+      {
+        "unit": "region_min_10p",
+        "score": 7,
+        "rationale": "Minimum in a 10% patch is directly interpretable as the darkest point in a moderate focal area."
+      },
+      {
+        "unit": "region_max_10p",
+        "score": 7,
+        "rationale": "Maximum in a 10% patch is directly interpretable as the brightest point in a moderate focal area."
+      },
+      {
+        "unit": "region_sum_10p",
+        "score": 6,
+        "rationale": "Sum in a 10% patch is interpretable as total signal in a moderate focal area."
+      },
+      {
+        "unit": "region_median_10p",
+        "score": 7,
+        "rationale": "Median in a 10% patch is directly interpretable as typical intensity in a moderate focal area."
+      },
+      {
+        "unit": "region_range_10p",
+        "score": 7,
+        "rationale": "Range in a 10% patch is directly interpretable as local contrast in a moderate focal area."
+      },
+      {
+        "unit": "region_contrast_10p",
+        "score": 7,
+        "rationale": "Center-versus-ring contrast in a 10% patch is interpretable as moderate-scale lesion contrast."
+      },
+      {
+        "unit": "region_energy_10p",
+        "score": 5,
+        "rationale": "Energy in a 10% patch is moderately interpretable but the squared nature adds abstraction."
+      },
+      {
+        "unit": "region_entropy_10p",
+        "score": 6,
+        "rationale": "Entropy in a 10% patch measures textural complexity in a moderate focal area."
+      },
+      {
+        "unit": "region_mean_20p",
+        "score": 8,
+        "rationale": "Mean intensity in a large 20% patch is directly interpretable as average brightness across a broad region."
+      },
+      {
+        "unit": "region_std_20p",
+        "score": 7,
+        "rationale": "Standard deviation in a 20% patch is directly interpretable as broad-scale texture variability."
+      },
+      {
+        "unit": "region_min_20p",
+        "score": 7,
+        "rationale": "Minimum in a 20% patch is directly interpretable as the darkest point across a broad area."
+      },
+      {
+        "unit": "region_max_20p",
+        "score": 7,
+        "rationale": "Maximum in a 20% patch is directly interpretable as the brightest point across a broad area."
+      },
+      {
+        "unit": "region_sum_20p",
+        "score": 6,
+        "rationale": "Sum in a 20% patch is interpretable as total signal across a broad area."
+      },
+      {
+        "unit": "region_median_20p",
+        "score": 7,
+        "rationale": "Median in a 20% patch is directly interpretable as typical intensity across a broad area."
+      },
+      {
+        "unit": "region_range_20p",
+        "score": 7,
+        "rationale": "Range in a 20% patch is directly interpretable as broad-scale contrast."
+      },
+      {
+        "unit": "region_contrast_20p",
+        "score": 7,
+        "rationale": "Center-versus-ring contrast in a 20% patch is interpretable as large-scale lesion-versus-background contrast."
+      },
+      {
+        "unit": "region_energy_20p",
+        "score": 5,
+        "rationale": "Energy in a 20% patch is moderately interpretable but the squared nature adds abstraction."
+      },
+      {
+        "unit": "region_entropy_20p",
+        "score": 6,
+        "rationale": "Entropy in a 20% patch measures broad-scale textural complexity."
+      },
+      {
+        "unit": "haar_lr",
+        "score": 5,
+        "rationale": "Left-versus-right intensity contrast is interpretable as lateral asymmetry in a local region."
+      },
+      {
+        "unit": "haar_tb",
+        "score": 5,
+        "rationale": "Top-versus-bottom intensity contrast is interpretable as vertical asymmetry in a local region."
+      },
+      {
+        "unit": "haar_diag_main",
+        "score": 4,
+        "rationale": "Diagonal Haar contrast for main diagonal is less intuitively interpretable for a clinician."
+      },
+      {
+        "unit": "haar_diag_anti",
+        "score": 4,
+        "rationale": "Diagonal Haar contrast for anti-diagonal is less intuitively interpretable for a clinician."
+      },
+      {
+        "unit": "haar_center_surround",
+        "score": 7,
+        "rationale": "Center-versus-surround contrast directly maps to lesion prominence against background tissue."
+      },
+      {
+        "unit": "haar_three_h",
+        "score": 4,
+        "rationale": "Horizontal three-band Haar contrast is a technical feature without immediate clinical intuition."
+      },
+      {
+        "unit": "haar_three_v",
+        "score": 4,
+        "rationale": "Vertical three-band Haar contrast is a technical feature without immediate clinical intuition."
+      },
+      {
+        "unit": "orientation_coherence",
+        "score": 5,
+        "rationale": "Orientation coherence of gradient fields is moderately interpretable as structural regularity or fiber alignment."
+      },
+      {
+        "unit": "dominant_orientation",
+        "score": 4,
+        "rationale": "Dominant gradient orientation bin is a technical concept that requires understanding of directional analysis."
+      },
+      {
+        "unit": "orientation_energy_0",
+        "score": 4,
+        "rationale": "Proportion of energy at 0-degree orientation is a technical directional measure not immediately clinical."
+      },
+      {
+        "unit": "orientation_energy_45",
+        "score": 4,
+        "rationale": "Proportion of energy at 45-degree orientation is a technical directional measure not immediately clinical."
+      },
+      {
+        "unit": "orientation_energy_90",
+        "score": 4,
+        "rationale": "Proportion of energy at 90-degree orientation is a technical directional measure not immediately clinical."
+      },
+      {
+        "unit": "orientation_energy_135",
+        "score": 4,
+        "rationale": "Proportion of energy at 135-degree orientation is a technical directional measure not immediately clinical."
+      },
+      {
+        "unit": "orientation_spread",
+        "score": 5,
+        "rationale": "How widely orientation energy is distributed could relate to tissue isotropy but requires interpretation effort."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_mean",
+        "score": 4,
+        "rationale": "GLCM mean texture feature is a recognized radiomics concept but the multi-angle aggregation adds complexity."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_sum",
+        "score": 4,
+        "rationale": "GLCM mean summed across angles is a technical texture metric requiring background knowledge."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_std",
+        "score": 4,
+        "rationale": "Standard deviation of GLCM mean across angles is a technical texture metric."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_minimum",
+        "score": 4,
+        "rationale": "Minimum GLCM mean across angles is a technical texture metric."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_maximum",
+        "score": 4,
+        "rationale": "Maximum GLCM mean across angles is a technical texture metric."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_mean",
+        "score": 4,
+        "rationale": "GLCM variance texture feature averaged across angles is a recognized but technical radiomics measure."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_sum",
+        "score": 3,
+        "rationale": "GLCM variance summed across angles is a technical texture metric with limited direct clinical intuition."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_std",
+        "score": 3,
+        "rationale": "Standard deviation of GLCM variance across angles is a highly technical texture metric."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_minimum",
+        "score": 3,
+        "rationale": "Minimum GLCM variance across angles is a highly technical texture metric."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_maximum",
+        "score": 3,
+        "rationale": "Maximum GLCM variance across angles is a highly technical texture metric."
+      },
+      {
+        "unit": "glcm_correlation_mean",
+        "score": 5,
+        "rationale": "GLCM correlation measures linear dependence of neighboring pixels, which is moderately interpretable as texture regularity."
+      },
+      {
+        "unit": "glcm_correlation_sum",
+        "score": 4,
+        "rationale": "GLCM correlation summed across angles is a technical aggregation of texture regularity."
+      },
+      {
+        "unit": "glcm_correlation_std",
+        "score": 4,
+        "rationale": "Standard deviation of GLCM correlation across angles is a technical texture metric."
+      },
+      {
+        "unit": "glcm_correlation_minimum",
+        "score": 4,
+        "rationale": "Minimum GLCM correlation across angles is a technical texture metric."
+      },
+      {
+        "unit": "glcm_correlation_maximum",
+        "score": 4,
+        "rationale": "Maximum GLCM correlation across angles is a technical texture metric."
+      },
+      {
+        "unit": "glcm_contrast_mean",
+        "score": 6,
+        "rationale": "GLCM contrast measures local intensity variation and is interpretable as overall textural roughness."
+      },
+      {
+        "unit": "glcm_contrast_sum",
+        "score": 5,
+        "rationale": "GLCM contrast summed across angles is a technical aggregation of texture roughness."
+      },
+      {
+        "unit": "glcm_contrast_std",
+        "score": 4,
+        "rationale": "Standard deviation of GLCM contrast across angles is a technical texture metric."
+      },
+      {
+        "unit": "glcm_contrast_minimum",
+        "score": 4,
+        "rationale": "Minimum GLCM contrast across angles is a technical texture metric."
+      },
+      {
+        "unit": "glcm_contrast_maximum",
+        "score": 5,
+        "rationale": "Maximum GLCM contrast across angles is interpretable as the highest directional texture roughness."
+      },
+      {
+        "unit": "glcm_IDM_mean",
+        "score": 4,
+        "rationale": "GLCM inverse-difference-moment relates to texture homogeneity but the term IDM is technical."
+      },
+      {
+        "unit": "glcm_IDM_sum",
+        "score": 3,
+        "rationale": "GLCM IDM summed across angles is a highly technical metric."
+      },
+      {
+        "unit": "glcm_IDM_std",
+        "score": 3,
+        "rationale": "Standard deviation of GLCM IDM across angles is a highly technical metric."
+      },
+      {
+        "unit": "glcm_IDM_minimum",
+        "score": 3,
+        "rationale": "Minimum GLCM IDM across angles is a highly technical metric."
+      },
+      {
+        "unit": "glcm_IDM_maximum",
+        "score": 3,
+        "rationale": "Maximum GLCM IDM across angles is a highly technical metric."
+      },
+      {
+        "unit": "glcm_ASM_mean",
+        "score": 4,
+        "rationale": "GLCM angular-second-moment relates to texture uniformity but the ASM abbreviation is technical."
+      },
+      {
+        "unit": "glcm_ASM_sum",
+        "score": 3,
+        "rationale": "GLCM ASM summed across angles is a highly technical metric."
+      },
+      {
+        "unit": "glcm_ASM_std",
+        "score": 3,
+        "rationale": "Standard deviation of GLCM ASM across angles is a highly technical metric."
+      },
+      {
+        "unit": "glcm_ASM_minimum",
+        "score": 3,
+        "rationale": "Minimum GLCM ASM across angles is a highly technical metric."
+      },
+      {
+        "unit": "glcm_ASM_maximum",
+        "score": 3,
+        "rationale": "Maximum GLCM ASM across angles is a highly technical metric."
+      },
+      {
+        "unit": "glcm_glcm_entropy_mean",
+        "score": 5,
+        "rationale": "GLCM entropy measures texture randomness and is moderately interpretable as tissue heterogeneity."
+      },
+      {
+        "unit": "glcm_glcm_entropy_sum",
+        "score": 4,
+        "rationale": "GLCM entropy summed across angles is a technical aggregation of texture heterogeneity."
+      },
+      {
+        "unit": "glcm_glcm_entropy_std",
+        "score": 4,
+        "rationale": "Standard deviation of GLCM entropy across angles is a technical texture metric."
+      },
+      {
+        "unit": "glcm_glcm_entropy_minimum",
+        "score": 4,
+        "rationale": "Minimum GLCM entropy across angles is a technical texture metric."
+      },
+      {
+        "unit": "glcm_glcm_entropy_maximum",
+        "score": 4,
+        "rationale": "Maximum GLCM entropy across angles is a technical texture metric."
+      },
+      {
+        "unit": "glcm_max_prob_mean",
+        "score": 5,
+        "rationale": "GLCM maximum probability relates to the most common pixel pair and is moderately interpretable as texture dominance."
+      },
+      {
+        "unit": "glcm_max_prob_sum",
+        "score": 4,
+        "rationale": "GLCM max probability summed across angles is a technical aggregation."
+      },
+      {
+        "unit": "glcm_max_prob_std",
+        "score": 3,
+        "rationale": "Standard deviation of GLCM max probability across angles is a highly technical metric."
+      },
+      {
+        "unit": "glcm_max_prob_minimum",
+        "score": 3,
+        "rationale": "Minimum GLCM max probability across angles is a highly technical metric."
+      },
+      {
+        "unit": "glcm_max_prob_maximum",
+        "score": 4,
+        "rationale": "Maximum GLCM max probability across angles is a moderately technical metric."
+      },
+      {
+        "unit": "glcm_energy_mean",
+        "score": 5,
+        "rationale": "GLCM energy (sum of squared entries) measures texture uniformity and is moderately interpretable."
+      },
+      {
+        "unit": "glcm_energy_sum",
+        "score": 4,
+        "rationale": "GLCM energy summed across angles is a technical aggregation of texture uniformity."
+      },
+      {
+        "unit": "glcm_energy_std",
+        "score": 3,
+        "rationale": "Standard deviation of GLCM energy across angles is a highly technical metric."
+      },
+      {
+        "unit": "glcm_energy_minimum",
+        "score": 3,
+        "rationale": "Minimum GLCM energy across angles is a highly technical metric."
+      },
+      {
+        "unit": "glcm_energy_maximum",
+        "score": 4,
+        "rationale": "Maximum GLCM energy across angles is a moderately technical texture metric."
+      },
+      {
+        "unit": "glcm_dissimilarity_mean",
+        "score": 6,
+        "rationale": "GLCM dissimilarity measures how different neighboring pixels are, which is interpretable as local texture heterogeneity."
+      },
+      {
+        "unit": "glcm_dissimilarity_sum",
+        "score": 5,
+        "rationale": "GLCM dissimilarity summed across angles is moderately interpretable as cumulative texture heterogeneity."
+      },
+      {
+        "unit": "glcm_dissimilarity_std",
+        "score": 4,
+        "rationale": "Standard deviation of GLCM dissimilarity across angles is a technical texture metric."
+      },
+      {
+        "unit": "glcm_dissimilarity_minimum",
+        "score": 4,
+        "rationale": "Minimum GLCM dissimilarity across angles is a technical texture metric."
+      },
+      {
+        "unit": "glcm_dissimilarity_maximum",
+        "score": 5,
+        "rationale": "Maximum GLCM dissimilarity across angles is interpretable as the highest directional texture heterogeneity."
+      }
+    ]
+  }
+]

@@ -1,0 +1,1532 @@
+[
+  {
+    "library_id": "Library 1",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 9,
+        "rationale": "Returning an image completely unchanged is a trivial and straightforward concept."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 8,
+        "rationale": "A completely uniform white image is easy to visualize."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 8,
+        "rationale": "A completely uniform black image is easy to visualize."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 10,
+        "rationale": "Inverting image intensities is highly intuitive and conceptually similar to a photographic negative."
+      },
+      {
+        "unit": "experimental_normalize_2D",
+        "score": 8,
+        "rationale": "Normalizing contrast to a standard range is a common and understandable operation in medical imaging."
+      },
+      {
+        "unit": "experimental_standardize_2D",
+        "score": 6,
+        "rationale": "Using statistical standardization is moderately clear, but slightly more abstract than simple normalization."
+      },
+      {
+        "unit": "experimental_tointensity_image2D",
+        "score": 6,
+        "rationale": "Converting binary masks to intensity formats is technically straightforward but relates more to data types than clinical concepts."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 8,
+        "rationale": "Shrinking bright regions clearly translates to eroding the borders of highlighted tissues or cells."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 8,
+        "rationale": "Expanding bright regions clearly translates to dilating the boundaries of structures."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 8,
+        "rationale": "Removing small bright noise dots is an extremely practical and intuitive concept."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 8,
+        "rationale": "Filling in small dark gaps within a bright object is an intuitive concept for continuous tissue representation."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 7,
+        "rationale": "Extracting small bright structures helps intuitively isolate elements like tiny lesions or nuclei."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 7,
+        "rationale": "Extracting small dark structures helps isolate dark spots or cavities within tissues."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 8,
+        "rationale": "Emphasizing object boundaries is highly relevant and understandable for detecting organ or lesion outlines."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 5,
+        "rationale": "A Laplace-style morphological edge response requires some technical signal processing background to interpret fully."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 7,
+        "rationale": "Image subtraction is a recognizable technique for highlighting differences, as seen in subtraction angiography."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 7,
+        "rationale": "Adding two images together is easily understandable as superimposing features."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 7,
+        "rationale": "Multiplying images mathematically makes sense for applying masks or scaling brightness."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 7,
+        "rationale": "Taking the brightest pixel between two images is conceptually simple."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 7,
+        "rationale": "Taking the darkest pixel between two images is conceptually simple."
+      },
+      {
+        "unit": "bsubtract_image2D",
+        "score": 8,
+        "rationale": "Uniformly subtracting brightness effectively makes the entire image darker, which is easy to grasp."
+      },
+      {
+        "unit": "badd_image2D",
+        "score": 8,
+        "rationale": "Uniformly adding brightness makes the entire image lighter, which is very easy to grasp."
+      },
+      {
+        "unit": "bmult_image2D",
+        "score": 8,
+        "rationale": "Multiplying by a scalar easily translates to an overall contrast or brightness adjustment."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 6,
+        "rationale": "While the name 'Sobel' is technical, identifying horizontal edge derivatives is moderately intuitive."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 6,
+        "rationale": "Identifying vertical edge derivatives is moderately intuitive despite the specific algorithm name."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 7,
+        "rationale": "Gradient magnitude indicates overall edge strength, a very useful and clear concept for boundary detection."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 5,
+        "rationale": "The specific 'Ando' filter name is opaque, although the concept of extracting horizontal edges is understood."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 5,
+        "rationale": "The specific 'Ando' filter name is opaque, although extracting vertical edges is understood."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 5,
+        "rationale": "The filter name is specific and technical, though gradient magnitudes represent edges."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 5,
+        "rationale": "The specific 'Ando 4x4' filter name is opaque, although extracting horizontal edges is understood."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 5,
+        "rationale": "The specific 'Ando 4x4' filter name is opaque, although extracting vertical edges is understood."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 5,
+        "rationale": "The filter name is specific and technical, though gradient magnitudes represent edges."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 5,
+        "rationale": "The specific 'Ando 5x5' filter name is opaque, although extracting horizontal edges is understood."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 5,
+        "rationale": "The specific 'Ando 5x5' filter name is opaque, although extracting vertical edges is understood."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 5,
+        "rationale": "The filter name is specific and technical, though gradient magnitudes represent edges."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 5,
+        "rationale": "The 'Bickley' name is technically obscure for clinicians, despite finding horizontal edges."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 5,
+        "rationale": "The 'Bickley' name is technically obscure for clinicians, despite finding vertical edges."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 5,
+        "rationale": "Gradient magnitude is understandable, but the 'Bickley' identifier is opaque."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 5,
+        "rationale": "The 'Prewitt' name is specific computer vision jargon, though edge detection is clear."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 5,
+        "rationale": "The 'Prewitt' name is specific computer vision jargon, though edge detection is clear."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 5,
+        "rationale": "Gradient magnitude is understandable, but the 'Prewitt' identifier is opaque."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 5,
+        "rationale": "The 'Scharr' name is specific computer vision jargon, though edge detection is clear."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 5,
+        "rationale": "The 'Scharr' name is specific computer vision jargon, though edge detection is clear."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 5,
+        "rationale": "Gradient magnitude is understandable, but the 'Scharr' identifier is opaque."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 8,
+        "rationale": "Gaussian smoothing is a widely known and understood concept for blurring and noise reduction in medical scans."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 8,
+        "rationale": "Gaussian smoothing is a widely known and understood concept for blurring and noise reduction."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 8,
+        "rationale": "Gaussian smoothing is a widely known and understood concept for blurring and noise reduction."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 8,
+        "rationale": "Gaussian smoothing is a widely known and understood concept for blurring and noise reduction."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 8,
+        "rationale": "Gaussian smoothing is a widely known and understood concept for blurring and noise reduction."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 6,
+        "rationale": "A second-order edge response is somewhat mathematically abstract but correctly implies highlighting fine borders."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 5,
+        "rationale": "Difference-of-Gaussians is a specific image processing algorithm that requires domain knowledge to interpret."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 4,
+        "rationale": "The Moffat smoothing filter is highly specialized terminology unlikely to be known by a clinical stakeholder."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 4,
+        "rationale": "The Moffat smoothing filter is highly specialized terminology unlikely to be known by a clinical stakeholder."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 4,
+        "rationale": "The Moffat smoothing filter is highly specialized terminology unlikely to be known by a clinical stakeholder."
+      },
+      {
+        "unit": "exp_image2D",
+        "score": 6,
+        "rationale": "Applying an exponential mathematical transform is mathematically clear but visually slightly abstract."
+      },
+      {
+        "unit": "loginv_image2D",
+        "score": 6,
+        "rationale": "Inverse logarithmic transformations can be understood as contrast windowing, but are a bit convoluted mathematically."
+      },
+      {
+        "unit": "log_image2D",
+        "score": 6,
+        "rationale": "Logarithmic transforms map to known contrast adjustments, though the underlying math is slightly abstract."
+      },
+      {
+        "unit": "powerof_image2D",
+        "score": 6,
+        "rationale": "Power transforms map to known gamma corrections, but require some technical intuition to visualize."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 6,
+        "rationale": "A logical conditional choice between values is logical but its visual result relies heavily on the specific condition."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 5,
+        "rationale": "Block-based pooling is a machine learning concept that translates broadly to a coarse, pixelated blur."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 4,
+        "rationale": "Cross-block averaging is a highly specific algorithmic sampling method that is unintuitive visually."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 5,
+        "rationale": "Block-based max pooling is abstract ML terminology, though it effectively expands bright pixels coarsely."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 4,
+        "rationale": "Cross-block max pooling is an obscure sampling technique for a non-ML expert."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 5,
+        "rationale": "Block-based min pooling is abstract, effectively functioning as a coarse erosion of bright structures."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 4,
+        "rationale": "Cross-block min pooling is an obscure and unintuitive sampling technique."
+      },
+      {
+        "unit": "meanpool",
+        "score": 7,
+        "rationale": "A sliding-window mean acts as a simple moving average or blur, which is easy to conceptualize."
+      },
+      {
+        "unit": "maxpool",
+        "score": 6,
+        "rationale": "A sliding-window maximum is understandable as mathematically expanding the brightest points."
+      },
+      {
+        "unit": "minpool",
+        "score": 6,
+        "rationale": "A sliding-window minimum is understandable as mathematically expanding the darkest points."
+      },
+      {
+        "unit": "stdpool",
+        "score": 6,
+        "rationale": "A sliding-window standard deviation highlights areas of high variance or texture, which is clinically useful."
+      },
+      {
+        "unit": "medianpool",
+        "score": 7,
+        "rationale": "Median filtering is a standard and easily understood method for eliminating isolated speckle noise."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 4,
+        "rationale": "Counting unique pixel values locally is an abstract feature extraction method not typically used in visual diagnosis."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 4,
+        "rationale": "Argmax-count pooling is an opaque ML operation with little direct visual interpretation."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 4,
+        "rationale": "Argmin-count pooling is an opaque ML operation with little direct visual interpretation."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 5,
+        "rationale": "Interquartile-range pooling is statistically sound but visually difficult to interpret directly."
+      },
+      {
+        "unit": "grad_magnitude",
+        "score": 8,
+        "rationale": "A map of gradient magnitudes creates a clear outline of structural boundaries in the image."
+      },
+      {
+        "unit": "grad_orientation",
+        "score": 6,
+        "rationale": "Mapping the angle of gradients is slightly abstract, though conceptually maps to the direction of edges."
+      },
+      {
+        "unit": "orientation_select",
+        "score": 6,
+        "rationale": "Selecting gradients near a target angle is understandable for isolating specifically aligned fibers or tissues."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 2",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 9,
+        "rationale": "Returning the binary image unchanged is a trivial and clear concept."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 8,
+        "rationale": "An image made entirely of positive segments (ones) is easy to visualize."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 8,
+        "rationale": "An image made entirely of negative segments (zeros) is easy to visualize."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 10,
+        "rationale": "Inverting a binary mask (swapping foreground and background) is perfectly intuitive."
+      },
+      {
+        "unit": "experimental_tobinary_image2D",
+        "score": 9,
+        "rationale": "Converting an image to a binary mask via default thresholding is a core concept in isolating tissues."
+      },
+      {
+        "unit": "experimental_tobinary_th_image2D_factory",
+        "score": 9,
+        "rationale": "Using a provided numerical threshold to separate bright from dark structures is highly intuitive."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 7,
+        "rationale": "Subtracting binary masks helps identify exclusive regions, similar to logical exclusions."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 7,
+        "rationale": "Adding binary images acts as a logical OR, combining structures."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 7,
+        "rationale": "Multiplying binary images acts as a logical AND, finding structural overlaps."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 7,
+        "rationale": "Taking the maximum acts as a logical OR, which is easy to grasp."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 7,
+        "rationale": "Taking the minimum acts as a logical AND, which is easy to grasp."
+      },
+      {
+        "unit": "binarize_adaptive2D",
+        "score": 8,
+        "rationale": "Adaptive thresholding is a known and understandable method for handling uneven image illumination."
+      },
+      {
+        "unit": "binarize_niblack2D",
+        "score": 5,
+        "rationale": "Niblack thresholding is a specific algorithmic name that is unlikely to be familiar, though binarizing is understood."
+      },
+      {
+        "unit": "binarize_polysegment2D",
+        "score": 5,
+        "rationale": "Polysegment thresholding is a technical algorithm name."
+      },
+      {
+        "unit": "binarize_sauvola2D",
+        "score": 5,
+        "rationale": "Sauvola is a specific local thresholding algorithm that requires domain knowledge."
+      },
+      {
+        "unit": "binarize_otsu2D",
+        "score": 6,
+        "rationale": "Otsu thresholding is commonly used but still represents a specific statistical histogram technique."
+      },
+      {
+        "unit": "binarize_minimumintermodes2D",
+        "score": 5,
+        "rationale": "Minimum-intermodes is an abstract statistical histogram concept."
+      },
+      {
+        "unit": "binarize_intermodes2D",
+        "score": 5,
+        "rationale": "Intermodes is an abstract statistical histogram concept."
+      },
+      {
+        "unit": "binarize_minimumerror2D",
+        "score": 5,
+        "rationale": "Minimum-error thresholding implies a specific mathematical estimation obscure to most clinicians."
+      },
+      {
+        "unit": "binarize_moments2D",
+        "score": 5,
+        "rationale": "Moments-based thresholding requires advanced mathematical statistics knowledge."
+      },
+      {
+        "unit": "binarize_unimodalrosin2D",
+        "score": 4,
+        "rationale": "Unimodal Rosin is highly specific terminology that is opaque without computer vision training."
+      },
+      {
+        "unit": "binarize_entropy2D",
+        "score": 5,
+        "rationale": "Entropy-based thresholding uses information theory concepts that are somewhat abstract visually."
+      },
+      {
+        "unit": "binarize_balanced2D",
+        "score": 5,
+        "rationale": "Balanced histogram thresholding relies on statistical distributions rather than direct visual cues."
+      },
+      {
+        "unit": "binarize_yen2D",
+        "score": 4,
+        "rationale": "Yen thresholding is an obscure algorithmic name for a non-expert."
+      },
+      {
+        "unit": "binarize_manual2D",
+        "score": 9,
+        "rationale": "Manually providing threshold parameters is highly understandable and practical."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 5,
+        "rationale": "Applying a Sobel derivative to a binary image and rounding is an obscure mathematical concept."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 5,
+        "rationale": "Applying a Sobel derivative to a binary image and rounding is an obscure mathematical concept."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 5,
+        "rationale": "Computing gradient magnitude on a binary mask is technically abstract."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 5,
+        "rationale": "Applying specific Ando derivatives to binary images requires technical interpretation."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 5,
+        "rationale": "Applying specific Ando derivatives to binary images requires technical interpretation."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 5,
+        "rationale": "Computing gradient magnitude on a binary mask with Ando filters is technically abstract."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 5,
+        "rationale": "Applying specific Ando derivatives to binary images requires technical interpretation."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 5,
+        "rationale": "Applying specific Ando derivatives to binary images requires technical interpretation."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 5,
+        "rationale": "Computing gradient magnitude on a binary mask with Ando filters is technically abstract."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 5,
+        "rationale": "Applying specific Ando derivatives to binary images requires technical interpretation."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 5,
+        "rationale": "Applying specific Ando derivatives to binary images requires technical interpretation."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 5,
+        "rationale": "Computing gradient magnitude on a binary mask with Ando filters is technically abstract."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 5,
+        "rationale": "Applying specific Bickley derivatives to binary images requires technical interpretation."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 5,
+        "rationale": "Applying specific Bickley derivatives to binary images requires technical interpretation."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 5,
+        "rationale": "Computing gradient magnitude on a binary mask with Bickley filters is technically abstract."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 5,
+        "rationale": "Applying specific Prewitt derivatives to binary images requires technical interpretation."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 5,
+        "rationale": "Applying specific Prewitt derivatives to binary images requires technical interpretation."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 5,
+        "rationale": "Computing gradient magnitude on a binary mask with Prewitt filters is technically abstract."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 5,
+        "rationale": "Applying specific Scharr derivatives to binary images requires technical interpretation."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 5,
+        "rationale": "Applying specific Scharr derivatives to binary images requires technical interpretation."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 5,
+        "rationale": "Computing gradient magnitude on a binary mask with Scharr filters is technically abstract."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 6,
+        "rationale": "Smoothing a binary image effectively rounds jagged edges, which is somewhat understandable."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 6,
+        "rationale": "Smoothing a binary image effectively rounds jagged edges, which is somewhat understandable."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 6,
+        "rationale": "Smoothing a binary image effectively rounds jagged edges, which is somewhat understandable."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 6,
+        "rationale": "Smoothing a binary image effectively rounds jagged edges, which is somewhat understandable."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 6,
+        "rationale": "Smoothing a binary image effectively rounds jagged edges, which is somewhat understandable."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 5,
+        "rationale": "Applying a Laplacian filter to a binary mask is mathematically abstract."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 5,
+        "rationale": "Difference-of-Gaussians on binary masks is technically opaque."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 4,
+        "rationale": "Applying an obscure smoothing filter (Moffat) to a mask is highly abstract."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 4,
+        "rationale": "Applying an obscure smoothing filter (Moffat) to a mask is highly abstract."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 4,
+        "rationale": "Applying an obscure smoothing filter (Moffat) to a mask is highly abstract."
+      },
+      {
+        "unit": "findlocalminima_image2D",
+        "score": 8,
+        "rationale": "Marking the darkest spots (minima) translates clearly to pinpointing specific structures."
+      },
+      {
+        "unit": "findlocalmaxima_image2D",
+        "score": 8,
+        "rationale": "Marking the brightest spots (maxima) is highly intuitive for isolating distinct structures."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 8,
+        "rationale": "Shrinking the boundaries of a binary mask is a very clear and practical operation."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 8,
+        "rationale": "Expanding the boundaries of a binary mask is very clear and practical."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 8,
+        "rationale": "Removing isolated tiny dots in a mask is an intuitive way to reduce noise."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 8,
+        "rationale": "Filling tiny holes within a solid mask makes clear geometric sense."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 7,
+        "rationale": "Extracting small foreground pieces separates fine details from larger objects."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 7,
+        "rationale": "Extracting small background pieces helps locate internal gaps or distinct boundaries."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 8,
+        "rationale": "Extracting the outline of a binary mask is an essential and perfectly understandable step."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 5,
+        "rationale": "Morphological Laplace is a mathematically technical way to process boundaries."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 6,
+        "rationale": "A conditional between masks is logical but abstract without knowing the exact condition."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 5,
+        "rationale": "Block averaging rounded to binary creates a coarse pixelation that is moderately understandable."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 4,
+        "rationale": "Cross-block averaging on a mask is mathematically very specific and visually non-intuitive."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 5,
+        "rationale": "Block max pooling on a mask creates coarse square dilations, which are ML-specific but observable."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 4,
+        "rationale": "Cross-block max pooling is an obscure sampling technique."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 5,
+        "rationale": "Block min pooling creates coarse square erosions."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 4,
+        "rationale": "Cross-block min pooling is an obscure sampling technique."
+      },
+      {
+        "unit": "meanpool",
+        "score": 6,
+        "rationale": "Sliding-window mean with rounding effectively smooths mask borders, analogous to low-pass filtering."
+      },
+      {
+        "unit": "maxpool",
+        "score": 6,
+        "rationale": "Sliding-window maximum on a mask is mathematically equivalent to simple dilation."
+      },
+      {
+        "unit": "minpool",
+        "score": 6,
+        "rationale": "Sliding-window minimum on a mask is mathematically equivalent to simple erosion."
+      },
+      {
+        "unit": "stdpool",
+        "score": 5,
+        "rationale": "Applying standard-deviation pooling to a binary mask to find edges is technically convoluted."
+      },
+      {
+        "unit": "medianpool",
+        "score": 7,
+        "rationale": "Median filtering easily maps to smoothing out small jagged errors in a mask."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 4,
+        "rationale": "Counting unique values locally in a binary image is largely uninformative and abstract."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 4,
+        "rationale": "Argmax-count pooling is an opaque technical operation."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 4,
+        "rationale": "Argmin-count pooling is an opaque technical operation."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 5,
+        "rationale": "Interquartile-range pooling is heavily statistical and unintuitive for mask boundaries."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 3",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 9,
+        "rationale": "Returning an unchanged segmented image is conceptually trivial."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 8,
+        "rationale": "Creating a uniform single-segment image is straightforward."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 8,
+        "rationale": "Creating a blank or zero-segment image is straightforward."
+      },
+      {
+        "unit": "experimental_tosegment_image2D",
+        "score": 8,
+        "rationale": "Converting a mask into labeled foreground/background segments is a core clinical imaging concept."
+      },
+      {
+        "unit": "fastscanning_image2D",
+        "score": 6,
+        "rationale": "Region-labeling is clear, though 'fast scanning' refers to an opaque algorithm implementation."
+      },
+      {
+        "unit": "watershed_image2D",
+        "score": 7,
+        "rationale": "Watershed transform is a widespread metaphor for flooding topological regions to find object boundaries."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 4",
+    "scores": [
+      {
+        "unit": "identity_float",
+        "score": 9,
+        "rationale": "Returning a number unchanged is perfectly clear."
+      },
+      {
+        "unit": "ret_1",
+        "score": 9,
+        "rationale": "Returning the constant 1.0 is a simple mathematical given."
+      },
+      {
+        "unit": "tanh",
+        "score": 6,
+        "rationale": "Hyperbolic tangent is a known math function, though interpreting its effect in an ML context requires effort."
+      },
+      {
+        "unit": "relu",
+        "score": 5,
+        "rationale": "ReLU is specific machine learning jargon, although its description as max(x, 0) helps clarify it."
+      },
+      {
+        "unit": "modulo",
+        "score": 7,
+        "rationale": "Remainder division is a basic mathematical operation."
+      },
+      {
+        "unit": "is_eq_to",
+        "score": 9,
+        "rationale": "Checking if two values are equal is universally understood."
+      },
+      {
+        "unit": "experimental_is_gt",
+        "score": 9,
+        "rationale": "Checking if a value is greater than another is universally understood."
+      },
+      {
+        "unit": "experimental_is_lt",
+        "score": 9,
+        "rationale": "Checking if a value is less than another is universally understood."
+      },
+      {
+        "unit": "experimental_not",
+        "score": 8,
+        "rationale": "A logical NOT operation is fundamental and easy to grasp."
+      },
+      {
+        "unit": "number_sum",
+        "score": 9,
+        "rationale": "Basic addition is universally understood."
+      },
+      {
+        "unit": "number_minus",
+        "score": 9,
+        "rationale": "Basic subtraction is universally understood."
+      },
+      {
+        "unit": "number_mult",
+        "score": 9,
+        "rationale": "Basic multiplication is universally understood."
+      },
+      {
+        "unit": "number_div",
+        "score": 9,
+        "rationale": "Basic division is universally understood."
+      },
+      {
+        "unit": "safe_div",
+        "score": 8,
+        "rationale": "Division that safely handles zeros is a practical and clear concept."
+      },
+      {
+        "unit": "power_of",
+        "score": 8,
+        "rationale": "Exponentiation is basic mathematics."
+      },
+      {
+        "unit": "pi_",
+        "score": 9,
+        "rationale": "The mathematical constant pi is universally understood."
+      },
+      {
+        "unit": "exp_",
+        "score": 7,
+        "rationale": "The exponential function is a standard mathematical concept."
+      },
+      {
+        "unit": "log_",
+        "score": 7,
+        "rationale": "The natural logarithm is a standard mathematical concept."
+      },
+      {
+        "unit": "log10_",
+        "score": 7,
+        "rationale": "The base-10 logarithm is a standard mathematical concept."
+      },
+      {
+        "unit": "reduce_length",
+        "score": 8,
+        "rationale": "Counting the total number of pixels reflects the overall image area, which is easily understood."
+      },
+      {
+        "unit": "reduce_biggestAxis",
+        "score": 8,
+        "rationale": "Finding the largest dimension size is a straightforward spatial metric."
+      },
+      {
+        "unit": "reduce_smallerAxis",
+        "score": 8,
+        "rationale": "Finding the smallest dimension size is a straightforward spatial metric."
+      },
+      {
+        "unit": "reduce_histMode",
+        "score": 8,
+        "rationale": "Identifying the most common pixel value is a clear statistical property of tissue density."
+      },
+      {
+        "unit": "reduce_histModeCount",
+        "score": 8,
+        "rationale": "Counting the frequency of the most common pixel value is straightforward."
+      },
+      {
+        "unit": "reduce_propWhite",
+        "score": 9,
+        "rationale": "The proportion of white pixels directly translates to the percentage of an image containing a target structure."
+      },
+      {
+        "unit": "reduce_propBlack",
+        "score": 9,
+        "rationale": "The proportion of black pixels directly translates to the percentage of background area."
+      },
+      {
+        "unit": "reduce_nColors",
+        "score": 8,
+        "rationale": "Counting unique values translates well to evaluating image complexity or bit depth."
+      },
+      {
+        "unit": "reduce_mean",
+        "score": 9,
+        "rationale": "The mean intensity represents the overall brightness or tissue density, which is heavily used."
+      },
+      {
+        "unit": "reduce_median",
+        "score": 9,
+        "rationale": "The median intensity is a robust, well-understood statistical measure of overall brightness."
+      },
+      {
+        "unit": "reduce_std",
+        "score": 8,
+        "rationale": "Standard deviation cleanly represents the total amount of variation or contrast in the image."
+      },
+      {
+        "unit": "reduce_maximum",
+        "score": 9,
+        "rationale": "Finding the highest intensity value represents locating the brightest structure."
+      },
+      {
+        "unit": "reduce_minimum",
+        "score": 9,
+        "rationale": "Finding the lowest intensity value represents locating the darkest structure."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 7,
+        "rationale": "A conditional choice based on a number is logically straightforward."
+      },
+      {
+        "unit": "region_mean",
+        "score": 9,
+        "rationale": "The local mean indicates the specific density/brightness of an isolated piece of tissue."
+      },
+      {
+        "unit": "region_std",
+        "score": 8,
+        "rationale": "Local standard deviation measures localized tissue texture or noise."
+      },
+      {
+        "unit": "region_min",
+        "score": 9,
+        "rationale": "The local minimum finds the darkest point in a specific area."
+      },
+      {
+        "unit": "region_max",
+        "score": 9,
+        "rationale": "The local maximum finds the brightest spot in a specific area."
+      },
+      {
+        "unit": "region_sum",
+        "score": 8,
+        "rationale": "Summing local intensity mathematically combines area and brightness intuitively."
+      },
+      {
+        "unit": "region_median",
+        "score": 9,
+        "rationale": "Local median indicates typical local brightness while ignoring extreme outliers."
+      },
+      {
+        "unit": "region_range",
+        "score": 8,
+        "rationale": "The range mathematically represents the total scale of local contrast."
+      },
+      {
+        "unit": "region_contrast",
+        "score": 8,
+        "rationale": "Center-versus-surround contrast closely mirrors human visual perception of spots and lesions."
+      },
+      {
+        "unit": "region_energy",
+        "score": 6,
+        "rationale": "Mean squared value (energy) is a mathematically sound but visually abstract texture metric."
+      },
+      {
+        "unit": "region_entropy",
+        "score": 6,
+        "rationale": "Local entropy signifies complexity and disorder but requires statistical knowledge to interpret."
+      },
+      {
+        "unit": "region_mean_5p",
+        "score": 9,
+        "rationale": "Specifying a 5% patch explicitly contextualizes the local mean intensity measurement."
+      },
+      {
+        "unit": "region_std_5p",
+        "score": 8,
+        "rationale": "Specifying a 5% patch explicitly contextualizes the local texture variation."
+      },
+      {
+        "unit": "region_min_5p",
+        "score": 9,
+        "rationale": "Specifying a 5% patch explicitly contextualizes the local darkest point."
+      },
+      {
+        "unit": "region_max_5p",
+        "score": 9,
+        "rationale": "Specifying a 5% patch explicitly contextualizes the local brightest point."
+      },
+      {
+        "unit": "region_sum_5p",
+        "score": 8,
+        "rationale": "Summing intensity in a defined 5% region is mathematically concrete."
+      },
+      {
+        "unit": "region_median_5p",
+        "score": 9,
+        "rationale": "The local median in a 5% patch provides a clear robust brightness metric."
+      },
+      {
+        "unit": "region_range_5p",
+        "score": 8,
+        "rationale": "The contrast range in a defined 5% patch is intuitive."
+      },
+      {
+        "unit": "region_contrast_5p",
+        "score": 8,
+        "rationale": "Center-versus-ring contrast measured over a 5% patch aligns with spot detection."
+      },
+      {
+        "unit": "region_energy_5p",
+        "score": 6,
+        "rationale": "Local energy on a 5% patch remains a somewhat abstract mathematical texture metric."
+      },
+      {
+        "unit": "region_entropy_5p",
+        "score": 6,
+        "rationale": "Local entropy on a 5% patch remains slightly abstract statistically."
+      },
+      {
+        "unit": "region_mean_10p",
+        "score": 9,
+        "rationale": "Specifying a 10% patch clearly dictates the scale of the local mean evaluation."
+      },
+      {
+        "unit": "region_std_10p",
+        "score": 8,
+        "rationale": "Specifying a 10% patch clearly dictates the scale of the local texture evaluation."
+      },
+      {
+        "unit": "region_min_10p",
+        "score": 9,
+        "rationale": "Specifying a 10% patch clearly dictates the scale of local minimum evaluation."
+      },
+      {
+        "unit": "region_max_10p",
+        "score": 9,
+        "rationale": "Specifying a 10% patch clearly dictates the scale of local maximum evaluation."
+      },
+      {
+        "unit": "region_sum_10p",
+        "score": 8,
+        "rationale": "Summing intensity in a 10% region provides a concrete mathematical feature."
+      },
+      {
+        "unit": "region_median_10p",
+        "score": 9,
+        "rationale": "The median over a 10% patch provides clear robust brightness data."
+      },
+      {
+        "unit": "region_range_10p",
+        "score": 8,
+        "rationale": "The local max/min range over a 10% patch acts as a solid contrast proxy."
+      },
+      {
+        "unit": "region_contrast_10p",
+        "score": 8,
+        "rationale": "Center-versus-ring contrast measured over 10% matches broader lesion detection."
+      },
+      {
+        "unit": "region_energy_10p",
+        "score": 6,
+        "rationale": "Energy over 10% is a specific but statistically abstract metric."
+      },
+      {
+        "unit": "region_entropy_10p",
+        "score": 6,
+        "rationale": "Entropy over 10% quantifies larger-scale disorder, which is somewhat abstract."
+      },
+      {
+        "unit": "region_mean_20p",
+        "score": 9,
+        "rationale": "A 20% patch provides a broad but clear regional mean evaluation."
+      },
+      {
+        "unit": "region_std_20p",
+        "score": 8,
+        "rationale": "A 20% patch provides a broad but clear regional variation metric."
+      },
+      {
+        "unit": "region_min_20p",
+        "score": 9,
+        "rationale": "A 20% patch provides a broad but clear regional minimum."
+      },
+      {
+        "unit": "region_max_20p",
+        "score": 9,
+        "rationale": "A 20% patch provides a broad but clear regional maximum."
+      },
+      {
+        "unit": "region_sum_20p",
+        "score": 8,
+        "rationale": "Summing a large 20% patch mathematically reflects total localized density."
+      },
+      {
+        "unit": "region_median_20p",
+        "score": 9,
+        "rationale": "The median over a large 20% patch ignores localized artifacts smoothly."
+      },
+      {
+        "unit": "region_range_20p",
+        "score": 8,
+        "rationale": "The 20% patch range offers a concrete measure of regional contrast limits."
+      },
+      {
+        "unit": "region_contrast_20p",
+        "score": 8,
+        "rationale": "Large center-versus-ring contrast at 20% aligns with evaluating massive objects."
+      },
+      {
+        "unit": "region_energy_20p",
+        "score": 6,
+        "rationale": "Energy over a broad 20% area remains a statistically abstract notion."
+      },
+      {
+        "unit": "region_entropy_20p",
+        "score": 6,
+        "rationale": "Entropy over 20% quantifies coarse regional complexity, requiring statistical reasoning."
+      },
+      {
+        "unit": "haar_lr",
+        "score": 6,
+        "rationale": "Left-versus-right Haar contrast describes comparing adjacent blocks, which is understandable but highly algorithmic."
+      },
+      {
+        "unit": "haar_tb",
+        "score": 6,
+        "rationale": "Top-versus-bottom Haar contrast identifies horizontal block differences, similar to vertical edges."
+      },
+      {
+        "unit": "haar_diag_main",
+        "score": 5,
+        "rationale": "Diagonal block contrast is somewhat hard to mentally map onto specific clinical structures."
+      },
+      {
+        "unit": "haar_diag_anti",
+        "score": 5,
+        "rationale": "Anti-diagonal block contrast requires effort to visualize structurally."
+      },
+      {
+        "unit": "haar_center_surround",
+        "score": 7,
+        "rationale": "Center-versus-surround models spot detection naturally, resembling localized lesion finding."
+      },
+      {
+        "unit": "haar_three_h",
+        "score": 5,
+        "rationale": "Three-band horizontal contrast corresponds to a specific computer vision feature template."
+      },
+      {
+        "unit": "haar_three_v",
+        "score": 5,
+        "rationale": "Three-band vertical contrast corresponds to a specific computer vision feature template."
+      },
+      {
+        "unit": "orientation_coherence",
+        "score": 6,
+        "rationale": "Measuring how neatly aligned tissue fibers are is useful but mathematically slightly abstract."
+      },
+      {
+        "unit": "dominant_orientation",
+        "score": 6,
+        "rationale": "Identifying the primary angle of lines or edges is geometrically intuitive."
+      },
+      {
+        "unit": "orientation_energy_0",
+        "score": 6,
+        "rationale": "Measuring horizontal structural proportion is moderately understandable."
+      },
+      {
+        "unit": "orientation_energy_45",
+        "score": 6,
+        "rationale": "Measuring diagonal structural proportion is moderately understandable."
+      },
+      {
+        "unit": "orientation_energy_90",
+        "score": 6,
+        "rationale": "Measuring vertical structural proportion is moderately understandable."
+      },
+      {
+        "unit": "orientation_energy_135",
+        "score": 6,
+        "rationale": "Measuring the opposing diagonal structural proportion is moderately understandable."
+      },
+      {
+        "unit": "orientation_spread",
+        "score": 6,
+        "rationale": "Measuring the spread of orientations evaluates tissue organization, which makes sense but uses abstract calculation."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_mean",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_sum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_std",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_minimum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_maximum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_mean",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_sum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_std",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_minimum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_maximum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_correlation_mean",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_correlation_sum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_correlation_std",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_correlation_minimum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_correlation_maximum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_contrast_mean",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_contrast_sum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_contrast_std",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_contrast_minimum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_contrast_maximum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_IDM_mean",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_IDM_sum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_IDM_std",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_IDM_minimum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_IDM_maximum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_ASM_mean",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_ASM_sum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_ASM_std",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_ASM_minimum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_ASM_maximum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_glcm_entropy_mean",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_glcm_entropy_sum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_glcm_entropy_std",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_glcm_entropy_minimum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_glcm_entropy_maximum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_max_prob_mean",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_max_prob_sum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_max_prob_std",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_max_prob_minimum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_max_prob_maximum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_energy_mean",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_energy_sum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_energy_std",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_energy_minimum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_energy_maximum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_dissimilarity_mean",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_dissimilarity_sum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_dissimilarity_std",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_dissimilarity_minimum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      },
+      {
+        "unit": "glcm_dissimilarity_maximum",
+        "score": 3,
+        "rationale": "GLCM metrics represent advanced Gray-Level Co-occurrence Matrix texture analysis, heavily opaque to standard clinicians."
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+You will score the interpretability of symbolic program primitives from the perspective of the stakeholder defined above.
+
+You are given:
+1. A library identifier.
+2. A table of primitive function names and descriptions.
+
+Each primitive is a function that may appear inside a symbolic program. Score each primitive independently, using its name and description.
+
+# Scoring
+
+Score from 1 to 10, where:
+1 = not interpretable at all for this stakeholder;
+5 = moderately interpretable, but requiring effort or background assumptions;
+10 = very interpretable, clear and easy for this stakeholder to understand.
+
+Use integers only.
+
+Score interpretability, not predictive usefulness, clinical correctness, or whether the primitive is likely to improve classification.
+
+# Output
+
+Return only valid JSON. Do not include markdown, comments, or explanatory text outside the JSON.
+
+Use this exact schema:
+
+[
+  {
+    "library_id": "<library identifier>",
+    "scores": [
+      {
+        "unit": "<unit exactly as provided>",
+        "score": <integer from 1 to 10>,
+        "rationale": "<one short sentence>"
+      }
+    ]
+  },
+  {
+    "library_id": "<library identifier>",
+    "scores": [
+      {
+        "unit": "<unit exactly as provided>",
+        "score": <integer from 1 to 10>,
+        "rationale": "<one short sentence>"
+      }
+    ]
+  }
+]
+
+
+Return one score for every primitive in the provided table.
+Preserve the exact function names.
+Do not omit primitives.
+Do not add primitives that were not provided.

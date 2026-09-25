@@ -1,0 +1,144 @@
+class,method,sensitivity,specificity
+bladder,MAGE end-to-end,22.22222222222222,88.88738494856524
+bladder,Best per dim RF,84.42,96.494
+bladder,Best per dim SVC,82.246,97.13000000000001
+bladder,Best per dim LR,78.744,96.53500000000001
+bladder,Runs per dim RF,86.715,97.64500000000001
+bladder,Runs per dim SVC,87.198,97.97
+bladder,Runs per dim LR,86.35300000000001,98.538
+bladder,All per dim RF,85.386,97.61800000000001
+bladder,All per dim SVC,89.493,98.227
+bladder,All per dim LR,91.063,98.687
+bladder,resnet18,89.73429951690821,98.78180833784515
+bladder,resnet34,92.7536231884058,99.12019491066594
+bladder,resnext50,92.512077294686,99.4044396318354
+femur-left,MAGE end-to-end,27.610208816705335,91.90751445086705
+femur-left,Best per dim RF,72.158,98.356
+femur-left,Best per dim SVC,75.40599999999999,98.304
+femur-left,Best per dim LR,54.059999999999995,99.152
+femur-left,Runs per dim RF,79.582,99.332
+femur-left,Runs per dim SVC,82.135,99.319
+femur-left,Runs per dim LR,82.135,98.882
+femur-left,All per dim RF,83.527,99.062
+femur-left,All per dim SVC,88.399,99.461
+femur-left,All per dim LR,87.471,99.191
+femur-left,resnet18,88.39907192575406,99.55041746949261
+femur-left,resnet34,90.95127610208816,99.56326268464997
+femur-left,resnext50,93.7354988399072,99.55041746949261
+femur-right,MAGE end-to-end,69.12114014251782,89.15971776779988
+femur-right,Best per dim RF,70.07100000000001,98.165
+femur-right,Best per dim SVC,70.54599999999999,98.49900000000001
+femur-right,Best per dim LR,62.470000000000006,98.602
+femur-right,Runs per dim RF,89.549,98.97399999999999
+femur-right,Runs per dim SVC,86.936,99.22999999999999
+femur-right,Runs per dim LR,87.173,98.768
+femur-right,All per dim RF,86.698,99.19200000000001
+femur-right,All per dim SVC,91.686,99.48700000000001
+femur-right,All per dim LR,88.361,99.217
+femur-right,resnet18,90.02375296912113,99.66645285439384
+femur-right,resnet34,96.91211401425178,99.32007697241822
+femur-right,resnext50,95.01187648456056,99.55099422706863
+heart,MAGE end-to-end,64.8456057007126,92.46953175112252
+heart,Best per dim RF,78.385,99.32
+heart,Best per dim SVC,75.059,99.47399999999999
+heart,Best per dim LR,79.335,97.98599999999999
+heart,Runs per dim RF,82.89800000000001,99.897
+heart,Runs per dim SVC,81.235,99.96199999999999
+heart,Runs per dim LR,86.461,99.846
+heart,All per dim RF,86.698,99.756
+heart,All per dim SVC,85.51100000000001,99.96199999999999
+heart,All per dim LR,89.786,99.923
+heart,resnet18,95.96199524940617,99.9230275817832
+heart,resnet34,93.34916864608076,100.0
+heart,resnext50,96.43705463182897,99.88454137267479
+kidney-left,MAGE end-to-end,0.0,100.0
+kidney-left,Best per dim RF,64.512,97.997
+kidney-left,Best per dim SVC,68.77600000000001,97.089
+kidney-left,Best per dim LR,63.136,97.142
+kidney-left,Runs per dim RF,74.553,98.331
+kidney-left,Runs per dim SVC,77.717,97.503
+kidney-left,Runs per dim LR,73.72800000000001,97.677
+kidney-left,All per dim RF,76.20400000000001,97.997
+kidney-left,All per dim SVC,82.256,97.997
+kidney-left,All per dim LR,81.706,98.358
+kidney-left,resnet18,82.53094910591471,99.07864868473762
+kidney-left,resnet34,84.59422283356258,99.01188409667513
+kidney-left,resnext50,82.9436038514443,99.02523701428763
+kidney-right,MAGE end-to-end,53.46938775510204,93.98476139553536
+kidney-right,Best per dim RF,62.17700000000001,98.409
+kidney-right,Best per dim SVC,59.864,98.409
+kidney-right,Best per dim LR,58.231,98.222
+kidney-right,Runs per dim RF,68.97999999999999,98.837
+kidney-right,Runs per dim SVC,70.748,98.74300000000001
+kidney-right,Runs per dim LR,70.612,98.129
+kidney-right,All per dim RF,70.476,99.01100000000001
+kidney-right,All per dim SVC,74.422,99.104
+kidney-right,All per dim LR,76.327,98.971
+kidney-right,resnet18,85.4421768707483,99.23806977676782
+kidney-right,resnet34,82.0408163265306,99.50541371474402
+kidney-right,resnext50,86.53061224489797,99.07766341398208
+liver,MAGE end-to-end,0.0,100.0
+liver,Best per dim RF,95.041,99.06
+liver,Best per dim SVC,93.624,98.856
+liver,Best per dim LR,93.678,98.746
+liver,Runs per dim RF,97.602,99.32600000000001
+liver,Runs per dim SVC,97.875,99.514
+liver,Runs per dim LR,97.112,99.655
+liver,All per dim RF,97.384,99.467
+liver,All per dim SVC,98.583,99.38900000000001
+liver,All per dim LR,98.638,99.812
+liver,resnet18,99.72752043596729,99.82761322676697
+liver,resnet34,99.83651226158038,99.68656950321267
+liver,resnext50,99.83651226158038,99.73358407773077
+lung-left,MAGE end-to-end,78.87067395264117,88.32659449589148
+lung-left,Best per dim RF,94.718,99.804
+lung-left,Best per dim SVC,93.625,99.909
+lung-left,Best per dim LR,93.625,99.27
+lung-left,Runs per dim RF,97.63199999999999,99.94800000000001
+lung-left,Runs per dim SVC,96.90299999999999,99.961
+lung-left,Runs per dim LR,97.81400000000001,99.909
+lung-left,All per dim RF,96.721,99.94800000000001
+lung-left,All per dim SVC,96.90299999999999,99.97399999999999
+lung-left,All per dim LR,97.63199999999999,99.843
+lung-left,resnet18,98.1785063752277,99.97391417764445
+lung-left,resnet34,96.90346083788707,99.98695708882222
+lung-left,resnext50,97.81420765027322,100.0
+lung-right,MAGE end-to-end,0.0,100.0
+lung-right,Best per dim RF,97.846,99.804
+lung-right,Best per dim SVC,97.666,99.856
+lung-right,Best per dim LR,97.846,99.24300000000001
+lung-right,Runs per dim RF,98.74300000000001,99.83
+lung-right,Runs per dim SVC,98.384,99.882
+lung-right,Runs per dim LR,98.564,99.882
+lung-right,All per dim RF,98.74300000000001,99.634
+lung-right,All per dim SVC,98.205,99.94800000000001
+lung-right,All per dim LR,98.384,99.896
+lung-right,resnet18,98.92280071813285,99.89554772163468
+lung-right,resnet34,98.02513464991023,99.97388693040867
+lung-right,resnext50,98.74326750448833,99.93471732602167
+pancreas,MAGE end-to-end,52.13333333333333,92.23144923653898
+pancreas,Best per dim RF,90.93299999999999,97.402
+pancreas,Best per dim SVC,89.86699999999999,97.30799999999999
+pancreas,Best per dim LR,88.133,95.205
+pancreas,Runs per dim RF,94.267,98.286
+pancreas,Runs per dim SVC,95.06700000000001,98.379
+pancreas,Runs per dim LR,94.533,98.661
+pancreas,All per dim RF,92.133,98.433
+pancreas,All per dim SVC,95.467,98.634
+pancreas,All per dim LR,95.333,98.86200000000001
+pancreas,resnet18,98.13333333333333,98.79453522635949
+pancreas,resnet34,97.6,99.02223412804715
+pancreas,resnext50,98.93333333333332,99.10259844628985
+spleen,MAGE end-to-end,43.24324324324324,87.48276812792942
+spleen,Best per dim RF,80.042,96.443
+spleen,Best per dim SVC,78.898,95.63000000000001
+spleen,Best per dim LR,68.29499999999999,96.36099999999999
+spleen,Runs per dim RF,91.684,97.243
+spleen,Runs per dim SVC,91.164,97.65599999999999
+spleen,Runs per dim LR,89.917,97.739
+spleen,All per dim RF,91.372,97.643
+spleen,All per dim SVC,93.659,98.373
+spleen,All per dim LR,95.53,98.51100000000001
+spleen,resnet18,98.44074844074844,98.84201819685691
+spleen,resnet34,99.06444906444906,98.85580369451337
+spleen,resnext50,96.15384615384616,99.1590846429556

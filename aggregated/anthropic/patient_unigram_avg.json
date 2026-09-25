@@ -1,0 +1,1532 @@
+[
+  {
+    "library_id": "Library 1",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 4.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 4.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 7.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "experimental_normalize_2D",
+        "score": 4.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "experimental_standardize_2D",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "experimental_tointensity_image2D",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 4.666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 4.666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 3.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 3.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 2.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 2.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 3.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 4.666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 5.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 5.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "bsubtract_image2D",
+        "score": 5.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "badd_image2D",
+        "score": 5.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "bmult_image2D",
+        "score": 5.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 3.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 4.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 4.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 4.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 4.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 4.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "exp_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "loginv_image2D",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "log_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "powerof_image2D",
+        "score": 2.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 3.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 3.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 3.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 3.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "meanpool",
+        "score": 4.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "maxpool",
+        "score": 4.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "minpool",
+        "score": 4.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "stdpool",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "medianpool",
+        "score": 4.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "grad_magnitude",
+        "score": 3.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "grad_orientation",
+        "score": 2.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "orientation_select",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 2",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 4.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 4.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "experimental_invert_2D",
+        "score": 7.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "experimental_tobinary_image2D",
+        "score": 5.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "experimental_tobinary_th_image2D_factory",
+        "score": 5.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "subtract_img2D",
+        "score": 5.666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "add_img2D",
+        "score": 5.666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "mult_img2D",
+        "score": 4.666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "max_img2D",
+        "score": 5.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "min_img2D",
+        "score": 5.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "binarize_adaptive2D",
+        "score": 4.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "binarize_niblack2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "binarize_polysegment2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "binarize_sauvola2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "binarize_otsu2D",
+        "score": 3.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "binarize_minimumintermodes2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "binarize_intermodes2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "binarize_minimumerror2D",
+        "score": 2.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "binarize_moments2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "binarize_unimodalrosin2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "binarize_entropy2D",
+        "score": 2.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "binarize_balanced2D",
+        "score": 3.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "binarize_yen2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "binarize_manual2D",
+        "score": 5.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "sobelx_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "sobely_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "sobelm_image2D",
+        "score": 3.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ando3x_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ando3y_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ando3m_image2D",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ando4x_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ando4y_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ando4m_image2D",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ando5x_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ando5y_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ando5m_image2D",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "bickleyx_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "bickleyy_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "bickleym_image2D",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "prewittx_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "prewitty_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "prewittm_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "scharrx_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "scharry_image2D",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "scharrm_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "gaussian5_image2D",
+        "score": 4.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "gaussian9_image2D",
+        "score": 4.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "gaussian13_image2D",
+        "score": 4.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "gaussian17_image2D",
+        "score": 4.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "gaussian25_image2D",
+        "score": 4.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "laplacian3_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "dog_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "moffat5_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "moffat13_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "moffat25_image2D",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "findlocalminima_image2D",
+        "score": 5.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "findlocalmaxima_image2D",
+        "score": 5.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "erosion_2D",
+        "score": 4.666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "dilation_2D",
+        "score": 4.666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "opening_2D",
+        "score": 3.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "closing_2D",
+        "score": 3.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "tophat_2D",
+        "score": 2.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "bothat_2D",
+        "score": 2.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "morphogradient_2D",
+        "score": 3.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "morpholaplace_2D",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 3.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "avgpool_blocks",
+        "score": 3.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "avgpool_cross_blocks",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "maxpool_blocks",
+        "score": 3.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "maxpool_cross_blocks",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "minpool_blocks",
+        "score": 3.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "minpool_cross_blocks",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "meanpool",
+        "score": 4.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "maxpool",
+        "score": 4.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "minpool",
+        "score": 4.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "stdpool",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "medianpool",
+        "score": 4.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "uniquecountpool",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "argmaxcountpool",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "argmincountpool",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "iqrpool",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 3",
+    "scores": [
+      {
+        "unit": "identity_image2D",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ones_2D",
+        "score": 4.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "zeros_2D",
+        "score": 4.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "experimental_tosegment_image2D",
+        "score": 4.666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "fastscanning_image2D",
+        "score": 3.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "watershed_image2D",
+        "score": 3.3333333333333335,
+        "rationale": "Average over 3 runs."
+      }
+    ]
+  },
+  {
+    "library_id": "Library 4",
+    "scores": [
+      {
+        "unit": "identity_float",
+        "score": 5.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "ret_1",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "tanh",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "relu",
+        "score": 3.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "modulo",
+        "score": 3.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "is_eq_to",
+        "score": 6.666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "experimental_is_gt",
+        "score": 6.666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "experimental_is_lt",
+        "score": 6.666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "experimental_not",
+        "score": 5.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "number_sum",
+        "score": 7.666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "number_minus",
+        "score": 7.666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "number_mult",
+        "score": 7.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "number_div",
+        "score": 6.666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "safe_div",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "power_of",
+        "score": 4.666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "pi_",
+        "score": 6.666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "exp_",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "log_",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "log10_",
+        "score": 3.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "reduce_length",
+        "score": 6.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "reduce_biggestAxis",
+        "score": 6.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "reduce_smallerAxis",
+        "score": 6.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "reduce_histMode",
+        "score": 4.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "reduce_histModeCount",
+        "score": 4.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "reduce_propWhite",
+        "score": 8.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "reduce_propBlack",
+        "score": 8.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "reduce_nColors",
+        "score": 6.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "reduce_mean",
+        "score": 7.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "reduce_median",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "reduce_std",
+        "score": 3.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "reduce_maximum",
+        "score": 8.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "reduce_minimum",
+        "score": 8.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "if_else_multiplexer",
+        "score": 4.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_mean",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_std",
+        "score": 3.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_min",
+        "score": 7.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_max",
+        "score": 7.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_sum",
+        "score": 5.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_median",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_range",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_contrast",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_energy",
+        "score": 2.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_entropy",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_mean_5p",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_std_5p",
+        "score": 3.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_min_5p",
+        "score": 7.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_max_5p",
+        "score": 7.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_sum_5p",
+        "score": 5.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_median_5p",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_range_5p",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_contrast_5p",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_energy_5p",
+        "score": 2.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_entropy_5p",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_mean_10p",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_std_10p",
+        "score": 3.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_min_10p",
+        "score": 7.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_max_10p",
+        "score": 7.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_sum_10p",
+        "score": 5.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_median_10p",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_range_10p",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_contrast_10p",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_energy_10p",
+        "score": 2.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_entropy_10p",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_mean_20p",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_std_20p",
+        "score": 3.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_min_20p",
+        "score": 7.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_max_20p",
+        "score": 7.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_sum_20p",
+        "score": 5.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_median_20p",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_range_20p",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_contrast_20p",
+        "score": 6.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_energy_20p",
+        "score": 2.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "region_entropy_20p",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "haar_lr",
+        "score": 4.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "haar_tb",
+        "score": 4.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "haar_diag_main",
+        "score": 3.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "haar_diag_anti",
+        "score": 3.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "haar_center_surround",
+        "score": 5.333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "haar_three_h",
+        "score": 3.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "haar_three_v",
+        "score": 3.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "orientation_coherence",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "dominant_orientation",
+        "score": 2.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "orientation_energy_0",
+        "score": 2.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "orientation_energy_45",
+        "score": 2.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "orientation_energy_90",
+        "score": 2.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "orientation_energy_135",
+        "score": 2.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "orientation_spread",
+        "score": 3.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_mean",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_sum",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_std",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_minimum",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_glcm_mean_ref_maximum",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_mean",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_sum",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_std",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_minimum",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_glcm_var_ref_maximum",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_correlation_mean",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_correlation_sum",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_correlation_std",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_correlation_minimum",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_correlation_maximum",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_contrast_mean",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_contrast_sum",
+        "score": 2.3333333333333335,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_contrast_std",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_contrast_minimum",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_contrast_maximum",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_IDM_mean",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_IDM_sum",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_IDM_std",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_IDM_minimum",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_IDM_maximum",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_ASM_mean",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_ASM_sum",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_ASM_std",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_ASM_minimum",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_ASM_maximum",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_glcm_entropy_mean",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_glcm_entropy_sum",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_glcm_entropy_std",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_glcm_entropy_minimum",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_glcm_entropy_maximum",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_max_prob_mean",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_max_prob_sum",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_max_prob_std",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_max_prob_minimum",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_max_prob_maximum",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_energy_mean",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_energy_sum",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_energy_std",
+        "score": 1.3333333333333333,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_energy_minimum",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_energy_maximum",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_dissimilarity_mean",
+        "score": 2.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_dissimilarity_sum",
+        "score": 2.6666666666666665,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_dissimilarity_std",
+        "score": 1.6666666666666667,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_dissimilarity_minimum",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      },
+      {
+        "unit": "glcm_dissimilarity_maximum",
+        "score": 2.0,
+        "rationale": "Average over 3 runs."
+      }
+    ]
+  }
+]
