@@ -470,3 +470,53 @@ This repository uses the following external assets:
 - LLM APIs: GPT-5, Claude Sonnet 4.6, and Gemini 3.1 Pro Preview were accessed through their providers' API terms.
 
 The code introduced in this repository is released under the MIT License.
+
+## Appendix of appendices
+
+Moved out of the paper and kept here for the record.
+
+### Detailed scores for each function over different seeds for LLM: Gemini 3.1 Pro Preview
+
+#### Library 1
+
+![Library 1](figures/lollipop_gemini/lib1-1.png)
+
+Gemini 3.1 Pro Preview unigram interpretability scores for Library 1 primitives across stakeholder audiences. Diamonds show individual repeated runs, and filled markers show the mean score for each audience. Page 1.
+
+![Library 1](figures/lollipop_gemini/lib1-2.png)
+
+Gemini 3.1 Pro Preview unigram interpretability scores for Library 1 primitives across stakeholder audiences. Diamonds show individual repeated runs, and filled markers show the mean score for each audience. Page 2.
+
+#### Library 2
+
+![Library 2](figures/lollipop_gemini/lib2-1.png)
+
+Gemini 3.1 Pro Preview unigram interpretability scores for Library 2 primitives across stakeholder audiences. Diamonds show individual repeated runs, and filled markers show the mean score for each audience. Page 1.
+
+![Library 2](figures/lollipop_gemini/lib2-2.png)
+
+Gemini 3.1 Pro Preview unigram interpretability scores for Library 2 primitives across stakeholder audiences. Diamonds show individual repeated runs, and filled markers show the mean score for each audience. Page 2.
+
+#### Library 3
+
+![Library 3](figures/lollipop_gemini/lib3-1.png)
+
+Gemini 3.1 Pro Preview unigram interpretability scores for Library 3 primitives across stakeholder audiences. Diamonds show individual repeated runs, and filled markers show the mean score for each audience.
+
+#### Library 4
+
+![Library 4](figures/lollipop_gemini/lib4-1.png)
+
+Gemini 3.1 Pro Preview unigram interpretability scores for Library 4 primitives across stakeholder audiences. Diamonds show individual repeated runs, and filled markers show the mean score for each audience. Page 1.
+
+![Library 4](figures/lollipop_gemini/lib4-2.png)
+
+Gemini 3.1 Pro Preview unigram interpretability scores for Library 4 primitives across stakeholder audiences. Diamonds show individual repeated runs, and filled markers show the mean score for each audience. Page 2.
+
+![Library 4](figures/lollipop_gemini/lib4-3.png)
+
+Gemini 3.1 Pro Preview unigram interpretability scores for Library 4 primitives across stakeholder audiences. Diamonds show individual repeated runs, and filled markers show the mean score for each audience. Page 3.
+
+![Library 4](figures/lollipop_gemini/lib4-4.png)
+
+Gemini 3.1 Pro Preview unigram interpretability scores for Library 4 primitives across stakeholder audiences. Diamonds show individual repeated runs, and filled markers show the mean score for each audience. Page 4.
